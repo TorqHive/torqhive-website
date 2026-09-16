@@ -9,6 +9,7 @@ const FOOTER_LINKS = {
     { label: 'Torque Tools', to: '/products?category=Torque+Tools' },
     { label: 'Automotive Specialty', to: '/products?category=Automotive+Specialty+Tools' },
     { label: 'Tool Sets', to: '/products?category=Tool+Sets' },
+    { label: 'Next-Gen Power Tools', to: '/about' },
   ],
   Company: [
     { label: 'About TorqHive', to: '/about' },
@@ -36,7 +37,7 @@ export default function Footer() {
               />
             </Link>
             <p style={{ fontSize: 'var(--text-sm)', lineHeight: 1.8, maxWidth: '280px', marginBottom: '20px' }}>
-              Hand tool export business working with manufacturing partners in Zhejiang, China. Ratchets, sockets, wrenches and automotive service tool sets for importers and distributors.
+              Precision mechanical hand tools and next-generation cordless power tool solutions for global trade. Serving distributors, importers, and custom OEM programs.
             </p>
             <a
               href={WA_URL}
@@ -80,7 +81,7 @@ export default function Footer() {
             © {new Date().getFullYear()} TorqHive. All rights reserved.
           </p>
           <p style={{ fontSize: 'var(--text-xs)', color: 'rgba(255,255,255,0.25)', fontFamily: 'var(--font-mono)' }}>
-            Professional hand tools for global trade.
+            Precision hand tools &amp; next-gen power solutions for global trade.
           </p>
         </div>
       </div>

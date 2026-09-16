@@ -1,1 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#111111"/><path d="M14 15H50V25H37V50H27V25H14Z" fill="#C8102E"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <linearGradient id="thBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2026" />
+      <stop offset="100%" stop-color="#0E0F12" />
+    </linearGradient>
+    <linearGradient id="thRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2B4A" />
+      <stop offset="100%" stop-color="#C8102E" />
+    </linearGradient>
+    <linearGradient id="thSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+    <linearGradient id="thBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5173F" />
+      <stop offset="40%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#E5173F" />
+    </linearGradient>
+    <filter id="thGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3.5" flood-color="#E5173F" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Industrial Hexagon Shield (Hive + Fastener Anvil) -->
+  <polygon points="50,5 89,27.5 89,72.5 50,95 11,72.5 11,27.5" fill="url(#thBg)" stroke="url(#thBorder)" stroke-width="2.5" stroke-linejoin="round" />
+  
+  <!-- Precision Technical Inner Guide -->
+  <polygon points="50,11 83,30 83,70 50,89 17,70 17,30" fill="none" stroke="#252A34" stroke-width="1.2" stroke-dasharray="3 2" />
+
+  <!-- The "T" - Solid, powerful, precision-machined -->
+  <!-- Top Crossbar Left (Titanium Steel) -->
+  <path d="M23 27 L49 27 L49 41 L27 41 Z" fill="url(#thSteel)" />
+  
+  <!-- Top Crossbar Right (Torq Red with Speed Angle) -->
+  <path d="M51 27 L77 27 L73 41 L51 41 Z" fill="url(#thRed)" filter="url(#thGlow)" />
+
+  <!-- Center Ratchet/Drive Anvil Hex Point -->
+  <polygon points="50,31 53.5,33 53.5,37 50,39 46.5,37 46.5,33" fill="#0E0F12" />
+  <circle cx="50" cy="35" r="1.5" fill="#FFFFFF" />
+
+  <!-- Vertical Pillar Left (Polished Steel) -->
+  <path d="M42 41 L49 41 L49 76 L42 76 Z" fill="url(#thSteel)" />
+
+  <!-- Vertical Pillar Right (Torq Red Kinetic Blade) -->
+  <path d="M51 41 L58 41 L58 76 L51 76 Z" fill="url(#thRed)" filter="url(#thGlow)" />
+
+  <!-- Lower Torque Wedge / Chamfer Point -->
+  <polygon points="42,77 58,77 50,84" fill="url(#thRed)" />
+</svg>

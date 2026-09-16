@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles, ShieldCheck, Wrench, Zap } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -9,81 +9,279 @@ export default function Hero() {
         className="container"
         style={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          minHeight: '560px',
-          gap: 0,
+          gridTemplateColumns: '1.15fr 0.85fr',
+          minHeight: '620px',
+          gap: '24px',
+          alignItems: 'center',
         }}
       >
-        {/* Left — copy */}
+        {/* Left — Brand Logo, Title, Copy & Badges */}
         <div
           style={{
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            padding: '80px 48px 80px 0',
+            padding: '64px 32px 64px 0',
           }}
           className="hero-left"
         >
-          <p className="text-eyebrow" style={{ marginBottom: '16px' }}>
-            Professional Hand Tools for Global Trade
-          </p>
-          <h1 className="text-hero" style={{ color: '#FFFFFF', marginBottom: '20px' }}>
-            Build a sharper<br />
-            tool assortment.
+          {/* Brand Logo & Big English Typography */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '16px',
+              marginBottom: '20px',
+            }}
+          >
+            <div
+              style={{
+                width: '58px',
+                height: '58px',
+                borderRadius: '12px',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%)',
+                border: '1px solid rgba(229,23,63,0.3)',
+                boxShadow: '0 8px 24px rgba(200,16,46,0.25)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+                padding: '6px',
+              }}
+            >
+              <img
+                src="/assets/images/logo/torqhive-icon.svg"
+                alt="TorqHive Logo"
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+              />
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '3px', lineHeight: 1 }}>
+                <span
+                  style={{
+                    fontFamily: "'Arial Black', Impact, sans-serif",
+                    fontSize: '36px',
+                    fontWeight: 900,
+                    letterSpacing: '-0.5px',
+                    color: '#FFFFFF',
+                  }}
+                >
+                  TORQ
+                </span>
+                <span
+                  style={{
+                    fontFamily: "'Arial Black', Impact, sans-serif",
+                    fontSize: '36px',
+                    fontWeight: 900,
+                    letterSpacing: '-0.5px',
+                    color: 'var(--th-red)',
+                  }}
+                >
+                  HIVE
+                </span>
+              </div>
+              <p
+                style={{
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  letterSpacing: '2.5px',
+                  color: 'rgba(255,255,255,0.55)',
+                  marginTop: '5px',
+                  textTransform: 'uppercase',
+                }}
+              >
+                Industrial Tools &amp; Solutions
+              </p>
+            </div>
+          </div>
+
+          {/* Scope Badge: Hand Tools & Upcoming Power Tools */}
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              background: 'rgba(255,255,255,0.05)',
+              border: '1px solid rgba(255,255,255,0.12)',
+              borderRadius: '100px',
+              padding: '6px 14px',
+              marginBottom: '22px',
+              width: 'fit-content',
+            }}
+          >
+            <span
+              style={{
+                width: '8px',
+                height: '8px',
+                borderRadius: '50%',
+                background: 'var(--th-red)',
+                boxShadow: '0 0 10px var(--th-red)',
+              }}
+            />
+            <span style={{ fontSize: '12px', fontWeight: 600, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.02em' }}>
+              Pro Hand Tools Catalog <span style={{ color: 'rgba(255,255,255,0.3)', margin: '0 6px' }}>•</span> Expanding to Cordless Power Tools
+            </span>
+          </div>
+
+          {/* Main Hero Headline */}
+          <h1
+            className="text-hero"
+            style={{
+              color: '#FFFFFF',
+              marginBottom: '20px',
+              fontSize: '44px',
+              lineHeight: '1.18',
+              letterSpacing: '-0.02em',
+            }}
+          >
+            Precision Hand Tools.<br />
+            <span
+              style={{
+                background: 'linear-gradient(90deg, #FFFFFF 0%, #F3F4F6 50%, var(--th-red) 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                display: 'inline-block',
+              }}
+            >
+              Next-Gen Power Solutions.
+            </span>
           </h1>
-          <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: 'var(--text-lg)', marginBottom: '36px', lineHeight: '1.7', maxWidth: '420px' }}>
-            Explore 40 ratchets, sockets, wrenches, torque tools, automotive specialty tools and workshop sets. MOQ starts at one piece, with light customization available.
+
+          {/* Value Proposition Description */}
+          <p
+            style={{
+              color: 'rgba(255,255,255,0.72)',
+              fontSize: '16px',
+              marginBottom: '28px',
+              lineHeight: '1.75',
+              maxWidth: '520px',
+            }}
+          >
+            TorqHive engineers and exports professional mechanical hand tools alongside an expanding frontier of high-torque brushless power tools. Built for international distributors, trade buyers, and custom OEM/ODM brands with flexible MOQ and rigorous factory-direct quality testing.
           </p>
-          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-            <Link to="/products" className="btn btn-primary" style={{ gap: '6px' }}>
+
+          {/* Quick Pillar Badges */}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '12px',
+              marginBottom: '32px',
+              maxWidth: '520px',
+            }}
+            className="hero-pillars"
+          >
+            <div
+              style={{
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(255,255,255,0.08)',
+                borderRadius: '6px',
+                padding: '12px 14px',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--th-red)', fontWeight: 800, fontSize: '14px' }}>
+                <Wrench size={14} /> 40+ Models
+              </div>
+              <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '11px', marginTop: '4px' }}>
+                Pro Hand Tools
+              </div>
+            </div>
+
+            <div
+              style={{
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(255,255,255,0.08)',
+                borderRadius: '6px',
+                padding: '12px 14px',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#60A5FA', fontWeight: 800, fontSize: '14px' }}>
+                <Zap size={14} /> Power R&amp;D
+              </div>
+              <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '11px', marginTop: '4px' }}>
+                Cordless &amp; Electric
+              </div>
+            </div>
+
+            <div
+              style={{
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(255,255,255,0.08)',
+                borderRadius: '6px',
+                padding: '12px 14px',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#34D399', fontWeight: 800, fontSize: '14px' }}>
+                <ShieldCheck size={14} /> Low MOQ
+              </div>
+              <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '11px', marginTop: '4px' }}>
+                OEM &amp; Custom Label
+              </div>
+            </div>
+          </div>
+
+          {/* Action CTAs */}
+          <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+            <Link to="/products" className="btn btn-primary" style={{ gap: '6px', padding: '12px 24px' }}>
               Explore Products <ArrowRight size={16} />
             </Link>
-            <Link to="/contact" className="btn btn-outline">
-              Request a Quote
+            <Link to="/about" className="btn btn-outline" style={{ padding: '12px 22px' }}>
+              Company &amp; Roadmap
             </Link>
           </div>
         </div>
 
-        {/* Right — product image */}
+        {/* Right — Product Showcase Image */}
         <div
           style={{
-            background: 'rgba(255,255,255,0.03)',
+            background: 'linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%)',
             borderLeft: '1px solid rgba(255,255,255,0.06)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             padding: '40px',
             position: 'relative',
+            minHeight: '480px',
           }}
           className="hero-right"
         >
           <img
             src="/assets/images/home/torqhive-hero-premium.png"
-            alt="TorqHive — Professional Hand Tools"
+            alt="TorqHive — Precision Hand Tools and Power Tool Solutions"
             style={{
-              maxWidth: '440px',
+              maxWidth: '460px',
               width: '100%',
               height: 'auto',
               objectFit: 'contain',
-              filter: 'drop-shadow(0 16px 40px rgba(0,0,0,0.5))',
+              filter: 'drop-shadow(0 20px 48px rgba(0,0,0,0.65))',
             }}
           />
           {/* Subtle accent line */}
-          <div style={{
-            position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px',
-            background: 'var(--th-red)',
-          }} />
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: '3px',
+              background: 'linear-gradient(90deg, var(--th-red) 0%, #FF4D6D 50%, transparent 100%)',
+            }}
+          />
         </div>
       </div>
 
       {/* Mobile layout override */}
       <style>{`
-        @media (max-width: 768px) {
-          .hero-left { padding: 40px 0 32px 0 !important; }
+        @media (max-width: 900px) {
+          .hero-left { padding: 48px 0 32px 0 !important; }
           .hero-right { display: none !important; }
           [data-component="hero-section"] .container {
             grid-template-columns: 1fr !important;
           }
+        }
+        @media (max-width: 540px) {
+          .hero-pillars { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </section>

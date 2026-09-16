@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/hero/Hero';
 import CategoryGrid from '../components/categories/CategoryGrid';
+import PowerToolsRoadmap from '../components/sections/PowerToolsRoadmap';
 import FeaturedProducts from '../components/sections/FeaturedProducts';
 import BuyingProcess from '../components/sections/BuyingProcess';
 import ManufacturingSection from '../components/sections/ManufacturingSection';
@@ -15,6 +16,7 @@ export default function HomePage() {
     <main data-component="home-page">
       <Hero />
       <CategoryGrid categories={categories} />
+      <PowerToolsRoadmap />
       <FeaturedProducts products={featuredProducts} />
       <BuyingProcess />
       <ManufacturingSection />

@@ -2,10 +2,10 @@ import React from 'react';
 import SectionHeading from '../common/SectionHeading';
 
 const FACTORY_IMGS = [
-  { src: 'https://sc02.alicdn.com/kf/H8e50af1cb26f454aa3c521fd04764156i.jpg', alt: 'Precision machining at partner facility' },
-  { src: 'https://sc02.alicdn.com/kf/H34d63c1261fd47b7816a57a4994ee74a6.jpg', alt: 'Machine operation floor' },
-  { src: 'https://sc02.alicdn.com/kf/Heacf559c61b842d7b26816b251e608b4v.jpg', alt: 'Socket component detail' },
-  { src: 'https://sc02.alicdn.com/kf/H38afb1f2663b429d956a0cdfc96a3d85E.jpg', alt: 'Packed and ready-for-export goods' },
+  { src: '/assets/images/factory/machining-detail.jpg', alt: 'Precision machining at partner facility' },
+  { src: '/assets/images/factory/machine-operation.jpg', alt: 'Machine operation floor' },
+  { src: '/assets/images/factory/socket-component-detail.jpg', alt: 'Socket component detail' },
+  { src: '/assets/images/factory/packed-goods.jpg', alt: 'Packed and ready-for-export goods' },
 ];
 
 export default function ManufacturingSection() {
@@ -32,16 +32,17 @@ export default function ManufacturingSection() {
           {/* Right — copy */}
           <div>
             <SectionHeading
-              eyebrow="Sourcing Approach"
-              title="A closer look behind the tools."
-              subtitle="See footage from a partner manufacturing facility, including machining, component handling and packing areas."
+              eyebrow="Manufacturing &amp; Supply Chain"
+              title="A closer look behind TorqHive tools."
+              subtitle="Inside our partner manufacturing facilities in Zhejiang, China — covering alloy forging, precision CNC machining, torque calibration, and export packaging."
             />
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {[
-                { label: 'Location', value: 'Zhejiang, China' },
-                { label: 'Partnership model', value: 'Coordinated sourcing with partner factories' },
-                { label: 'Customization', value: 'Logo, label, packaging — confirm per product' },
-                { label: 'Quality documentation', value: 'Available for selected models on request' },
+                { label: 'Location', value: 'Zhejiang, China (Industrial Hardware & Power Tool Cluster)' },
+                { label: 'Core Capabilities', value: 'Precision alloy forging, CNC machining, and electromechanical assembly' },
+                { label: 'Product Focus', value: 'Professional hand tools & upcoming cordless/brushless power tools' },
+                { label: 'Customization', value: 'Laser marking, two-shot color molding, custom blow-mold cases & EVA trays' },
+                { label: 'Compliance & QA', value: 'Traceable torque calibration, DIN/ISO standards, and CE/RoHS safety audits' },
               ].map(item => (
                 <div key={item.label} style={{ display: 'flex', gap: '16px', paddingBottom: '16px', borderBottom: '1px solid var(--th-border)' }}>
                   <p className="text-meta" style={{ width: '140px', flexShrink: 0 }}>{item.label}</p>
