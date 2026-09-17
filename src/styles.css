@@ -7,6 +7,7 @@
   --th-black:       #111111;
   --th-red:         #C8102E;
   --th-red-hover:   #A80D27;
+  --th-red-accent:  #FF5C7A;
   --th-white:       #FFFFFF;
   --th-surface:     #F5F5F4;
   --th-text:        #171717;
@@ -142,10 +143,16 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .text-eyebrow {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--accent);
+}
+
+.section--dark .text-eyebrow,
+[data-component="inquiry-banner"] .text-eyebrow,
+[data-component="hero-section"] .text-eyebrow {
+  color: var(--th-red-accent);
 }
 
 /* ─── Buttons ────────────────────────────────────────────────────── */

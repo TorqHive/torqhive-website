@@ -77,10 +77,10 @@ export default function Footer() {
 
         <hr className="divider" style={{ borderColor: 'rgba(255,255,255,0.08)', marginBottom: '24px' }} />
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-          <p style={{ fontSize: 'var(--text-xs)', color: 'rgba(255,255,255,0.35)', fontFamily: 'var(--font-mono)' }}>
+          <p style={{ fontSize: 'var(--text-xs)', color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-mono)' }}>
             © {new Date().getFullYear()} TorqHive. All rights reserved.
           </p>
-          <p style={{ fontSize: 'var(--text-xs)', color: 'rgba(255,255,255,0.25)', fontFamily: 'var(--font-mono)' }}>
+          <p style={{ fontSize: 'var(--text-xs)', color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-mono)' }}>
             Precision hand tools &amp; next-gen power solutions for global trade.
           </p>
         </div>

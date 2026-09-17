@@ -17,7 +17,7 @@ export default function SectionHeading({ eyebrow, title, subtitle, align = 'left
       style={{ textAlign: align, marginBottom: '40px' }}
     >
       {eyebrow && (
-        <p className="text-eyebrow" style={{ marginBottom: '10px', color: isDark ? '#C8102E' : undefined }}>
+        <p className="text-eyebrow" style={{ marginBottom: '10px', color: isDark ? '#FF5C7A' : undefined }}>
           {eyebrow}
         </p>
       )}

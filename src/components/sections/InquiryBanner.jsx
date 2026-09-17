@@ -16,7 +16,7 @@ export default function InquiryBanner() {
         className="container"
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}
       >
-        <p className="text-eyebrow" style={{ marginBottom: '16px' }}>Start Your Inquiry</p>
+        <p className="text-eyebrow" style={{ marginBottom: '16px', color: '#FF5C7A' }}>Start Your Inquiry</p>
         <h2
           className="text-h2"
           style={{ color: '#FFFFFF', marginBottom: '16px', maxWidth: '560px' }}

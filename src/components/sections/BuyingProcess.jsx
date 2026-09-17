@@ -56,7 +56,7 @@ export default function BuyingProcess() {
               <p style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: '12px',
-                color: 'var(--th-red)',
+                color: '#FF5C7A',
                 fontWeight: 600,
                 marginBottom: '16px',
                 letterSpacing: '0.1em',

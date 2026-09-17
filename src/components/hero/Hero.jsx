@@ -180,10 +180,10 @@ export default function Hero() {
                 padding: '12px 14px',
               }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--th-red)', fontWeight: 800, fontSize: '14px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#FF5C7A', fontWeight: 800, fontSize: '14px' }}>
                 <Wrench size={14} /> 40+ Models
               </div>
-              <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '11px', marginTop: '4px' }}>
+              <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '11px', marginTop: '4px' }}>
                 Pro Hand Tools
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function Hero() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#60A5FA', fontWeight: 800, fontSize: '14px' }}>
                 <Zap size={14} /> Power R&amp;D
               </div>
-              <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '11px', marginTop: '4px' }}>
+              <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '11px', marginTop: '4px' }}>
                 Cordless &amp; Electric
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function Hero() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#34D399', fontWeight: 800, fontSize: '14px' }}>
                 <ShieldCheck size={14} /> Low MOQ
               </div>
-              <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '11px', marginTop: '4px' }}>
+              <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '11px', marginTop: '4px' }}>
                 OEM &amp; Custom Label
               </div>
             </div>
@@ -330,8 +330,12 @@ export default function Hero() {
                 }}
               >
                 <img
-                  src="/assets/images/home/torqhive-hero-premium.png"
-                  alt="TorqHive 15-Piece Torque Wrench & Spark Plug Socket Set"
+                  src="/assets/images/home/torqhive-hero-premium.webp"
+                  alt="TorqHive 15-Piece Torque Wrench &amp; Spark Plug Socket Set"
+                  fetchPriority="high"
+                  decoding="async"
+                  width="328"
+                  height="190"
                   style={{
                     maxHeight: '190px',
                     width: 'auto',
@@ -390,6 +394,8 @@ export default function Hero() {
                 <img
                   src="/assets/images/products/TH-016/hero-web.webp"
                   alt="3-Piece Flex-Head Ratchet Set"
+                  loading="eager"
+                  decoding="async"
                   style={{
                     maxHeight: '105px',
                     width: 'auto',
@@ -442,6 +448,8 @@ export default function Hero() {
                 <img
                   src="/assets/images/products/TH-006/hero-web.webp"
                   alt="15-Piece Universal Impact Socket Set"
+                  loading="eager"
+                  decoding="async"
                   style={{
                     maxHeight: '110px',
                     width: 'auto',
@@ -494,6 +502,8 @@ export default function Hero() {
                 <img
                   src="/assets/images/products/TH-003/hero-web.webp"
                   alt="Extra-Long Wrench Set"
+                  loading="eager"
+                  decoding="async"
                   style={{
                     maxHeight: '80px',
                     width: 'auto',
