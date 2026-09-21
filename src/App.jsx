@@ -9,6 +9,8 @@ import ProductDetailPage from './pages/ProductDetailPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import BuyingGuidePage from './pages/BuyingGuidePage';
+import BlogPage from './pages/BlogPage';
+import BlogPostDetailPage from './pages/BlogPostDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
 import './styles.css';
 
@@ -23,6 +25,8 @@ export default function App() {
             <Route path="/products"      element={<ProductsPage />} />
             <Route path="/products/:id"  element={<ProductDetailPage />} />
             <Route path="/about"         element={<AboutPage />} />
+            <Route path="/blog"          element={<BlogPage />} />
+            <Route path="/blog/:slug"    element={<BlogPostDetailPage />} />
             <Route path="/contact"       element={<ContactPage />} />
             <Route path="/buying-guide"  element={<BuyingGuidePage />} />
             <Route path="*"              element={<NotFoundPage />} />

@@ -13,6 +13,7 @@ const FOOTER_LINKS = {
   ],
   Company: [
     { label: 'About TorqHive', to: '/about' },
+    { label: 'Technical Blog & Insights', to: '/blog' },
     { label: 'Buying Guide', to: '/buying-guide' },
     { label: 'Quality & Documentation', to: '/about#quality' },
     { label: 'Contact', to: '/contact' },
