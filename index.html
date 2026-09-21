@@ -52,6 +52,13 @@
       ]
     }
     </script>
+
+    <!-- Global Analytics Queue (GA4 / GTM / Clarity fallback) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+    </script>
   </head>
   <body>
     <div id="root"></div>

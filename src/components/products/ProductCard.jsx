@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { trackWhatsAppClick } from '../../utils/analytics';
 
 /**
  * ProductCard — single product display for grid catalog
@@ -14,7 +15,12 @@ import { Link } from 'react-router-dom';
  */
 export default function ProductCard({ id, title, category, dimensions, weight, moq, image }) {
   const waNumber = '8615669586372';
-  const waText = encodeURIComponent(`Hi TorqHive, I'd like to inquire about ${id} — ${title}. Please share availability and pricing.`);
+  const waText = encodeURIComponent(
+    `Hi TorqHive, I'd like to inquire about ${id} — ${title}.\n` +
+    `• Target Qty: [e.g. 50 / 200 / 1000 pcs]\n` +
+    `• Destination Country: [e.g. UK / Germany / USA]\n` +
+    `Please share export pricing, sample availability (freight collect) and lead time.`
+  );
   const waUrl = `https://wa.me/${waNumber}?text=${waText}`;
 
   return (
@@ -38,7 +44,7 @@ export default function ProductCard({ id, title, category, dimensions, weight, m
         </p>
         <div style={{ display: 'flex', gap: '6px', marginBottom: '12px', flexWrap: 'wrap' }}>
           <span className="badge badge-outline">MOQ {moq}</span>
-          <span className="badge badge-outline">Light customization</span>
+          <span className="badge badge-outline">Samples available</span>
         </div>
         <a
           href={waUrl}
@@ -46,6 +52,7 @@ export default function ProductCard({ id, title, category, dimensions, weight, m
           rel="noopener noreferrer"
           className="btn btn-primary btn-sm product-card__cta"
           aria-label={`Request quote for ${title} via WhatsApp`}
+          onClick={() => trackWhatsAppClick({ location: 'product_card', productId: id, productTitle: title })}
         >
           Request Quote
         </a>

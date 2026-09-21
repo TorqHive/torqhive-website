@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { trackWhatsAppClick } from '../../utils/analytics';
 
 const WA_NUMBER = '8615669586372';
-const WA_DEFAULT_TEXT = "Hi TorqHive, I'd like to inquire about your hand tool products.";
+const WA_DEFAULT_TEXT = "Hi TorqHive, I'd like to inquire about your hand tool products.\n• Sourcing: [Wholesale / OEM / Custom Brand]\n• Target Category: [Ratchets / Sockets / Wrenches / Torque Tools]\nPlease share your export catalog and price list.";
 
 export default function WhatsAppFAB() {
   const [pulse, setPulse] = useState(true);
@@ -21,6 +22,7 @@ export default function WhatsAppFAB() {
       aria-label="Chat on WhatsApp"
       data-component="whatsapp-fab"
       className={pulse ? 'wa-fab-pulse' : ''}
+      onClick={() => trackWhatsAppClick({ location: 'floating_fab' })}
       style={{
         position: 'fixed',
         bottom: '24px',
