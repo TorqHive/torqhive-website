@@ -270,4 +270,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://torqhive.com/blog</loc>
+  </url>
+  <url>
+    <loc>https://torqhive.com/blog/flex-head-vs-fixed-head-ratchet</loc>
+  </url>
+  <url>
+    <loc>https://torqhive.com/blog/no-skip-socket-set-buying-guide</loc>
+  </url>
+  <url>
+    <loc>https://torqhive.com/blog/deep-vs-shallow-impact-sockets</loc>
+  </url>
+  <url>
+    <loc>https://torqhive.com/blog/how-to-choose-high-torque-ratchet-handles</loc>
+  </url>
+  <url>
+    <loc>https://torqhive.com/blog/cr-v-vs-cr-mo-steel-selecting-the-right-alloy</loc>
+  </url>
+  <url>
+    <loc>https://torqhive.com/blog/oem-private-label-hand-tool-sourcing-guide</loc>
+  </url>
 </urlset>

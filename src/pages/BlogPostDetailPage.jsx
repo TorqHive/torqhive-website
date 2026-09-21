@@ -3,12 +3,18 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Tag, User, MessageSquare, ArrowRight } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import { products } from '../data/products';
+import useBlogMetadata from '../hooks/useBlogMetadata';
 
 const WA_NUMBER = '8615669586372';
 
 export default function BlogPostDetailPage() {
   const { slug } = useParams();
   const post = blogPosts.find((p) => p.slug === slug);
+  useBlogMetadata({
+    title: post ? (post.seoTitle || `${post.title} | TorqHive`) : 'Article Not Found | TorqHive',
+    description: post ? (post.metaDescription || post.excerpt) : 'Find practical tool guides on the TorqHive blog.',
+    path: `/blog/${slug}`, image: post?.coverImage, type: post ? 'article' : 'website', missing: !post,
+  });
 
   if (!post) {
     return (
