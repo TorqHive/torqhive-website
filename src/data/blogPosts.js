@@ -10,6 +10,263 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "torque-adapter-extension-swivel-correction",
+    title: "Torque Adapters, Extensions and Swivels: When the Wrench Setting Is No Longer the Fastener Torque",
+    date: "Sep 24, 2026",
+    category: "Workshop Practice",
+    readTime: "8 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-035/hero-web.webp",
+    excerpt: "A straight extension bar changes nothing. A crow foot or an angled adapter changes the lever arm, and therefore changes the torque that actually reaches the fastener. Here is the geometry, the correction formula, and the cases where no correction is possible.",
+    tags: [
+      "torque adapter correction",
+      "torque wrench extension",
+      "crow foot torque setting",
+      "swivel socket torque loss",
+      "torque wrench lever arm"
+    ],
+    content: `
+      <h2>Why the question keeps returning</h2>
+      <p>It comes up every time somebody cannot get a torque wrench squarely onto a fastener. <a href="https://www.reddit.com/r/Tools/comments/15viw3d/does_putting_an_adapter_andor_extender_make_a/">A r/Tools thread asking whether an adapter or extender changes the torque</a> collects the correct answer and several confident wrong ones. <a href="https://www.reddit.com/r/AskMechanics/comments/11wnvyj/dumb_question_re_extensions_with_torque_wrench/">A r/AskMechanics thread about using extensions on a torque wrench for wheel work</a> is the practical version of the problem, and <a href="https://www.reddit.com/r/AskMechanics/comments/191yjxg/does_adapting_a_torque_wrench_change_the_amount/">a thread about stepping a 3/8 in. wrench up to 1/2 in. sockets</a> shows how quickly the accessory chain grows. <a href="https://www.reddit.com/r/AskEngineers/comments/1fygfel/torque_wrench_extension_variables_and_effect_on/">An r/AskEngineers discussion of the variables involved</a> and <a href="https://www.reddit.com/r/AskEngineers/comments/5506ch/torque_wrench_extension_bar_or_crows_foot_socket/">an older thread on extension bars and crow foot sockets</a> both reach the same conclusion from the engineering side.</p>
+      <p>The subject is confusing because it mixes two different things. One is whether the accessory changes the torque at all. The other is whether the accessory changes the lever arm through which the torque is applied. Only the second one matters.</p>
+
+      <h2>The rule is about lever arm, not about accessories</h2>
+      <p>Terex publishes a service training document on this, <a href="https://www.terex.com/utilities/en/about/utility-pros/how-to-adjust-torque-values-when-using-torque-adapters">Tech Tip 53, on adjusting torque values when using torque adapters</a>, and it states the governing principle in one sentence: any adapter or offset that changes the distance between the centreline of the fastener and the centreline of the torque wrench drive requires an adjustment to the wrench setting, and without that adjustment the fastener will not receive the intended torque. It then adds the exception that causes most of the confusion: a straight extension used between the adapter and the torque wrench does not affect the torque setting.</p>
+      <p>That single distinction resolves the forum argument. A straight extension bar extends the assembly along the line of the drive. Because the load path stays in line, the moment arm measured at the handle does not change, and the wrench reading remains valid. An adapter or an offset moves the fastener sideways relative to the wrench drive. That changes how far the hand travels for a given rotation of the fastener, which is exactly what a torque wrench is reading, and the indicated torque is then wrong.</p>
+
+      <h2>The correction formula</h2>
+      <p>The correction is simple geometry, and the same relationship is implemented in the published calculators from <a href="https://www.norbar.com/Support/Calculators/Torque-Wrench-Extension-Formula">Norbar</a> and in the equations listed by <a href="https://www.engineersedge.com/manufacturing_spec/torque_wrench_1.htm">Engineers Edge</a>. The setting you dial into the wrench is:</p>
+      <p><strong>(torque wrench length x desired torque) divided by (torque wrench length + offset length)</strong></p>
+      <p>Two measurements have to be taken with a tape measure, not estimated. The wrench length runs from the centre of the drive to the centre of the handle, and some wrenches carry a reference mark for it. The offset is measured from the centre of the wrench drive to the centreline of the fastener.</p>
+
+      <h2>Worked examples</h2>
+      <p>The Terex document works through a single desired torque of 180 ft-lb on an 18.5 in. wrench and a 13.5 in. wrench, and the results show how much the correction matters in practice:</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Configuration</th><th scope="col">Measured offset</th><th scope="col">Desired torque</th><th scope="col">Wrench setting</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>3 in. adapter in line with the drive, 18.5 in. wrench</td><td>3 in.</td><td>180 ft-lb</td><td>155 ft-lb</td></tr>
+      <tr><td>Same adapter angled at 45 degrees, 18.5 in. wrench</td><td>2.125 in. effective</td><td>180 ft-lb</td><td>161 ft-lb</td></tr>
+      <tr><td>Same adapter at 90 degrees to the wrench</td><td>Offset parallel to the wrench axis</td><td>180 ft-lb</td><td>180 ft-lb, no correction</td></tr>
+      <tr><td>Crow foot with 1.25 in. offset, 13.5 in. wrench</td><td>1.25 in.</td><td>180 ft-lb</td><td>165 ft-lb</td></tr>
+      </tbody>
+      </table></div>
+      <p>The direction of the error matters as much as the size of it. An offset that lengthens the lever arm makes the wrench deliver more torque than it indicates, so the setting must be reduced to compensate, which is what every line of the table above does. An offset arranged so that the fastener sits closer to the handle than the drive does reverses that relationship.</p>
+
+      <h2>The 90 degree shortcut and the swivel rule</h2>
+      <p>Two special cases let you skip the arithmetic entirely, and both are worth knowing because they are common in real work.</p>
+      <ul>
+        <li><strong>An adapter at 90 degrees needs no correction.</strong> Terex states directly that when an adapter is at 90 degrees to the wrench, no adjustment is needed, because the length of the adapter is parallel to the wrench and the distance is the same as if no adapter were used. The r/Tools thread gives the same advice in workshop language: put the crow foot at 90 degrees to the wrench and do no math.</li>
+        <li><strong>A swivel or universal joint is safe up to about 15 degrees.</strong> Terex states that the torque applied is not changed if a swivel socket or universal joint is used at an angle of 15 degrees or less. Beyond that angle, the load path is no longer a simple lever relationship and the correction formula does not describe what happens, which is why the consistent recommendation on engineering forums is not to torque through a universal joint at a significant angle at all.</li>
+      </ul>
+
+      <h2>Where the arithmetic stops being useful</h2>
+      <ul>
+        <li><strong>Steep swivel angles.</strong> The formula corrects for an offset in the plane of the wrench. It does not correct for the losses and side loads introduced when a universal joint is used at a large angle, and no wrench setting can compensate for a reading that has stopped being meaningful.</li>
+        <li><strong>Wobble extensions and flexible bars.</strong> Because the correction scales with the offset distance, a short accessory that adds only a small in-line distance produces a correction smaller than the wrench's own accuracy tolerance. That is not the same as assuming all accessories are free of effect; it is a reason to measure rather than guess.</li>
+        <li><strong>Drive size adapters.</strong> Stepping from 1/2 in. down to 3/8 in. does not change the lever arm, so no correction is required on that account. It does, however, put the smallest drive in the chain in the position where the whole load passes through it.</li>
+        <li><strong>Composite offsets.</strong> Where a crow foot, a swivel and a long extension are all used together, the resulting offset is a geometry problem in more than one plane. The reliable answer is to restructure the job so the wrench can reach the fastener without the stack of accessories.</li>
+      </ul>
+
+      <h2>What to do before the job starts</h2>
+      <ul>
+        <li><strong>Measure the tool, not the accessory listing.</strong> Wrench length is centre of drive to centre of handle, and it differs between a standard and an extendable handle.</li>
+        <li><strong>Measure the offset from the fastener centreline.</strong> For an angled adapter, the effective offset is shorter than the accessory's own length, which is why the 45 degree example uses 2.125 in. rather than 3 in.</li>
+        <li><strong>Write the corrected setting on the job card.</strong> The correction is easy to lose between the person who worked it out and the person holding the wrench.</li>
+        <li><strong>Verify a wrench that has been adjusted.</strong> A setting derived from a formula is only as good as the wrench applying it, which is why verification and interval are treated together in our guide to <a href="/blog/torque-wrench-calibration-frequency-and-verification">torque wrench calibration</a>.</li>
+      </ul>
+
+      <h2>What this means for buying and specifying accessories</h2>
+      <p>For an importer or a brand owner, the practical implication is that defined geometry is a feature. An extension set whose bar lengths are stated, and a swivel or universal adapter whose dimensions are published, lets a professional calculate the correction instead of estimating it. A catalogue that lists accessories by appearance only removes that ability.</p>
+      <p>TorqHive's accessory range is built for that kind of use: the <a href="/products/TH-035">extension bar set</a> covers reach in straight lines, where no correction is needed, the <a href="/products/TH-034">universal socket adapter set</a> handles the angled access that would otherwise be reached with a wrench held off-square, and the <a href="/products/TH-005">15-piece torque wrench and spark plug socket set</a> covers the common automotive ranges. Socket geometry, which decides how the load is shared across a fastener that is already damaged or rounded, is covered separately in our comparison of <a href="/blog/six-point-vs-12-point-sockets">6-point and 12-point sockets</a>.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>A straight extension used in line does not change the torque setting; the load path, and therefore the lever arm, is unchanged.</li>
+        <li>An adapter or offset that moves the fastener sideways relative to the wrench drive changes the lever arm and requires a correction.</li>
+        <li>The setting is the wrench length multiplied by the desired torque, divided by the wrench length plus the offset.</li>
+        <li>An adapter at 90 degrees needs no correction, and a swivel used at 15 degrees or less does not change the torque applied.</li>
+        <li>Beyond a shallow swivel angle, no wrench setting can compensate, and the job should be re-planned so the wrench reaches the fastener directly.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-035", "TH-034", "TH-005"],
+    seoTitle: "Torque Adapters & Extensions: Correct the Setting | TorqHive",
+    metaDescription: "When a torque adapter, crow foot or swivel changes the torque at the fastener, how to apply the lever arm correction formula, and why a straight extension needs no adjustment.",
+  },
+  {
+    slug: "impact-socket-retention-friction-ring-vs-detent-pin",
+    title: "Impact Socket Retention: Friction Ring vs Detent Pin vs Pin and O-Ring",
+    date: "Sep 24, 2026",
+    category: "Buying Guide",
+    readTime: "8 min read",
+    author: "Global Trade Specialist",
+    coverImage: "/assets/images/products/TH-006/hero-web.webp",
+    excerpt: "Three retaining systems hold an impact socket on an anvil, and they are not interchangeable. Here is how each one grips, where each one wears out, and what a buyer has to put on a purchase order to avoid shipping a tool that cannot hold its own sockets.",
+    tags: [
+      "impact socket retention",
+      "hog ring vs detent pin",
+      "friction ring impact wrench",
+      "pin and o-ring socket",
+      "impact socket anvil"
+    ],
+    content: `
+      <h2>The question behind the question</h2>
+      <p>The subject comes up whenever somebody buys their first impact wrench, and it always arrives in the same shape. <a href="https://www.reddit.com/r/Tools/comments/7lgdx8/beginner_question_hog_ring_or_detent_pin/">A r/Tools thread asking whether to choose a hog ring or a detent pin</a> draws a dozen answers that disagree. <a href="https://www.reddit.com/r/Tools/comments/j1iljm/why_do_impact_sockets_have_holes_in_them_why_dont/">A second r/Tools thread asking why impact sockets have holes in them at all</a> reaches the real issue: the socket only stays on if you use a retaining pin, unlike a hand socket. <a href="https://www.reddit.com/r/Tools/comments/r4jlms/m18_stubby_impact_wrench_friction_ring_or_detent/">A thread about choosing between the two options on a stubby 1/2 in. wrench</a> and <a href="https://www.reddit.com/r/MilwaukeeTool/comments/mgshc6/milwaukee_friction_ring_vs_pin_detent/">the equivalent discussion in r/MilwaukeeTool</a> cover the same ground from the user's side.</p>
+      <p>The confusion is understandable, because three different mechanisms get described as "the thing that holds the socket". They hold it in three different ways, they impose three different requirements on the socket, and they fail differently.</p>
+
+      <h2>The three systems</h2>
+      <ul>
+        <li><strong>Friction ring, also called a hog ring.</strong> A steel ring sits in a groove machined into the anvil, expanded by a neoprene O-ring underneath it. The rubber pushes the steel ring outward against the inner walls of the socket bore, and friction does the rest. Nothing on the socket has to be modified for this system to work.</li>
+        <li><strong>Detent pin.</strong> The anvil carries a spring-loaded mushroom pin held in place by a roll pin. The detent engages a cross-hole drilled through the socket, so the socket is mechanically captured rather than gripped. A socket without that drilled hole cannot use the system.</li>
+        <li><strong>Pin and O-ring.</strong> The socket has two opposed holes in a groove near the square drive. A pin passes through both, and a rubber O-ring slipped over the pin keeps it from working out. The socket itself is drilled for the pin, and the pin is a consumable that can be replaced on its own.</li>
+      </ul>
+      <p>The mechanics of the first two are set out clearly in <a href="https://www.fortishd.com/blogs/tools/friction-ring-detent-pin-pin-and-o-ring-impact-socket-retaining-systems">this comparison of impact socket retaining systems</a>, which also documents the distinctive detail of the pin and O-ring arrangement: it can be combined with a friction ring, so a socket set can be compatible with both kinds of anvil.</p>
+
+      <h2>How the three systems compare</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Retaining system</th><th scope="col">How it holds the socket</th><th scope="col">Requirement on the socket</th><th scope="col">Socket changes</th><th scope="col">Wear behaviour</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>Friction ring (hog ring)</td><td>Steel ring expanded against the socket bore by a neoprene O-ring in the anvil groove</td><td>None, any standard impact socket fits</td><td>Fast, by hand</td><td>Grip fades as the ring and the socket bore wear; ring and O-ring are replaceable</td></tr>
+      <tr><td>Detent pin</td><td>Spring-loaded pin seated in a cross-hole drilled through the socket</td><td>Socket must be drilled for the pin</td><td>Slow, needs a punch or screwdriver to depress the pin</td><td>Pin, spring and roll pin are replaceable without changing the anvil</td></tr>
+      <tr><td>Pin and O-ring</td><td>Pin through two opposed holes in the socket, retained by a rubber O-ring</td><td>Socket must be drilled and grooved for the pin</td><td>Medium, by hand</td><td>Does not depend on friction, so retention does not fade with socket wear; the pin and O-ring are consumables</td></tr>
+      </tbody>
+      </table></div>
+
+      <h2>Choosing between them on the job</h2>
+      <ul>
+        <li><strong>Frequent socket changes point to a friction ring.</strong> This is the consistent theme in the user threads: a hog ring is the default because a mechanic swapping between sizes all day does not want to find a punch first. Industry buying guidance says the same thing, noting that pin detents need a significant amount of force to actuate compared with a friction ring (see <a href="https://www.reidsupply.com/en-us/industry-news/friction-ring-vs-pin-detent">this friction ring and pin detent comparison</a>).</li>
+        <li><strong>Maximum retention points to a detent pin.</strong> Because the pin passes through the socket rather than gripping it, retention does not depend on friction at all. That is the case for repetitive work with one size, and for work where a dropped socket is a hazard rather than an inconvenience.</li>
+        <li><strong>Heavy-duty and safety-critical work points to a pin and O-ring arrangement.</strong> It is the most secure of the three and, because nothing relies on friction, it does not lose grip as the socket wears. The caveat from the same comparison is about the hardware: a metal retaining ring or C-ring is the durable choice, and a plastic security ring is not something to put on a heavy-duty tool.</li>
+        <li><strong>Contact geometry explains the difference.</strong> A detent pin presses the socket at a single point through its drilled hole, while a friction ring loads the bore at four points around its circumference. A pin used on a socket that is not drilled for it, effectively as a substitute for a friction ring, is holding on almost nothing.</li>
+      </ul>
+
+      <h2>Four things that are not true</h2>
+      <ul>
+        <li><strong>Retention does not create torque.</strong> The anvil drives the socket and the retention system only keeps it in place. No anvil type adds or subtracts turning force.</li>
+        <li><strong>A failed detent pin does not mean a new impact wrench.</strong> Both detent pins and friction rings are replaceable parts.</li>
+        <li><strong>A socket must never be retained with wire.</strong> It is a documented injury mechanism, not a field fix: the wire passes through the hand when the tool is triggered.</li>
+        <li><strong>Through-hole anvils are not exclusive to 1 in. tools.</strong> They are most common on 3/4 in. drive and larger tools, but a number of 1/2 in. models are supplied with a friction ring plus a through-hole, so the specification has to be read rather than assumed.</li>
+      </ul>
+
+      <h2>What a buyer has to specify</h2>
+      <p>This is the part of the topic that matters most on a purchase order, because retention type is a specification and not a preference. It is also the part that is easiest to leave out, and the one that produces a container of tools nobody can use.</p>
+      <ul>
+        <li><strong>State the anvil type separately from the socket set.</strong> "1/2 in. drive impact wrench" describes a drive size, not a retaining system. The order should say friction ring, detent pin, or through-hole with a pin and ring.</li>
+        <li><strong>State whether the sockets are drilled.</strong> A set of undrilled sockets cannot be used on a detent-pin anvil, and a set drilled for a cross-hole is not a problem on a friction ring anvil. This is the one combination question that decides whether the shipment is usable.</li>
+        <li><strong>Order the consumables with the tools.</strong> Hog rings, O-rings, detent pins, roll pins and retaining pins are low-cost items that determine whether the tool is still being used in year three. They are also the parts most often omitted from a first order.</li>
+        <li><strong>Match the socket range to the drive.</strong> The retention system is fixed by the tool, so the socket set has to be ordered against it rather than the other way round.</li>
+        <li><strong>Document the failure mode for the end user.</strong> A short note in the box explaining how to replace a hog ring or depress a detent pin removes a large share of the returns that get filed as "socket falls off".</li>
+      </ul>
+      <p>TorqHive supplies impact and long-socket sets for both kinds of anvil. The <a href="/products/TH-006">15-piece universal impact socket set</a> is the current workhorse for impact use, the <a href="/products/TH-035">extension bar set</a> covers the reach problem that drives people to improvise retention in the first place, and the <a href="/products/TH-033">3-piece magnetic socket tray set</a> keeps a drawer organised enough that a missing socket is noticed before it is lost in an engine bay. Working torque ratings for impact tools are a separate subject, covered in our explanation of <a href="/blog/impact-wrench-torque-ratings-explained">breakaway versus fastening torque</a>.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>A friction ring grips the socket bore by friction and needs no modification to the socket; it is the fastest for frequent changes.</li>
+        <li>A detent pin locks mechanically through a cross-hole drilled in the socket; retention is stronger but changing sockets needs a punch.</li>
+        <li>A pin and O-ring system is the most secure and does not depend on friction, but the socket must be drilled and grooved, and metal retaining hardware is the durable option.</li>
+        <li>None of the three changes the torque the tool delivers; they only decide whether the socket stays attached.</li>
+        <li>On a purchase order, anvil type and socket drilling are specifications to be written down, and the consumable rings and pins belong in the same order.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-006", "TH-035", "TH-033"],
+    seoTitle: "Impact Socket Retention: Hog Ring vs Detent Pin | TorqHive",
+    metaDescription: "How friction rings, detent pins and pin and O-ring systems retain impact sockets, how they compare on retention and socket changes, and what importers must specify on a purchase order.",
+  },
+  {
+    slug: "torque-wrench-storage-and-dial-back",
+    title: "Torque Wrench Storage: Dial Back to the Minimum Setting, Never to Zero",
+    date: "Sep 24, 2026",
+    category: "Workshop Practice",
+    readTime: "7 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-005/hero-web.webp",
+    excerpt: "A click-type torque wrench spends most of its life in a case, and the setting it is left at is the subject of a permanent forum argument. Here is what the spring actually does in storage, what Norbar's own testing found, and how to turn the answer into a workshop rule.",
+    tags: [
+      "torque wrench storage",
+      "dial back to minimum setting",
+      "click type torque wrench care",
+      "torque wrench spring fatigue",
+      "torque wrench calibration interval"
+    ],
+    content: `
+      <h2>An argument with two right answers</h2>
+      <p>Ask a group of mechanics whether a click-type torque wrench has to be wound back after use and the replies split immediately. <a href="https://www.reddit.com/r/MechanicAdvice/comments/1h430i0/always_adjust_torque_wrench_to_zero_after_use/">A r/MechanicAdvice thread titled "Always adjust (torque) wrench to zero after use"</a> turns into a debate about whether zero means the lowest printed number on the scale or spinning the adjuster past it until it stops. <a href="https://www.reddit.com/r/Tools/comments/1c9irmj/at_what_torque_setting_should_i_store_torque/">A r/Tools thread asking what setting to store a wrench at</a> collects both schools, and <a href="https://www.reddit.com/r/AskEngineers/comments/1n8qama/why_are_you_supposed_to_store_torque_wrenches_at/">an r/AskEngineers discussion about why the rule exists</a> questions whether stored spring tension matters at all.</p>
+      <p>Both camps are partly right, which is why the thread never settles. Relaxing the spring between jobs is sound advice. The word zero is what turns sound advice into a damaged tool.</p>
+
+      <h2>What the storage setting actually controls</h2>
+      <p>A micrometer or click-type torque wrench does not sense force directly. An adjustment knob compresses a spring to a set preload, and the mechanism releases a detent when the applied torque matches that preload. The position the wrench is left in therefore decides how much load the spring carries while the tool is doing nothing at all, which is why the storage question is a mechanism question rather than a superstition.</p>
+
+      <h2>Minimum scale marking, not zero</h2>
+      <p>Norbar, which manufactures torque tools and calibrates them for a living, states the position plainly: if a torque wrench is wound back at all, it should not be adjusted below the minimum scale marking, which is usually about 20 percent of maximum. It should never be adjusted to zero, because doing so can adversely affect the calibration of the wrench (see the <a href="https://www.norbarusa.com/News-Events/Blog/ArticleID/112/Do-Torque-Wrenches-Need-To-Be-Wound-Back-To-Zero-After-Use">Norbar article on winding back to zero</a>).</p>
+      <p>Put numbers on that. On a 5 to 75 ft-lb wrench, the minimum marking sits at 15 ft-lb. On a 50 to 250 in-lb tool, it sits at 50 in-lb. These are the examples used in <a href="https://schmidttools.com/10-best-practices-for-torque-tool-storage-and-care/">this torque tool storage guide</a>, which reaches the same conclusion: dial back to the lowest scale marking and lock the adjuster, and specifically not past it. Backing the adjuster below that point takes the mechanism outside the range its detent was set up for, and the error appears first at the bottom of the scale, where the click is already light enough to miss.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Where the adjuster is left</th><th scope="col">Spring state between jobs</th><th scope="col">Documented effect</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>At a working torque, for example 100 ft-lb on a 250 ft-lb scale</td><td>Held compressed at load for the whole storage period</td><td>No measurable deviation over one month of testing; long-term set-and-forget is what the wind-back advice targets</td></tr>
+      <tr><td>At the lowest scale marking, about 20 percent of full scale</td><td>Relaxed to the design resting preload</td><td>Readings stayed within the ISO tolerance of 4 percent of reading in controlled testing</td></tr>
+      <tr><td>Below the minimum marking, toward zero</td><td>Adjuster backed out past its designed range</td><td>Position can be lost and low-end accuracy suffers, which is the specific warning against zero</td></tr>
+      </tbody>
+      </table></div>
+
+      <h2>What Norbar's own testing found</h2>
+      <p>The rule is repeated so often that the evidence behind it is rarely quoted. Norbar ran the test directly. Four wrenches were measured in a calibration laboratory, two were left wound up at 100 percent of full scale and two were wound down to 20 percent, and all four were re-measured after 24 hours, after one week and after one month. At the end of the month, every reading except one sat inside the ISO tolerance of 4 percent of reading, whether the wrench had been stored wound up or wound down.</p>
+      <p>Their conclusion is worth reading twice: unwinding to the minimum setting has no effect on calibration, and it remains a matter of considered good practice rather than a technical necessity. That matters for a busy shop. A production wrench left at its setting for months is not being abused. The mistake to avoid is a different one, and it is going below the minimum marking in the belief that zero means fully relaxed.</p>
+
+      <h2>How long the wrench is stored changes the answer</h2>
+      <p>The practical guidance splits by storage duration rather than by brand, because the mechanism only cares about time under load. The duration breaks used in the guidance above are:</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Storage period</th><th scope="col">Recommended action</th><th scope="col">Reasoning</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>A few days</td><td>Leaving it set is acceptable</td><td>Test results show no measurable movement at this timescale</td></tr>
+      <tr><td>Several weeks</td><td>Wind back to the minimum marking</td><td>Preferred rather than optional once storage outlasts a normal job cycle</td></tr>
+      <tr><td>Several months or a seasonal shutdown</td><td>Wind back to the minimum marking, every time</td><td>In this shop, "I left it at 90 ft-lb since spring" is the answer that gets a wrench pulled from service</td></tr>
+      </tbody>
+      </table></div>
+
+      <h2>Storage is only part of the routine</h2>
+      <ul>
+        <li><strong>Exercise the wrench before use.</strong> Norbar's guidance is that a wrench unused for a day should be cycled about five times before it is trusted, to redistribute grease that has dried or been squeezed out of the mechanism.</li>
+        <li><strong>Do not dismantle it.</strong> Taking a torque wrench apart and reassembling it affects the torque values, and Norbar states that calibration and adjustment are required afterwards. Cleaning is not a reason to open the head.</li>
+        <li><strong>Never use a handle extension or cheater bar.</strong> The load path is a lever, so an 18 in. pipe on a 3/8 in. drive wrench multiplies the load the pawl and beam were never rated for. This is also where warranties end.</li>
+        <li><strong>Treat a drop as an inspection trigger.</strong> A dropped wrench is an unknown quantity: check for cracks and loose parts, cycle the ratchet, and recalibrate before it goes back on a critical fastener.</li>
+        <li><strong>Pull the batteries on digital models.</strong> If a digital wrench is going into storage for three months or longer, remove the cells; leaking electrolyte damages the electronics rather than the spring.</li>
+        <li><strong>Store flat, in a case.</strong> Hanging a wrench by its handle loads the internals for as long as it hangs, and storing it loose against other tools passes vibration into a precision mechanism.</li>
+      </ul>
+
+      <h2>How storage relates to the calibration interval</h2>
+      <p>Good storage habits are not a substitute for calibration. ISO 6789-2:2017 is the standard that defines the calibration method for hand torque tools, and the commonly cited default interval is 12 months or 5,000 cycles, whichever comes first, unless an organisation runs its own control procedure and can justify a longer interval from its own data. Norbar states that default directly in <a href="https://www.norbarusa.com/News-Events/Blog/ArticleID/99/How-often-should-I-recalibrate-my-torque-wrench">its guidance on recalibration intervals</a>, and <a href="https://www.ciscal.com.au/blogs/torque-wrench-calibration-guide">this guide to how calibration is performed</a> explains how successive results, rather than a calendar, are used to extend an interval responsibly. Our own walk-through of <a href="/blog/torque-wrench-calibration-frequency-and-verification">calibration frequency and verification</a> covers the method and the paperwork in detail.</p>
+
+      <h2>What belongs on a specification or purchase order</h2>
+      <ul>
+        <li><strong>Scale range and graduation.</strong> The storage rule depends on the minimum marking, so the minimum marking belongs on the datasheet, not only the maximum.</li>
+        <li><strong>Declared accuracy.</strong> Click-type tools are typically quoted against an ISO 6789 tolerance of 4 percent of reading, which is the same figure Norbar used in the storage test above.</li>
+        <li><strong>Traceable calibration certificate.</strong> A certificate that identifies the standard and the interval, not a generic compliance sentence.</li>
+        <li><strong>Case and storage provision.</strong> A protective case is part of the accuracy system for a tool that lives in a van; a set that ships without one is a set that gets stored against other tools.</li>
+        <li><strong>Spares and service.</strong> Adjustment locks, ratchet heads and, for digital tools, battery compartments are the parts that wear.</li>
+      </ul>
+      <p>The kit we supply for torque work is built around that checklist. The <a href="/products/TH-005">15-piece torque wrench and spark plug socket set</a> covers the common automotive ranges, the <a href="/products/TH-001">dual-mode extendable ratchet handle</a> keeps high-breakaway work away from the precision wrench, and the <a href="/products/TH-036">long-handle breaker bar</a> exists so that nobody reaches for a cheater bar in the first place.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>Store a click-type torque wrench at its lowest scale marking, which is usually about 20 percent of full scale.</li>
+        <li>Never back the adjuster below that marking, and never to zero: zero can affect calibration, and it is the one storage position that carries a real warning.</li>
+        <li>Norbar's own test found no measurable difference between wrenches stored wound up and wound down over one month, so the wind-back habit is good practice rather than damage prevention.</li>
+        <li>Short storage tolerates leaving the setting alone; storage measured in months does not.</li>
+        <li>Storage discipline sits alongside calibration, not instead of it: the default interval remains 12 months or 5,000 cycles, whichever comes first.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-005", "TH-001", "TH-036"],
+    seoTitle: "Torque Wrench Storage: Dial Back to Minimum, Not Zero | TorqHive",
+    metaDescription: "Why a click-type torque wrench is stored at its lowest scale marking and never at zero, what Norbar's storage testing found, and how storage relates to the 12-month or 5,000-cycle calibration interval.",
+  },
+  {
     slug: "metric-bolt-grade-markings-8-8-vs-10-9-vs-12-9",
     title: "Metric Bolt Grade Markings: 8.8 vs 10.9 vs 12.9, and Why Upgrading Can Be a Mistake",
     date: "Sep 23, 2026",
