@@ -10,6 +10,270 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "click-vs-split-beam-vs-digital-torque-wrench",
+    title: "Click vs Split Beam vs Digital Torque Wrenches: Which Mechanism to Buy",
+    date: "Oct 16, 2026",
+    category: "Buying Guide",
+    readTime: "8 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-005/hero-web.webp",
+    excerpt: "Click, split beam, dial and digital torque wrenches are four different measuring mechanisms, not four price points of the same tool. Here is how each one stores its setting, what ISO 6789:2017 actually guarantees, and which mechanism matches which job.",
+    tags: [
+      "click vs split beam torque wrench",
+      "digital torque wrench",
+      "ISO 6789 accuracy class",
+      "torque wrench mechanism",
+      "torque wrench buying guide"
+    ],
+    content: `
+      <h2>Why the question keeps coming back</h2>
+      <p>It arrives on every tool forum in the same shape: somebody is about to spend real money on a torque wrench and cannot work out which mechanism to buy. <a href="https://www.reddit.com/r/Tools/comments/sv6s2n/click_or_split_beam_torque_wrench/">A r/Tools thread on choosing between a click and a split beam wrench for torquing wheels at the track</a> sets out the decision, and <a href="https://www.reddit.com/r/harborfreight/comments/1klur1e/icon_split_beam_vs_icon_click_torque_wrench/">a r/harborfreight comparison of a split beam against a click wrench</a> records the usual verdict from owners: a click type can be dialled to a specific setting and is easier for engine work, while a split beam is not as easy to set. <a href="https://www.reddit.com/r/mechanics/comments/1lbe19a/digital_and_click_style_torque_wrenches/">A r/mechanics thread on digital and click wrenches</a> adds the third position from working technicians, and <a href="https://www.reddit.com/r/harborfreight/comments/1epypai/a_split_beam_torque_wrench_is_worth_it/">a thread asking whether a split beam wrench is worth it</a> contains the sentence that explains half the disagreement, from an owner who says he can pretty much guarantee he was over torquing with the click type.</p>
+      <p>Those threads are arguing about three different things at once: accuracy when the tool is new, accuracy after it has sat in a toolbox for two years, and how easy it is to set. The mechanisms answer those three questions differently.</p>
+
+      <h2>The mechanisms are mechanically different, not just differently priced</h2>
+      <ul>
+        <li><strong>Click type.</strong> A coil spring is compressed as the handle is dialled, and the wrench releases with an audible click when the set torque is reached. The spring is the measuring element, so the setting lives in the spring, and the spring is what ages.</li>
+        <li><strong>Split beam.</strong> There is no coil spring to fatigue. A beam is pre-loaded by the setting mechanism and the wrench releases when the beam reaches the set deflection. Because the setting is not stored in a spring that stays compressed, a split beam does not need to be dialled back for storage.</li>
+        <li><strong>Dial and deflecting beam.</strong> These read continuously on a scale or dial as the handle is loaded. They are the traditional way of watching torque rise, and they remain the right tool for finding running or drag torque, because they do not release at a value.</li>
+        <li><strong>Digital.</strong> A strain gauge and electronics give a numeric reading, usually with peak hold, an audible or vibrating alarm, and a wider usable range on a single tool.</li>
+      </ul>
+      <p>The claim that a split beam holds its calibration longer follows directly from the first two bullets. <a href="https://olsatools.com/blogs/olsa-tools-blog/split-beam-vs-click-torque-wrench">A manufacturer comparison of split beam and click wrenches</a> puts it plainly: split beam wrenches stay consistently accurate while click wrenches need more frequent calibration, because the click wrench stores its setting in a spring that takes a set over time.</p>
+
+      <h2>What the standard actually guarantees</h2>
+      <p>An accuracy figure means nothing without the standard behind it. ISO 6789:2017 is the governing international standard for hand torque tools, and as set out in <a href="https://oushke.com/resources/iso-6789-torque-wrench-calibration/">this summary of the ISO 6789 calibration requirements</a> it defines two accuracy classes:</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">ISO 6789:2017 class</th><th scope="col">Permitted deviation</th><th scope="col">Measured against</th><th scope="col">Valid range on the tool</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>Class 1</td><td>plus or minus 4 percent</td><td>Indicated value</td><td>20 percent to 100 percent of capacity</td></tr>
+      <tr><td>Class 2</td><td>plus or minus 6 percent</td><td>Indicated value</td><td>20 percent to 100 percent of capacity</td></tr>
+      </tbody>
+      </table></div>
+      <p>Two consequences matter to a buyer. First, the accuracy class is only specified over the top 80 percent of the scale. A 1/2 in. wrench rated to 250 ft-lb is a 200 ft-lb measuring instrument with 50 ft-lb of unusable range beneath it, which is why a smaller wrench belongs on the low-torque end of a procedure. Second, the class describes the tool in the condition it was tested in, not a promise about the tool two years later.</p>
+      <p>The trade press makes the same point about click wrenches specifically. <a href="https://www.tomorrowstechnician.com/how-accurate-is-your-click-style-torque-wrench/">A Tomorrow's Technician article on click wrench accuracy</a> explains that a click wrench can be very accurate when new but can lose its factory calibration because of the way it makes the click.</p>
+
+      <h2>Comparing the mechanisms side by side</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Mechanism</th><th scope="col">Measuring element</th><th scope="col">How the setting is made</th><th scope="col">Needs dial-back for storage</th><th scope="col">Strongest use case</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>Click type</td><td>Coil spring</td><td>Dial or micrometer handle to a value</td><td>Yes, to protect the spring</td><td>Assembly and engine work needing one specific value</td></tr>
+      <tr><td>Split beam</td><td>Pre-loaded beam, no coil spring</td><td>Scale and lock</td><td>No</td><td>Repeat work at a single value, harsh shop environments</td></tr>
+      <tr><td>Dial or deflecting beam</td><td>Beam deflection read on a dial or scale</td><td>No setting, continuous reading</td><td>No</td><td>Measuring existing torque, drag and running torque, training</td></tr>
+      <tr><td>Digital</td><td>Strain gauge</td><td>Keypad, often several units</td><td>No</td><td>Wide range on one tool, logging, tight-tolerance work</td></tr>
+      </tbody>
+      </table></div>
+
+      <h2>Where each mechanism actually wins</h2>
+      <ul>
+        <li><strong>Engine and assembly work goes to click or digital.</strong> The reason is the setting, not the accuracy. When a fastener needs a torque figure followed by a specified angle, or a sequence of different values in one procedure, a handle that dials to a number is faster and less error-prone than reading a scale.</li>
+        <li><strong>Repeat work at a single value goes to split beam.</strong> Torquing wheels to one figure all day is exactly the use case a split beam is built for: it survives being dropped, it does not need unwinding, and the setting does not drift.</li>
+        <li><strong>Diagnostics go to dial or beam.</strong> If the task is to find out what a fastener is already at, or to measure the running torque of a bearing or seal, then a tool that releases at a value is the wrong instrument.</li>
+        <li><strong>Anything that needs a record goes to digital.</strong> A strain gauge tool with memory produces a reading and a count, which is worth having where torque has to be evidenced rather than simply applied.</li>
+      </ul>
+
+      <h2>What this means for buying and specifying</h2>
+      <p>For a distributor or a private-label buyer, the practical point is that a torque wrench is not one product. A range that offers only one mechanism will lose orders to a competitor who offers the mechanism the customer's procedure calls for. Three specification items are worth stating:</p>
+      <ul>
+        <li><strong>The accuracy class and the standard.</strong> Class 1 at plus or minus 4 percent under ISO 6789:2017 is a defensible line for a professional tool; stating nothing lets the buyer assume the worst.</li>
+        <li><strong>The usable range, not only the maximum.</strong> Publishing the 20 percent to 100 percent window lets the buyer see which sizes they need instead of buying one oversized wrench.</li>
+        <li><strong>The calibration and verification path.</strong> A wrench is only as good as its last check. Our guide to <a href="/blog/torque-wrench-calibration-frequency-and-verification">torque wrench calibration frequency and verification</a> covers the interval, the test points and the one-quarter rule for the reference device, and <a href="/blog/torque-wrench-storage-and-dial-back">torque wrench storage and dial-back</a> covers what happens between calibrations.</li>
+      </ul>
+      <p>TorqHive's torque range covers the common automotive and workshop sizes: the <a href="/products/TH-005">15-piece torque wrench and spark plug socket set</a> packages a wrench with the sockets it is most often used with, and the <a href="/products/TH-036">long-handle breaker bar</a> covers the removal step, where a torque wrench should never be used.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>Click, split beam, dial and digital are four different measuring mechanisms, not four price points of the same tool.</li>
+        <li>A click wrench stores its setting in a coil spring while a split beam does not, which is why a split beam holds calibration longer and does not need dialling back.</li>
+        <li>ISO 6789:2017 Class 1 is plus or minus 4 percent and Class 2 is plus or minus 6 percent of indicated value, and both apply only from 20 percent to 100 percent of the wrench's range.</li>
+        <li>Choose by the procedure: a single repeat value favours a split beam, a sequence of values favours a click or digital, and measuring existing or drag torque requires a dial or beam.</li>
+        <li>Whatever the mechanism, the wrench is only trustworthy between calibrations, so the interval and the storage habit matter as much as the accuracy class.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-005", "TH-036", "TH-020"],
+    seoTitle: "Click vs Split Beam vs Digital Torque Wrench | TorqHive",
+    metaDescription: "How click, split beam, dial and digital torque wrenches differ mechanically, what ISO 6789:2017 Class 1 and Class 2 accuracy really guarantee, and which mechanism matches which job.",
+  },
+  {
+    slug: "impact-driver-vs-impact-wrench-hex-vs-square-drive",
+    title: "Impact Driver vs Impact Wrench: Hex Shank and Square Drive Explained",
+    date: "Oct 16, 2026",
+    category: "Buying Guide",
+    readTime: "8 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-006/hero-web.webp",
+    excerpt: "An impact driver makes many blows at low force; an impact wrench makes fewer blows at high force. The drive interface, the hammer behaviour and the torque ranges explain why they are not substitutes, and why a 1/4 in. hex shank is not a torque drive.",
+    tags: [
+      "impact driver vs impact wrench",
+      "1/4 inch hex shank",
+      "square drive impact wrench",
+      "impact driver torque range",
+      "ISO 1173 bit standard"
+    ],
+    content: `
+      <h2>The question behind the purchase</h2>
+      <p>Two tools, one brand name, and a permanent argument about whether the small one can replace the big one. <a href="https://www.reddit.com/r/Tools/comments/1hhsvkp/impact_driver_vs_impact_wrench/">A r/Tools thread asking directly about impact driver versus impact wrench</a> collects both answers, including the observation that an impact wrench can loosen or drive some screws but will strip or snap a lot more, while an impact driver will be underpowered for many jobs. <a href="https://www.reddit.com/r/Tools/comments/1jwbugk/what_would_the_point_of_a_14_impact_wrench_be/">A thread asking what the point of a 1/4 in. impact wrench is</a> contains the clearest technical sentence in the whole discussion: an impact wrench will deliver fewer, but higher impact, blows, while an impact driver will deliver many many more blows with less force. <a href="https://www.reddit.com/r/MilwaukeeTool/comments/1og53lx/impact_wrench_14_dr_vs_impact_driver/">A r/MilwaukeeTool thread comparing a 1/4 in. drive wrench with an impact driver</a> and <a href="https://www.reddit.com/r/Tools/comments/1l1hvdz/why_not_use_impact_wrench_instead_of_impact_driver/">a thread asking why you should not just use an impact wrench instead of a driver</a> cover the practical side: what the tool attaches to, and why the fastener decides the answer.</p>
+
+      <h2>Two hammers tuned for opposite problems</h2>
+      <p>Both tools convert motor rotation into a series of rotary impacts, but they are tuned for opposite ends of the same problem. An impact driver is built to turn a screw or a small bolt quickly, so its hammer mechanism trips many times per minute at a low force per blow. An impact wrench is built to break a fastener that is already tight, so it trips fewer times per minute and puts more energy into each blow. The quote above states the trade-off exactly: more blows at less force against fewer blows at higher force.</p>
+      <p>That difference is not marketing language, it is what limits each tool. Adding blows per minute to a driver does not let it remove a rusted suspension bolt, and slowing an impact wrench down does not make it gentle enough for a trim screw. Choosing the wrong one usually shows up as a damaged fastener rather than a missing tool.</p>
+
+      <h2>The drive interface decides the job as much as the torque does</h2>
+      <p>The second half of the difference is the drive, and it is the part buyers get wrong. An impact driver ends in a hexagonal quick-change collet, nominally 1/4 in. across the flats. That is a standardised interface: the 1/4 in. hex shank is Form C 6.3 under ISO 1173, dimensionally identical to DIN 3126 style C 6.3, and the matching holder is style E 6.3 (see <a href="https://en.wikipedia.org/wiki/Screwdriver_bit">this table of common shank sizes</a> and <a href="https://industrialmonitordirect.com/blogs/knowledgebase/14-inch-hex-drive-screwdriver-bits-imperial-size-selection-guide">this sourcing guide to 1/4 in. hex drive bits</a>). The same standard extends upward: a 5/16 in. hex is C 8 / E 8, the size used for nutsetters and heavy-duty drivers.</p>
+      <p>A hex shank, however, is a retention interface rather than a torque drive. Its cross-section is small, and that is what caps how much torque can usefully be pushed through it. An impact wrench ends in a square drive, which is a torque drive: 1/2 in. and 3/4 in. are the common sizes because they carry torsional load far better. Adapting a hex shank to a socket is possible, and TorqHive covers that hardware with the <a href="/products/TH-034">universal socket adapter set</a>, but an adapter does not remove the small hex shank from the load path. <a href="https://industrialmonitordirect.com/blogs/knowledgebase/square-vs-hex-impact-driver-selecting-the-right-cordless-wrench">This square versus hex impact driver comparison</a> sets out the same distinction from the tool-selection side.</p>
+
+      <h2>Realistic torque ranges</h2>
+      <p>The number on the box is the maximum, not the working figure, and the gap between the classes is large. Published buying guidance puts cordless impact drivers at roughly 50 to 350 Nm, while impact wrenches handle well past 1,600 Nm (see <a href="https://uk.rs-online.com/web/content/product-knowledge/tools-hardware/power-tools/impact-driver-guide">this impact driver guide</a>). The strongest impact drivers exceed about 2,000 in-lb, which is roughly 167 ft-lb of fastening torque (see <a href="https://www.protoolreviews.com/impact-driver-vs-impact-wrench/">this impact driver versus impact wrench comparison</a>). Put another way, the strongest driver on the market is doing work that a mid-range impact wrench treats as light duty.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Property</th><th scope="col">Impact driver</th><th scope="col">Impact wrench</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>Drive interface</td><td>1/4 in. hex quick-change collet (ISO 1173 Form C 6.3)</td><td>Square drive, commonly 1/2 in. and 3/4 in.</td></tr>
+      <tr><td>Hammer behaviour</td><td>Many blows per minute, lower force per blow</td><td>Fewer blows per minute, higher force per blow</td></tr>
+      <tr><td>Typical torque range</td><td>About 50 to 350 Nm, best models over about 2,000 in-lb</td><td>Well past 1,600 Nm on the largest models</td></tr>
+      <tr><td>Fasteners it is built for</td><td>Screws, small bolts, hex-head self-tappers, decking and framing</td><td>Lug nuts, suspension and chassis bolts, seized fasteners</td></tr>
+      <tr><td>Failure mode when misused</td><td>Cam-out and stripped screw heads, snapped small bolts</td><td>Over-torqued or stretched fasteners, cracked sockets</td></tr>
+      </tbody>
+      </table></div>
+
+      <h2>Choosing between them</h2>
+      <ul>
+        <li><strong>If the fastener has a screw head, use a driver.</strong> The hex collet, the bit range and the blow profile are all built around driving screws without cam-out.</li>
+        <li><strong>If the fastener is a nut or a bolt that is already tight, use a wrench.</strong> Higher force per blow is what breaks static friction, and a square drive is what survives the reaction torque.</li>
+        <li><strong>Do not judge by blow count alone.</strong> A higher impacts-per-minute figure does not mean more removal capability, because the two mechanisms trade blows for force and removal needs force.</li>
+        <li><strong>Match the socket to the tool.</strong> Impact-rated sockets and the correct drive size belong on an impact wrench, and our guide to <a href="/blog/impact-wrench-torque-ratings-explained">impact wrench torque ratings</a> explains why the advertised figure and the delivered figure differ.</li>
+      </ul>
+
+      <h2>What this means for buying and specifying</h2>
+      <p>For a distributor, the two tools are not substitutes on a purchase order and should not be merchandised as a choice between a cheap one and a good one. The specification points that let a buyer compare honestly are the drive interface with its standard reference, the fastening torque range rather than a single peak number, and the socket or bit range the tool is supplied to work with.</p>
+      <p>TorqHive's range matches the two ends of this split: the <a href="/products/TH-006">15-piece universal impact socket set</a> is built for pneumatic and electric impact tools across drive sizes, and the <a href="/products/TH-011">12-piece 1/2 in. drive long socket set</a> covers the deep-reach work that appears once a wrench has broken a fastener loose.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>An impact driver makes many blows at low force to drive screws; an impact wrench makes fewer blows at high force to remove tight fasteners.</li>
+        <li>The driver's 1/4 in. hex collet is a bit-retention interface under ISO 1173 Form C 6.3, while the wrench's square drive is a torque drive.</li>
+        <li>Published ranges put impact drivers around 50 to 350 Nm and impact wrenches well past 1,600 Nm.</li>
+        <li>A higher impacts-per-minute figure does not mean more removal power, because the mechanisms trade blows for force.</li>
+        <li>Buy by the fastener and the drive, not by a single peak torque number.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-006", "TH-011", "TH-034"],
+    seoTitle: "Impact Driver vs Impact Wrench: Hex vs Square Drive | TorqHive",
+    metaDescription: "How impact drivers and impact wrenches differ in hammer behaviour, drive interface and torque range, why a 1/4 in. hex shank is not a torque drive, and which tool fits which fastener.",
+  },
+  {
+    slug: "metric-vs-sae-socket-substitution-and-fitment",
+    title: "Metric vs SAE Sockets: Safe Substitutions and the Sizes That Round Bolts",
+    date: "Oct 16, 2026",
+    category: "Material & Engineering",
+    readTime: "8 min read",
+    author: "Metallurgical Quality Team",
+    coverImage: "/assets/images/products/TH-011/hero-web.webp",
+    excerpt: "13/32 in. is nearly 10 mm and 19 mm is nearly 3/4 in., but a near-miss socket drives on the corners of a bolt head instead of its flats. Here are the real head-across-flats figures, the near-miss pairs worth knowing, and the mistake that produces most rounded fasteners.",
+    tags: [
+      "metric vs SAE sockets",
+      "socket size substitution",
+      "bolt head across flats",
+      "ISO 4014 vs DIN vs JIS",
+      "rounded bolt head"
+    ],
+    content: `
+      <h2>The substitution everybody tries</h2>
+      <p>Sooner or later every technician reaches for the wrong-marked socket and gets away with it, and the internet has built an entire folklore out of which sizes are secretly the same. <a href="https://www.reddit.com/r/Tools/comments/rh8e5v/what_sae_metric_sockets_are_almost_identical_in/">A r/Tools thread on which SAE and metric sockets are almost identical</a> supplies the two answers that get repeated everywhere: 13/32 in. is a 10 mm, and 6.5 mm fits 1/4 in. <a href="https://www.reddit.com/r/Tools/comments/199fnc3/is_there_any_way_to_know_or_make_an_educated/">A thread asking how to make an educated guess at a socket size</a> and <a href="https://www.reddit.com/r/Tools/comments/xi094o/can_i_get_away_with_only_metric_socket_set/">a thread asking whether a metric-only set is enough</a> show how far the habit goes, and <a href="https://www.reddit.com/r/Justrolledintotheshop/comments/g7geg1/why_engineers_pick_one_metric_or_standard_please/">a r/Justrolledintotheshop thread on vehicles that mix metric and standard fasteners</a> shows who pays for it.</p>
+      <p>The folklore is not wrong about the numbers, and it is wrong about the conclusion. Two sockets can be close enough to sit on a bolt head and still not be the right socket, and the difference shows up on the corners of the fastener.</p>
+
+      <h2>Why a near fit is not a fit</h2>
+      <p>A hex socket drives a bolt head by contact on the six flats. The design condition is a slight clearance fit, so the load is spread across the full flat. When the socket is even half a millimetre oversized, the flats no longer sit on the flats with full contact: engagement shifts toward the corners of the head across six points, and a hard pull concentrates load exactly where the material is thinnest. That is the mechanism behind a rounded-off bolt, and it is why <a href="https://tengtoolsusa.com/blogs/news/metric-vs-sae-sockets">this metric versus SAE guide</a> warns that rounding a fastener is the usual outcome and offers a hand fit test before committing to a pull.</p>
+      <p>An undersized socket is worse still. It will not seat on the head at all, or it seats on the top edge only, which is how a socket splits or a bolt head deforms at the crown.</p>
+
+      <h2>The near-miss pairs, and how close they really are</h2>
+      <p>Some conversions are exact by design, because the nominal figures describe the same dimension. Others are approximations that merely happen to be close, and the two are not equivalent in use.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Metric socket</th><th scope="col">SAE socket</th><th scope="col">Actual difference</th><th scope="col">Practical verdict</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>10 mm</td><td>13/32 in.</td><td>13/32 in. is 10.32 mm, about 0.3 mm larger</td><td>Close, and commonly used as a substitute, but not the intended fit</td></tr>
+      <tr><td>6.5 mm</td><td>1/4 in.</td><td>1/4 in. is 6.35 mm, about 0.15 mm smaller</td><td>Very close; the metric size exists because some fasteners need it</td></tr>
+      <tr><td>19 mm</td><td>3/4 in.</td><td>3/4 in. is 19.05 mm, about 0.05 mm larger</td><td>The closest pair here, and still two separate sizes</td></tr>
+      <tr><td>14 mm</td><td>9/16 in.</td><td>9/16 in. is 14.29 mm, under half a millimetre larger</td><td>Interchangeable in an emergency, not for a torque-critical fastener</td></tr>
+      <tr><td>13 mm</td><td>1/2 in.</td><td>1/2 in. is 12.7 mm, about 0.3 mm smaller</td><td>Not interchangeable; the SAE socket is undersized for an M8 head</td></tr>
+      </tbody>
+      </table></div>
+      <p>The first three rows are the ones that cause damage, precisely because they work most of the time. The last row is the one that matters most for buyers, because 13 mm is the standard socket for an M8 bolt head and 1/2 in. is a common SAE size that sits nearby on the rack.</p>
+
+      <h2>The error that produces most rounded bolts</h2>
+      <p>Most of the folklore comes from confusing two different measurements. A bolt's designation is its shank diameter, measured on the thread, while the socket size is the width across the flats of the head. They are not the same number and never have been. <a href="https://socketconversion.com/bolt-size-chart/">This bolt and socket size chart</a> states the relationship in one line: an M8 bolt takes a 13 mm socket, and a 1/2 in. bolt takes a 3/4 in. socket. Reading the bolt marking as the socket size is the single most common source of a socket that is far too small.</p>
+
+      <h2>Metric head sizes, and where the older standards differ</h2>
+      <p>For current metric hex bolts, ISO 4014 (part thread) and ISO 4017 (full thread) define the head width across flats. The values below are the ones a socket set has to cover.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Thread</th><th scope="col">Head across flats, ISO 4014 / 4017</th><th scope="col">Withdrawn DIN 931 / 933</th><th scope="col">JIS</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>M5</td><td>8 mm</td><td>8 mm</td><td>-</td></tr>
+      <tr><td>M6</td><td>10 mm</td><td>10 mm</td><td>-</td></tr>
+      <tr><td>M8</td><td>13 mm</td><td>13 mm</td><td>12 mm</td></tr>
+      <tr><td>M10</td><td>16 mm</td><td>17 mm</td><td>-</td></tr>
+      <tr><td>M12</td><td>18 mm</td><td>19 mm</td><td>17 mm</td></tr>
+      <tr><td>M14</td><td>21 mm</td><td>22 mm</td><td>-</td></tr>
+      <tr><td>M16</td><td>24 mm</td><td>24 mm</td><td>-</td></tr>
+      <tr><td>M18</td><td>27 mm</td><td>27 mm</td><td>-</td></tr>
+      <tr><td>M20</td><td>30 mm</td><td>30 mm</td><td>-</td></tr>
+      <tr><td>M22</td><td>34 mm</td><td>32 mm</td><td>-</td></tr>
+      <tr><td>M24</td><td>36 mm</td><td>36 mm</td><td>-</td></tr>
+      </tbody>
+      </table></div>
+      <p>The lesson for a buyer is that the same nominal thread can need a different socket depending on the standard the bolt was made to. An M10 fastener made to the withdrawn DIN 931 takes a 17 mm socket, while a current ISO 4014 M10 takes 16 mm. An M22 shows the opposite divergence. Japanese vehicles commonly use JIS head sizes, which are smaller again: an M8 JIS head takes 12 mm and an M12 JIS head takes 17 mm. A set built only to current ISO sizes has a gap for every older or JIS vehicle it meets.</p>
+
+      <h2>Inch head sizes</h2>
+      <p>On the SAE side, ASME B18.2.1 defines the head width across flats. The pattern is that the head runs roughly one and a half times the nominal shank diameter.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Nominal bolt diameter</th><th scope="col">Head across flats, ASME B18.2.1</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>1/4 in.</td><td>7/16 in.</td></tr>
+      <tr><td>5/16 in.</td><td>1/2 in.</td></tr>
+      <tr><td>3/8 in.</td><td>9/16 in.</td></tr>
+      <tr><td>7/16 in.</td><td>5/8 in.</td></tr>
+      <tr><td>1/2 in.</td><td>3/4 in.</td></tr>
+      <tr><td>9/16 in.</td><td>13/16 in.</td></tr>
+      <tr><td>5/8 in.</td><td>15/16 in.</td></tr>
+      <tr><td>3/4 in.</td><td>1-1/8 in.</td></tr>
+      </tbody>
+      </table></div>
+      <p>Note the same trap in imperial units: a 5/16 in. bolt takes a 1/2 in. socket, and a 1/2 in. bolt takes a 3/4 in. socket. In neither case does the socket size equal the bolt size, and reading the two as the same number produces a socket that is far too small.</p>
+
+      <h2>Thread series, which a socket cannot fix</h2>
+      <p>A correctly sized socket does not make two threads compatible. UNC and UNF are different thread pitches on the same nominal diameter, and a 3/8-16 UNC nut will not go onto a 3/8-24 UNF bolt. The socket fits both because the head is the same size; the fastening still fails. Buyers comparing metric and imperial fastener lines should treat head size and thread series as two separate specification items.</p>
+
+      <h2>What this means for buying and specifying</h2>
+      <ul>
+        <li><strong>Do not build a set by exclusion.</strong> A metric-only set will meet JIS heads and every pre-ISO DIN head with a gap. The priority metric sizes for a general workshop set are 8, 10, 13 and 17 mm, and the priority SAE sizes are 3/8, 7/16 and 1/2 in.</li>
+        <li><strong>Prefer six-point sockets where heads are already worn.</strong> A six-point socket contacts the flats over a larger area than a 12-point, which is the difference between loosening a soft head and rounding it, as covered in our comparison of <a href="/blog/six-point-vs-12-point-sockets">6-point and 12-point sockets</a>.</li>
+        <li><strong>Match the drive to the size, not to the rack.</strong> Large heads on a small drive put the whole load through the smallest component in the chain, and our notes on <a href="/blog/impact-socket-retention-friction-ring-vs-detent-pin">impact socket retention</a> explain how that load is carried.</li>
+      </ul>
+      <p>TorqHive's socket range is built to close that gap: the <a href="/products/TH-011">12-piece 1/2 in. drive long socket set</a> and the <a href="/products/TH-015">14-piece 1/2 in. drive long socket set with case</a> cover the common deep-reach sizes, and the <a href="/products/TH-020">100-piece professional workshop tool set</a> provides metric and SAE coverage in one assortment for a distributor catalogue.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>A near-miss socket drives on the bolt's corners instead of its flats, which is what rounds heads; close is not the same as correct.</li>
+        <li>13/32 in. approximates 10 mm, 6.5 mm approximates 1/4 in. and 19 mm approximates 3/4 in., but each is a separate size and only the last is under 0.1 mm apart.</li>
+        <li>A bolt's designation is its shank diameter while the socket size is the head width across flats; an M8 bolt takes a 13 mm socket and a 1/2 in. bolt takes a 3/4 in. socket.</li>
+        <li>Current ISO 4014 / 4017 head sizes differ from the withdrawn DIN 931 / 933 values and from JIS, so the same thread can need three different sockets.</li>
+        <li>UNC and UNF share a head size and nothing else, and a socket cannot make the threads compatible.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-011", "TH-015", "TH-020"],
+    seoTitle: "Metric vs SAE Sockets: Substitution and Fitment | TorqHive",
+    metaDescription: "Why near-miss SAE and metric sockets round bolt heads, the real metric and inch head across-flats figures, ISO vs DIN vs JIS divergence, and which sizes a workshop set must cover.",
+  },
+  {
     slug: "torque-adapter-extension-swivel-correction",
     title: "Torque Adapters, Extensions and Swivels: When the Wrench Setting Is No Longer the Fastener Torque",
     date: "Sep 24, 2026",
