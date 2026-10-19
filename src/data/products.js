@@ -328,6 +328,28 @@ export const products = [
     overview: "Ball joint separator kit for steering and suspension component separation without component damage during repair.",
     lightCustomization: true,
   },
+  {
+    id: "TH-041",
+    title: "1/2 in. & 3/8 in. Drive Digital Torque Angle Adapter",
+    category: "Torque Tools",
+    dimensions: "12×8×6 cm",
+    weight: "380 g",
+    moq: 1,
+    image: "/assets/images/products/TH-041/hero-web.webp",
+    overview: "High-precision digital torque and angle adapter converting standard ratchet handles into smart calibrated digital torque wrenches. Features backlit LCD display, real-time peak/track modes, buzzer alert, and ±2% accuracy class adhering to ISO 6789.",
+    lightCustomization: true,
+  },
+  {
+    id: "TH-042",
+    title: "15-Piece 3/8 in. Drive Low-Profile Nano Impact Socket Set",
+    category: "Sockets & Accessories",
+    dimensions: "26×14×3.5 cm",
+    weight: "980 g",
+    moq: 1,
+    image: "/assets/images/products/TH-042/hero-web.webp",
+    overview: "Ultra-compact stubby low-profile impact socket set forged from heat-treated Chrome-Molybdenum (Cr-Mo) alloy. Engineered with external hex drive base for tight engine bays and high-torque cordless impact drivers.",
+    lightCustomization: true,
+  },
 ];
 
 export const categories = [
@@ -339,7 +361,7 @@ export const categories = [
   {
     name: "Sockets & Accessories",
     description: "Socket sets, individual socket configurations, adapters and magnetic accessories organized for fast comparison.",
-    count: 13,
+    count: 14,
   },
   {
     name: "Wrenches",
@@ -349,7 +371,7 @@ export const categories = [
   {
     name: "Torque Tools",
     description: "Torque wrench sets with dimensions, listed weight and model-specific documentation ready for inquiry review.",
-    count: 1,
+    count: 2,
   },
   {
     name: "Automotive Specialty Tools",
@@ -363,4 +385,4 @@ export const categories = [
   },
 ];
 
-export const featuredProductIds = ["TH-005", "TH-006", "TH-016", "TH-020", "TH-025", "TH-037"];
+export const featuredProductIds = ["TH-041", "TH-005", "TH-006", "TH-042", "TH-016", "TH-020"];
