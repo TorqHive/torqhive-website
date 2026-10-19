@@ -102,12 +102,12 @@ export default function AboutPage() {
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
                 <img
-                  src="/assets/images/factory/machining-detail.jpg"
+                  src="/assets/images/factory/machining-detail-v2.jpg"
                   alt="Precision CNC Machining"
                   style={{ borderRadius: 'var(--radius)', height: '160px', objectFit: 'cover', width: '100%' }}
                 />
                 <img
-                  src="/assets/images/factory/machine-operation.jpg"
+                  src="/assets/images/factory/machine-operation-v2.jpg"
                   alt="Assembly & Inspection Floor"
                   style={{ borderRadius: 'var(--radius)', height: '160px', objectFit: 'cover', width: '100%' }}
                 />

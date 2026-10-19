@@ -2,10 +2,10 @@ import React from 'react';
 import SectionHeading from '../common/SectionHeading';
 
 const FACTORY_IMGS = [
-  { src: '/assets/images/factory/machining-detail.jpg', alt: 'Precision machining at partner facility' },
-  { src: '/assets/images/factory/machine-operation.jpg', alt: 'Machine operation floor' },
-  { src: '/assets/images/factory/socket-component-detail.jpg', alt: 'Socket component detail' },
-  { src: '/assets/images/factory/packed-goods.jpg', alt: 'Packed and ready-for-export goods' },
+  { src: '/assets/images/factory/machining-detail-v2.jpg', alt: 'Precision machining at partner facility' },
+  { src: '/assets/images/factory/machine-operation-v2.jpg', alt: 'Machine operation floor' },
+  { src: '/assets/images/factory/socket-component-detail-v2.jpg', alt: 'Socket component detail' },
+  { src: '/assets/images/factory/packed-goods-v2.jpg', alt: 'Packed and ready-for-export goods' },
 ];
 
 export default function ManufacturingSection() {
