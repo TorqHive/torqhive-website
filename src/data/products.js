@@ -470,11 +470,6 @@ export const products = [
     image: "/assets/images/products/TH-053/hero-web.webp",
     overview: "One-piece hot-forged 42CrMo (Cr-Mo) deep impact socket for 33 mm truck wheel nuts. 78 mm barrel clears extended studs and aluminium rim shoulders, with a 6-point broach, black phosphate finish, pin hole and ring groove for pneumatic guns.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "重型卡车轮胎螺丝套筒 33mm 加长 气动 铬钼钢",
-      material: "42CrMo 铬钼钢，整体淬火，黑色磷化",
-      cluster: "浙江永康 — 套筒锻造产业带：热锻成型、壁厚均匀、六角口倒角，单只现货散装",
-    },
   },
   {
     id: "TH-054",
@@ -486,11 +481,6 @@ export const products = [
     image: "/assets/images/products/TH-054/hero-web.webp",
     overview: "Five deep 12-point sockets in 29, 30, 32, 34 and 36 mm for front and rear axle nuts, crank bolts and hub retaining nuts. Cold-formed 42CrMo bodies, 45 mm depth, black oxide finish, supplied on a spring-clip steel rail.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "半轴螺母套筒 12角 加长 组套 29 30 32 34 36mm",
-      material: "42CrMo 铬钼钢，冷挤压 12 角，发黑处理",
-      cluster: "浙江永康 / 山东临沂 — 12 角套筒成熟模具，五件挂条套装现货，可按车型配比混装",
-    },
   },
   {
     id: "TH-055",
@@ -502,11 +492,6 @@ export const products = [
     image: "/assets/images/products/TH-055/hero-web.webp",
     overview: "Pistol-grip inflator with die-cast zinc body, backlit digital gauge (PSI / BAR / kPa switchable), brass clip-on chuck on a 0.5 m rubber hose, and a thumb deflation button for precise pressure setting during wheel service.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "数显轮胎充气枪 带气压表 胎压枪 汽车打气枪",
-      material: "锌合金压铸枪体 + 黄铜气门嘴接头 + 橡胶软管",
-      cluster: "浙江余姚 — 气动元件与模具产业带：枪体压铸、握把注塑、标准 1/4 快插接头配套齐全",
-    },
   },
   {
     id: "TH-056",
@@ -518,11 +503,6 @@ export const products = [
     image: "/assets/images/products/TH-056/hero-web.webp",
     overview: "Snap-in valve stem installation and core service kit: chrome-plated T-handle puller, 4-way core tool, three brass valve cores and three dust caps. Covers tubeless tyre valve replacement without removing the wheel.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "气门嘴拉装工具 气门芯扳手 补胎工具套装",
-      material: "45# 碳钢镀铬拉杆 + 黄铜气门芯 + 橡胶密封",
-      cluster: "浙江金华 — 补胎工具产业带：冲压拉杆与注塑手柄同厂配套，小件散装现货、整箱起订",
-    },
   },
   {
     id: "TH-057",
@@ -534,11 +514,6 @@ export const products = [
     image: "/assets/images/products/TH-057/hero-web.webp",
     overview: "Roadside and shop tubeless repair kit with a spiral rasp, a slotted plug inserter, five vulcanising rubber plug strips, a 15 ml cement tube and a folding knife. Chrome-plated high-carbon steel shafts with moulded T-handles.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "真空胎补胎工具套装 胶条 补胎锥子 T型柄",
-      material: "高碳钢镀铬工具 + 硫化橡胶胶条",
-      cluster: "浙江金华 — 补胎耗材产业带：胶条自产硫化、工具与耗材成套配货，支持彩盒改版",
-    },
   },
   {
     id: "TH-058",
@@ -550,11 +525,6 @@ export const products = [
     image: "/assets/images/products/TH-058/hero-web.webp",
     overview: "Three 600 mm forged carbon steel tire irons — straight, curved and hook-end — for manual demounting of passenger, light-truck and agricultural tyres. Drop-forged one-piece bodies, polished chrome finish, radiused spoon edges that protect the bead seat.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "扒胎撬棍 轮胎撬棒 补胎撬板 24寸 三件套",
-      material: "45# 碳钢整体锻打 + 表面镀铬",
-      cluster: "浙江金华 / 永康 — 锻打工具产业带：整体调质、端部轧扁抛光，三种头型同模生产",
-    },
   },
   {
     id: "TH-059",
@@ -566,11 +536,6 @@ export const products = [
     image: "/assets/images/products/TH-059/hero-web.webp",
     overview: "Two zinc-plated 40Cr alignment studs that support a wheel on the hub while the remaining bolts are fitted by hand — avoiding cross-threading and rim damage during tyre rotation and brake service. M14 x 1.5 thread, 120 mm and 90 mm lengths, knurled grip.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "轮毂安装定位销 轮胎螺丝对位销 M14*1.5 辅助螺栓",
-      material: "40Cr 合金钢，滚丝后镀锌",
-      cluster: "浙江永康 — 车削件产业带：数控车削 + 滚丝 + 滚花一体成型，M12/M14 多种螺距现货",
-    },
   },
   {
     id: "TH-060",
@@ -582,11 +547,6 @@ export const products = [
     image: "/assets/images/products/TH-060/hero-web.webp",
     overview: "Split-die thread restorers that clean and re-form damaged wheel stud and lug nut threads instead of cutting new ones. Hex bodies drive with a standard socket; two M12 x 1.5 and two M14 x 1.5 sizes cover most passenger and light commercial hubs.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "轮胎螺丝板牙 螺纹修复器 汽车轮毂螺栓丝锥 修复工具",
-      material: "40Cr 合金钢，调质后发黑，分瓣式丝锥结构",
-      cluster: "山东临沂 — 五金工具集散地：丝锥板牙成熟模具，热处理与开槽工序配套，规格可按螺纹定制",
-    },
   },
   {
     id: "TH-061",
@@ -598,11 +558,6 @@ export const products = [
     image: "/assets/images/products/TH-061/hero-web.webp",
     overview: "Tire-pressure sensor service consumables: four EPDM snap-in valve stems with brass inserts, four nickel-plated cores, four caps, four sealing grommets and four retaining nuts — the parts replaced whenever a TPMS sensor is transferred to a new rim.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "胎压传感器维修包 气门嘴 TPMS 配件 橡胶气门嘴",
-      material: "EPDM 三元乙丙橡胶 + 黄铜嵌件 + 镀镍气门芯",
-      cluster: "浙江余姚 — 橡胶与塑料模具产业带：橡胶注射成型，气门嘴与气门芯同园区配套",
-    },
   },
   {
     id: "TH-062",
@@ -614,11 +569,6 @@ export const products = [
     image: "/assets/images/products/TH-062/hero-web.webp",
     overview: "Factory-preset slip-clutch extension bar that releases at 140 Nm, the common passenger-car wheel nut setting. Fits between any 1/2 in. impact wrench and a 17/19/21 mm socket so every nut on the vehicle is tightened to the same value without a torque wrench.",
     lightCustomization: true,
-    sourcing1688: {
-      name: "轮胎螺丝扭力限力杆 140N.m 1/2寸 预置式限力杆",
-      material: "Cr-V 铬钒钢杆体 + 弹簧钢离合机构 + 彩色标识环",
-      cluster: "浙江永康 — 手动工具产业带：预置扭力弹簧标准化，按 110/120/140 N.m 分色分档现货",
-    },
   },
 ];
 
