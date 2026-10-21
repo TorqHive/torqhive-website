@@ -10,6 +10,182 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "bolt-extractor-sockets-and-screw-extractors-sizing",
+    title: "Bolt Extractor Sockets and Screw Extractors: Sizing Rules and the Two Ways They Fail",
+    date: "Oct 21, 2026",
+    category: "Workshop Practice",
+    readTime: "9 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-048/hero-web.webp",
+    excerpt: "Extractor sockets are deliberately undersized and screw extractors are deliberately hardened, and both facts decide whether the job ends with a freed fastener or a broken tool welded into the hole.",
+    tags: [
+      "bolt extractor socket",
+      "screw extractor sizing",
+      "broken bolt removal",
+      "rounded nut repair",
+      "left-hand drill bit"
+    ],
+    content: `
+      <h2>One search phrase, three different tools</h2>
+      <p>Ask for a bolt extractor and the results mix three products that solve three different problems. A spiral flute screw extractor is a hardened tapered shank that is driven into a drilled pilot hole in a snapped stud. An extractor socket is a female socket with reverse spiral flutes that is hammered over a rounded nut or bolt head from the outside. A nut splitter cuts the nut away. The first needs a hole, the second needs a head, and the third destroys the part on purpose.</p>
+      <p>Buyers who conflate them end up with the wrong tool in the wrong failure. The threads below show what that costs in practice.</p>
+      <ul>
+        <li>In <a href="https://www.reddit.com/r/Tools/comments/qmle0e/lug_nut_extractor_doesnt_fit/">an r/Tools thread on a lug nut extractor that does not fit</a>, the complaint is that a 17 mm extractor will not go over a 17 mm nut even after hammering. The tool is not defective; that is the design.</li>
+        <li>In <a href="https://www.reddit.com/r/Tools/comments/1r31huz/how_do_i_release_this_lug_nut/">an r/Tools thread about releasing a lug nut</a>, a spiral extractor socket was hammered onto a rounded nut that turned out to be hollow, so there was nothing behind it to drive against and nothing to push the socket back off.</li>
+        <li>In <a href="https://www.reddit.com/r/MechanicAdvice/comments/ffkwbc/socket_extractor_stuck_on_lug_nut_stuck_on_bolt/">an r/MechanicAdvice thread on an extractor socket stuck on a lug nut</a>, the socket came off the nut only after it had done its job with an impact wrench, and then stayed wedged on the fastener.</li>
+        <li>In <a href="https://www.reddit.com/r/Tools/comments/1lsby3s/i_need_advice_snapped_bolt_extractor_inside/">an r/Tools thread titled "I need advice, snapped bolt extractor inside snapped bolt"</a>, the extractor itself has broken off inside the fastener, which is the failure that turns a one-hour job into a machining job.</li>
+      </ul>
+      <p>Four threads, four different mechanisms, one product family. The specification detail that separates them is not steel grade or brand. It is sizing, and then flute geometry.</p>
+
+      <h2>Why an extractor socket is smaller than the size on the label</h2>
+      <p>An extractor socket grips by interference. The reverse spiral flutes have to cut into the flats and corners of a damaged fastener, so the hexagon at the mouth of the socket is intentionally smaller than the nominal size printed on it. That is why a 17 mm extractor will not slide onto an undamaged 17 mm nut, and why the same r/Tools poster could hammer until the nut deformed without the socket seating.</p>
+      <p>The practical rule that follows is uncomfortable for first-time buyers: an extractor socket is a one-shot tool for a fastener that is already ruined. It is not a substitute for the correct six-point socket, and it is not a size-up or size-down tool. If the head still has clean flats, use a proper socket. If the flats are gone, choose the extractor labelled at or just under the original size and expect to drive it on with a hammer.</p>
+      <p>Two constraints come with that:</p>
+      <ol>
+        <li><strong>Access for the hammer.</strong> A hammer-on tool needs clear axial space and a solid backing. A recessed nut, a hollow lug nut, or a fastener on a sprung bracket will absorb the blow instead of transferring it, which is exactly the hollow-nut case above.</li>
+        <li><strong>Wall thickness and drive size.</strong> Extractor sockets are made in the same drive families as impact sockets, but they are consumables. A 1/2 in. drive set handles wheel and suspension hardware; a 3/8 in. drive set covers the 10 to 19 mm range where most rounded fasteners live.</li>
+      </ol>
+
+      <h2>Spiral flute against straight flute</h2>
+      <p>The two flute forms behave differently, and the difference is not marketing. A spiral flute extractor is tapered and threaded so that turning it counterclockwise drives it deeper into the hole, converting rotation into grip. That is also its weakness: the deeper it goes, the more it expands the fastener, and the more of the hole it consumes. Distributor technical notes make the contrast explicit, for example in <a href="https://blog.kimballmidwest.com/extractor-selection">this extractor selection guide</a>, which points out that straight flute designs do not dig deeper or apply the same expansion pressure that can hinder extraction.</p>
+      <p>Straight flute and square section extractors are therefore the better first choice when the hole is shallow, when the fastener is small, or when the walls around it are thin. Spiral flute earns its place when there is depth to work with and the fastener is genuinely seized on its threads rather than merely tight.</p>
+      <p>The same logic appears in workshop discussion, where the argument for square section extractors is about shallow or blind holes and about what happens if the tool breaks: <a href="https://www.reddit.com/r/Tools/comments/10s902p/whats_your_favorite_boltnut_extractor_quite_happy/">an r/Tools thread on favourite bolt and nut extractors</a> collects exactly that trade-off between bite and recoverability.</p>
+
+      <h2>The pilot hole is the whole job</h2>
+      <p>A screw extractor is only as good as the hole under it. Two rules decide the outcome, and both are printed on the tool or its packaging rather than left to judgement.</p>
+      <p><strong>The hole must sit inside the minor diameter of the thread.</strong> If the drill wanders into the thread flanks, the extractor has nothing to bite except the parent material, and the fastener will not turn. If the hole is too small, the extractor cannot enter far enough to grip and the tip snaps. Manufacturers publish the matched drill size for each extractor because the window is narrow. An Irwin Hanson EX-3 spiral extractor is supplied with a 5/32 in. drill, for instance, and the EX-5 is specified against a 19/64 in. drill for fasteners in the 3/8 in. to 5/8 in. range.</p>
+      <p><strong>The drill must be able to cut the fastener.</strong> A snapped bolt is usually work-hardened at the fracture, and a cheap high-speed bit will skate. Users who succeed on hardened remnants consistently report the same two things: a cobalt bit and cutting fluid, as in <a href="https://www.reddit.com/r/MechanicAdvice/comments/1bjh4sn/money_wasted_drill_left_hand_drill_bit_not_going/">this r/MechanicAdvice thread on left-hand bits that will not cut</a>.</p>
+      <p>A left-hand drill bit is worth its own line here. Running the drill counterclockwise means the cutting force is already trying to unscrew the remnant, and on a fastener that is not truly seized it will walk out on the bit before an extractor is needed at all. Where the bit does not free it, it leaves the pilot hole the extractor needs.</p>
+
+      <h2>Failure one: the extractor snaps in the hole</h2>
+      <p>Extractors are through-hardened so that their flutes can bite steel. That hardness is also why they are brittle, and why a snapped extractor is the worst outcome in the sequence: the hole is now occupied by a piece of tool steel that is harder than most drill bits. The r/Tools thread above is that exact situation, and the respondent's advice is to stop drilling and go to a thread insert or a machine shop.</p>
+      <p>From the tooling side, the workable options are abrasion rather than cutting. A carbide burr in a die grinder will grind the extractor away, centre punch first to stop the burr wandering, and the same approach appears in <a href="https://www.reddit.com/r/Tools/comments/83vwlj/looking_for_strong_drill_bits_to_drill_into/">this r/Tools thread about drilling into a broken extractor</a>, where the recommendation is a narrow pointed rotary file. Diamond abrasives are the other route, as demonstrated in <a href="https://www.youtube.com/watch?v=kIKqjFcINoM">this walkthrough of removing a broken extractor</a>. Conventional HSS bits are not the answer, and neither is more force.</p>
+      <p>The prevention is boring and effective: use the matched drill size, keep the hole on centre, use a straight flute or square extractor in shallow holes, and stop turning the moment the extractor starts to spring rather than bite.</p>
+
+      <h2>Failure two: the extractor socket stays on the nut</h2>
+      <p>The second failure is mechanical rather than metallurgical. An extractor socket grips in one direction and releases in the other, but if it has been driven on with a hammer and then loaded with an impact wrench, the flutes can bury themselves in the nut and the nut can deform into the socket. The reverse spiral now works against removal. The hollow lug nut case is worse, because there is no thread end to press against.</p>
+      <p>The release sequence that preserves the most parts is: stop adding torque, apply penetrating oil and time, then work the socket off axially with a punch and a second hammer rather than by twisting, and if that fails, cut the nut. On a lug nut, cutting means splitting the shell with a chisel or a nut splitter, after which the socket will usually release. None of this is a warranty conversation; it is a technique conversation, and it is worth saying so on a product page.</p>
+
+      <h2>Choosing between the rescue tools</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Tool</th><th scope="col">Best case</th><th scope="col">Fails when</th><th scope="col">Consumable risk</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>Extractor socket</td><td>Rounded nut or bolt head with clear axial access</td><td>Hollow nut, recessed fastener, no room to hammer</td><td>Medium: socket can weld itself to the nut</td></tr>
+      <tr><td>Spiral flute screw extractor</td><td>Snapped shank, deep hole, threads not seized</td><td>Shallow hole, thin walls, work-hardened remnant</td><td>High: snaps and blocks the hole</td></tr>
+      <tr><td>Straight flute or square extractor</td><td>Shallow or blind hole, small fastener</td><td>Needs more bite than a straight flute can generate</td><td>Lower: does not expand the fastener</td></tr>
+      <tr><td>Nut splitter</td><td>Nut is sacrificial and the stud must survive</td><td>Nut is hardened, or access for the wedge is blocked</td><td>None, but the nut is destroyed</td></tr>
+      <tr><td>Left-hand drill bit alone</td><td>Fastener loose enough to unscrew once relieved</td><td>Galled or cross-threaded fastener</td><td>Low</td></tr>
+      </tbody>
+      </table></div>
+      <p>For the friction side of the problem, which is usually what made the fastener round or snap in the first place, the sequence of penetrant, heat and patience is set out in <a href="/blog/seized-bolt-removal-penetrating-oil-and-heat">seized bolt removal</a>. For the leverage question that comes before any extractor is chosen, see <a href="/blog/breaker-bar-vs-impact-wrench-stuck-bolts">breaker bar versus impact wrench on stuck bolts</a>.</p>
+
+      <h2>What distributors should hold in stock</h2>
+      <p>The extractor category is small, fast-moving and frequently bought in a panic, which makes it a good accessory line and a poor place to hold deep inventory of any single SKU.</p>
+      <ul>
+        <li><strong>Both formats, not one.</strong> A range of extractor sockets covers rounded heads; a screw extractor set with matched left-hand drill bits covers snapped shanks. Selling one without the other sends the customer to a competitor at the second attempt.</li>
+        <li><strong>Size continuity in the wheel range.</strong> The highest-turnover extractor sockets are the ones matching lug nut sizes, because wheel work is where damaged fasteners concentrate.</li>
+        <li><strong>Impact-rated construction where the socket will meet a gun.</strong> Extractor sockets used on an impact wrench should be forged from a toughness-first alloy; the material logic is covered in <a href="/blog/cr-v-vs-cr-mo-steel-selecting-the-right-alloy">Cr-V versus Cr-Mo selection</a>.</li>
+        <li><strong>Warranty language that matches the physics.</strong> A snapped extractor is a normal outcome of the tool being used at its limit, and treating it as a manufacturing defect creates a claims problem that no inspection can settle. State the intended use, the maximum fastener condition and the matched drill sizes on the packaging.</li>
+        <li><strong>Replacement bits as line items.</strong> Left-hand drill bits are consumed faster than extractors and are the easiest add-on sale in the category.</li>
+      </ul>
+
+      <h2>The short version</h2>
+      <p>An extractor socket is undersized by design and grips a head that is already damaged; a screw extractor is hardened by design and needs a pilot hole inside the thread's minor diameter with a matched drill size. Spiral flutes bite harder and expand more, straight flutes are safer in shallow holes, and both fail in the same two ways: the tool snaps in the hole, or the socket stays on the nut. Size the tool to the damage, not to the label, and keep the destructive options, nut splitter and drill-out with a thread insert, in the plan from the start.</p>
+    `,
+    relatedProducts: ["TH-036", "TH-029", "TH-035"],
+    seoTitle: "Bolt Extractor Sockets and Screw Extractors: Sizing Guide | TorqHive",
+    metaDescription: "Why extractor sockets are deliberately undersized, how spiral and straight flute extractors differ, and the two failure modes that break the job: a snapped extractor and a socket stuck on the nut.",
+  },
+  {
+    slug: "flare-nut-wrench-fit-brake-line-fittings",
+    title: "Flare Nut Wrenches: Why Six Points and an Exact Fit Decide Whether a Brake Line Survives",
+    date: "Oct 21, 2026",
+    category: "Buying Guide",
+    readTime: "8 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-003/hero-web.webp",
+    excerpt: "A flare nut wrench is a slotted box end with one job: hold a soft, corroded, hard-to-reach fitting without rounding it. Point count and opening tolerance do more for that job than steel grade or brand.",
+    tags: [
+      "flare nut wrench",
+      "line wrench",
+      "brake line fitting",
+      "6-point flare nut wrench",
+      "rounded brake nut"
+    ],
+    content: `
+      <h2>The complaint that never goes away</h2>
+      <p>Hard line work produces one of the most consistent complaints in automotive repair: the fitting was rounded even though the right tool was used. The threads are unambiguous about it. In <a href="https://www.reddit.com/r/MechanicAdvice/comments/vjarcv/replacing_brake_hose_i_got_my_flare_wrench_but/">an r/MechanicAdvice thread on a brake hose replacement</a>, the poster has the flare wrench in hand and the nut still will not move; the reply is that a correctly sized line wrench of good quality should not round the nut, and that once it is rounded the answer is locking pliers. In <a href="https://www.reddit.com/r/projectcar/comments/t7rh1e/i_think_we_can_all_are_hard_lines_are_a_b_to_work/">an r/projectcar thread on hard lines</a>, the poster puts it more bluntly: use the right size flare nut wrench and they still get rounded.</p>
+      <p>Both statements can be true at once, because a flare nut wrench is not a magic shape. It is a slotted box end, and a slotted box end is a C-shaped spring. How well it holds depends on how much of the nut it covers and how closely the opening matches the across-flats dimension. Those two variables are what a buyer can actually specify.</p>
+
+      <h2>What the standard fixes, and what it leaves open</h2>
+      <p>Flare nut wrenches sit inside the ASME B107 hand tool family, which covers combination, open-end, box, flare-nut and ratcheting box wrenches as flat wrenches; the series overview is set out in <a href="https://usmadesupply.com/resources/building-codes-standards/safety-compliance/asme-b107">this summary of the B107 standards</a>. The metric document, ASME B107.9M, is specific about the geometry: the wrench has one open end and one box end with a 6 or 12 point opening of the same nominal size, and that box end carries a slot so the wrench can pass over the tube.</p>
+      <p>That is the whole definition, and it explains why two wrenches sold as 11 mm can behave differently. The standard sets the nominal size and the form, not the fit class, the slot width, the head thickness or the torsional stiffness of the jaws. A manufacturer can therefore produce a wrench that is compliant and still too loose for a rusted brake fitting.</p>
+      <p>What the standard does not govern is also worth naming, because the fitting side has its own documents. Inverted flare tube fittings are specified in SAE J512, which defines the flare geometry and the matching seats; the wrench only has to survive what that joint demands. <a href="https://doi.org/10.4271/J512_199406">SAE J512</a> is the reference an importer should quote when a customer asks what the fitting is supposed to be.</p>
+
+      <h2>Why the slot matters more than the steel</h2>
+      <p>A closed box end is a hoop. Load it and the hoop is in tension around the nut, so it stays round and the flats stay in contact. Cut a slot in it to clear a tube and the hoop becomes an open C. Load that C and the jaws deflect outward, the opening grows, and the contact migrates from the flats toward the corners.</p>
+      <p>Two consequences follow directly:</p>
+      <ul>
+        <li><strong>Clearance turns into rounding.</strong> Any play between wrench and nut is a head start for jaw deflection. A wrench that fits with visible slop on a bench will spread further under a breaker bar length of leverage.</li>
+        <li><strong>Length is a trade, not an upgrade.</strong> A longer flare nut wrench gives more leverage and more jaw spread at the same time. That is why these wrenches are traditionally short, and why the popular aftermarket answer to a stuck fitting is not a longer wrench but heat, penetrant and a better-fitting wrench.</li>
+      </ul>
+      <p>For the chemistry of that stuck fitting, the sequence is covered in <a href="/blog/seized-bolt-removal-penetrating-oil-and-heat">seized bolt removal</a>. What matters here is that no wrench, however well made, is designed to break a corroded taper seat loose by force alone.</p>
+
+      <h2>Six points or twelve</h2>
+      <p>The standard permits either, and the trade is the same one that applies to sockets, covered in more detail in <a href="/blog/six-point-vs-12-point-sockets">6-point versus 12-point sockets</a>. A 6-point opening presents a flat to each of the six nut flats, so the load goes into the flats and the corners are left alone. A 12-point opening indexes every 30 degrees, which helps in a cramped wheel well, but each engagement covers less of the flank.</p>
+      <p>On a brake line nut the corner is exactly where failure starts. These nuts are typically steel, often plated, frequently corroded, and frequently smaller than the wrench the technician wishes would fit. They also sit on a tube that will kink if the nut is crushed. Six points, in the correct size, is the default for this work; twelve points is a compromise for access, not an improvement.</p>
+      <p>Material claims should be read the same way. Forged chrome vanadium is the normal specification for a chrome-plated wrench, and premium flank-drive style openings do exist: Snap-on publishes a claim of 15 to 20 percent more turning power for its Flank Drive system on its <a href="https://sep.snapon.com/product/RXFMS606B">6-point flare nut wrench range</a>. That is a manufacturer claim about contact geometry, not a substitute for the correct size, and independent comparisons of the category are worth watching before paying a premium; the <a href="https://www.youtube.com/watch?v=xlRuGboPIg8">Torque Test Channel comparison of flare nut wrenches</a> is one such test.</p>
+
+      <h2>Fit is a measurement, not a guess</h2>
+      <p>Flare nut sizes are nominal, and real fittings are not. The classic forum case is a nut that a 3/8 in. wrench is too small for and a 7/16 in. wrench is too large for, with an 11 mm wrench fitting closer than either; the arithmetic explains it, since 3/8 in. is 9.53 mm and 7/16 in. is 11.11 mm, leaving the metric size as the only sensible option on a nominal 11 mm hex. Threads on <a href="https://www.reddit.com/r/MechanicAdvice/comments/11rwlbo/probably_a_dumb_question_but_i_couldnt_find_a/">choosing between flare and open-end wrenches</a> and <a href="https://www.reddit.com/r/autorepair/comments/1gj3qf5/do_i_need_a_flare_wrench_to_disconnect_a_brake/">whether a flare wrench is mandatory on a brake line</a> keep returning to the same point from different directions: the shape helps, but only if the size is right.</p>
+      <p>Practical fit test before any load is applied:</p>
+      <ol>
+        <li>The wrench should slip over the nut with the tube through the slot and seat with no perceptible rock.</li>
+        <li>If it needs a hammer, it is the wrong size or the nut is already deformed; forcing it converts a repair into a replacement.</li>
+        <li>If it rocks visibly on the flats, the opening is oversized for that nut. On a corroded fitting, that wrench is the rounding tool.</li>
+        <li>Seat the wrench fully; partial engagement moves the load onto the nut's lead chamfer, which is the weakest section.</li>
+      </ol>
+
+      <h2>Open end, adjustable, and the soft-metal case</h2>
+      <p>An open-end wrench contacts two flats and, under load, rotates slightly about the corner it is bearing on, which concentrates stress at the corner. An adjustable wrench adds a sliding jaw and a loose fit on top of that. On brass and copper fittings, which deform well before steel does, the difference is not subtle; the point comes up repeatedly in <a href="https://www.reddit.com/r/harborfreight/comments/1pikcap/flare_nut_wrenches/">discussion of flare nut wrenches for brass hydraulic fittings</a>, where the argument for the flare pattern is simply that it has more points of contact.</p>
+      <p>HVAC flare fittings, power steering lines, transmission cooler lines and fuel lines all present the same problem in different metals, and the softer the fitting, the less tolerance there is for a loose wrench. That is also why the category is not only an automotive one, and why the same wrench appears in <a href="https://www.reddit.com/r/HVAC/comments/6qkw5h/should_i_buy_flare_nut_wrenches_or_just_a_regular/">HVAC tool discussions</a> arguing against open-end wrenches on flare nuts.</p>
+
+      <h2>Technique that keeps the nut round</h2>
+      <ul>
+        <li><strong>Hold the other half.</strong> A flare joint has two hexes on the same axis. Reacting the torque against the mating fitting with a second wrench keeps the tube from twisting and halves the load on each nut.</li>
+        <li><strong>Square the wrench to the axis.</strong> A wrench cocked on the nut loads the chamfer, not the flats.</li>
+        <li><strong>Pull, do not push, where the position allows.</strong> A pull keeps knuckles out of the path and keeps the wrench seated.</li>
+        <li><strong>Break the corrosion first.</strong> Penetrant with time, then heat on the female side, then torque. If the nut is already rounded, locking pliers or a cut and re-flare are the honest options, not a bigger wrench.</li>
+        <li><strong>Never power it.</strong> An impact driver or wrench on a flare nut converts a controlled breakaway into a hammering load on the weakest hex in the system.</li>
+      </ul>
+
+      <h2>Specifying flare nut wrenches for a distributor range</h2>
+      <p>The category is small, slow-moving and dominated by a handful of sizes, which makes it a range decision rather than an inventory decision.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0"><table>
+      <thead>
+      <tr><th scope="col">Specification point</th><th scope="col">What to require</th><th scope="col">Why it matters at the counter</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>Point count</td><td>6-point as the standard, 12-point only as an access variant</td><td>Flank contact is the whole reason the tool exists</td></tr>
+      <tr><td>Size coverage</td><td>Metric 8 to 19 mm in the common steps, plus SAE 1/4 to 3/4 in.</td><td>Brake and fuel fittings cluster in the 10 to 14 mm band</td></tr>
+      <tr><td>Opening tolerance</td><td>State a maximum clearance on the across-flats dimension</td><td>The only number that predicts rounding on a corroded nut</td></tr>
+      <tr><td>Head form</td><td>15 degree offset heads, slot sized for 3/16 in. and 1/4 in. tube</td><td>Access to fittings buried against a body rail</td></tr>
+      <tr><td>Construction</td><td>Drop-forged Cr-V, fully polished chrome</td><td>Cracks and jaw spread are visible before failure</td></tr>
+      <tr><td>Set format</td><td>Double-end sizes to cut SKU count without cutting coverage</td><td>Better shelf economics than single-size wrenches</td></tr>
+      </tbody>
+      </table></div>
+      <p>For the range around this tool, TorqHive lists the <a href="/products/TH-003">6-piece extra-long wrench set</a> and <a href="/products/TH-004">8-piece extra-long wrench set</a> for general fastener work, and the <a href="/products/TH-038">4-piece offset ring wrench set</a> for obstructed access. A flare nut wrench is a specialist addition to those ranges rather than a replacement for them, and the sizing logic that decides whether a metric or inch set is the primary purchase is set out in <a href="/blog/metric-vs-sae-socket-substitution-and-fitment">metric versus SAE substitution and fitment</a>.</p>
+
+      <h2>The short version</h2>
+      <p>A flare nut wrench is a slotted 6- or 12-point box end, defined by ASME B107.9M and nothing more. The slot that lets it pass over a tube also lets the jaws spread, so the fit on the flats, not the steel or the brand, is what decides whether a corroded brake nut survives. Buy six points, buy the exact size, hold the mating half, break the corrosion before adding leverage, and treat a rounded nut as a signal to change approach rather than to add force.</p>
+    `,
+    relatedProducts: ["TH-003", "TH-004", "TH-038"],
+    seoTitle: "Flare Nut Wrenches: 6-Point Fit and Sizing Guide | TorqHive",
+    metaDescription: "How ASME B107.9M defines flare nut wrenches, why the slotted 6-point box end spreads under load, and how opening tolerance rather than brand decides whether a brake line nut rounds.",
+  },
+  {
     slug: "thin-wall-impact-sockets-wheel-clearance",
     title: "Thin-Wall Impact Sockets: What the Label Does Not Measure on a Wheel Socket",
     date: "Oct 20, 2026",
