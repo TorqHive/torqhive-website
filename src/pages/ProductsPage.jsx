@@ -31,7 +31,7 @@ export default function ProductsPage() {
       <div style={{ background: 'var(--th-black)', padding: '48px 0 40px' }}>
         <div className="container">
           <p className="text-eyebrow" style={{ marginBottom: '10px' }}>Product Catalog</p>
-          <h1 className="text-h1" style={{ color: '#FFFFFF', marginBottom: '12px' }}>40 professional hand tools.</h1>
+          <h1 className="text-h1" style={{ color: '#FFFFFF', marginBottom: '12px' }}>{products.length} professional hand tools.</h1>
           <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: 'var(--text-lg)', maxWidth: '480px' }}>
             MOQ starts at one piece. Light customization available on all items.
           </p>

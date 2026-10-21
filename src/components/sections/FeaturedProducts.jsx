@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SectionHeading from '../common/SectionHeading';
 import ProductCard from '../products/ProductCard';
+import { products as catalog } from '../../data/products';
 
 export default function FeaturedProducts({ products }) {
   return (
@@ -14,7 +15,7 @@ export default function FeaturedProducts({ products }) {
             subtitle="Review a focused cross-section of the launch range, then send quantities, destination and customization needs for a quotation."
           />
           <Link to="/products" className="btn btn-outline-dark" style={{ flexShrink: 0 }}>
-            View All 40 Products
+            View All {catalog.length} Products
           </Link>
         </div>
         <div style={{
