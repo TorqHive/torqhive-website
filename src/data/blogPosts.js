@@ -9,7 +9,7 @@ export const blogCategories = [
 ];
 
 export const blogPosts = [
-﻿  {
+  {
     slug: "socket-drive-size-selection-1-4-vs-3-8-vs-1-2",
     title: "1/4 vs 3/8 vs 1/2 in. Drive: How Drive Size Sets the Torque Ceiling",
     date: "Oct 22, 2026",
@@ -222,11 +222,11 @@ export const blogPosts = [
       <p>For importers and distributors, the product is only as good as the specification behind it. The lines worth writing into a purchase order:</p>
       <ul>
         <li><strong>Impact-rated bar stock</strong> with a one-piece forged square at each end, not a welded or pressed-in drive.</li>
-        <li><strong>Permanent marking in both units</strong> 鈥?ft-lb and Nm 鈥?laser-etched rather than printed, plus the drive size and the intended tool class.</li>
+        <li><strong>Permanent marking in both units</strong> — ft-lb and Nm — laser-etched rather than printed, plus the drive size and the intended tool class.</li>
         <li><strong>Colour coding that matches the marking</strong>, because the colour is what a technician actually reads at arm's length in a wheel arch.</li>
         <li><strong>A stated test method</strong> for the nominal limit, with the gun class and supply conditions used, and a batch record that can be produced on request.</li>
         <li><strong>A spring-back check</strong> in incoming inspection: a bar that has taken a permanent set is scrap, and it is the single easiest defect to screen.</li>
-        <li><strong>Instructions that say the quiet part</strong> 鈥?that the stick limits, that it does not measure, and that final torque requires a calibrated wrench.</li>
+        <li><strong>Instructions that say the quiet part</strong> — that the stick limits, that it does not measure, and that final torque requires a calibrated wrench.</li>
       </ul>
       <p>That last item is commercial, not legal decoration. A range sold with clear instructions generates fewer warranty arguments than a range sold with a percentage claim and no context, because the customer who understands the tool does not ask it to do the wrong job.</p>
 
@@ -256,7 +256,7 @@ export const blogPosts = [
     content: `
       <h2>Serviceability shows up in the workshop threads first</h2>
       <p>Technicians talk about repairability long before distributors do. In <a href="https://www.reddit.com/r/Tools/comments/rhqwt3/question_about_rebuilding_us_made_craftsman/">an r/Tools thread on rebuilding a US-made Craftsman ratchet</a>, the numbers are almost trivial: a rebuild kit in the high teens to mid twenties, and about five minutes of work once the split ring is off. In <a href="https://www.reddit.com/r/Craftsman/comments/1i7uf8m/tip_for_parts_when_refurbing_ratchets/">an r/Craftsman thread on sourcing parts while refurbishing ratchets</a>, the trick is scavenging a detent ball from a standard bearing. In <a href="https://www.reddit.com/r/Craftsman/comments/1iss9ss/can_i_fix_this_vintage_craftsman_ratchet/">another r/Craftsman thread</a>, the anvil has sheared off a 1/4 in. ratchet and the question is whether the body is worth saving at all.</p>
-      <p>Read together, those three threads describe a market. There is a population of users who will repair a tool rather than replace it, a parts channel that exists to serve them, and a failure mode 鈥?the sheared anvil 鈥?that no rebuild kit can fix. For an importer or a private-label brand, that is a specification problem with three separate answers, and only one of them is about the kit.</p>
+      <p>Read together, those three threads describe a market. There is a population of users who will repair a tool rather than replace it, a parts channel that exists to serve them, and a failure mode — the sheared anvil — that no rebuild kit can fix. For an importer or a private-label brand, that is a specification problem with three separate answers, and only one of them is about the kit.</p>
 
       <h2>What actually wears inside a ratchet</h2>
       <p>A ratchet is a small, highly loaded mechanism. The parts that decide its service life are consistent across designs:</p>
@@ -330,17 +330,17 @@ export const blogPosts = [
       <p>Most Asian factories can produce a serviceable ratchet. Far fewer can support one commercially for five years. The difference is documentation and logistics, and it is worth more to a distributor than a few cents on the unit price:</p>
       <ol>
         <li><strong>An exploded diagram with part numbers</strong> for every head in the range, supplied as print-ready artwork and as a web page. Users who can identify a part order the right part.</li>
-        <li><strong>Two levels of SKU</strong> 鈥?the full kit and the individual high-wear parts. Dealers want kits; repair shops want bags of detent balls.</li>
+        <li><strong>Two levels of SKU</strong> — the full kit and the individual high-wear parts. Dealers want kits; repair shops want bags of detent balls.</li>
         <li><strong>A stated spare-parts fill rate and lead time</strong>, written into the contract. A rebuild programme with a six-week parts lead time is a warranty programme in disguise.</li>
         <li><strong>Warranty terms that separate wear parts from structural parts.</strong> Pawls wear; anvils should not shear. Pricing the two the same way hides the quality signal the brand is paying for.</li>
-        <li><strong>Marking that survives the workshop</strong> 鈥?drive size, tooth count and country of origin laser-marked on the body, so a returned tool can be identified without its packaging.</li>
+        <li><strong>Marking that survives the workshop</strong> — drive size, tooth count and country of origin laser-marked on the body, so a returned tool can be identified without its packaging.</li>
       </ol>
 
       <h2>A rebuild protocol your QC can sign off</h2>
       <p>If a brand offers service, the service needs a procedure, otherwise rebuilt tools return with new faults and no traceability. A workable protocol is six steps:</p>
       <ol>
         <li><strong>Strip and degrease.</strong> Record the head type and tooth count against the work order.</li>
-        <li><strong>Inspect the gear ring under magnification.</strong> Any damaged tooth condemns the ring, not just the pawl 鈥?a new pawl on a damaged ring will skip again within days.</li>
+        <li><strong>Inspect the gear ring under magnification.</strong> Any damaged tooth condemns the ring, not just the pawl — a new pawl on a damaged ring will skip again within days.</li>
         <li><strong>Replace the pawl and its spring as a set.</strong> They wear together, and mixing a new pawl with a set spring reproduces the original fault.</li>
         <li><strong>Check the anvil square for corner rounding and plating damage.</strong> If the square is worn, the tool is scrap regardless of the internals.</li>
         <li><strong>Reassemble with the specified grease quantity</strong> and a new retaining ring. Reused rings are a false economy.</li>
