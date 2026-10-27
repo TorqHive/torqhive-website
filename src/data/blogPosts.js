@@ -10,6 +10,185 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "wheel-bolt-thread-engagement-and-lug-nut-torque",
+    title: "Wheel Bolt Thread Engagement and Lug Nut Torque: The Spec That Decides Whether a Wheel Stays On",
+    date: "Oct 27, 2026",
+    category: "Workshop Practice",
+    readTime: "12 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-044/hero-web.webp",
+    excerpt: "An aftermarket wheel changes the shank length a lug bolt needs, and a bolt that engages two threads short will still click a torque wrench at the specified value. Here is how engagement, seat geometry and clamp load actually interact, and what belongs on the purchase order.",
+    tags: [
+      "wheel bolt thread engagement",
+      "lug nut torque",
+      "ball seat vs cone seat",
+      "wheel bolt length",
+      "wheel re-torque"
+    ],
+    content: `
+      <h2>A 28 mm bolt on a wheel that wants 40 mm</h2>
+      <p>In <a href="https://www.reddit.com/r/MechanicAdvice/comments/1t7rl3t/lug_bolts_and_aftermarket_wheels/">an r/MechanicAdvice thread on aftermarket wheels</a>, the owner of a 2001 Mk4 Jetta fits 18x7.5 summer wheels and finds that the factory lug bolts expose what he calls "quite short" a length of thread. He then finds 40 mm bolts online and asks the two questions that decide whether the car is safe: is the current engagement enough, and will the longer bolt hit something inside the hub?</p>
+      <p>Both questions have the same answer, and it is not on the bolt's packaging. Engagement is the length of thread actually inside the hub after the wheel has consumed its share of the shank. A bolt sold as 28 mm may deliver 12 mm of engagement on one wheel and 20 mm on another, because the mounting pad thickness of the wheel sits between the two numbers. Aftermarket wheels, spacers and refurbished alloys all move that pad thickness, and none of them come with a note telling the buyer to re-check the fastener.</p>
+      <p>This is why wheel hardware is one of the few product categories where a distributor can lose a fleet account over a specification error that never appears in a catalogue photo.</p>
+
+      <h2>Torque is not the specification. Clamp load is.</h2>
+      <p>A wheel does not stay on because a nut is tight. It stays on because the joint holds clamp load: the wheel is squeezed against the hub face hard enough that friction carries the vertical and longitudinal loads, and the studs only see a fraction of them. Torque is simply the input used to create that clamp load, and it is a poor proxy for it.</p>
+      <p>The relationship is written as T = K x F x d, where T is applied torque, F is clamp force, d is the nominal thread diameter and K is the nut factor, a single number that rolls up thread friction, under-head friction and thread geometry. Because K absorbs friction, two identical bolts tightened to the same torque can end up with different clamp loads. Bolt Science quantifies the scatter in its tutorial on bolted joints: for a torque wrench, the tightening factor is usually taken as 1.6, meaning the maximum preload in a batch can be 1.6 times the minimum. See <a href="https://www.boltscience.com/pages/basics9.htm">Bolt Preload Variation due to the Tightening Method</a>.</p>
+      <p>Two practical consequences follow. First, the vehicle manufacturer's torque figure is not a strength rating, it is the input that produces the clamp load the joint was designed around, assuming clean and dry threads. Second, anything that changes friction at the same torque changes clamp load: grease, copper anti-seize, zinc flake coating, a damaged thread, or a painted wheel face. That mechanism is covered in detail in our article on <a href="/blog/anti-seize-lug-nuts-torque-and-preload">anti-seize on lug nuts and preload</a>, and it is the reason a shop that lubricates studs "to be safe" is often producing a looser wheel, not a tighter one.</p>
+
+      <h2>Engagement: the dimension nobody prints on the box</h2>
+      <p>Thread engagement is what remains of the shank after the wheel's mounting pad. The engineering target is not a round number in millimetres; it is a joint in which the male fastener fails before the internal thread strips. Nord-Lock states the principle plainly in its bolting guide: any fastener failure must occur in the shank of the bolt or stud, which means the shear strength of both internal and external threads must exceed the tensile strength of the bolt (<a href="https://www.nord-lock.com/learnings/bolting-tips/2011/thread-engagement-in-tapped-hole-avoid-stripped-thread/">How much thread engagement is needed in a tapped hole</a>). When that condition is not met, the failure mode moves into the hub, and the repair stops being a bolt.</p>
+      <p>On a wheel, the internal thread is a steel hub or a pressed-in stud, so the material match is usually favourable. The risk is geometric rather than metallurgical, and it runs in both directions.</p>
+      <ul>
+        <li><strong>Too little engagement.</strong> The bolt seats, the wrench clicks, and only part of the thread carries the load. The first symptom is often a wheel that loosens repeatedly no matter how carefully it is torqued, followed by pulled threads in the hub. A bolt that reaches the wheel face after two or three turns is a warning, not a convenience.</li>
+        <li><strong>Too much engagement.</strong> A long shank can pass through the hub and contact what sits behind it: ABS sensor rings, parking brake components, dust shields or suspension hardware. On a blind hole the bolt can bottom out and produce a false "tight" with almost no clamp load on the wheel. A bolt that spins in for many turns before it touches the wheel face is the mirror-image warning.</li>
+      </ul>
+      <p>The reliable method is measurement, not feel. With the wheel on the hub and three bolts finger-tight, check how much thread is visible between the wheel face and the start of the thread, then compare against the original hardware on the original wheel. If the original bolts were correct and the new wheel has a thicker pad, the difference is exactly the extra shank length required. That single comparison resolves the r/MechanicAdvice question faster than any rule of thumb.</p>
+
+      <h2>Seat geometry: ball, cone and flat</h2>
+      <p>The seat is the surface that centres the wheel and transfers clamp load into the rim. Three forms cover almost everything in service, and they are not interchangeable.</p>
+      <ul>
+        <li><strong>Ball seat (radius).</strong> Common on Volkswagen Group, Audi and Mercedes-Benz original wheels, including the Mk4 platform in the thread above. The bolt head is spherical and mates with a matching radius in the wheel.</li>
+        <li><strong>60 degree cone seat.</strong> The default for most aftermarket alloy wheels and for many Asian and American applications. The cone both centres the wheel and provides the friction face.</li>
+        <li><strong>Flat seat with a captive washer.</strong> Used on some original steel wheels and commercial applications, where a flat washer spreads load and the shank centres the wheel rather than the seat.</li>
+      </ul>
+      <p>Fitting a cone-seat bolt to a ball-seat wheel converts a full-face contact into a line contact. The wheel is damaged at the seat, the friction coefficient changes, and the clamp load the manufacturer designed for is no longer achievable even at the correct torque. It is a common aftermarket error because both bolts are M14 and both are 28 mm long, and the only visible difference is the shape under the head.</p>
+      <p>Thread pitch is the second trap. Volkswagen Group uses M14 x 1.5; BMW uses M14 x 1.25 on many applications. The finer pitch will start in the coarser hole and then gall, which is why the pitch belongs in the product title and not only in a specification tab.</p>
+
+      <h2>Sequence and staging: why the star pattern is not folklore</h2>
+      <p>The cross or star pattern exists to seat the wheel concentrically. Torquing one nut to full value first pulls the wheel off-centre against the hub face; the remaining nuts then clamp a wheel that is already misaligned, and the last one may never reach the specified value because the joint has taken a set. The standard practice is two stages: bring every nut to roughly half the final torque in the cross pattern, then repeat at full torque, then verify.</p>
+      <p>For a five-stud wheel, the sequence is 1-3-5-2-4. For four studs, it is diagonal pairs. The pattern matters less than the staging: two passes at half and full torque produce a more even clamp load than one pass at full torque in any order.</p>
+
+      <h2>Re-torque is part of the procedure</h2>
+      <p>New wheels, new studs and freshly painted or powder-coated wheel faces settle. The coating creeps under clamp load, the joint loses preload, and the nuts that were correct at the shop are below specification a week later. This is why the Tire Dealers Association of Canada and most provincial tire associations recommend a re-torque after the first 50 to 100 km, as reported in <a href="https://abc17news.com/cnn-regional/2022/10/30/should-i-retorque-my-wheels-when-changing-my-tires-what-those-in-the-industry-recommend/">this industry summary of re-torque practice</a>.</p>
+      <p>For a distributor, that recommendation is a product opportunity. A wheel installation that includes a printed re-torque card, a torque spec label and a set of twenty bolts in one box is a complete procedure. The same parts sold loose are a comeback waiting to happen.</p>
+
+      <h2>What the tooling has to do</h2>
+      <p>Wheel work is high-volume, high-consequence and usually performed by the least experienced person in the shop, so the tooling has to make the correct action the easy one.</p>
+      <ul>
+        <li><strong>Hex coverage.</strong> 17 mm, 19 mm and 21 mm cover most passenger cars; 33 mm deep sockets cover commercial truck wheel nuts. Thin-wall and non-marring versions protect alloy finishes, and a scratched set of new alloys is a customer complaint that no torque value prevents.</li>
+        <li><strong>Impact for removal, torque wrench for final.</strong> An impact wrench is the correct tool for breaking a nut loose and for running it down. It is the wrong tool for the final value, because the delivered torque depends on joint stiffness, air supply and socket time. Torque-limiting extension bars are a production aid that reduces the spread, not a measurement; our <a href="/blog/torque-stick-accuracy-vs-torque-wrench">torque stick comparison</a> covers where that line sits.</li>
+        <li><strong>Thread restoration, not thread cutting.</strong> A rusted or lightly damaged stud should be cleaned with a thread chaser, which reforms the existing thread, rather than a tap, which cuts material away. Our <a href="/blog/stripped-thread-repair-chaser-tap-helicoil-solid-insert">thread repair comparison</a> sets out the difference and when an insert is the only remaining option.</li>
+        <li><strong>Holding the wheel on the hub.</strong> Alignment pins turn a two-person job into a one-person job and remove the temptation to start a bolt with the wheel hanging on the thread.</li>
+      </ul>
+
+      <h2>What belongs on the purchase order</h2>
+      <p>Most wheel-hardware quality problems are specification problems that were never written down. A purchase order that carries the following fields removes the ambiguity, and it also makes the difference between two apparently identical bolts visible before the container ships.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Field</th><th>What to specify</th><th>Why it decides the sale</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Thread size and pitch</td><td>M14 x 1.5, M14 x 1.25, M12 x 1.5, 1/2-20 UNF</td><td>Both metric pitches start in the same hole; the wrong one galls and destroys the hub thread.</td></tr>
+            <tr><td>Seat form</td><td>Ball, 60 degree cone, flat with captive washer</td><td>A seat mismatch is a wheel damage claim, not a warranty discussion.</td></tr>
+            <tr><td>Shank length</td><td>Millimetres, measured from the seat face to the thread end</td><td>The only dimension that governs engagement once the wheel is fitted.</td></tr>
+            <tr><td>Hex</td><td>17 mm, 19 mm, 21 mm, spline or tuner profile</td><td>Decides whether the customer needs a second socket set to use the product.</td></tr>
+            <tr><td>Property class</td><td>Head marking, typically 10.9 on passenger-car wheel bolts</td><td>Fleet buyers reject unmarked hardware before they test it.</td></tr>
+            <tr><td>Coating</td><td>Zinc flake, chrome, geomet, black oxide</td><td>Coating changes friction, and friction changes clamp load at the same torque.</td></tr>
+            <tr><td>Kit format</td><td>Set of 20, locking bolt included or not, retail or bulk</td><td>A vehicle needs a full set; single-piece SKUs generate partial orders and mismatched finishes.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Stock the procedure, not just the part</h2>
+      <p>For a distributor, the wheel-fastener category is won by covering the small number of variables that produce most of the failures: seat form, pitch, shank length and hex. The <a href="/products/TH-044">3-piece non-marring wheel protector lug nut socket set</a> covers the finish-protection problem on alloy wheels; the <a href="/products/TH-053">33 mm deep impact wheel nut socket</a> covers commercial truck hubs; the <a href="/products/TH-060">wheel stud thread chaser and restorer kit</a> handles the corroded stud that would otherwise be cut; and the <a href="/products/TH-062">140 Nm preset torque limiting extension bar</a> gives a tire bay a consistent run-down value before the torque wrench is applied.</p>
+      <p>None of those tools fixes a bolt that is the wrong length. That decision is made at the counter, with the wheel in front of the customer and the original bolt in hand, and it is the reason the specification conversation is worth having before the sale rather than after the comeback.</p>
+    `,
+    relatedProducts: ["TH-044", "TH-053", "TH-060", "TH-062"],
+    seoTitle: "Wheel Bolt Thread Engagement and Lug Nut Torque Guide | TorqHive",
+    metaDescription: "Why aftermarket wheels need longer lug bolts, how thread engagement and clamp load interact, and what to specify on a wheel hardware purchase order.",
+  },
+  {
+    slug: "spark-plug-socket-fitment-and-torque-aluminum-head",
+    title: "Spark Plug Socket Fitment and Aluminum Head Torque: Hex Size, Reach and the 30 Percent Anti-Seize Rule",
+    date: "Oct 27, 2026",
+    category: "Buying Guide",
+    readTime: "11 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-046/hero-web.webp",
+    excerpt: "A 21 mm socket is not automatically a spark plug socket. Hex size, wall thickness, broach depth and retention decide whether the tool reaches the plug, and the torque value that follows decides whether the aluminum thread survives.",
+    tags: [
+      "spark plug socket size",
+      "thin wall spark plug socket",
+      "spark plug torque",
+      "aluminum cylinder head",
+      "anti-seize on spark plugs"
+    ],
+    content: `
+      <h2>The question behind "would this work for spark plugs?"</h2>
+      <p>In <a href="https://www.reddit.com/r/Tools/comments/1vl5sn1/would_this_work_for_spark_plugs/">a recent r/Tools thread</a>, a user with a specific project asks whether a Japanese 1/4 in. drive, 21 mm, long surface-length socket can be used on spark plugs. The socket in the link is a genuine industrial long socket, correctly made, correctly sized on the hex, and it is not a spark plug socket. The gap between those two statements is the entire buying decision for this product category.</p>
+      <p>The same confusion appears in the opposite direction every week: someone buys a "spark plug socket set" and finds the 5/8 in. version will not fit a modern deep plug well because the wall is too thick, or the rubber insert stays on the plug and the socket comes out empty. In <a href="https://www.reddit.com/r/MechanicAdvice/comments/1i00ppg/upside_down_socket_on_spark_plug/">a thread where a socket was left upside down in a plug well</a>, the problem is the same family: the tool and the well were never checked against each other.</p>
+
+      <h2>Four dimensions decide fit, and only one of them is on the label</h2>
+      <p>Spark plug sockets are specified by hex size, drive size and length, which is the same information printed on any other socket. What the label usually omits is the outside diameter, and that is the number that determines whether the tool enters the well.</p>
+      <ul>
+        <li><strong>Hex size.</strong> 5/8 in. (16 mm) covers most modern passenger-car plugs, 13/16 in. (21 mm) covers many older and larger plugs, and 9/16 in. (14 mm) covers small-engine and some powersports applications. The 21 mm socket in the r/Tools thread is the right hex for the application the poster had in mind; hex size was never the problem.</li>
+        <li><strong>Drive size.</strong> 3/8 in. is the default for engine work. 1/4 in. is useful where the well is narrow or the plug is small, which is exactly why the poster was looking for a 1/4 in. drive 21 mm. 1/2 in. drive versions exist for large-bore and industrial engines but are rarely needed on a car.</li>
+        <li><strong>Outside diameter and wall thickness.</strong> Coil-on-plug engines with deep wells in a cam cover leave very little radial clearance. A thin-wall socket is not a marketing upgrade in that situation; it is the difference between reaching the plug and removing the cam cover.</li>
+        <li><strong>Usable depth and broach position.</strong> The hex broach must sit deep enough to reach the plug shell without the socket body bottoming on the head. A long "surface length" socket positions the broach at the very end of a long body, which is why the r/Tools poster thought it might work: the reach is right, but the internal geometry is not.</li>
+      </ul>
+
+      <h2>What makes it a spark plug socket</h2>
+      <p>Two features separate a spark plug socket from a long socket of the same hex, and both are about handling the plug rather than turning it.</p>
+      <p><strong>Retention.</strong> A rubber insert or a magnet holds the plug inside the socket so it can be lifted out of a well and started back in without cross-threading. A plain long socket has neither, so the plug stays in the head when the socket is withdrawn, and installation becomes a blind operation with fingers that do not fit. Magnetic retention is cleaner in oily wells; rubber inserts grip porcelain more gently but wear and can stay behind on the plug.</p>
+      <p><strong>Wall and broach design.</strong> Spark plug sockets are typically turned thinner than a standard socket of the same size, and many are 12-point so the socket can be re-indexed on the plug hex in a confined well. Neither feature is visible in a product photo, which is why the specification sheet matters more here than in most hand-tool categories.</p>
+      <p>A swivel or universal joint built into the socket is the third practical feature, and it is the one technicians ask for by name when the rear bank of a transverse V6 sits under the cowl. The trade-off is height: a swivel head adds length, and in a shallow well that length can be the reason the extension will not fit.</p>
+
+      <h2>The torque values, from the plug manufacturers</h2>
+      <p>Spark plug torque is not a generic number, because the same plug can be installed in a cast-iron head and an aluminum head with different results. NGK publishes values by thread diameter, seat type and head material, and warns that under-torque prevents the plug from seating, which slows heat transfer from the firing end and can lead to pre-ignition; over-torque stretches the metal shell and can crack or break the threads. The full table is on <a href="https://ngksparkplugs.com/en/resources/spark-plug-installation">NGK's spark plug installation page</a>.</p>
+      <p>Denso publishes a comparable table in newton-metres, organised by thread size, with a separate line for taper-seat plugs and a lower figure for M14 plugs in aluminum heads. See <a href="https://am.denso.com/plug-global/basic/torque/">Denso's spark plug installation guidance</a>. The two sets of numbers are close but not identical, and neither overrides the engine manufacturer's service data.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Thread and seat</th><th>Head material</th><th>NGK (lb-ft)</th><th>Denso (N m)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>18 mm, flat seat with gasket</td><td>Cast iron</td><td>25.3 to 32.5</td><td>30 to 40</td></tr>
+            <tr><td>18 mm, flat seat with gasket</td><td>Aluminum</td><td>25.3 to 32.5</td><td>30 to 40</td></tr>
+            <tr><td>14 mm, flat seat with gasket</td><td>Cast iron</td><td>18.0 to 25.3</td><td>20 to 30</td></tr>
+            <tr><td>14 mm, flat seat with gasket</td><td>Aluminum</td><td>18.0 to 21.6</td><td>20 to 30</td></tr>
+            <tr><td>12 mm, flat seat with gasket</td><td>Cast iron</td><td>10.8 to 18.0</td><td>15 to 20</td></tr>
+            <tr><td>12 mm, flat seat with gasket</td><td>Aluminum</td><td>10.8 to 14.5</td><td>15 to 20</td></tr>
+            <tr><td>10 mm, flat seat with gasket</td><td>Cast iron</td><td>7.2 to 10.8</td><td>10 to 15</td></tr>
+            <tr><td>10 mm, flat seat with gasket</td><td>Aluminum</td><td>7.2 to 8.7</td><td>10 to 15</td></tr>
+            <tr><td>8 mm, flat seat with gasket</td><td>Aluminum</td><td>5.8 to 7.2</td><td>8 to 10</td></tr>
+            <tr><td>18 mm, conical seat</td><td>Cast iron or aluminum</td><td>14.5 to 21.6</td><td>30 to 40 (Denso lists by thread size)</td></tr>
+            <tr><td>14 mm, conical seat</td><td>Cast iron</td><td>10.8 to 18.0</td><td>10 to 20 (taper seat)</td></tr>
+            <tr><td>14 mm, conical seat</td><td>Aluminum</td><td>7.2 to 14.5</td><td>10 to 20 (taper seat)</td></tr>
+            <tr><td>12 mm, conical seat</td><td>Aluminum</td><td>7.36 to 14.75</td><td>Not listed separately</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The aluminum column is the one that matters commercially. A 14 mm plug in an aluminum head is specified at 18.0 to 21.6 lb-ft by NGK, against 18.0 to 25.3 lb-ft in cast iron, and a 12 mm plug drops to 10.8 to 14.5 lb-ft. A technician who applies the cast-iron habit to an aluminum head is already at the top of the range before the wrench clicks, and the thread in the head is the weakest element in the joint.</p>
+
+      <h2>When there is no torque wrench: the angle method and its limits</h2>
+      <p>Both manufacturers publish a fallback based on rotation after the plug seats, and both describe it as a substitute for measurement rather than an equivalent.</p>
+      <ul>
+        <li><strong>NGK:</strong> with a gasket, tighten one half to two thirds of a turn after the plug contacts the head; with a taper seat, one twelfth to one eighth of a turn. NGK's own summary of manufacturer practice is published on <a href="https://www.ngk.com/plug-torque-settings-2">its plug torque settings page</a>.</li>
+        <li><strong>Denso:</strong> for a new M14 plug, about one half turn; for an M12, about one third; for an M10, about one third, or two thirds for certain types; for an M18, about one quarter. A previously used plug is tightened about one twelfth of a turn, because the gasket has already been crushed.</li>
+      </ul>
+      <p>The angle method assumes a new gasket and clean threads. It also assumes the installer can feel the moment the plug seats, which is exactly the judgement that fails when a plug is started at an angle in a deep well. For a shop, the honest position is that the angle method is a roadside fallback, and a 3/8 in. torque wrench in the 5 to 80 lb-ft band covers every value in the table above.</p>
+
+      <h2>Anti-seize: two manufacturers, two instructions</h2>
+      <p>This is the part of spark plug installation where published guidance genuinely diverges, and a distributor should not paper over it.</p>
+      <p>NGK's torque page states that if anti-seize compound is used it should be applied sparingly and the torque reduced by 30 percent, because the lubricant changes the friction that the torque value was calibrated against. Denso's installation guidance takes the opposite position and states plainly that thread lubricant should not be applied to the spark plug, because it may cause over-tightening and breakage.</p>
+      <p>Both instructions are internally consistent: they are describing the same friction effect from different starting assumptions about what the installer will do with the torque wrench. The resolution is procedural, not technical. Follow the engine manufacturer's service information first, then the plug manufacturer's instruction for that part number, and never lubricate a plug and then torque it to the dry value. Our article on <a href="/blog/anti-seize-lug-nuts-torque-and-preload">anti-seize, torque and preload</a> explains the friction mechanism in more detail.</p>
+      <p>There is a second reason to be conservative in aluminum: a plug that is removed and refitted without cleaning the threads is being torqued against carbon and debris, so the wrench reads the friction of the contamination rather than the clamp load on the gasket. NGK is explicit that the plug holes must be clean before installation, otherwise the plug can be under-torqued even when the wrench indicates the correct value.</p>
+
+      <h2>When the thread is already damaged</h2>
+      <p>An over-torqued or cross-threaded plug in an aluminum head usually presents as a plug that will not tighten, followed by a compression leak or a misfire. The repair options, from a thread chaser through a coil insert to a solid insert, are set out in our <a href="/blog/stripped-thread-repair-chaser-tap-helicoil-solid-insert">stripped thread repair comparison</a>. The important commercial point is that this failure is almost always installation-induced, which makes the socket and the torque wrench the cheapest insurance a distributor can sell alongside the plug.</p>
+
+      <h2>What a spark plug socket SKU should state</h2>
+      <p>Because the differences are invisible in a photograph, the specification sheet is the product. A complete listing carries hex size, drive size, overall length, outside diameter, broach depth, point count, retention type and finish, and states which plug families the socket is intended for. The <a href="/products/TH-046">5-piece 3/8 in. drive magnetic thin-wall swivel spark plug socket set</a> is built around the three variables that cause most fitment returns: wall thickness, retention and swivel access. For a workshop buying one set, the <a href="/products/TH-005">15-piece torque wrench and spark plug socket set</a> pairs the sockets with the wrench in the same case, which removes the temptation to install by feel. For the small-plug and low-torque end of the range, the <a href="/products/TH-050">1/4 in. drive micrometer torque screwdriver</a> covers 10 to 50 in-lb, where a 3/8 in. wrench is too coarse to be meaningful.</p>
+      <p>The r/Tools question, in the end, has a simple answer: a 21 mm long socket will turn a 21 mm plug, and it will not hold it, will not protect the porcelain, and may not clear the well. Selling the right socket is a specification sale, and the torque value that follows is what keeps the head intact.</p>
+    `,
+    relatedProducts: ["TH-046", "TH-005", "TH-050"],
+    seoTitle: "Spark Plug Socket Size and Aluminum Head Torque Guide | TorqHive",
+    metaDescription: "Spark plug socket fitment explained: 5/8, 13/16 and 9/16 in. hex, thin-wall and swivel options, plus verified NGK and Denso torque values for aluminum heads.",
+  },
+
+  {
     slug: "tpms-valve-stem-torque-and-service-kit-spec",
     title: "TPMS Valve Stems: Snap-In vs Clamp-In, Inch-Pound Torque and the Service Kit Spec",
     date: "Oct 26, 2026",
