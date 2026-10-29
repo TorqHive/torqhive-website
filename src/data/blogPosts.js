@@ -8,7 +8,196 @@ export const blogCategories = [
   "Workshop Practice",
 ];
 
-export const blogPosts = [  {
+export const blogPosts = [
+  {
+    slug: "torque-multiplier-vs-impact-wrench-high-torque",
+    title: "Torque Multiplier vs Impact Wrench: How to Reach 1,000 ft-lb Without a Cheater Pipe",
+    date: "Oct 29, 2026",
+    category: "Workshop Practice",
+    readTime: "11 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-047/hero-web.webp",
+    excerpt: "A 1,018 ft-lb fastener is not set by an impact wrench, a cheater pipe or a guess. Here is the ratio arithmetic behind a torque multiplier, why the reaction arm is the dangerous end of the tool, and what a distributor should specify on the purchase order.",
+    tags: [
+      "torque multiplier",
+      "torque multiplier vs impact wrench",
+      "high torque tightening",
+      "reaction arm safety",
+      "1000 ft-lb torque"
+    ],
+    content: `
+      <h2>The r/Tools thread that frames the problem</h2>
+      <p>A maintenance technician in <a href="https://www.reddit.com/r/Tools/comments/1km4emf/need_to_torque_to_1018_ft_lbs/">a r/Tools post titled "Need to torque to 1,018 ft lbs"</a> is about to replace a bearing in a 1999 Milnor commercial washer. The fasteners are 1"-14, 3 in. long, grade 8, and the manufacturer's figure is 1,018 ft-lb. His coworker gives him two pieces of advice in the same breath: use the high-torque half-inch impact, and be careful, because that impact is rated higher than the bolts can take.</p>
+      <p>Both halves are wrong for the same reason. An impact wrench is a nut runner. It cannot tell you what torque it has delivered, and the moment the joint stops turning the tool keeps hammering against a fastener that is already tight. The "1,100 to 1,200 ft-lb" on the box is a measured fastening capability under test conditions, not a dial setting, and the difference between the two is where studs get stretched.</p>
+      <p>The alternative in most shops is worse. A second r/Tools thread describes <a href="https://www.reddit.com/r/Tools/comments/1nhwilj/had_to_torque_40_deadbolts_on_a_dd15_this_morning/">torquing 40 deadbolts on a DD15 with a cheater pipe</a> until a coworker handed over a torque multiplier; the poster calls it a game changer. A third describes the predictable ending of the pipe method — <a href="https://www.reddit.com/r/Tools/comments/1ocn7uo/i_drew_blood_when_i_bonked_myself_on_the_head/">a cheater bar that drew blood</a> and a multiplier bought the next morning. Neither thread is really about tools. They are about a torque value that a wrench could not reach and a body that tried to reach it instead.</p>
+
+      <h2>Fastening torque is not a set point</h2>
+      <p>There are four ways to put 1,000 ft-lb into a fastener, and only three of them can state the number they produced. That is the whole basis for choosing between them.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Method</th><th>Can it state the applied torque?</th><th>Real limit</th><th>Where it belongs</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Cheater pipe on a breaker bar</td><td>No</td><td>Whatever the pipe and the operator produce; loads the bar beyond its design length</td><td>Loosening, never tightening</td></tr>
+            <tr><td>High-torque impact wrench</td><td>No</td><td>Repeats until the joint stops moving; rating is not a setting</td><td>Running nuts down, dismantling</td></tr>
+            <tr><td>Torque limiting extension ("stick")</td><td>Approximately, tool and air supply dependent</td><td>Tuned to one gun and one pressure; drifts with wear</td><td>Wheel nuts in volume, with a wrench check behind it</td></tr>
+            <tr><td>1 in. drive torque wrench, 200–1,000 N·m</td><td>Yes, against its calibration certificate</td><td>Handle length and swing room; operator fatigue at the top of the range</td><td>Up to roughly 738 ft-lb</td></tr>
+            <tr><td>Manual torque multiplier, 3:1 and above</td><td>Yes, through a small input wrench plus the published ratio</td><td>Needs a solid reaction point; the reaction arm carries the full output torque</td><td>Above any hand wrench, in tight or elevated positions</td></tr>
+            <tr><td>Hydraulic torque wrench</td><td>Yes, with a pressure-torque table</td><td>Pump, hoses, cost, weight</td><td>Repetitive flange and structural bolting</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The impact wrench's place in that table is honest but narrow. Our notes on <a href="/blog/impact-wrench-torque-ratings-explained">how impact torque ratings are produced</a> explain why the headline number is not reproducible on a real joint, and the same logic applies to <a href="/blog/torque-stick-accuracy-vs-torque-wrench">torque sticks</a>: they are a production aid, not a measurement.</p>
+
+      <h2>The arithmetic behind a multiplier</h2>
+      <p>A manual multiplier is a planetary gear set in a housing with a reaction arm. The output is the input multiplied by the ratio, which means the setting on the wrench you drive it with is a division problem.</p>
+      <ul>
+        <li><strong>1,018 ft-lb through a 3:1 multiplier:</strong> 1,018 ÷ 3 = 339 ft-lb on the input wrench.</li>
+        <li><strong>475 ft-lb truck wheel nuts through the same tool:</strong> 475 ÷ 3 = 158 ft-lb on the input wrench.</li>
+        <li><strong>644 N·m (475 ft-lb) through 3:1, in metric:</strong> 215 N·m on the input wrench.</li>
+      </ul>
+      <p>That is why 3:1 is the ratio most hand multipliers are sold at. The input lands in the middle of a normal wrench's scale instead of at either end. Enerpac's E-Series catalogue covers ratios from <a href="https://5.imimg.com/data5/RX/RT/MY-756497/e-series-manual-torque-multipliers.pdf">3:1 to 52:1 with an output accuracy of plus or minus 5 percent</a>, and the high ratios exist for a different reason: a 20:1 tool is for a fastener where there is almost no room to swing a wrench, not for a better reading. Push 1,018 ft-lb through 52:1 and the input is about 20 ft-lb, at the bottom of any wrench scale, where thread friction rather than the mechanism decides what the reading means.</p>
+      <p>Accuracy does not improve by adding stages. A wrench certified at its own tolerance feeding a multiplier quoted at plus or minus 5 percent stacks both errors, and in the worst case they add. A shop that needs a defensible 1,018 ft-lb should read the certificate of the wrench and the datasheet of the multiplier, not just the ratio printed on the housing.</p>
+
+      <h2>The reaction arm is the dangerous end</h2>
+      <p>Every newton-metre that leaves the output square has to be absorbed somewhere. On a multiplier it is absorbed by the reaction arm, which means the arm is loaded to the full output torque and will move when the fastener breaks free or the gear train takes up backlash.</p>
+      <p>Three rules cover most of the risk:</p>
+      <ol>
+        <li><strong>Brace against structure, in the direction of rotation.</strong> A frame member, a flange, an adjacent bolt head. Never a brake line, a hose, a wiring loom or a body panel, and never your leg.</li>
+        <li><strong>Keep hands off the reaction arm.</strong> Hold the input wrench and the tool body only. On models with an anti-backlash device, the arm can still kick when load reverses.</li>
+        <li><strong>Never drive the input with an impact tool.</strong> Enerpac states it plainly in the same datasheet: "Never use impact type air tools for power driving torque multipliers. Torque multiplier drive train damage will occur." The gear train is designed for steady manual input, not hammering.</li>
+      </ol>
+      <p>Overload protection is worth specifying. On the E300 and E400 series a replaceable shear drive shears at 103 to 110 percent of rated capacity and protects the internals; a multiplier without that feature converts an operator error into a scrapped tool.</p>
+
+      <h2>Sockets: impact-rated, and matched to the output drive</h2>
+      <p>A multiplier output is a square drive, usually 3/4 in. or 1 in. on hand tools, and the socket that goes on it is not the chrome socket from a general set. The same Enerpac document specifies heavy duty impact sockets to ISO 2725 and ISO 1174, DIN 3129 and DIN 3121, or ASME B107.2. At 1,000 ft-lb a chrome socket is a shatter risk, and a worn 6-point broach on a truck wheel nut rounds the nut before the torque is reached.</p>
+      <p>This is why a high-torque kit is a system rather than a single purchase: multiplier, correct output sockets, an input wrench with the right range, and a reaction point that exists on the machine you are working on. Our <a href="/products/TH-086">26-piece 3/4 in. and 1 in. drive heavy-duty impact socket set</a> covers the output side for truck wheel, suspension and frame work.</p>
+
+      <h2>When a multiplier is the wrong answer</h2>
+      <p>Three situations where the arithmetic above stops applying:</p>
+      <ul>
+        <li><strong>Torque-plus-angle specifications.</strong> If the manual gives a torque followed by a angle, the angle is the part that sets clamp. A multiplier can apply the torque stage, but the angle stage needs a protractor or an angle gauge, and some multipliers are supplied with one for exactly this reason.</li>
+        <li><strong>Torque-to-yield fasteners.</strong> These are stretched once by design and are not reusable. Reaching the number again on a used bolt does not restore the clamp, as our article on <a href="/blog/torque-to-yield-bolts-single-use">single-use TTY bolts</a> sets out.</li>
+        <li><strong>Repetition.</strong> Forty fasteners a shift on a production line is hydraulic wrench work. A manual multiplier is for the joint you meet twice a year, in a position where nothing else fits.</li>
+      </ul>
+
+      <h2>What belongs on the purchase order</h2>
+      <p>For distributors building a high-torque line, the specification sheet matters more than the catalogue photo. Ask for:</p>
+      <ul>
+        <li>Rated output in N·m and ft-lb, and the ratio as a number rather than a description.</li>
+        <li>Input and output square drive sizes, stated separately. A 1/2 in. input to 3/4 in. output is a different tool from 1/2 in. to 1 in.</li>
+        <li>Reaction style: bar, plate, or both, with the arm length, because the reaction point often decides whether the tool can be used at all.</li>
+        <li>Overload protection type and whether the shear drive is a stocked spare.</li>
+        <li>Weight, since these are usually used overhead or on a machine frame.</li>
+        <li>Calibration documentation, and the accuracy figure the supplier is prepared to put in writing.</li>
+        <li>Export packing: VCI film and desiccant, because a geared tool that arrives with corrosion in the planet carrier is a warranty claim before it is a sale.</li>
+      </ul>
+
+      <h2>What TorqHive stocks in this class</h2>
+      <p>Our <a href="/products/TH-047">TH-047 is a 3:1 planetary multiplier rated to 1,500 N·m</a> (about 1,107 ft-lb) with a 1/2 in. square input and a 3/4 in. square output — the ratio that keeps the input wrench in its accurate band for truck wheel nuts and machine frame bolts. Above that, the <a href="/products/TH-088">TH-088 planetary multiplier</a> is built for M42 and larger classes such as foundation bolts and crusher frames, 1/2 in. input to 1 in. output, with the exact ratio and maximum output confirmed against the supplier's model sheet at quotation.</p>
+      <p>The input side is covered by the <a href="/products/TH-084">TH-084 1 in. drive preset click wrench, 200–1,000 N·m</a>, or the <a href="/products/TH-083">TH-083 3/4 in. drive wrench at 100–600 N·m</a> where the target sits lower. Both are preset so a setting survives being handed between technicians, and both ship with the supplier's calibration certificate — which is the document that decides whether the number on the job card means anything. Service intervals for either are covered in our guide to <a href="/blog/torque-wrench-calibration-frequency-and-verification">torque wrench calibration and verification</a>.</p>
+      <p>The point of the multiplier is not that it is stronger than an impact wrench. It is that it turns an unanswerable question — how tight is it — into a division sum you can write on the job card and defend a year later.</p>
+    `,
+    relatedProducts: ["TH-047", "TH-088", "TH-084", "TH-083"],
+    seoTitle: "Torque Multiplier vs Impact Wrench Above 600 N·m | TorqHive",
+    metaDescription: "How to reach 1,000 ft-lb with a torque multiplier instead of an impact wrench: ratio maths, reaction arm safety, socket standards and a purchase order checklist.",
+  },
+  {
+    slug: "heavy-truck-wheel-nut-torque-33mm-flange-nut",
+    title: "Heavy Truck Wheel Nut Torque: Why 33 mm Flange Nuts Need 475 ft-lb and a Deep Impact Socket",
+    date: "Oct 29, 2026",
+    category: "Buying Guide",
+    readTime: "9 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-053/hero-web.webp",
+    excerpt: "Hub-piloted and stud-piloted wheels use different nuts, different torque and different sockets. Here is the published 475 ft-lb figure explained, the retorque interval behind it, and the drive sizes that can actually deliver it.",
+    tags: [
+      "heavy truck wheel nut torque",
+      "33mm wheel nut socket",
+      "hub piloted vs stud piloted wheels",
+      "475 ft-lb wheel torque",
+      "truck wheel retorque"
+    ],
+    content: `
+      <h2>The question behind "which torque wrench for lug nuts"</h2>
+      <p>In <a href="https://www.reddit.com/r/tractors/comments/1gb2a7z/torque_wrench_for_lug_nuts_recommendations/">a r/tractors thread asking for torque wrench recommendations for lug nuts</a>, a reply makes the practical point that most 1/2 in. drive torque wrenches top out around 150 ft-lb, so a 3/4 in. drive tool is usually needed instead. That reply is the right instinct, and it still understates the problem on a heavy truck.</p>
+      <p>The published figure for the most common modern truck wheel is <a href="https://www.trucknews.com/transportation/on-again-off-again/1003118297">475 ft-lb plus or minus 25 ft-lb for 33 mm M22x1.5 two-piece flange nuts</a>, which is 610 to 678 N·m. A 3/4 in. drive wrench sold as a 600 N·m tool reaches 443 ft-lb and stops short of the specification. That is not a marketing detail; it is the difference between a wheel that is torqued and a wheel that is nearly torqued.</p>
+      <p>And the nut is only half the decision. Two wheel systems use that same torque class, and they do not share nuts, sockets or procedures.</p>
+
+      <h2>Hub-piloted and stud-piloted are not interchangeable</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Feature</th><th>Hub-piloted</th><th>Stud-piloted (Budd style)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>How the wheel is centred</td><td>On pilot pads or the hub bore</td><td>On the studs and their chamfers</td></tr>
+            <tr><td>Nut type</td><td>One-piece or two-piece flange nut with a flat washer face</td><td>Ball-seat cap nut; dual wheels use an inner cap nut and an outer nut</td></tr>
+            <tr><td>Typical heavy-truck nut</td><td>33 mm hex, M22x1.5 thread, two-piece flange</td><td>Varies by hub and stud; often 1-1/2 in. hex or similar</td></tr>
+            <tr><td>Published torque</td><td>475 ft-lb plus or minus 25 for the 33 mm M22x1.5 nut</td><td>Set by the wheel, hub or vehicle maker, not by a generic table</td></tr>
+            <tr><td>Common failure if mixed</td><td>Nut bottoms on the wrong seat, or the wheel is not centred and frets the stud holes</td><td>Ball seat cannot align on a flat flange face; clamping force is lost</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The 475 ft-lb figure applies to one nut design. Truck News is explicit that flange nuts with a 1-1/2 in. hex head, among other designs, carry different torque requirements and that the manufacturer's value governs. Treating a single number as a universal truck spec is how a stud gets stretched on one hub and left loose on another.</p>
+
+      <h2>Why 33 mm is a socket decision</h2>
+      <p>A 33 mm truck flange nut is not a passenger-car lug nut scaled up. Three features drive the socket specification:</p>
+      <ul>
+        <li><strong>Depth.</strong> The nut is tall and the stud often protrudes through it, especially on dual assemblies and aluminium wheels with thicker hubs. A shallow socket bottoms on the stud before the hex is fully engaged and loads only the first few millimetres of the nut.</li>
+        <li><strong>Wall and barrel shape.</strong> The socket has to pass an aluminium rim shoulder and still reach the nut. That is the job of a long barrel rather than a thin wall; our <a href="/products/TH-053">TH-053 33 mm deep impact socket</a> uses a 78 mm barrel for exactly this clearance.</li>
+        <li><strong>Impact construction and retention.</strong> Wheel nuts are run down with a gun and finished with a wrench, so the socket is used on an impact anvil every time. A one-piece forged Cr-Mo body, a 6-point broach and a pin hole plus ring groove for the anvil retainer are the baseline, not an upgrade.</li>
+      </ul>
+      <p>One caution on drive size. A 1/2 in. drive 33 mm socket is a legitimate service-kit item for running nuts down and for utility work, but 475 ft-lb is applied through 3/4 in. or 1 in. drive tooling. Stepping a 1 in. output down to 1/2 in. through an adapter to reach a 1/2 in. socket puts the adapter in series with the full torque and is not a substitute for the right socket.</p>
+
+      <h2>The procedure, in the order that matters</h2>
+      <p>The sequence in the Truck News guidance is short and worth following literally:</p>
+      <ol>
+        <li><strong>Lubricate the hub pilots</strong> with a non-water-based lubricant, and do not lubricate the wheel face, the hub face or the brake drum face.</li>
+        <li><strong>Seat the wheel</strong> with a pilot pad at the 12 o'clock position, hand-thread every flange nut, and align the hand holes for valve access.</li>
+        <li><strong>Tighten in a crisscross pattern starting at 12 o'clock</strong>, using the sequence the OEM publishes, so each nut helps seat the wheel flat against the hub.</li>
+        <li><strong>Bring every nut to the specified torque</strong> with a calibrated tool, not with an air wrench set by ear.</li>
+        <li><strong>Recheck after 50 to 100 miles</strong> of operation, then at least every 10,000 miles thereafter.</li>
+      </ol>
+      <p>The retorque step is not a formality. Paint, dirt and surface bedding compress after the first heat cycles, and clamping force drops with them. A shop that torques once and never rechecks has installed a wheel that was correct on the bay and may not be correct on the road.</p>
+
+      <h2>Matching the tool to 610–678 N·m</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Tool</th><th>Range</th><th>Fits 475 ft-lb (644 N·m)?</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>3/4 in. drive preset click wrench</td><td>100–600 N·m (74–443 ft-lb)</td><td>No — stops about 200 N·m short</td><td>Correct for lighter suspension and driveline work</td></tr>
+            <tr><td>1 in. drive preset click wrench</td><td>200–1,000 N·m (148–738 ft-lb)</td><td>Yes, with the target in the middle of the band</td><td>Long handle; needs swing room at the wheel</td></tr>
+            <tr><td>3:1 manual torque multiplier</td><td>Up to 1,500 N·m (about 1,107 ft-lb)</td><td>Yes — 644 ÷ 3 = 215 N·m input</td><td>Use where a 1 in. wrench will not swing, or on duals with poor access</td></tr>
+            <tr><td>Impact wrench alone</td><td>Rated in fastening torque, not settable</td><td>No</td><td>Run-down only; finish with a calibrated tool</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>That middle row is the reason a truck shop ends up owning both a 1 in. wrench and a multiplier. The wrench is faster when there is room; the multiplier is the only thing that works when the handle cannot swing, and at 3:1 the input stays inside a normal wrench's accurate band. The ratio arithmetic and the reaction arm rules are covered in our article on <a href="/blog/torque-multiplier-vs-impact-wrench-high-torque">torque multipliers versus impact wrenches</a>.</p>
+
+      <h2>Lubrication changes the clamp, not the number</h2>
+      <p>Torque is a turning force; clamp is what holds the wheel on. Thread and under-head friction consume a large share of the applied torque, so the same 475 ft-lb on dry threads and on oiled threads does not produce the same clamp load. This is why the wheel and nut maker specifies whether the stud threads and the nut flange should be oiled, and it is why a shop cannot substitute its own habit.</p>
+      <p>The same friction logic explains why adding anti-seize to a wheel stud changes the outcome at an unchanged wrench setting, which is the subject of our note on <a href="/blog/anti-seize-lug-nuts-torque-and-preload">anti-seize, torque and preload</a>.</p>
+
+      <h2>What a distributor should stock for this wheel</h2>
+      <p>The 33 mm hub-piloted wheel is common enough on modern fleets that the supporting range is worth holding as a set rather than as individual parts:</p>
+      <ul>
+        <li><a href="/products/TH-053">TH-053</a> — 33 mm deep 6-point impact socket, 78 mm barrel, Cr-Mo, pin hole and ring groove.</li>
+        <li><a href="/products/TH-086">TH-086</a> — 26-piece 3/4 in. and 1 in. drive impact socket set for the surrounding suspension and frame fasteners.</li>
+        <li><a href="/products/TH-084">TH-084</a> — 1 in. drive preset wrench, 200–1,000 N·m, which covers 644 N·m without pushing the tool to its ceiling.</li>
+        <li><a href="/products/TH-083">TH-083</a> — 3/4 in. drive preset wrench, 100–600 N·m, for medium-duty wheels and suspension work.</li>
+        <li><a href="/products/TH-047">TH-047</a> — 3:1 multiplier, 1,500 N·m, for duals and recessed wheels where a long wrench handle will not swing.</li>
+      </ul>
+      <p>For an importer, the sellable unit is not the socket. It is the combination that lets a fleet do the job to the published number and recheck it 50 miles later — socket, wrench, multiplier and a calibration record that survives an audit.</p>
+    `,
+    relatedProducts: ["TH-053", "TH-086", "TH-084", "TH-083", "TH-047"],
+    seoTitle: "Heavy Truck Wheel Nut Torque: 33 mm Flange Nuts at 475 ft-lb | TorqHive",
+    metaDescription: "Hub-piloted truck wheels with 33 mm M22x1.5 flange nuts take 475 ft-lb plus or minus 25. Compare socket depth, drive sizes, retorque intervals and tooling.",
+  },
+  {
     slug: "axle-nut-sockets-12-point-stake-nut-torque-procedure",
     title: "Axle Nut Sockets: 12-Point vs 6-Point, Stake Nuts and the Torque Procedure That Decides Bearing Life",
     date: "Oct 28, 2026",
