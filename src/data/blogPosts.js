@@ -10,6 +10,232 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "brake-caliper-wind-back-tool-selection",
+    title: "Brake Caliper Wind-Back Tools: Push, Screw or Service Mode — Matching the Tool to the Caliper",
+    date: "Nov 02, 2026",
+    category: "Buying Guide",
+    readTime: "9 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-026/hero-web.webp",
+    excerpt: "A rear caliper piston that will not go back is rarely a technique problem. It is a family problem: plain piston, screw-in piston, or a motor bolted to the caliper. Here is how each one must be retracted, and why a universal wind-back kit can destroy two of the three.",
+    tags: [
+      "brake caliper wind back tool",
+      "electronic parking brake service mode",
+      "rear caliper piston",
+      "brake pad replacement",
+      "caliper piston compressor"
+    ],
+    content: `
+      <h2>Two threads, one question: which way does this piston move?</h2>
+      <p>In <a href="https://www.reddit.com/r/MechanicAdvice/comments/1px9q7s/rear_brake_caliper_piston_wont_reset_what_am_i/">"Rear brake caliper piston won't reset. What am I doing..."</a> a poster working on a 2009 Cobalt SS has tried both motions and neither works: twisting the piston does nothing, and a compression tool does not move it either. In <a href="https://www.reddit.com/r/mechanics/comments/1al9p30/electronic_park_brake_caliper_piston_compression/">"Electronic park brake caliper piston compression"</a> the replies split immediately, because one contributor is describing a screw-in piston and another is describing a caliper with an electric motor on the back of it.</p>
+      <p>Neither thread is really about technique. Three different mechanisms sit behind three rear calipers that look identical from the outside, and each one wants a different motion. A tool that only pushes cannot retract a screw-in piston. A tool that only rotates can destroy a caliper whose parking brake motor is bolted to it.</p>
+
+      <h2>The three families, and what each one wants</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Caliper family</th><th>What sits inside the piston</th><th>Correct motion</th><th>What the wrong tool does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Plain floating caliper</td><td>Hydraulic cup, no internal thread</td><td>Straight axial push, square to the bore</td><td>Rotation drags the dust boot and can spin the piston off its seat</td></tr>
+            <tr><td>Integral mechanical parking brake (screw-in)</td><td>Nut on a threaded spindle or a ramp mechanism</td><td>Rotate while applying axial load</td><td>A pure push loads the spindle in the direction it was never designed to take and strips the internal nut</td></tr>
+            <tr><td>Caliper-integrated EPB</td><td>Electric motor and reduction gear driving the piston</td><td>Service mode first, then usually a straight push</td><td>Forcing the piston back drives the gear train backwards and can strip the gear or crack the motor housing</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Sealey publishes the second row in its own instruction sheet for a 50-piece wind-back kit, which states that the set "includes left and right-handed thrust bolt assemblies". That is not padding in the box. It is an admission that the thread handedness changes between caliper designs, so a kit with one thrust bolt cannot cover a workshop's real mix of vehicles.</p>
+
+      <h2>What the OEM-facing procedures actually say about EPB</h2>
+      <p>A trade-level explanation of electric parking brakes published by <a href="https://www.vehicleservicepros.com/industry-news/article/53089883/theres-no-stopping-the-electric-parking-brake-2018-02-16">Vehicle Service Pros</a> is blunt about the sequence: "The EPB system must be in service or maintenance mode prior to servicing or removing rear brake components." The same article separates the two hardware designs — a cable puller that motorises the old handbrake, and a caliper-integrated unit where each caliper carries "a bidirectional electric motor" plus "a gear reduction drive" to generate clamping force.</p>
+      <p>The model-specific notes are where a tool decision actually gets made:</p>
+      <ul>
+        <li><strong>Ford F-150, 2016:</strong> after entering service mode with the pedal-and-switch sequence, "The Ford caliper piston does not have to be rotated back into the caliper, but does need to be compressed using the proper tool. The use of a C-clamp or pliers may damage the caliper or motor."</li>
+        <li><strong>Mazda CX-5, 2016 and 2017:</strong> "Mazda does not want the piston rotated when servicing the caliper, just pushed back. Rotating the piston may damage the caliper internal parts."</li>
+        <li><strong>Honda:</strong> with the actuator unbolted, a T45 Torx driver turns the spindle shaft 360 degrees clockwise to release the brake, and the piston is then pressed straight back — turning is not required, and the actuator goes back on with a new sealing O-ring.</li>
+        <li><strong>VW and Audi:</strong> service mode and re-initialisation need a scan tool, and some models also require the pad thickness to be entered so the wear algorithm resets.</li>
+      </ul>
+      <p>Two of those four are explicit that rotation is forbidden. Any kit sold on the promise that every rear caliper has to be screwed in is therefore wrong for a substantial part of the fleet, and the failure it produces is expensive: a caliper with a stripped internal nut or a cracked motor housing does not rebuild.</p>
+
+      <h2>The direction check that costs nothing</h2>
+      <p>Before an adaptor goes anywhere near the piston, mark the piston face and the caliper body with a paint pen, then turn the thrust bolt a quarter turn by hand. If the marks separate and the piston advances instead of retracting, the handedness is wrong — stop and swap to the opposite thrust assembly. If the piston does not move at all under hand pressure, the caliper is either seized or still held by its parking brake, and more force only converts a rebuild into a replacement.</p>
+
+      <h2>The reaction plate is doing half the work</h2>
+      <p>A wind-back tool is a screw jack. It only works if the reaction force has a square, stable path back into the caliper body or the opposing pad abutment. On a floating caliper that means taking the caliper off its bracket and seating the reaction plate flat against the piston housing — not hooking it over a hose or a bleeder.</p>
+      <ul>
+        <li><strong>Square the plate.</strong> A plate sitting at an angle cocks the piston in the bore and scores the wall on the way in, which is the one failure a new seal kit will not fix.</li>
+        <li><strong>Open the bleeder.</strong> Displaced fluid then leaves at the caliper instead of being pushed back up the line towards the ABS hydraulic unit. Cap the bleeder, bleed the corner afterwards and top the reservoir up.</li>
+        <li><strong>Clean the boot first.</strong> Grit sitting in the dust boot gets dragged past the seal as the piston retracts.</li>
+      </ul>
+
+      <h2>What belongs on a distributor's specification sheet</h2>
+      <p>Buyers sourcing these kits for resale tend to compare piece counts, which is the least predictive number in the box. The questions that decide return rates are structural:</p>
+      <ul>
+        <li>Does the kit contain both left-hand and right-hand thrust assemblies?</li>
+        <li>Do the adaptor plates cover the pin patterns and piston diameters used in the target market, and are the pins magnetic so they stay seated in the piston?</li>
+        <li>Is the thrust bolt carried on a bearing, or does the plate grind against the caliper as it turns?</li>
+        <li>Are pins, plates and thrust bolts available as spare parts, and is the thread a standard size?</li>
+        <li>What finish is on the plates, and how many salt spray hours does it survive? Our <a href="/blog/hand-tool-plating-salt-spray-test-spec">plating and salt spray guide</a> covers how to write that clause.</li>
+      </ul>
+      <p>A <a href="/products/TH-026">brake caliper wind-back tool set</a> earns its shelf space by covering the three families above, not by adding a fourth copy of the same plate. Distributors who also sell general workshop kits can pair it with a <a href="/products/TH-020">professional workshop tool set</a> for the caliper bracket and slide pin work that comes with every pad change.</p>
+
+      <h2>The three-line rule for the bay</h2>
+      <ol>
+        <li>Identify the caliper: plain piston, screw-in piston, or a motor bolted to the caliper.</li>
+        <li>If there is a motor, put the system into service mode before the caliper comes off, and exit service mode afterwards.</li>
+        <li>Match the motion, not the marketing: push, rotate-and-push, or push only after service mode.</li>
+      </ol>
+      <p>Adaptor size, thread handedness and reaction plate all follow from that identification. Get the family wrong and no amount of leverage will help, because the caliper is not resisting — it is being asked to move in a direction its mechanism does not have.</p>
+    `,
+    relatedProducts: ["TH-026", "TH-020"],
+    seoTitle: "Brake Caliper Wind-Back Tool Guide: Push, Screw or EPB Service Mode",
+    metaDescription: "Rear caliper pistons retract three different ways. Learn which calipers need rotation, which forbid it, and what a wind-back tool kit must include before you buy."
+  },
+  {
+    slug: "cv-axle-removal-pry-bar-slide-hammer-axle-puller",
+    title: "CV Axle Removal: Pry Bar, Slide Hammer or Axle Puller — Getting a Stuck Shaft Out Without Splitting the Joint",
+    date: "Nov 02, 2026",
+    category: "Workshop Practice",
+    readTime: "8 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-037/hero-web.webp",
+    excerpt: "A CV axle is held by a spring clip, not by rust alone. That single fact explains why a long pry bar often loses, why a slide hammer wins in tight bays, and why pulling on the shaft instead of the joint housing turns a two-hour job into a gearbox repair.",
+    tags: [
+      "cv axle removal",
+      "slide hammer",
+      "axle puller",
+      "cv joint circlip",
+      "driveshaft replacement"
+    ],
+    content: `
+      <h2>Three threads, one stuck shaft</h2>
+      <p>The recurring shape of this job is visible in <a href="https://www.reddit.com/r/MechanicAdvice/comments/1swao9s/update_cv_axle/">"Update cv axle"</a>, where the working answer is to put a bar "between the back part of the axle and the transmission and pop it out" and the poster is told plainly that the method being attempted will never release it. The same wall appears in <a href="https://www.reddit.com/r/AskAMechanic/comments/1913w0g/i_need_help_removing_cv_axle_from_transmission/">"I need help removing cv axle from transmission"</a>, where wedges, screwdrivers and slide hammers have all failed because a casting leaves no straight approach to the joint. And in <a href="https://www.reddit.com/r/MechanicAdvice/comments/cjj00g/cv_is_stuck_in_the_diff_and_i_cannot_get_it_out/">"CV is stuck in the diff and I cannot get it out for the life of me"</a> the sequence that finally works is short and unglamorous: push the axle in, turn it slightly, pull, then escalate to a slide hammer.</p>
+      <p>Read together, those three threads are not about strength. They are about where the axial load lands and whether the tool can deliver it in the direction the retaining clip needs.</p>
+
+      <h2>What is actually holding the shaft</h2>
+      <p>On most transaxle layouts the inner joint carries a splined stub that engages the differential side gear. The stub is grooved, and a circlip sits in that groove with its outer edge trapped behind a shoulder in the side gear. There is no bolt and no taper to break; the clip is a spring that has to be squeezed radially as the stub passes, and it only squeezes when the stub moves axially.</p>
+      <p>Two practical consequences follow, and they explain almost every failed attempt in those threads:</p>
+      <ul>
+        <li><strong>The clip needs a sharp axial movement, not a slow one.</strong> A lever applied progressively lets the clip stay seated and simply loads the housing. A short, firm impulse moves the stub far enough that the clip cams inward.</li>
+        <li><strong>The load has to pass through the joint housing, not the shaft.</strong> Pull or pry on the shaft and the force goes through the joint's internal cage and the boot before it ever reaches the clip.</li>
+      </ul>
+      <p>Not every axle is clipped. Some layouts bolt the inner joint to a stub flange, and a few retain the shaft with a plate or a keeper at the joint face. Look before you lever: if there is a bolted flange, no amount of prying will release it, and the bolts are usually the answer.</p>
+
+      <h2>Where a pry bar is allowed to touch</h2>
+      <p>The bar is not the problem; the contact point is. A wide, flat blade seated between the machined back face of the inner joint and the transaxle casting gives a clean, short stroke with the load going exactly where it needs to. Three contact points turn the same bar into a damage tool:</p>
+      <ul>
+        <li><strong>The shaft itself.</strong> A bar across the shaft bends it and side-loads the joint cage.</li>
+        <li><strong>The boot or its clamp.</strong> A torn boot is a comeback even if the axle comes out perfectly.</li>
+        <li><strong>The seal lip or the case parting line.</strong> Levering on the seal scores the bore that the new seal has to seal against, and the leak appears a week later, not on the day.</li>
+      </ul>
+      <p>Long bars are also a trap in a tight bay. A bar long enough to reach the joint is usually too long to swing, which is why the thread with the obstructed casting ended up improvising. If the bar cannot be seated square, stop and change tool rather than lever at an angle.</p>
+
+      <h2>When a bar will not fit: axial impulse</h2>
+      <p>A slide hammer with an adapter bolted to the joint face converts the same hand movement into pure axial load. Nothing is side-loaded, nothing is levered against a casting, and the impulse is repeatable — which matters because the clip either cams or it does not, and ten identical taps tell you more than one long pull.</p>
+      <p>An air hammer with a blunt or chisel tip applied to the joint body is the other method that shows up in these threads, and it is fast when it works. It is also the method most likely to crack a thin casting or deform a joint face, so it belongs after the puller has failed, not before it.</p>
+      <p>On the wheel side the constraint is different: the outer splines are held in the hub, often with a staked nut that has to be replaced rather than reused. That joint is released with a puller or a press acting on the hub flange, never with a hammer on the shaft end.</p>
+
+      <h2>Going back in: the three things that cause a comeback</h2>
+      <ol>
+        <li><strong>Fit a new circlip.</strong> A clip that has been dragged out once has lost its spring. Reusing it is the most common reason an axle walks out again.</li>
+        <li><strong>Push, do not hammer.</strong> The shaft should seat with a firm axial push until it clicks. Hammering on the end transfers shock straight into the joint races and brinells them before the car moves.</li>
+        <li><strong>Check the seal and the level.</strong> A new seal lip is cheap; a transmission that has been run low is not. Confirm the joint is fully seated by pulling back on the housing — it should not move.</li>
+      </ol>
+
+      <h2>Specifying the kit</h2>
+      <p>For a distributor, the useful questions about an axle puller are whether the adapter range matches the joint faces in the market, whether the slide hammer mass is enough for a corroded clip without being unusable in a wheel well, and whether the threads on the adapter and the hammer are rolled and hardened rather than cut. A <a href="/products/TH-037">CV axle drive shaft puller tool kit</a> is the core of that set, backed by a <a href="/products/TH-040">ball joint separator kit</a> when the knuckle has to come apart first and a <a href="/products/TH-036">long-handle breaker bar</a> for the axle nut.</p>
+
+      <h2>The short version</h2>
+      <p>Find the retainer before you find the leverage. If it is a circlip, the axle needs an axial impulse delivered through the joint housing — a square-seated bar on a clear casting, or a slide hammer when the casting will not allow it. Pulling on the shaft, levering on the seal, and hammering the shaft end are the three ways this job becomes a gearbox repair.</p>
+    `,
+    relatedProducts: ["TH-037", "TH-040", "TH-036"],
+    seoTitle: "CV Axle Removal Guide: Pry Bar vs Slide Hammer vs Axle Puller",
+    metaDescription: "A stuck CV axle is held by a circlip that needs axial load. Learn where a pry bar may touch, when a slide hammer wins, and how to avoid splitting the joint."
+  },
+  {
+    slug: "hand-tool-plating-salt-spray-test-spec",
+    title: "Plating and Salt Spray Testing for Hand Tools: What a Private-Label PO Should Actually Specify",
+    date: "Nov 02, 2026",
+    category: "OEM & Sourcing",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-001/hero-web.webp",
+    excerpt: "Salt spray hours are the most quoted and least understood number in a hand tool specification. ASTM B117 defines a method, not a pass mark. Here is how to write a finish clause that a factory can meet and an auditor can check.",
+    tags: [
+      "salt spray test",
+      "ASTM B117",
+      "ISO 9227",
+      "chrome plating hand tools",
+      "private label tool sourcing"
+    ],
+    content: `
+      <h2>The complaint that is really a specification gap</h2>
+      <p>Finish is the first thing a buyer judges and the last thing a purchase order defines. In <a href="https://www.reddit.com/r/Tekton/comments/1rmcp82/poor_chrome_inside_sockets/">"Poor chrome inside sockets"</a> the explanation offered is that the socket interior is lacquered rather than plated, and that the coating is there to protect raw steel and will wear away with use. In <a href="https://www.reddit.com/r/ToolTruckTools/comments/1869jxk/coop_kid_cracked_one_of_my_chrome_sockets_used_it/">a thread about a cracked chrome socket used on an impact</a> the failure is the opposite one: a hard decorative layer that cannot absorb shock.</p>
+      <p>Both complaints are legitimate, and both would have been prevented by a clause on the purchase order rather than a conversation at sampling. The clause needs three parts: the substrate, the finish process, and a corrosion test with an acceptance criterion.</p>
+
+      <h2>What ASTM B117 actually specifies</h2>
+      <p>The most useful fact about <a href="https://indeecon.com/blog/astm-b117-salt-spray-test-complete-guide/">ASTM B117</a> is what it does not contain. Formally titled Standard Practice for Operating Salt Spray (Fog) Apparatus, it "does not define pass/fail criteria. Instead, it defines the test method — the apparatus, the salt solution, temperature, and procedure — so that results from different laboratories are reproducible and comparable."</p>
+      <p>The method parameters are fixed and therefore useful to quote:</p>
+      <ul>
+        <li>5 percent sodium chloride solution by weight, plus or minus 1 percent, made with distilled or deionised water.</li>
+        <li>Collected solution pH between 6.5 and 7.2 at 25 degrees C.</li>
+        <li>Exposure zone held at 35 degrees C, plus or minus 2 degrees C.</li>
+        <li>Fog collection rate of 1.0 to 2.0 mL per 80 square centimetres of horizontal area per hour.</li>
+        <li>Flat panels inclined 15 to 30 degrees from vertical, not touching each other.</li>
+      </ul>
+      <p>Duration is the buyer's variable, not the standard's. The same reference lists the durations that dominate practice: 96 hours for many hardware and fastener specifications, 240 hours for general industrial coatings, 500 hours for automotive OEM requirements, and 1,000 hours for premium automotive and aerospace coatings.</p>
+      <p>That is the number a supplier quotes and a buyer repeats. It only means something when paired with an acceptance criterion, which is why the evaluation side matters as much as the hours: red rust at the base metal, white rust on a zinc coating, blistering and loss of adhesion, and creep measured out from a scribe line, often rated with ASTM D610 or ISO 4628-3.</p>
+
+      <h2>B117 and ISO 9227 are not interchangeable labels</h2>
+      <p>European and Asian buyers will often ask for ISO 9227 instead, and the two documents do not cover the same ground. The comparison below is drawn from the standard summaries linked above.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Parameter</th><th>ASTM B117</th><th>ISO 9227</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Test types covered</td><td>Neutral salt spray (NSS) only</td><td>NSS, acetic acid (AASS) and copper-accelerated (CASS)</td></tr>
+            <tr><td>Salt concentration</td><td>5 percent NaCl, plus or minus 1 percent</td><td>50 g/L, plus or minus 5 g/L</td></tr>
+            <tr><td>Solution pH</td><td>6.5 to 7.2</td><td>6.5 to 7.2 for NSS; 3.1 to 3.3 for AASS and CASS</td></tr>
+            <tr><td>Chamber temperature</td><td>35 degrees C, plus or minus 2 degrees C</td><td>35 degrees C, plus or minus 2 degrees C</td></tr>
+            <tr><td>Typical market</td><td>Americas, global OEM specifications</td><td>Europe, Asia, international tenders</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A chamber run to B117 will generally also satisfy the NSS requirements of ISO 9227. It will not satisfy AASS or CASS, which are the variants used for decorative chrome and plated zinc alloys. If a buyer in Germany asks for a finish specification on a chrome-plated wrench, quoting a B117 neutral test is answering a slightly different question.</p>
+
+      <h2>Why hours cannot be converted into years</h2>
+      <p>This is the part of the conversation that loses sales. A salt spray chamber is a comparative instrument, not a service-life predictor: it has no drying cycle, no sunlight and no temperature swings, so the corrosion sequence it produces is not the one a tool sees on a service truck. The guidance from one laboratory supplier is unusually direct — there is "no magic math" to turn lab hours into real-world years, and the test is best used to prove that batch B is as good as batch A.</p>
+      <p>That reframing is commercially useful. A distributor who promises "five years rust-free because 480 hours" is exposed. A distributor who promises "no red rust on the working surfaces after 240 hours of neutral salt spray, tested per lot, report on request" is defensible, and is offering the buyer something a competitor's marketing line cannot match.</p>
+
+      <h2>Matching the finish to the part</h2>
+      <p>Decorative chrome and impact tools are a poor pairing, and the reason is mechanical rather than cosmetic. A bright nickel-chrome layer is hard and brittle; under repeated impact the substrate deflects and the coating does not, so it flakes or chips at the edges where stress concentrates. That is why impact sockets are commonly finished in black oxide or a phosphate coating rather than decorative chrome, while hand sockets and wrenches carry nickel-chrome for wear resistance and appearance.</p>
+      <ul>
+        <li><strong>Nickel-chrome over chrome-vanadium:</strong> the default for hand sockets, extensions and combination wrenches. Specify plating thickness and an adhesion check, because a thick layer changes the hex dimension and the socket stops fitting a worn fastener.</li>
+        <li><strong>Black oxide or manganese phosphate over chrome-molybdenum:</strong> the normal choice for impact sockets and adapters. The finish holds oil, hides wear and does not spall, but it offers little salt spray resistance on its own — do not accept a 240-hour claim on an untreated black oxide part without a supplementary oil or zinc coating.</li>
+        <li><strong>Zinc and zinc-nickel:</strong> the economical route for pressed and stamped accessories, with corrosion resistance rising with alloy content and thickness.</li>
+        <li><strong>Interior lacquer or e-coat:</strong> cheap protection for socket bores and the reason a new socket can look unevenly finished inside. Specify it explicitly if you want it, and specify that it must not be present on the drive end where it changes fit.</li>
+      </ul>
+
+      <h2>A finish clause that survives an audit</h2>
+      <ol>
+        <li><strong>Substrate and grade.</strong> Name the steel and the hardness range, then reference the product standard the part is built to.</li>
+        <li><strong>Process, not adjective.</strong> "Nickel-chrome electroplated" is checkable; "rust proof" is not.</li>
+        <li><strong>Coating thickness in micrometres,</strong> with the measurement method and the number of points per part.</li>
+        <li><strong>Corrosion test:</strong> standard, method variant, duration in hours, and the acceptance criterion — for example, no red rust on functional surfaces after the stated hours, with scribe creep limited in millimetres.</li>
+        <li><strong>Inspection surfaces.</strong> State whether the criterion applies to the whole part or to functional surfaces only. This single sentence prevents most finish disputes.</li>
+        <li><strong>Sampling and evidence.</strong> Batch size, sample size, and whether a third-party report is required per lot or per shipment.</li>
+        <li><strong>Traceability.</strong> Heat or lot marking that lets a claim be traced back to a plating line, not just to a factory.</li>
+      </ol>
+      <p>None of these clauses is exotic. Together they turn a finish from a matter of opinion into a measurable acceptance criterion, which is what a distributor needs when a container arrives and the chrome looks different from the sample. For the tools themselves, the same logic applies to the <a href="/products/TH-001">dual-mode extendable ratchet handle</a>, the <a href="/products/TH-020">professional workshop tool set</a> and the <a href="/products/TH-036">long-handle breaker bar</a>: the finish is specified in the same document as the torque rating, or it is not specified at all.</p>
+
+      <h2>The one-line conclusion</h2>
+      <p>Salt spray hours are a method plus a duration plus an acceptance criterion. Quote all three, on the part where the buyer can see them, and the number stops being marketing and starts being a quality record.</p>
+    `,
+    relatedProducts: ["TH-001", "TH-020", "TH-036"],
+    seoTitle: "Hand Tool Plating & Salt Spray Spec: ASTM B117 vs ISO 9227",
+    metaDescription: "How to write a private-label hand tool finish clause: ASTM B117 parameters, ISO 9227 differences, plating choices for Cr-V and Cr-Mo, and acceptance criteria."
+  },
+  {
     slug: "wheel-hub-bearing-removal-puller-guide",
     title: "Wheel Hub and Bearing Removal: Puller, Separator or Press — Which Tool Actually Frees a Seized Hub",
     date: "Oct 30, 2026",
