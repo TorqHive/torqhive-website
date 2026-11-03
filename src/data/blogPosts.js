@@ -10,6 +10,317 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "impact-socket-wear-inspection-and-retirement",
+    title: "When to Retire an Impact Socket: Wear Signs, Clearance Trade-offs and What Impact Rated Really Certifies",
+    date: "Nov 03, 2026",
+    category: "Material & Engineering",
+    readTime: "9 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-073/hero-web.webp",
+    excerpt: "A cracked socket is the easy case. The expensive one still looks serviceable but has lost its grip, rounds a fastener, and turns a routine job into an extraction. Here is how to inspect a socket, when to retire it, and what a purchase order should require when it says impact rated.",
+    tags: [
+      "impact socket wear",
+      "when to replace impact sockets",
+      "impact rated socket",
+      "ASME B107.110",
+      "socket inspection"
+    ],
+    content: `
+      <h2>The question is never really about the socket</h2>
+      <p>In <a href="https://www.reddit.com/r/Tools/comments/1wpmfs8/impact_sockets/">a recent r/Tools thread simply titled "Impact sockets"</a>, a user with 1/2 in. impact sockets already in the box asks whether he needs a second set in 3/8 in. for a Milwaukee M12 FUEL ratchet. A reply in the thread answers with a rule of thumb rather than a spec: "So long as you are not doing full send unga bunga on bolts bigger than 14mm you should be fine. I have seen sockets crack never explode."</p>
+      <p>That is the right answer to the wrong question, which is why the thread keeps coming back. The ratchet is not an impact wrench: it has no hammer mechanism delivering repeated shock, so the socket is loaded in torsion rather than struck. But the same drawer then gets used with a cordless impact driver, and the distinction collapses. The useful question is not "do I need impact sockets" but "what is this socket certified to survive, and how do I know when it has stopped surviving it".</p>
+      <p>The other side of the same coin is <a href="https://www.reddit.com/r/Tools/comments/1k51685/remember_to_use_impact_rated_sockets/">"Remember to use impact rated sockets"</a>, posted with a photograph of a split Bosch impact socket: "Fourth time I'm using this socket for removing lug nuts. Thankfully it was impact rated. It was a bit expensive Bosch impact socket too." Impact rating did not prevent the failure. It changed the failure from a shattering event into a split, which is the entire point of the material choice.</p>
+
+      <h2>What impact rated actually certifies</h2>
+      <p>In the US market, socket wrenches, handles and attachments are covered by ASME B107.110. The 2012 edition is a redesignation and consolidation of seven earlier standards, including B107.2, which covered power drive (impact) sockets. The practical effect for a buyer is that hand sockets and impact sockets now sit under one document, with separate performance requirements inside it, instead of under a confusing set of part numbers.</p>
+      <p>The physical differences that meet those requirements are consistent across manufacturers:</p>
+      <ul>
+        <li><strong>Alloy.</strong> Impact sockets are normally made from chrome-molybdenum steel rather than the chrome-vanadium used for hand sockets. Cr-Mo trades some surface hardness for toughness, so a shock load produces deformation instead of fragmentation. Our <a href="/blog/cr-v-vs-cr-mo-steel-selecting-the-right-alloy">Cr-V versus Cr-Mo comparison</a> covers the metallurgy.</li>
+        <li><strong>Wall section.</strong> Impact sockets are thicker and usually have a more generous fillet at the drive end, because the square drive corners are where a shock-loaded socket initiates a crack.</li>
+        <li><strong>Finish.</strong> Black oxide or phosphate rather than decorative chrome. Chrome plating is hard and brittle, and a plated impact socket can flake rather than deform.</li>
+        <li><strong>Marking.</strong> Size, drive, and usually the alloy or the word impact. A socket with no impact marking and a bright chrome finish is a hand socket regardless of what the listing says.</li>
+      </ul>
+      <p>None of that makes an impact socket immortal. It defines the failure mode the designer accepts: yielding and splitting at the end of life rather than exploding mid-job.</p>
+
+      <h2>Six ways a socket reaches the end of its life</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Sign</th><th>What has happened</th><th>Risk if it stays in service</th><th>Action</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Split at the drive-end corners</td><td>Crack initiated at the highest stress concentration and propagated under shock</td><td>Sudden loss of drive; fragments under load</td><td>Retire immediately, do not weld or grind</td></tr>
+            <tr><td>Opening out of round or "swole"</td><td>The hex has yielded; contact has moved from flats to corners</td><td>Rounds the fastener, especially on rusted hardware</td><td>Retire when it rocks on a known-good bolt head</td></tr>
+            <tr><td>Shiny, polished flats inside</td><td>Repeated slip; the socket is skating rather than gripping</td><td>Rounded fastener and a false diagnosis of a bad bolt</td><td>Compare against a new socket of the same size</td></tr>
+            <tr><td>Rounded or chipped square drive</td><td>Wear from reversing load and from a worn anvil</td><td>Socket rocks on the tool, detent no longer holds, control is lost</td><td>Retire; inspect the anvil for matching wear</td></tr>
+            <tr><td>Pitting or flaking on working surfaces</td><td>Corrosion has removed material and created stress raisers</td><td>Crack initiation hidden under the coating</td><td>Retire if pitting reaches the hex flats</td></tr>
+            <tr><td>Blue or purple discoloration</td><td>Torch heat has destroyed the temper</td><td>The socket is now the wrong hardness for any duty</td><td>Retire, even if it looks otherwise sound</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A trade checklist published by <a href="https://tengtoolsusa.com/es/blogs/news/when-to-replace-sockets">Teng Tools in October 2026</a> makes the same points in a service context and adds two that are easy to miss: a socket that has been run on an impact tool despite being a hand socket should be inspected even if it looks acceptable, and a socket that was hammered onto an oversized fastener or used as a punch has been altered in ways that are not visible.</p>
+
+      <h2>The thirty-second inspection that actually gets done</h2>
+      <p>Inspection routines fail when they require equipment. This one requires a rag, a light and one known-good socket of the same size:</p>
+      <ol>
+        <li><strong>Wipe and look inside.</strong> Corrosion and embedded grit are visible before any dimensional change is.</li>
+        <li><strong>Look at the drive end first.</strong> Cracks start at the square corners, not at the hex opening, because that is where the section change is sharpest.</li>
+        <li><strong>Fit it to a new bolt or a spare socket's hex.</strong> A worn socket rocks; a good one seats with minimal play. This is more reliable than eyeballing the opening.</li>
+        <li><strong>Check retention on the tool.</strong> If the detent no longer holds and the socket drops off an extension, the drive end has worn and the socket is a hazard overhead.</li>
+      </ol>
+      <p>The comparison step matters because socket wear is gradual and the eye normalises it. A socket that has opened by a few tenths of a millimetre still looks like a socket, and still works on a clean, new fastener, which is exactly why it survives until it meets a rusted one.</p>
+
+      <h2>Clearance versus strength is a real trade, not marketing</h2>
+      <p>Thin-wall and low-profile sockets exist because modern wheel and brake assemblies leave no room for a standard wall. The trade is unavoidable: removing wall section reduces the section modulus, so the same alloy at the same hardness will yield at a lower torque and crack sooner under shock.</p>
+      <p>That is acceptable when the tool is sold for the job it was designed for, and it is not acceptable when a thin-wall socket is used for breakaway on a corroded fastener. Two rules keep the trade honest:</p>
+      <ul>
+        <li><strong>Match the socket to the phase of the job.</strong> Use the thin-wall or nano socket for the fastener that has no clearance, and a standard-wall impact socket for the breakaway, where access usually allows it.</li>
+        <li><strong>Do not use a thin-wall socket with a long breaker bar.</strong> The bar multiplies torque without changing the socket's capacity, and the failure is a split at the drive end with no warning click.</li>
+      </ul>
+      <p>Our guide to <a href="/blog/thin-wall-impact-sockets-wheel-clearance">thin-wall impact sockets and wheel clearance</a> covers the measurement method for deciding when a standard wall will not fit.</p>
+
+      <h2>Why sockets fail in the first week of a new job</h2>
+      <p>The returns pattern in this category is predictable, and it is rarely a metallurgy problem. Three causes account for most early failures:</p>
+      <ul>
+        <li><strong>Hand socket on an impact tool.</strong> Chrome-vanadium at hand-socket hardness is brittle under shock. The failure is a split or a fragment, and the user often reports "the socket exploded".</li>
+        <li><strong>Undersized adapter or extension.</strong> A 1/2 in. to 3/8 in. adapter is the weakest link in the chain, and a shock load that the socket could survive will twist the adapter's square drive instead.</li>
+        <li><strong>Wrong drive size for the torque.</strong> A 3/8 in. socket on a 1/2 in. anvil through an adapter concentrates load on a smaller square and changes the load path the socket was designed for.</li>
+      </ul>
+      <p>For a distributor, those three causes are also the first three questions in a warranty claim. A socket that split at the drive end after a week is a duty question, not a quality question, and answering it with a replacement rather than a diagnosis guarantees the same claim next month.</p>
+
+      <h2>What a purchase order should specify</h2>
+      <p>"Impact rated" on a carton is a claim. A purchase order can turn it into a requirement:</p>
+      <ul>
+        <li>The standard and edition the socket is tested to, stated on the label and in the catalogue.</li>
+        <li>Base material with a grade, plus a mill certificate per heat, not a generic "Cr-Mo" claim.</li>
+        <li>Hardness band with a test location, because surface hardness and core hardness are different numbers and both matter.</li>
+        <li>Proof or fatigue test regime, and whether it is per batch or per design.</li>
+        <li>Minimum wall thickness at the hex and at the drive end, with a tolerance. This is the dimension that quietly shrinks when a supplier chases clearance.</li>
+        <li>Finish specification with a salt spray figure, using the method in our <a href="/blog/hand-tool-plating-salt-spray-test-spec">plating and salt spray guide</a>.</li>
+        <li>Individual replacement availability for the sizes that wear fastest, which are usually the wheel sizes.</li>
+      </ul>
+      <p>A <a href="/products/TH-073">32-piece 1/2 in. drive Cr-Mo impact socket set</a> with universal joint and extensions is the kind of line item that makes those questions concrete, because the set contains the accessories that fail alongside the sockets. For tighter spaces, a <a href="/products/TH-042">low-profile nano impact socket set</a> covers the clearance cases without pretending to be a breakaway tool.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>Impact rating changes the failure mode from shattering to splitting. It does not make a socket permanent.</li>
+        <li>Inspect the drive end first; that is where cracks start.</li>
+        <li>Compare fit against a known-good socket, not against memory.</li>
+        <li>Retire on any crack, any out-of-round opening, any rounded drive, or any heat discoloration.</li>
+        <li>Thin-wall sockets are a clearance tool, not a breakaway tool.</li>
+        <li>Specify standard, material, hardness, wall thickness and finish on the PO, or accept whatever the carton claims.</li>
+      </ol>
+      <p>The cheapest socket in the drawer is the one that fails on a fastener you can still reach. The most expensive is the one that fails on a fastener you cannot.</p>
+    `,
+    relatedProducts: ["TH-073", "TH-042", "TH-006"],
+    seoTitle: "When to Replace Impact Sockets: Wear Signs and Impact Rating | TorqHive",
+    metaDescription: "How to inspect impact sockets for cracks, swaging and drive wear, when to retire them, and what 'impact rated' should mean on a purchase order."
+  },
+  {
+    slug: "locking-wheel-nut-removal-without-key",
+    title: "Locking Wheel Nut Removal Without the Key: Clearance, Collars and the Order of Attack",
+    date: "Nov 03, 2026",
+    category: "Workshop Practice",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-048/hero-web.webp",
+    excerpt: "A wheel lock is not a rusted nut. It is a hardened, low-clearance fastener with a pattern drive, and on some cars a free-spinning collar that defeats every extractor sold for the job. The order you attack it in decides whether you lose a nut or a wheel.",
+    tags: [
+      "locking wheel nut removal",
+      "lost wheel lock key",
+      "lug nut extractor socket",
+      "McGard wheel lock",
+      "wheel nut torque"
+    ],
+    content: `
+      <h2>The two-in-the-morning version of the problem</h2>
+      <p>In <a href="https://www.reddit.com/r/AskAMechanic/comments/1wc7pmp/help_please_lugnut_lock_not_letting_me_swap_my/">"HELP please Lugnut Lock not letting me swap my daughters tires"</a> a parent is trying to change a tyre on a 2012 Mini Cooper S before driving back to Boston. The lock key is gone, the BMW dealer cannot supply one in time, and the replies split into four camps within a day: hammer a deep socket over the lock, buy a lug nut extractor kit, weld a nut onto it, or take it to a tyre shop that keeps master keys.</p>
+      <p>Two replies in that thread are worth more than the rest. One notes that this particular lock has a <strong>security collar</strong> and "cannot be extracted with any standard extraction socket". Another points out that there is "not enough room around that locking lug to use any kind of extractor". Those two sentences describe the whole job: a wheel lock is a clearance problem before it is a torque problem.</p>
+      <p>The second thread is what happens when clearance is ignored. In <a href="https://www.reddit.com/r/autorepair/comments/1lgy5sy/bolt_remover_broke_off_in_locking_wheel_nut_now/">"Bolt remover broke off in locking wheel nut. Now what?"</a> the extractor has sheared inside the lock, which is the outcome that converts a twenty-minute job into a wheel-and-stud replacement.</p>
+
+      <h2>Three lock families, three different failure modes</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Family</th><th>What the outside looks like</th><th>What defeats the usual extractor</th><th>First move</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>External spline (e.g. SplineDrive style)</td><td>Many fine external teeth, roughly nut-sized</td><td>Teeth shear before the socket bites, especially if a previous fitter used an impact gun</td><td>Correct spline key, then a hammer-on extractor only if the teeth are intact</td></tr>
+            <tr><td>Internal pattern (star, flower, hex socket)</td><td>Recessed pattern in the nut face</td><td>The pattern strips; the remaining shell is hard and thin</td><td>Key code lookup, then dealer or tyre-shop master set</td></tr>
+            <tr><td>Pattern with free-spinning collar</td><td>A smooth ring around the pattern that turns independently</td><td>The collar spins under any socket, so no extractor can develop grip</td><td>Key only. Welding or destructive removal is the fallback</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The collar is the detail that separates a solvable job from an expensive one, and it is why "buy an extractor kit" is not universal advice. A collar is designed to do exactly what it does to a thief, and it does not distinguish between a thief and a technician with a broken key.</p>
+
+      <h2>Measure the recess before buying anything</h2>
+      <p>An extractor socket works by interference: its internal flutes are driven onto the nut and bite as torque is applied. That requires the socket body to fit inside the wheel's nut recess, with enough depth for the flutes to reach the lock. On a steel wheel with a deep recess, a standard extractor may not reach. On an alloy with a narrow counterbore, the extractor may not enter at all.</p>
+      <p>Three measurements decide the method before any hammer comes out:</p>
+      <ul>
+        <li><strong>Recess diameter</strong> at the wheel face, compared with the outside diameter of the smallest extractor that will grip the lock.</li>
+        <li><strong>Recess depth</strong> from the wheel face to the lock face, compared with the length of the extractor's fluted section.</li>
+        <li><strong>Lock diameter across the pattern</strong>, which sets the extractor size. Too large and it bottoms on the wheel; too small and it never bites.</li>
+      </ul>
+      <p>If the numbers do not work, stop. A die grinder and a chisel on an alloy wheel cost more than a dealer visit, and a welded nut on a stud that also carries the wheel load is a heat input next to a hub bearing.</p>
+
+      <h2>The order of attack</h2>
+      <ol>
+        <li><strong>Find or reconstruct the key.</strong> The registration card, the glovebox, the spare-wheel well and the pouch behind the trim are the first places to look. McGard registers key codes free of charge for exactly this reason, and a dealer or a busy tyre shop usually holds a master set it will try for a fee far below a wheel.</li>
+        <li><strong>Try the master set.</strong> Pattern locks are made in a limited number of codes per market, so a tyre shop's tray of keys is often faster than any tool. This is the step most DIY threads skip.</li>
+        <li><strong>Hammer-on extractor, if the clearance allows.</strong> Use a sacrificial socket or a dedicated lug nut extractor with reverse flutes. Seat it square, drive it on with a brass drift rather than a steel hammer on the wheel, then use a breaker bar with steady force. An impact gun on an unseated extractor spins it and polishes the nut.</li>
+        <li><strong>Weld a nut or a bar onto the lock.</strong> Effective on a steel wheel and on locks without a collar, but the heat goes into the stud, the hub and the bearing. Treat it as a method for a wheel that is coming off anyway.</li>
+        <li><strong>Destructive removal.</strong> Drilling out the stud or splitting the nut is the last step, and it ends with a new stud, a new nut and sometimes a new wheel. It belongs in a shop with the wheel supported, not at the roadside.</li>
+      </ol>
+      <p>The sequence is deliberately ordered by cost and by reversibility. Each step that removes material makes the next step harder, and the extractor that breaks inside the lock (the second thread above) closes off the drilling option because the fragment is harder than the drill.</p>
+
+      <h2>Installation rules that prevent the whole job</h2>
+      <p>McGard's own <a href="https://www.quadratec.com/sites/default/files/installation_instructions/McGard-Wheel-Lock-Install-Instructions.pdf">wheel lock installation instructions</a> are short, and each line maps onto a failure seen in the threads:</p>
+      <ul>
+        <li><strong>One lock per wheel.</strong> Four locks per wheel multiplies the problem and adds nothing to security.</li>
+        <li><strong>Locks are the last fastener tightened and the first loosened.</strong> That single rule keeps the lock out of the load path during breakaway.</li>
+        <li><strong>No impact gun for installation.</strong> The instructions state plainly that impact installation "may cause over tightening resulting in difficulty of removal and permanent damage to the lock and key", and that over-tightening can damage brake rotors and wheel seats.</li>
+        <li><strong>Torque to the vehicle manufacturer's figure</strong>, not to a generic number, and keep the key pattern squarely engaged with direct inward pressure while tightening.</li>
+        <li><strong>Re-torque after 25 miles (40 km)</strong>, the same settling check that applies to any newly installed lug nut or bolt.</li>
+        <li><strong>Do not lubricate the threads</strong>, and register the key code so the next owner is not the person starting this article's first thread.</li>
+      </ul>
+      <p>That last point is a product-design issue as much as a service one. A lock sold without a code card, or with a code that cannot be replaced, is a security product that creates a maintenance liability. Distributors who ask for a registration program and a spare-key SKU get fewer angry phone calls than those who do not.</p>
+
+      <h2>What a shop or distributor should keep on the shelf</h2>
+      <p>The commercial case for stocking removal tooling is that it converts a lost-key emergency into a billable service instead of a referral. Four items cover most of it:</p>
+      <ul>
+        <li>A <a href="/products/TH-048">10-piece damaged lug nut and bolt extractor impact set</a>, sized to cover the common lock and nut diameters, with reverse flutes that bite rather than cam out.</li>
+        <li><a href="/products/TH-044">Non-marring wheel protector lug nut sockets</a> for routine service, because the most common cause of a damaged lock is a steel socket on an alloy wheel.</li>
+        <li>A <a href="/products/TH-036">long-handle breaker bar</a> for steady breakaway force, which is what an extractor needs and what an impact gun cannot provide once the nut is chewed.</li>
+        <li>A <a href="/products/TH-062">preset torque limiting bar</a> for installation, so the next removal does not start with an over-tightened lock.</li>
+      </ul>
+      <p>For a private-label range, the specification question is not "how many pieces" but "which lock families and recess depths does this kit actually reach". A set that cannot enter a deep alloy recess is a set that will be returned after its first Mini or BMW.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>Identify the lock family first, and look for a free-spinning collar. If there is one, extractors are not the answer.</li>
+        <li>Measure recess diameter and depth against the extractor before buying or hammering.</li>
+        <li>Work the ladder in order: key code, master set, hammer-on extractor, weld, destructive removal.</li>
+        <li>Never install a lock with an impact gun, and re-torque after 40 km.</li>
+        <li>Register the key code, and keep a spare key. The cheapest removal is the one that never happens.</li>
+      </ol>
+      <p>A locking wheel nut is a security device that has to survive being serviced. Treat the removal as a clearance problem and the installation as a torque problem, and the roadside scenario stops being a crisis.</p>
+    `,
+    relatedProducts: ["TH-048", "TH-044", "TH-036", "TH-062"],
+    seoTitle: "Locking Wheel Nut Removal Without a Key: Tools and Order of Attack | TorqHive",
+    metaDescription: "How to remove a locking wheel nut when the key is lost: collar types that defeat extractors, clearance measurements, and the correct escalation order."
+  },
+  {
+    slug: "torque-wrench-range-selection-20-100-percent",
+    title: "Torque Wrench Range Selection: Why the 20-100% Band Decides Which Wrench You Buy",
+    date: "Nov 03, 2026",
+    category: "Buying Guide",
+    readTime: "9 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-043/hero-web.webp",
+    excerpt: "Most torque wrench buying mistakes are capacity mistakes, not brand mistakes: a 250 ft-lb wrench asked to set 18 ft-lb, or a 200 in-lb wrench asked to do a whole engine. The accuracy claim usually starts at 20% of full scale, and that single number should decide the purchase.",
+    tags: [
+      "torque wrench range",
+      "torque wrench accuracy",
+      "ISO 6789",
+      "inch pound torque wrench",
+      "torque wrench selection"
+    ],
+    content: `
+      <h2>The thread that starts with a bicycle crank and ends with a car</h2>
+      <p>In <a href="https://www.reddit.com/r/Tools/comments/1ur0wb3/torque_wrench_uk_for_varied_uses_from_cycles_to/">"Torque wrench (UK) - for varied uses from cycles to potentially cars."</a> a home mechanic lays out the problem in one paragraph: a SRAM crank needs 54 Nm, the usual bicycle bolts need around 6 Nm, and he may later work on cars. That is a nine-to-one spread, and he is asking whether one wrench can cover it. A reply in the thread states the rule the catalogue never prints: <a href="https://www.reddit.com/r/Tools/comments/1ur0wb3/torque_wrench_uk_for_varied_uses_from_cycles_to/">"The industry standard is to spec the accuracy in the upper 80% of the max range, and for the other 20% you're rolling the dice."</a></p>
+      <p>The same confusion appears in <a href="https://www.reddit.com/r/MechanicAdvice/comments/1lab7w1/quick_question_about_digital_torque_wrench/">a r/MechanicAdvice question about digital torque wrench accuracy</a>, where the poster has read that digital tools are "similar to the mechanical ones (20-100%)" and cannot work out what the percentage refers to, and in <a href="https://www.reddit.com/r/MechanicAdvice/comments/1hqsw8a/torque_wrench_ranges/">"Torque Wrench Ranges"</a>, where a user is assembling a 1/4 in. wrench that stops at 16 ft-lb plus a 1/2 in. wrench covering 50-250 ft-lb and is unsure whether the middle is covered.</p>
+      <p>All three threads are the same question wearing different clothes: what is the usable range of a torque wrench, as distinct from the numbers printed on its scale?</p>
+
+      <h2>What the standard actually promises</h2>
+      <p>ISO 6789-1:2017 sets the requirements for hand torque tools and separates indicating tools (Type I, which display the torque reached) from setting tools (Type II, which signal a preset torque, the classic click wrench). Clause 5.1.5 defines the maximum permissible deviation for the declared torque, and <a href="https://www.norbarusa.com/Portals/0/CL305%20-%20NORBAR%20STANDARD%20CALIBRATION%20TERMS%20FOR%20NEW%20PRODUCT.pdf?ver=2020-02-27-083844-780">Norbar's published calibration terms</a> describe how a laboratory reports against it: tools are assessed against a claimed maximum deviation of 2%, 3%, 4% or 6% "over a range of [e.g. 10%-100%] of full scale", with the standard's own default being 4% or 6% depending on tool type and maximum torque.</p>
+      <p>The important sentence in that document is the one about the bottom of the scale. If a tool satisfies the requirement at 20% of full scale and above but not below, the certificate carries an extra note saying so. That is the technical origin of the familiar advice: the accuracy claim is a band, not a point, and the band normally starts at 20% of capacity.</p>
+      <p>Two consequences follow for anyone specifying or buying:</p>
+      <ul>
+        <li><strong>A 40-250 ft-lb wrench is a 50-250 ft-lb instrument</strong> for accuracy purposes. The 40-50 ft-lb slice of the dial exists, but it sits outside the band the manufacturer is claiming.</li>
+        <li><strong>A wide-range wrench is not a substitute for two wrenches.</strong> Widening the scale pushes the 20% floor up in absolute terms, which is exactly backwards from what a user with small fasteners needs.</li>
+      </ul>
+
+      <h2>The floor, expressed in fasteners</h2>
+      <p>Convert the rule into the jobs a workshop actually does and the failure mode becomes obvious. The table below takes common capacities and shows where the accuracy band begins, not where the scale begins.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Wrench capacity</th><th>20% floor</th><th>Typical fastener that falls below the floor</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>200 in-lb (22.6 Nm)</td><td>40 in-lb</td><td>Small engine covers, plastic trim screws at 20-30 in-lb</td></tr>
+            <tr><td>100 ft-lb (135 Nm)</td><td>20 ft-lb</td><td>Spark plugs at 11-18 ft-lb, valve cover bolts at 8-10 ft-lb</td></tr>
+            <tr><td>250 ft-lb (340 Nm)</td><td>50 ft-lb</td><td>Caliper brackets at 30-40 ft-lb, most M8 and M10 chassis fasteners</td></tr>
+            <tr><td>600 Nm</td><td>120 Nm</td><td>Wheel nuts at 110-140 Nm sit right at the edge</td></tr>
+            <tr><td>1000 Nm</td><td>200 Nm</td><td>Anything on a passenger car</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The last two rows are why heavy-truck torque tools and passenger-car torque tools are different product lines rather than a size upgrade. A 1 in. drive 200-1000 Nm wrench is the correct instrument for a commercial wheel nut at 600 Nm and the wrong instrument for a 25 Nm bracket bolt, no matter how carefully it is used.</p>
+
+      <h2>A worked example: the spark plug</h2>
+      <p>Take a plug specified at 16 ft-lb. That is 192 in-lb, and the two obvious wrenches behave very differently:</p>
+      <ol>
+        <li><strong>3/8 in. drive, 10-100 ft-lb.</strong> 16 ft-lb is 16% of capacity, below the 20% floor. The tool may well be accurate, but the manufacturer is not claiming it, and the click on a wrench this far down the scale is also the least distinct.</li>
+        <li><strong>1/4 in. drive, 20-200 in-lb.</strong> 192 in-lb is 96% of capacity. Inside the band, but at the very top, where there is no headroom for a slightly mis-set scale or a stiff mechanism.</li>
+        <li><strong>1/4 in. drive, 30-250 in-lb.</strong> 192 in-lb is 77% of capacity. This is the boring, correct answer, and it is why inch-pound wrenches exist as a category rather than as a smaller version of a ft-lb wrench.</li>
+      </ol>
+      <p>Note how the same fastener moves from "below the band" to "at the ceiling" to "comfortably inside" without changing the torque spec at all. Range selection is the variable.</p>
+
+      <h2>Build a set backwards from the fasteners</h2>
+      <p>The practical method is to list the torque values you actually tighten, not the tools you like. Then choose capacities so that every value lands between 20% and 80% of one wrench, and so that adjacent wrenches overlap by roughly a factor of two. The overlap is what stops a fastener from falling into the dead zone between two tools.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Layer</th><th>Working band</th><th>Covers</th><th>TorqHive reference</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Precision small</td><td>10-50 in-lb</td><td>Trim, small engine, electronics, bicycle 4-6 Nm work</td><td><a href="/products/TH-050">1/4 in. drive micrometer torque screwdriver</a></td></tr>
+            <tr><td>General automotive</td><td>40-250 ft-lb</td><td>Wheel nuts, suspension, caliper brackets, driveline</td><td><a href="/products/TH-043">1/2 in. drive split-beam click wrench</a></td></tr>
+            <tr><td>Commercial / heavy</td><td>100-600 Nm</td><td>Light truck and bus wheel systems, chassis</td><td><a href="/products/TH-083">3/4 in. drive preset click wrench</a></td></tr>
+            <tr><td>Industrial</td><td>200-1000 Nm</td><td>Plant and fleet fasteners above M24</td><td><a href="/products/TH-084">1 in. drive heavy-duty preset wrench</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A set built this way has an obvious gap in the 250-600 ft-lb region unless a 3/4 in. tool is added, and that is a real gap rather than an accident of the table: it is the band where a torque multiplier or a larger drive size becomes the sensible answer instead of a longer 1/2 in. wrench. Our guide to <a href="/blog/torque-multiplier-vs-impact-wrench-high-torque">torque multipliers versus impact wrenches</a> covers where that handover belongs.</p>
+
+      <h2>Three unit traps that produce real over-torque</h2>
+      <ul>
+        <li><strong>Setting a converted value on a dual scale.</strong> One ft-lb is 1.356 Nm, and one in-lb is 0.113 Nm. A spec of 100 Nm is 73.8 ft-lb, not 74 rounded down to the nearest mark on a coarse scale. On a wrench with 5 ft-lb graduations, that rounding is already a few percent.</li>
+        <li><strong>Converting in the wrong direction.</strong> Multiplying by 1.356 when the spec is in Nm and the tool is in ft-lb over-tightens by 84%. This is the single most common arithmetic error in a workshop, and it is invisible on the tool.</li>
+        <li><strong>Reading the top of the scale as the working range.</strong> A 250 ft-lb wrench used at 245 ft-lb has no reserve for break-over overshoot and is at the end of its mechanical travel. Leave headroom at both ends.</li>
+      </ul>
+
+      <h2>Accessories change the number, not the band</h2>
+      <p>An extension bar does not change the torque delivered in a straight line, but a crowfoot, a swivel or an offset adaptor changes the lever arm and therefore the setting. The correction arithmetic is set out in our guide to <a href="/blog/torque-adapter-extension-swivel-correction">torque adapters, extensions and swivels</a>. What matters here is that accessories also consume accuracy: a flexible joint stores energy and releases it unevenly, so a fastener that was already at 18% of scale is now being tightened by a system with two sources of error rather than one.</p>
+      <p>If a workshop needs to prove a wrench is still inside its band, the check is a comparison against a reference, not a pull against a bolt. A bench instrument such as the <a href="/products/TH-092">100 Nm torque wrench calibration tester</a> turns the question into a number at 20%, 60% and 100% of scale, which is the same three-point pattern a calibration laboratory uses. Our article on <a href="/blog/torque-wrench-calibration-frequency-and-verification">calibration frequency and verification</a> covers how often that check is worth doing.</p>
+
+      <h2>What a distributor should print in the catalogue</h2>
+      <p>Buyers comparing torque wrenches by maximum capacity are comparing the least useful number on the page. A specification table that answers these questions sells the tool and reduces returns:</p>
+      <ul>
+        <li>What is the <strong>accuracy band</strong>, stated separately from the scale? "40-250 ft-lb scale, accuracy 4% from 50-250 ft-lb" is an honest line.</li>
+        <li>Which <strong>standard and class</strong> is claimed, and is there a certificate in the box?</li>
+        <li>Is the graduation fine enough for the fasteners the market actually uses? A 250 ft-lb wrench with 5 ft-lb steps cannot set a 22 ft-lb fastener even if it were inside the band.</li>
+        <li>Are <strong>repair parts</strong> available, and is the tool re-calibratable rather than disposable?</li>
+        <li>Does the range table show the <strong>overlap</strong> with the next tool in the line, so a buyer can assemble a set instead of guessing?</li>
+      </ul>
+      <p>For a private-label program, that table is also the difference between a tool that generates calibration complaints and one that generates repeat orders. The <a href="/blog/oem-private-label-hand-tool-sourcing-guide">private-label sourcing guide</a> covers the documentation side of the same problem.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>Read the accuracy band, not the scale. It normally starts at 20% of full scale.</li>
+        <li>Convert the band into fasteners before buying, and check the smallest and largest value you will actually tighten.</li>
+        <li>Build a set with roughly 2x overlap between adjacent wrenches, and accept that one wrench cannot span 6 Nm to 54 Nm.</li>
+        <li>Keep the target between 20% and 80% of capacity, with headroom at the top for break-over overshoot.</li>
+        <li>Get the units right before the wrench leaves the box; a reversed conversion is a 1.84x error.</li>
+      </ol>
+      <p>A torque wrench is a measuring instrument with a handle. Buying one by its maximum number is like buying a multimeter by its highest range and then wondering why it cannot read millivolts.</p>
+    `,
+    relatedProducts: ["TH-043", "TH-050", "TH-083", "TH-092"],
+    seoTitle: "Torque Wrench Range Selection: The 20-100% Accuracy Band | TorqHive",
+    metaDescription: "Why a torque wrench is only accurate from 20% to 100% of full scale, how ISO 6789-1 defines the band, and how to choose capacities that cover your fasteners."
+  },
+  {
     slug: "brake-caliper-wind-back-tool-selection",
     title: "Brake Caliper Wind-Back Tools: Push, Screw or Service Mode — Matching the Tool to the Caliper",
     date: "Nov 02, 2026",
