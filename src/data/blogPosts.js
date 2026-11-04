@@ -10,6 +10,280 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "thread-pitch-identification-unc-unf-metric-coarse-fine",
+    title: "Thread Pitch Identification: Reading UNC, UNF and Metric Coarse and Fine Before You Chase or Replace a Thread",
+    date: "Nov 04, 2026",
+    category: "Material & Engineering",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-060/hero-web.webp",
+    excerpt: "Most stripped-thread and wrong-nut complaints start with a designation that carried the diameter and dropped the pitch. Here is how to identify UNC, UNF and metric coarse or fine threads with a caliper and a gauge, where the dangerous near-misses are, and what a purchase order has to state.",
+    tags: [
+      "thread pitch identification",
+      "UNC vs UNF",
+      "metric coarse vs fine thread",
+      "thread pitch gauge",
+      "thread chaser"
+    ],
+    content: `
+      <h2>"12 mm" is a diameter, not a specification</h2>
+      <p>Thread questions arrive at the same point every time. Someone has a fastener in their hand, a caliper on the bench, and a nut that will not go on. In <a href="https://www.reddit.com/r/machining/comments/1nhfaxf/what_thread_size_is_this/">a recent r/machining thread titled "What thread size is this?"</a> the reply that actually identifies the part is not a diameter: <em>"M5 fine thread pitch is 0.5 mm (M5-0.5). I would check to see if any compressed air fittings or hydraulic fittings thread on. Screw thread gauge."</em></p>
+      <p>The same pattern appears in <a href="https://www.reddit.com/r/machining/comments/zcaj2y/help_trying_to_identify_a_bolt/">"Help trying to identify a bolt"</a>, where the advice is to buy the gauge rather than guess: <em>"I'd recommend a pitch gage for both metric and UN threads. Size and pitch are close but there is no overlap when it comes to screws and threads."</em> And in <a href="https://www.reddit.com/r/machining/comments/1lm50ht/help_out_a_fellow_mechanic/">"Help out a fellow mechanic"</a>, the diagnosis is tactile: <em>"Invest in a thread pitch gauge. you should be able to tell (by feel) if the nut won't go on because of an incorrect thread size/pitch."</em></p>
+      <p>For a workshop that is a five-minute inconvenience. For a distributor it is a returned carton, a credit note, and a customer who now believes the thread chaser you sold him is badly made. Most of those claims are not manufacturing defects. They are a designation that carried the diameter and dropped the pitch.</p>
+
+      <h2>One profile, two ways of counting</h2>
+      <p>Unified inch threads and ISO metric threads share the same 60-degree basic profile. The difference is the counting convention: the Unified Thread Standard states threads per inch and defines pitch as its reciprocal, while ISO metric states pitch directly in millimetres. A complete designation therefore needs three parts, not one: diameter, pitch, and series or tolerance class. That is the difference between <strong>1/4-20 UNC 2B</strong> and <strong>M8x1.25 6g</strong> and a line on a packing list that says "8 mm nut".</p>
+      <p>The profile geometry is worth keeping in your head because it explains the shop-floor rules. Thread height is 0.866 times the pitch, thread depth is 0.54125 times the pitch, and the major-to-minor diameter difference is roughly 1.0825 times the pitch. That last figure is why the tap drill rule works: drill size is approximately major diameter minus pitch. It also explains why a thread that is "nearly right" is simply wrong. At M12, one step in pitch is 0.25 mm, which is more than enough for a nut to start and then jam.</p>
+
+      <h2>The series, in the sizes workshops actually meet</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Series</th><th>Designation</th><th>Pitch / TPI</th><th>Where it turns up</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>UNC (coarse)</td><td>1/4-20, 5/16-18, 3/8-16, 7/16-14, 1/2-13, 9/16-12, 5/8-11</td><td>20, 18, 16, 14, 13, 12, 11 TPI</td><td>General inch fasteners, brackets, body hardware</td></tr>
+            <tr><td>UNF (fine)</td><td>1/4-28, 5/16-24, 3/8-24, 7/16-20, 1/2-20, 9/16-18, 5/8-18</td><td>28, 24, 24, 20, 20, 18, 18 TPI</td><td>Wheel studs and lug hardware, suspension, high-vibration joints</td></tr>
+            <tr><td>Metric coarse</td><td>M6, M8, M10, M12, M14, M16</td><td>1.0, 1.25, 1.5, 1.75, 2.0, 2.0 mm</td><td>Default metric hardware, engine and chassis bolts</td></tr>
+            <tr><td>Metric fine</td><td>M8, M10, M12, M14</td><td>1.0 or 0.75; 1.25 or 1.0; 1.5 or 1.25; 1.5 mm</td><td>Wheel bolts, thin-wall sections, adjustment fittings</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The metric fine column is where most catalogue errors live. ISO 262 lists two fine pitches for several diameters, so "M12 fine" is not a single thread: 1.5 mm and 1.25 mm are both standard, and neither is the coarse 1.75 mm. If a drawing says "M12 fine" and nothing else, it is not a specification yet.</p>
+
+      <h2>Where the near misses are</h2>
+      <p><strong>5/16-18 UNC against M8x1.25.</strong> The major diameters are 7.9375 mm and 8.0000 mm, a difference of 0.0625 mm, about 0.0025 in. The pitches are 1.411 mm and 1.25 mm. An M8 nut will start on a 5/16 stud and bind within a turn, and the mechanic reads that as a damaged thread and reaches for a tap. This pair causes more unnecessary thread cutting than any other in light automotive work.</p>
+      <p><strong>1/4-20 against 1/4-28.</strong> Identical diameter, two pitches. The coarse nut catches on the first fine thread and then stops, which feels exactly like cross-threading.</p>
+      <p><strong>M12 coarse against M12 fine.</strong> 1.75 mm against 1.5 or 1.25 mm. Same 12 mm diameter, three nuts that are not interchangeable.</p>
+      <p><strong>1/2-20 is UNF, not UNC.</strong> Many wheel studs use 1/2-20, and buyers who assume "half inch coarse" order a 1/2-13 nut that will not even start. The <a href="/blog/wheel-bolt-thread-engagement-and-lug-nut-torque">thread engagement rules for wheel hardware</a> assume the correct series as a starting point.</p>
+      <p><strong>Pre-1967 Japanese metric.</strong> JIS metric threads did not follow ISO pitches until April 1967: M8 was 1.0 mm, M10 was 1.25 mm, and M12 was 1.5 mm. On older Japanese machines and motorcycles, a metric nut of the right diameter can still be the wrong nut, and no amount of chasing will fix the mismatch.</p>
+
+      <h2>Measure it in ninety seconds</h2>
+      <ol>
+        <li><strong>Major diameter over the threads.</strong> Use a caliper across the thread crests, not the unthreaded shank, and take the reading where the thread is least worn. For inch fasteners under 1/4 in., the number series applies; for everything else the inch fraction or millimetre value is the nominal size.</li>
+        <li><strong>Pitch, not thread count, if you are metric.</strong> Seat a metric pitch gauge in the thread and find the leaf that sits flush across several turns. If you have no gauge, measure across ten pitches with a caliper and divide by ten.</li>
+        <li><strong>TPI if you are inch.</strong> Count the thread crests in one inch, or measure the pitch and take the reciprocal. A 1/2-20 stud has 20 crests per inch, a pitch of 0.050 in.</li>
+        <li><strong>Confirm with a known nut or bolt.</strong> Thread it on by hand. If it goes two turns and stops, you have the wrong pitch, not a damaged thread. This is the step that separates a measurement from a guess.</li>
+        <li><strong>Check direction and taper.</strong> Left-hand threads exist on fan clutches, some wheel studs, and adjustment links. Pipe threads are tapered and seal on the thread; a bolt thread is parallel. Neither will behave like the other.</li>
+      </ol>
+      <p>One caution on the caliper reading: treat it as a band rather than an exact number. A worn external thread measures under nominal, and a plated thread can measure over it. The pitch gauge and the known-good nut are what confirm the series.</p>
+
+      <h2>Chase, don't cut</h2>
+      <p>Once the thread is identified, the repair decision matters more than the measurement. A thread chaser reforms deformed material back into the original profile. A tap cuts material out. On a wheel hub, a caliper bracket, or any joint that carries preload, cutting means removing the material that was holding the fastener. Our guide to <a href="/blog/stripped-thread-repair-chaser-tap-helicoil-solid-insert">thread chasers, taps, Heli-Coil and solid inserts</a> covers when each is legitimate; the short rule is that a chaser is a cleaning tool and a tap is a machining operation.</p>
+      <p>A dedicated chaser set also solves the identification problem in the sizes that matter most on a car. The <a href="/products/TH-060">four-piece wheel stud thread chaser and restorer kit</a> is made in M12 x 1.5 and M14 x 1.5, the two fine pitches used on most modern passenger-car wheel hardware, and it restores a rolled-over stud nose without removing metal from the shank. For holding a wheel on the hub while you work, the <a href="/products/TH-059">M14 x 1.5 wheel hanger alignment pins</a> are threaded to the same specification, which is a useful reminder that a hanger pin and a lug bolt must share a pitch, not just a diameter.</p>
+
+      <h2>What belongs on the drawing and the purchase order</h2>
+      <ul>
+        <li><strong>Full designation, including series and class.</strong> "M12x1.5 6g" or "1/2-20 UNF 2A". Class 2 is the common commercial fit in inch threads; class 6g is the usual external metric fit.</li>
+        <li><strong>The gauging system.</strong> ASME B1.3 defines acceptance gauging for inch and metric threads. If a supplier cannot say which system is used, the inspection is cosmetic.</li>
+        <li><strong>Thread length and runout.</strong> A stud that is 5 mm short on thread is a different part, and it is the dimension most often missing from a drawing.</li>
+        <li><strong>Material grade and coating.</strong> Grade and coating interact: a <a href="/blog/metric-bolt-grade-markings-8-8-vs-10-9-vs-12-9">10.9 stud</a> with a thick zinc flake coating changes the pitch diameter, and a coating callout without a thickness is not testable. Use a <a href="/blog/hand-tool-plating-salt-spray-test-spec">salt spray specification</a> if corrosion is the requirement.</li>
+        <li><strong>Direction.</strong> Left-hand threads must be marked on the part and on the carton. A left-hand stud in a right-hand bin is a warranty claim waiting for a delivery date.</li>
+        <li><strong>For studs and inserts, the grip features.</strong> Knurl diameter, shoulder length and head diameter belong on the same drawing as the thread, because the stud is a press fit with a thread on the end, not a bolt.</li>
+      </ul>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>A diameter without a pitch is half a specification.</li>
+        <li>UTS counts threads per inch; ISO metric states pitch in millimetres. Both share the same 60-degree profile.</li>
+        <li>Tap drill is roughly major diameter minus pitch, which is a useful check on a designation.</li>
+        <li>The dangerous pairs are 5/16-18 against M8x1.25, 1/4-20 against 1/4-28, and M12 coarse against M12 fine.</li>
+        <li>1/2-20 is UNF. Pre-1967 JIS metric does not match ISO coarse.</li>
+        <li>Confirm with a pitch gauge and a known-good nut before any tool touches the thread.</li>
+        <li>Chase to restore, tap to cut. Put the series, class, length and coating on the PO.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-060", "TH-059", "TH-048"],
+    seoTitle: "Thread Pitch Identification: UNC, UNF and Metric Coarse vs Fine | TorqHive",
+    metaDescription: "How to identify UNC, UNF and metric coarse or fine threads with a caliper and pitch gauge, the near-miss pairs that cause returns, and what to specify on a PO."
+  },
+  {
+    slug: "wheel-stud-replacement-knurl-fit-and-press",
+    title: "Wheel Stud Replacement: Knurl Fit, Hub Access and the Install Method That Does Not Damage the Bearing",
+    date: "Nov 04, 2026",
+    category: "Workshop Practice",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-059/hero-web.webp",
+    excerpt: "A wheel stud is a press fit with a thread on the end, and the knurl diameter decides whether it holds or spins. Here is how to measure the fit, which install method is safe, when the hub has to come off, and what a stud purchase order should specify.",
+    tags: [
+      "wheel stud replacement",
+      "wheel stud knurl diameter",
+      "press fit wheel stud",
+      "broken lug stud",
+      "wheel hub access"
+    ],
+    content: `
+      <h2>The part that is not a bolt</h2>
+      <p>The first question in <a href="https://www.reddit.com/r/AcuraTL/comments/1eo6qpk/broken_wheel_stud_need_a_press/">an r/AcuraTL thread on a broken wheel stud</a> is the right one: <em>"Do i have to have a press to replace a wheel stud?"</em> The answer depends on the hub, and it sets the whole job. A wheel stud is not threaded into the hub. It is a headed pin with a knurled shank pressed into a plain bore, and the thread on the outboard end only clamps the wheel.</p>
+      <p>That distinction explains the two failure reports that come up most often. In <a href="https://www.reddit.com/r/MechanicAdvice/comments/1ebdw5l/wheels_stud_broke_offhelp/">r/MechanicAdvice, a stud on a bolt-on spacer snapped</a> and the owner could not find a replacement with the same base diameter: <em>"one of them snapped and I can't find the same diameter base ones."</em> And in <a href="https://www.reddit.com/r/AskMechanics/comments/1njxi03/how_do_i_take_these_wheel_studs_off/">r/AskMechanics</a>, the access answer is blunt: <em>"You have to remove the bearing to replace them."</em> Both are knurl-and-access problems, not thread problems.</p>
+
+      <h2>What the knurl is doing</h2>
+      <p>The knurled section is the interference element. When the stud is pressed in, the ridges bite into the hub bore and the resulting radial pressure plus friction carries the reaction torque when the lug nut is tightened or a corroded nut is broken loose. The head or shoulder seats against the back of the flange and sets the installed depth.</p>
+      <p>Two field reports show what happens when the fit is wrong, in opposite directions:</p>
+      <ul>
+        <li><strong>Too small.</strong> In <a href="https://www.reddit.com/r/MechanicAdvice/comments/1mg6uyi/1575mm_serrated_knurl_into_1590mm_wheel_hub_hole/">r/MechanicAdvice</a>, an owner wants to fit studs with a 15.75 mm serrated knurl into a hub bore measured at 15.90 mm. That is a clearance fit, not an interference fit. The stud will press in by hand and spin under the first nut.</li>
+        <li><strong>Too large, or too few ridges.</strong> In <a href="https://www.reddit.com/r/askcarguys/comments/1pk9mx3/my_longer_studs_have_a_slightly_larger_diameter/">r/askcarguys</a>, longer studs arrive 0.3 mm larger in diameter with fewer knurl ridges than the originals. Oversize means drilling the hub, and fewer ridges means less material to bite: the same nominal diameter is not the same fit.</li>
+      </ul>
+      <p>The lesson for a buyer is that a wheel stud is specified by its grip features, not only by its thread. Two studs can share a 1/2-20 UNF thread, a 10.9 grade and a 3 in. length and still not be interchangeable, because the knurl diameter, ridge count and shoulder length differ.</p>
+
+      <h2>Five dimensions to measure before ordering</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Dimension</th><th>How to measure it</th><th>Why it decides the job</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Thread size and pitch</td><td>Pitch gauge plus caliper over the threads</td><td>1/2-20 UNF is common on US hubs; M12 x 1.5 and M14 x 1.5 on metric hubs. Wrong pitch will not take the original nut</td></tr>
+            <tr><td>Knurl diameter</td><td>Caliper across the knurl crests, not the grooves</td><td>Sets the interference. A stud smaller than the bore will spin; a larger one needs the bore opened</td></tr>
+            <tr><td>Knurl type and ridge count</td><td>Count ridges, note serrated or splined</td><td>Same diameter with fewer ridges grips less and distorts the bore differently</td></tr>
+            <tr><td>Shoulder length</td><td>From under the head to the start of the knurl</td><td>Sets installed depth and whether the stud bottoms before the head seats</td></tr>
+            <tr><td>Overall length and head diameter</td><td>Caliper, end to end</td><td>Decides open or closed lug nut, and whether the stud clears the wheel pocket</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Measure the hub bore as well, with the caliper rotated to two positions 90 degrees apart, because a worn or distorted bore is not round. If the replacement knurl is not clearly larger than the largest of those readings, the fit is wrong regardless of what the catalogue says. Our <a href="/blog/thread-pitch-identification-unc-unf-metric-coarse-fine">thread pitch identification guide</a> covers the thread half of the measurement.</p>
+
+      <h2>Three ways to seat a stud, ranked</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Method</th><th>What it does</th><th>Risk</th><th>Verdict</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Hydraulic press with a proper support collar</td><td>Pushes the head square, load axial, no torque on the stud</td><td>Needs the hub off the vehicle in most cases; wrong support can bend the flange</td><td>First choice where the hub can be removed</td></tr>
+            <tr><td>Draw-in with washers and an open lug nut</td><td>Pulls the stud into the bore using its own thread</td><td>Stretches the thread, galling, cocking if not started square, and bearing damage if heat is used</td><td>Acceptable in situ with clean, lubricated washers and a slow, straight pull</td></tr>
+            <tr><td>Hammer</td><td>Shock loads the head</td><td>Brinells the bearing races, bends the stud, cracks the flange</td><td>Not a method</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The draw-in method is the one that gets used because the hub often stays on the car. It works if three things are true: the stud starts square in the bore, the washers are hardened and lubricated so the nut turns on the washer rather than galling the stud, and the pull stops when the head seats. Continuing to run an impact gun after the head seats does not make the fit tighter; it stretches the stud and loads the bearing.</p>
+      <p>Owners who fit longer race studs report that the hub bore sometimes has to be opened up first, and that the knurl diameter is the reason. That is a machining decision, not an installation technique: opening the bore reduces the interference that holds the stud, so the correct replacement is the one whose knurl matches the bore, not the one that is closest in the catalogue.</p>
+
+      <h2>Access is the part nobody quotes</h2>
+      <p>A front hub on many vehicles has a relief in the backing plate or knuckle that lets a stud pass out the back. A rear hub on a front-wheel-drive car frequently does not, and the hub and bearing assembly has to come off. That changes the job from twenty minutes to a bearing replacement, and it is why a flat-rate quote for "replace one stud" is not a real quote until someone has looked at the back of the hub.</p>
+      <p>Two small tools make the difference on the in-situ version. A <a href="/products/TH-059">wheel hanger alignment pin</a> holds the wheel or rotor on the hub while both hands are free, and a <a href="/products/TH-060">thread chaser in the correct fine pitch</a> cleans the stud nose before the nut goes on, so the draw-in pull starts on clean threads rather than on rust. When a nut is already rounded or seized, the <a href="/products/TH-048">damaged lug nut and bolt extractor impact set</a> removes it without cutting into the stud you are trying to save.</p>
+
+      <h2>After the stud is seated</h2>
+      <ul>
+        <li><strong>Torque to the vehicle specification, not to a stud specification.</strong> The stud does not carry its own torque figure; the joint does. Use a wrench that has been <a href="/blog/torque-wrench-calibration-frequency-and-verification">verified against a known standard</a>.</li>
+        <li><strong>Look for the witness marks.</strong> A shiny ring around the knurl means the stud has been rotating in the bore: insufficient interference, and it will do it again. A crack radiating from the stud hole in the flange means the bore was overloaded.</li>
+        <li><strong>Re-check after the first drive cycle.</strong> Seating settles, and a stud that was not fully home will show as a loose nut before it shows as a lost wheel.</li>
+        <li><strong>Confirm thread engagement.</strong> The nut must engage enough full threads for the joint, which is a separate check from torque; the <a href="/blog/wheel-bolt-thread-engagement-and-lug-nut-torque">engagement rules for wheel hardware</a> cover the count.</li>
+      </ul>
+
+      <h2>What a stud purchase order should specify</h2>
+      <ul>
+        <li><strong>Grade and material.</strong> Class 10.9 is the common automotive grade, frequently in a chrome-molybdenum or SCM435-type steel. Ask for the grade mark and the mill certificate, not the word "high tensile".</li>
+        <li><strong>Knurl diameter with a tolerance band</strong>, plus ridge count and knurl type. A nominal diameter without a tolerance is not an inspection criterion.</li>
+        <li><strong>Shoulder length and installed depth</strong>, with the head style called out.</li>
+        <li><strong>Thread class</strong>, for example 1/2-20 UNF 2A, and the gauging method.</li>
+        <li><strong>Coating and corrosion performance</strong>, specified by test hours rather than colour. Zinc flake, phosphate and plain oiled finishes behave very differently on a wheel that sees road salt.</li>
+        <li><strong>Proof load or tensile test per batch</strong>, with traceability to the heat number. A stud is a safety part, and the batch record is what a distributor has when a claim arrives two years later.</li>
+      </ul>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>A wheel stud is a press fit with a thread on the end. The thread does not hold it in the hub.</li>
+        <li>The knurl diameter and ridge count decide whether it holds or spins. 15.75 mm into a 15.90 mm bore is a clearance fit.</li>
+        <li>Measure thread, knurl, ridge count, shoulder length, overall length, and the hub bore itself.</li>
+        <li>Press is best, draw-in is acceptable if it starts square and stops at the seat, hammer is not a method.</li>
+        <li>Access decides the labour: some hubs need the bearing removed.</li>
+        <li>Torque belongs to the vehicle, not the stud, and the re-check after the first drive is part of the job.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-059", "TH-060", "TH-048"],
+    seoTitle: "Wheel Stud Replacement: Knurl Fit, Press vs Draw-In and Hub Access | TorqHive",
+    metaDescription: "How wheel stud knurl diameter and shoulder length decide fit, which install method is safe, when the hub must come off, and what to specify when sourcing studs."
+  },
+  {
+    slug: "air-tool-lubrication-oil-grease-maintenance-schedule",
+    title: "Air Tool Lubrication: Oil, Grease and the Maintenance Schedule That Actually Prevents Pneumatic Impact Failure",
+    date: "Nov 04, 2026",
+    category: "Workshop Practice",
+    readTime: "9 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-096/hero-web.webp",
+    excerpt: "Pneumatic tools have two lubrication circuits, and most failures come from feeding one and starving the other. Here is what oil goes where, how often the hammer case needs checking, how to read the exhaust for over-oiling, and how a distributor should triage a warranty return.",
+    tags: [
+      "air tool lubrication",
+      "pneumatic tool maintenance",
+      "impact wrench oil",
+      "air line lubricator",
+      "air tool warranty"
+    ],
+    content: `
+      <h2>Two questions, and an answer that is not "more oil"</h2>
+      <p>Two threads on the same subject keep appearing within weeks of each other. In <a href="https://www.reddit.com/r/Tools/comments/1vha2tv/do_i_need_to_oil_any_pneumatic_tool/">r/Tools, a new owner asks whether pneumatic tools need oil at all</a>, and the reply is unambiguous: <em>"Air tools need oiled and they use air tool oil. Don't use motor oil, household oil, etc. in them. The owners manual will tell you how much."</em> A few weeks earlier, <a href="https://www.reddit.com/r/Tools/comments/1cxetme/how_do_i_know_if_i_am_overoiling_my_air_tools/">a mechanic of one year asks how to tell if he is over-oiling</a>, having built an eight-month routine around an AirCat 1150 impact and a second air tool. And in <a href="https://www.reddit.com/r/MechanicAdvice/comments/fdhbqj/stupid_question_but_how_often_yall_oil_your_air/">r/MechanicAdvice the frequency question</a> gets the field answer: <em>"You should oil an air tool once a day, or when you use it. Whatever is less."</em></p>
+      <p>All three are asking about the same thing from different ends, and the honest answer is that "oil it daily" is only half a maintenance schedule. A pneumatic impact wrench has two separate lubrication circuits, and putting oil in the wrong one, or only in one, produces the failures that get blamed on the tool.</p>
+
+      <h2>Two circuits, not one</h2>
+      <p><strong>The air motor and the bearings</strong> are lubricated by oil carried in the air stream. A few drops into the inlet before the hose goes on coats the rotor, the vanes and the front and rear bearings as the tool runs. This is the circuit the daily routine addresses.</p>
+      <p><strong>The impact mechanism</strong> is a sealed hammer case with its own oil or grease charge and a fill plug. It does not see the inlet oil mist in any useful quantity, which is why it has a separate service interval. Ingersoll Rand's maintenance guidance for pneumatic impact wrenches is explicit: <a href="https://irtoolhelp.ingersollrand.com/hc/en-us/articles/360013919553-Maintaining-and-Lubricating-a-Pneumatic-Impact-Wrench">after each 48 hours of operation, remove the oil plug screw and check the oil level in the impact mechanism</a>, topping up or draining and refilling as required. A tool that gets three drops every morning and never has its hammer case checked is being maintained on one circuit out of two.</p>
+      <p>This is also why "it has oil in it" is not a diagnosis. An impact wrench that rattles but will not break a lug nut loose can be oil-starved at the motor, low on oil in the hammer case, or simply short of air. The three have different fixes and only one of them is a lubricant.</p>
+
+      <h2>What oil is actually specified</h2>
+      <p>Air tool oil is a light, low-viscosity oil with a solvent component that lifts gum and carries it out of the exhaust. Milton lists its conventional pneumatic tool oil as an <a href="https://miltonindustries.com/products/high-performance-conventional-pneumatic-tool-oil-sae-10w-iso-32">SAE 10W, ISO 32 grade</a>. Champion Chisel describes the target as a 10W-20 oil, <a href="https://championchisel.com/blog/air-tool-oil-what-to-use-and-how-to-keep-your-pneumatic-tools-alive/">light enough to travel with the air and heavy enough to cling to internal surfaces and carry moisture out the exhaust</a>.</p>
+      <p>That combination is what engine oil does not do. A 15W-40 diesel oil is far too viscous to atomise at the inlet, its detergent package is designed for a pressurised circulating system rather than a once-through total loss path, and it leaves a film that collects grit. The r/Tools advice not to substitute motor oil or household oil is the correct reading of the specification, not brand loyalty.</p>
+      <p>Over-oiling is a real fault, not a myth. The symptoms are consistent: a fine oil mist at the exhaust that coats the workpiece and the floor, oil weeping past the seals, and a sticky, varnished feel in the rotor chamber as the excess combines with dust. If the tool smokes on start-up and the exhaust port is wet, the dose is too large. Two or three drops at the inlet before a session is the field norm; a lubricator on the air line replaces the manual dose and is easier to get wrong in the other direction, because a lubricator set too high delivers oil continuously.</p>
+
+      <h2>The failure chain, read from the exhaust</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Symptom</th><th>Most likely cause</th><th>What it damages first</th><th>Fix</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Dry exhaust, low power, hot housing</td><td>No inlet oil, or oil too heavy to atomise</td><td>Rotor vanes and rear bearing</td><td>Correct oil, few drops per session</td></tr>
+            <tr><td>Wet exhaust, oil mist on the work</td><td>Over-oiling or lubricator set too high</td><td>Seals, then the rotor chamber as grit sticks</td><td>Reduce dose; clean the chamber</td></tr>
+            <tr><td>Rattle but no torque</td><td>Low oil in the hammer case</td><td>Hammer and anvil faces</td><td>Check level at the plug, top up to spec</td></tr>
+            <tr><td>Brown varnish, vanes stuck</td><td>Wrong oil or long service without flushing</td><td>Vane slots, then compression</td><td>Flush with air tool oil, reseat or replace vanes</td></tr>
+            <tr><td>Water droplets from the exhaust</td><td>No water trap; condensate in the line</td><td>Bearings and steel internals, rust</td><td>Filter-regulator at the tool, drain the tank</td></tr>
+            <tr><td>Grit in the exhaust, scoring</td><td>Dirty line or open coupler on a dirty floor</td><td>Rotor and cylinder wall</td><td>Filter, clean couplers, cap the inlet</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Water is the other half of the problem</h2>
+      <p>Compressed air arrives saturated. As it expands through the tool it cools, and the water that drops out lands on the same bearings the oil is supposed to protect. Oil and water do not cancel each other: an oil film over a wet bearing still rusts from underneath. A filter-regulator at the point of use, a drained tank, and a drip leg on the drop are worth more than a larger oil dose.</p>
+      <p>The supply side also sets the tool's behaviour in ways that get misread as lubrication faults. A tool that is starved of volume runs slow and hot and sounds dry, and no amount of oil fixes a 1/4 in. hose feeding a 1/2 in. impact. Our guide to <a href="/blog/air-supply-impact-wrench-cfm-vs-psi">air supply, CFM and pressure at the tool</a> covers the measurement, and the <a href="/blog/pneumatic-quick-coupler-interchange-standards">coupler interchange guide</a> covers the restriction that a mismatched plug introduces at the same joint.</p>
+
+      <h2>Warranty triage: five checks before you accept a return</h2>
+      <p>For a distributor, lubrication is usually the difference between a defect and a duty claim, and the evidence is available in the first two minutes:</p>
+      <ol>
+        <li><strong>Ask how it was oiled.</strong> The answer "I didn't know it needed oil" ends most investigations. Record it, because the same customer will return the replacement.</li>
+        <li><strong>Look at the exhaust and the inlet screen.</strong> Dry and clean points to starvation; wet and gritty points to over-oiling or a dirty line.</li>
+        <li><strong>Check the hammer case level at the plug.</strong> A dry hammer case on a tool with visible external wear is a maintenance history, not a manufacturing fault.</li>
+        <li><strong>Inspect the rotor vanes.</strong> Worn but dry vanes indicate oil starvation. Varnished and stuck vanes indicate the wrong oil. Broken vanes with a scored cylinder indicate ingestion.</li>
+        <li><strong>Check the air inlet thread and coupler for damage.</strong> Cross-threaded inlet fittings and mismatched couplers are installation issues that show up as "low power".</li>
+      </ol>
+
+      <h2>Specifying the accessories on a pneumatic line</h2>
+      <ul>
+        <li><strong>Coupler interchange, not just thread size.</strong> A 1/4 in. body exists in several incompatible profiles, and the plug that "fits" may be the one that leaks. Specify the interchange standard, not the nominal size.</li>
+        <li><strong>Hose bore and length.</strong> Pressure at the tool is a function of flow and restriction. A long 1/4 in. hose on a 1/2 in. impact is a lubrication-adjacent failure because the tool runs hot and dry.</li>
+        <li><strong>Filtration and lubrication at the point of use.</strong> A filter-regulator-lubricator unit, or at minimum a filter-regulator plus manual oiling, is the difference between a tool that lasts and a tool that is replaced.</li>
+        <li><strong>Service parts availability.</strong> Vanes, bearings and hammer case seals are consumables. A distributor who can supply them keeps the account after the tool is out of warranty.</li>
+        <li><strong>Instructions in the box.</strong> The r/Tools thread exists because the manual did not survive the first week. A one-page lubrication card with the dose and the hammer case interval prevents a category of returns that costs more than the card.</li>
+      </ul>
+      <p>The accessories that make a line serviceable are unglamorous, which is why they are worth specifying properly. A <a href="/products/TH-096">five-piece C-style pneumatic quick coupler set with 8 mm hose tail</a> gives a consistent joint at every drop, an <a href="/products/TH-097">aluminium adjustable air blow gun with brass nozzle</a> handles the cleaning that keeps grit out of couplers, and a <a href="/products/TH-098">400 cc pneumatic grease gun</a> covers the chassis and bearing work that shares the same air line. None of them lubricate an impact wrench, and all of them belong on the same purchase order as the oil.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>Two circuits: oil mist for the motor and bearings, a separate charge in the hammer case.</li>
+        <li>Two or three drops at the inlet per session; check the hammer case level at the plug on the manufacturer's interval, which for Ingersoll Rand impact wrenches is every 48 hours of operation.</li>
+        <li>Use air tool oil at roughly ISO 32 / SAE 10W. Engine oil is the wrong viscosity and the wrong additive package.</li>
+        <li>Wet exhaust and oil mist mean too much oil; dry exhaust and a hot housing mean too little.</li>
+        <li>Water in the line defeats oil. Filter, drain and trap before increasing the dose.</li>
+        <li>Low power is as often a CFM or coupler problem as a lubrication problem.</li>
+        <li>Put the coupler standard, hose bore and service parts on the PO, and put a lubrication card in the box.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-096", "TH-097", "TH-098"],
+    seoTitle: "Air Tool Lubrication: Oil vs Grease and the Real Maintenance Schedule | TorqHive",
+    metaDescription: "How pneumatic impact wrenches are lubricated: inlet oil for the motor, a separate hammer case charge, the right oil grade, over-oiling symptoms and warranty triage."
+  },
+  {
     slug: "impact-socket-wear-inspection-and-retirement",
     title: "When to Retire an Impact Socket: Wear Signs, Clearance Trade-offs and What Impact Rated Really Certifies",
     date: "Nov 03, 2026",
