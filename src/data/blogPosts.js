@@ -10,6 +10,197 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "manual-impact-driver-jis-screws-cam-out",
+    title: "Manual Impact Driver and JIS Screws: Why Cross-Head Screws Cam Out, and the Order of Attack That Saves Them",
+    date: "Nov 05, 2026",
+    category: "Workshop Practice",
+    readTime: "11 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-068/hero-web.webp",
+    excerpt: "A rotor retaining screw, a motorcycle case cover and a carburettor bowl all fail the same way: a shallow cross recess, a tapered bit and ten years of galvanic corrosion. Here is what a struck impact driver does that a cordless one cannot, where JIS and Phillips geometry actually differ, and the sequence that removes the screw before the head is gone.",
+    tags: [
+      "manual impact driver",
+      "JIS vs Phillips screws",
+      "cam out",
+      "stuck screw removal",
+      "brake rotor retaining screw"
+    ],
+    content: `
+      <h2>The screw is not the problem. The recess is.</h2>
+      <p>Every workshop has a version of this job: a brake rotor retaining screw on a Japanese car, a case cover screw on a motorcycle engine, a carburettor bowl screw that has been in place since the Clinton administration. The threads are usually fine. The problem is that the only thing connecting your hand to a threadlocked M6 screw is a cross-shaped recess a few millimetres deep, and the bit that goes into it is tapered.</p>
+      <p>The trade has converged on the same answer. In <a href="https://www.reddit.com/r/mechanics/comments/1dvzqjx/that_rotor_screw/">a r/mechanics thread titled "That rotor screw"</a>, the reply is blunt: <em>"Just whack the rotor hat over the screw with a hammer. That's usually enough to loosen them. a GOOD impact driver and bit."</em> In <a href="https://www.reddit.com/r/HondaCB/comments/8c2p1u/seized_and_stripped_screws/">r/HondaCB's "Seized and stripped screws"</a> the advice is a sequence rather than a tool: <em>"Always use a manual impact driver before the screw does more than slightly strip. Also always make sure you are using a JIS Phillips as opposed..."</em> And in <a href="https://www.reddit.com/r/Fixxit/comments/j9s7jw/how_do_i_get_these_screws_out/">r/Fixxit</a> the diagnosis arrives with the remedy: <em>"You need a JIS scewdriver (Japanese Industrial Screws), although you may be beyond that now. You might get them with an impact screwdriver."</em></p>
+      <p>Two different things are being said there, and they are usually conflated. One is about the <strong>tool</strong> — a struck driver instead of a spinning one. The other is about the <strong>bit</strong> — a JIS profile instead of a Phillips. They solve different halves of the problem, and mixing them up is how a good screw becomes a drilled one.</p>
+
+      <h2>What a struck impact driver does that a cordless one cannot</h2>
+      <p>A manual impact driver contains a helical cam between the bit holder and the body. The bit is held in the removal direction, the cap is struck with a hammer, and the cam converts part of that axial blow into a short, high-force rotation — a fraction of a turn, not a revolution. Three things happen at once:</p>
+      <ul>
+        <li><strong>Axial load seats the bit.</strong> The blow drives the tip into the recess instead of letting it climb out of it.</li>
+        <li><strong>The rotation arrives as an impulse.</strong> The fastener sees a shock load rather than a torque build-up, which is what breaks a threadlocker film or a corrosion bond.</li>
+        <li><strong>The workpiece gets a shock too.</strong> That is why the same blow that frees the screw can also crack a plastic cover if the part is unsupported.</li>
+      </ul>
+      <p>A cordless impact driver does none of this. It delivers rotational impacts through a 1/4 in. hex shank, with no axial preload, into a recess that was never designed for impact torque. On a shallow cross recess that is the worst available combination: the bit chatters, the flanks round over, and the head is gone before the thread has moved. The tool is not weak. It is pointed the wrong way for the job. The same distinction runs through the <a href="/blog/impact-driver-vs-impact-wrench-hex-vs-square-drive">hex versus square drive comparison</a>: hex is for driving screws into material, square drive is for turning fasteners that are already tight.</p>
+
+      <h2>Two cross recesses, one bit shape</h2>
+      <p>The Japanese cross recess is defined in <strong>JIS B 1012</strong> (cross recesses for screws), and cross-recessed head screws are covered by <strong>JIS B 1111:2017</strong>. The driver is a separate standard: <strong>JIS B 4633:1998</strong>, cross-head screwdrivers, whose correspondence table lists ISO/DIS 8764-1:1996 and ISO 8764-2:1992 as the related international standards. On the international side, <a href="https://www.iso.org/es/contents/data/standard/02/72/27267.html">ISO 8764-1:2004</a> specifies the shapes, dimensions, technical requirements and torque test methods for the points of hand and machine-operated drivers for cross-recessed head screws. They are not the same document, and that is the first reason a "Phillips" bit is not automatically the right bit.</p>
+      <p>The commonly cited geometric difference is tip angle and flank shape: the JIS profile is described as shallower and flatter at the point, so it seats deeper and bears on more of the flank before it climbs. That is the mechanism behind every "JIS drivers cam out less" claim in the forums.</p>
+      <p>It is also where the argument gets interesting. <a href="https://www.reddit.com/r/dr650/comments/1p0joat/tekton_disproves_the_popular_myths_around_jis_and/">A r/dr650 thread titled "Tekton disproves the popular myths around JIS and Philips"</a> pushes back on the folklore, and the argument worth repeating to a customer is this one: <em>"The real problem is cheap, crappy Philips screwdrivers that don't meet any standards, which is what the majority of us have in our 'beginner'..."</em> That is a fair correction. A worn, undersized, unhardened PH2 bit will cam out of a Phillips recess and a JIS recess equally well.</p>
+      <p>So hold both facts. Geometry matters, and a JIS-profile bit is the correct starting point on Japanese hardware. But <strong>fit and condition matter more than the label.</strong> A new, correctly sized JIS bit beats a worn one every time, and a PH2 that actually measures to standard will often remove a JIS screw that a dollar-store bit has already chewed.</p>
+
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Recess</th><th>Defined by</th><th>Driver that fits</th><th>Where it turns up</th><th>What the wrong bit does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Phillips (PH)</td><td>Cross recess with tapered flanks; driver points covered by ISO 8764-1</td><td>PH0 to PH4, matched to screw size</td><td>General assembly, US and European vehicles, appliances</td><td>Rides up under torque and rounds the upper flanks</td></tr>
+            <tr><td>JIS cross</td><td>JIS B 1012 recess, JIS B 1111 screws, JIS B 4633 drivers</td><td>JIS +1, +2, +3, often sold as "JIS PH2"</td><td>Japanese cars and motorcycles, brake rotor retaining screws, case covers, carburettor bowls</td><td>Sits high in the recess, contacts only the top of the flanks, strips the corners first</td></tr>
+            <tr><td>Pozidriv (PZ)</td><td>Cross recess with four additional ribs between the arms</td><td>PZ1 to PZ4 only</td><td>European furniture, appliance panels, some cabinetry hardware</td><td>PH bit bottoms on the ribs, does not seat, and shears them off</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>One field note on identification: JIS cross-head screws are often said to carry a small dot or dimple on the head, and the JIS B 1012 head diagram does show an identifying dimple. Treat it as a hint, not a test. Plenty of original screws carry no mark, plenty of aftermarket replacements copy the mark without the geometry, and a 30-year-old fastener may have been replaced twice. Seating the bit and feeling for rock is more reliable than reading the head.</p>
+
+      <h2>The order of attack</h2>
+      <p>Screws are almost never destroyed on the first attempt. They are destroyed on the fourth, after three attempts with the wrong tool have polished the recess into a cone. Work in this order:</p>
+      <ol>
+        <li><strong>Clean the recess.</strong> Pick, brake cleaner, compressed air. Paint, undercoat and rust scale stop the bit from bottoming, and a bit that does not bottom cannot transmit axial load.</li>
+        <li><strong>Seat the bit and check for rock.</strong> If it rocks side to side, it is the wrong profile or it is worn. Stop and change it. This is the highest-value thirty seconds in the job.</li>
+        <li><strong>Apply penetrant and give it time.</strong> Penetrant is not a wrench; it works on the thread interface over minutes to hours. The <a href="/blog/seized-bolt-removal-penetrating-oil-and-heat">seized fastener guide</a> covers what it can and cannot do.</li>
+        <li><strong>Preload, then strike.</strong> Turn the body in the removal direction until it is loaded, hold it square to the screw, and hit the cap once, firmly, with a hammer heavy enough to matter — a 2 to 3 lb drilling hammer rather than a tack hammer. Several light taps mostly work-harden the recess.</li>
+        <li><strong>Support the part.</strong> Rotor hat on the hub, case cover braced against the bench, panel backed with a block. Energy that goes into flexing the workpiece is energy that did not reach the thread.</li>
+        <li><strong>Add heat, carefully.</strong> A heat gun or induction heater on the boss, not a torch aimed at a bearing or a seal. Aluminium expands faster than steel, which is often enough to break the grip on its own.</li>
+        <li><strong>Only now reach for an extractor.</strong> If the recess is already rounded, a <a href="/blog/bolt-extractor-sockets-and-screw-extractors-sizing">screw extractor</a> is the next step, and sizing rules decide whether it works. Drilling is the last resort, not the second.</li>
+      </ol>
+
+      <h2>Where workshops actually lose the screw</h2>
+      <ul>
+        <li><strong>Using the cordless impact driver because it is closer.</strong> No axial load, 1/4 in. hex bit, maximum cam-out. On a JIS case screw this is how a five-minute job becomes a drilled head and a helicoil.</li>
+        <li><strong>Running a worn bit.</strong> Bit wear is invisible until you put it beside a new one. A PH2 that has lost its point will strip a screw that a fresh bit removes in a single blow.</li>
+        <li><strong>Striking off-axis.</strong> The tool must be collinear with the screw. Angled blows bend the bit, gouge the recess wall and transfer almost nothing to the thread.</li>
+        <li><strong>Hammering without support.</strong> The screw does not move, the bracket does, and then the bracket cracks.</li>
+        <li><strong>Substituting a PH bit for a JIS or PZ recess because it fits.</strong> It fits until it is loaded. Then it climbs.</li>
+      </ul>
+
+      <h2>What a distributor should stock, and what belongs on the PO</h2>
+      <p>Manual impact drivers are a low-unit, high-attachment category: the tool sells once, the bits sell repeatedly. The commercial specification is therefore less about the body and more about the consumable interface.</p>
+      <ul>
+        <li><strong>Drive size.</strong> 3/8 in. square covers most automotive and motorcycle work; 1/2 in. suits heavier hardware and larger slotted bits.</li>
+        <li><strong>Bit range in the box.</strong> PH1 to PH3, JIS +1 to +3, and a slotted set. A kit that ships only Phillips bits guarantees the customer comes back for JIS bits after the first Japanese brake job — or leaves a bad review instead.</li>
+        <li><strong>Bit steel and hardness.</strong> Bits are the wear part. A struck tool puts a shock load through a small section, so toughness matters more than peak hardness; S2 tool steel is the usual specification. Ask for the hardness range on the drawing rather than the marketing page, and check it against the known <a href="/blog/torx-hex-bit-sockets-failure-and-specification">bit failure modes</a>.</li>
+        <li><strong>Replaceable bits and a retention method.</strong> Spring clip or magnetic holder, with spare bits as a separate SKU. If the bit cannot be replaced, the whole tool becomes landfill.</li>
+        <li><strong>Body and finish.</strong> A knurled, non-slip body matters because the hand holds the tool while the hammer hits it. Black phosphate or black oxide on the body is normal; decorative chrome on a struck tool is a chipping risk with no functional benefit.</li>
+        <li><strong>Instructions.</strong> A one-page card showing preload direction, the support point and the bit check prevents a measurable share of warranty conversations.</li>
+      </ul>
+      <p>When a customer has already passed the point of no return, the recovery path runs through a <a href="/products/TH-048">damaged bolt and lug nut extractor set</a> while the head still has material to grab, then through thread restoration. The <a href="/products/TH-060">wheel stud thread chaser kit</a> applies the same logic to a stud: reform the thread rather than cut it. And if the only bits in the drawer are 1/4 in. hex, a <a href="/products/TH-095">square-drive-to-hex bit adapter</a> will let you use them — but understand what you are adding. Every adapter joint absorbs part of the blow, and on a struck tool the adapter becomes the weakest link. Prefer one-piece square-drive bits for impact work and keep the adapter for the cordless tools it was designed for.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>A shallow cross recess converts torque into cam-out. That is geometry, not operator error.</li>
+        <li>A manual impact driver wins because it adds axial load and a rotational impulse. A cordless impact driver adds neither.</li>
+        <li>JIS and Phillips are separate standards — JIS B 1012 for the recess, JIS B 4633 for the driver, ISO 8764-1 for the international driver points — but bit condition matters as much as the label.</li>
+        <li>Clean, seat, check for rock, preload, support, strike once firmly. Then heat. Then extract.</li>
+        <li>Stock bits as a consumable line and specify the steel. The tool body is the easy part.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-048", "TH-060", "TH-095"],
+    seoTitle: "Manual Impact Driver and JIS Screws: Why Cross-Head Screws Cam Out | TorqHive",
+    metaDescription: "How a struck manual impact driver beats a cordless tool on JIS and Phillips screws, where the two recess standards actually differ, and the removal order that saves a stripped head."
+  },
+  {
+    slug: "nut-splitter-vs-bolt-extractor-vs-cut-off-wheel",
+    title: "Nut Splitter vs Bolt Extractor vs Cut-Off Wheel: Removing a Seized Nut Without Wrecking the Stud",
+    date: "Nov 05, 2026",
+    category: "Buying Guide",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-048/hero-web.webp",
+    excerpt: "A rusted nut is a different problem from a rounded bolt head, and the tool that rescues one ruins the other. Here is how a nut splitter actually cuts, where the chisel stops working, and how to choose between splitting, extracting and cutting before a stud you cannot replace is damaged.",
+    tags: [
+      "nut splitter",
+      "seized nut removal",
+      "bolt extractor",
+      "rusted fasteners",
+      "stud thread damage"
+    ],
+    content: `
+      <h2>Three tools, three different kinds of damage</h2>
+      <p>The fastener on the bench is usually described as "rounded", but the real problem is more specific. A rusted nut on a stud is not the same failure as a rounded bolt head, even though both end with a tool that will not grip. The difference decides which tool should come out of the box, because each of the three common answers destroys something different:</p>
+      <ul>
+        <li><strong>An extractor socket</strong> destroys the nut's hex and grips what is left. It leaves the stud alone, which is exactly what you want when the stud is a pressed wheel stud or a stud threaded into an expensive casting.</li>
+        <li><strong>A nut splitter</strong> destroys the nut deliberately and leaves the stud intact — if the chisel stops where it should.</li>
+        <li><strong>A cut-off wheel</strong> destroys the nut, the stud, or both, and sometimes the bracket behind them.</li>
+      </ul>
+      <p>The tool is underused for a simple reason: nobody plans for it. <a href="https://www.reddit.com/r/MechanicAdvice/comments/mqdza2/why_does_everyone_forget_nut_splitters/">A r/MechanicAdvice thread titled "Why does everyone forget nut splitters?"</a> puts it plainly: <em>"Every shop I've ever worked in everyone seems to be in shock and awe when I break out a nut splitter for a stubborn nut. Sure it doesn't fit in every..."</em> That last clause is the honest part. A splitter is a narrow-purpose tool with real geometric limits, and knowing those limits is what separates a tool that saves a job from a tool that sits in the drawer.</p>
+      <p>The improvisation it replaces is usually worse. In <a href="https://www.reddit.com/r/MechanicAdvice/comments/8yehk4/need_more_help_with_completely_rounded_nut_on/">a thread about a completely rounded exhaust nut</a>, the suggestion is a grinder slice: <em>"Another solution is if you have a grinder of some sort, you can make a deep vertical slice into the side of the nut."</em> That works. It also puts a cutting disc within a few millimetres of a stud and, on exhaust work, within a few millimetres of a flange face that has to seal.</p>
+
+      <h2>What a nut splitter is actually doing</h2>
+      <p>A mechanical nut splitter is a C-shaped body that hooks around the nut with a hardened chisel bearing on one flat. A screw or a hydraulic ram drives the chisel inward until the nut wall yields and cracks along that flat. The nut loses its hoop strength, the preload disappears with it, and what is left can be pried off. The stud is never gripped, which is the entire point.</p>
+      <p>Range is quoted in nut size, not drive size. The Kukko series 54, for example, is listed for nut sizes 10–27 mm (M6–M18) with two cutting edges — one at each end of the chisel, so the tool can be rotated to a fresh edge when the first dulls. Above that range the hand tool gives way to hydraulic units: Buffalo Hydraulic's HNS series is offered in 15 and 25 ton versions for the nut sizes found on structural and plant hardware, where hand force is no longer realistic.</p>
+      <p>The two-edge detail is worth more attention than it usually gets. The chisel is the wear part, and a splitter with a single non-replaceable edge has a service life measured in a handful of hard nuts. Distributors who stock the tool without stocking the chisel are selling a consumable with no refill.</p>
+
+      <h2>Where the chisel stops working</h2>
+      <p>A splitter needs three things: access to at least one nut flat, room around the nut for the body, and a nut softer than the chisel. Remove any one and the tool cannot do its job.</p>
+      <ul>
+        <li><strong>Flange nuts and captured nuts.</strong> The integrated washer and the surrounding sheet metal leave no flat for the chisel to seat on, and no gap for the split to open into.</li>
+        <li><strong>Nuts in a recess or a counterbore.</strong> The body will not fit, and the split fragments have nowhere to go.</li>
+        <li><strong>Hard nuts.</strong> ISO 898-2 sorts nuts into property classes 04, 05, 6, 8, 10 and 12, and specifies that classes 8, 10 and 12 are quenched and tempered. A class 10 nut is not a class 8 nut with a different stamp; the chisel meets a harder wall, wears faster, and is more likely to chip. A chipped chisel edge is a projectile, which is why eye protection is not optional on this tool.</li>
+        <li><strong>Anything that will still turn.</strong> If a six-point socket and a long breaker bar move the nut, split nothing. The <a href="/blog/breaker-bar-vs-impact-wrench-stuck-bolts">breaker bar versus impact wrench</a> comparison covers how much leverage is reasonable before you conclude the fastener is truly seized.</li>
+        <li><strong>Stainless and galvanic assemblies.</strong> Where the nut has galled onto the stud, the bond can be stronger than the nut wall in shear, and the chisel may deform rather than crack it. Heat first.</li>
+      </ul>
+
+      <h2>Choosing between the three</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Situation</th><th>First choice</th><th>Why</th><th>What it costs</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Hex intact, thread seized</td><td>Correct socket, breaker bar or impact</td><td>Nothing is damaged if the socket fits properly</td><td>Time and leverage</td></tr>
+            <tr><td>Hex rounded, nut accessible, stud must survive</td><td>Extractor socket</td><td>Grips the remaining flats or cuts its own</td><td>The nut, and sometimes a little stud material</td></tr>
+            <tr><td>Nut rusted onto a stud, corners gone, stud is not replaceable</td><td>Nut splitter</td><td>Cuts the nut wall, never grips the stud</td><td>The nut, plus a new nut and a thread chase</td></tr>
+            <tr><td>Flange nut, recessed nut, or no room for the body</td><td>Cut-off wheel or die grinder</td><td>Reaches where no splitter body fits</td><td>Often the stud and the bracket, plus replacement hardware</td></tr>
+            <tr><td>Nut seized to a bracket by corrosion</td><td>Heat first, then re-assess</td><td>Thermal expansion may restore clearance without cutting</td><td>Heat damage to nearby seals, paint or plastics</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The extractor is not automatically the gentler option. A tapered extractor socket applies a radial crushing load as well as torque, and on a thin-wall nut or a hollow stud it can collapse the fastener instead of turning it. The <a href="/blog/bolt-extractor-sockets-and-screw-extractors-sizing">sizing rules for extractors</a> matter more than the brand, and the two ways they fail are predictable.</p>
+
+      <h2>The procedure that protects the stud</h2>
+      <ol>
+        <li><strong>Clean the nut and the stud nose.</strong> Wire brush, then penetrant. A flap disc on a grinder is faster on heavy scale, and it is also how you remove the rust that stops the chisel from seating flat.</li>
+        <li><strong>Seat the chisel on a flat, square to the stud axis.</strong> Not on a corner, and not at an angle. An angled body drives the chisel diagonally into the stud instead of straight through the nut wall.</li>
+        <li><strong>Tighten until the nut cracks, then stop.</strong> The crack is audible and sudden; the resistance drops. Continuing to crank after that point drives the chisel tip toward the stud thread.</li>
+        <li><strong>Check the gap before the final turn.</strong> Once the split opens, the chisel tip is a millimetre or two from the stud. That is the moment to stop and pry rather than to "finish the cut".</li>
+        <li><strong>Pry the nut off along the stud axis.</strong> A cold chisel or a punch on the split, tapped parallel to the stud. Twisting it off with pliers loads the stud in bending, which is how a stud in aluminium becomes a helicoil job.</li>
+        <li><strong>Chase the thread and fit a new nut.</strong> Never reuse a split nut, and never fit a plain nut where the original was a prevailing-torque or flange nut. The <a href="/blog/stripped-thread-repair-chaser-tap-helicoil-solid-insert">thread repair comparison</a> explains why a chaser is the right tool here and a tap is not.</li>
+      </ol>
+
+      <h2>What a distributor should stock</h2>
+      <ul>
+        <li><strong>Range coverage by nut size, with overlap.</strong> Two or three mechanical sizes that cover M6 to M18 will serve most automotive and light industrial accounts; hydraulic units belong in the industrial catalogue, not the trade counter.</li>
+        <li><strong>Spare chisels as a line item.</strong> This is the attachment sale that makes the category worth carrying. If the chisel is not orderable, the tool is a one-time sale with a short life.</li>
+        <li><strong>Two cutting edges, or a replaceable insert.</strong> Both extend service life; state which one the product uses, because buyers assume two edges and are disappointed by one.</li>
+        <li><strong>Body material and finish.</strong> Forged or heat-treated body, black oxide or phosphate finish. A pressed sheet-metal body is a different product class and should be priced and positioned as such.</li>
+        <li><strong>Kit content.</strong> Splitter, spare chisel, and a drift or punch to remove the split nut. A kit that includes the punch sells better at the counter because it answers the second question before it is asked.</li>
+        <li><strong>Safety and instructions.</strong> Eye protection callout, the flat-not-corner rule, and a note that the split nut is scrap. These are the three points that generate returns and complaints when they are missing.</li>
+      </ul>
+      <p>For the jobs where the nut is already beyond a splitter, the practical pairing is an <a href="/products/TH-048">impact-rated damaged nut and bolt extractor set</a> for a head that still has material, a <a href="/products/TH-036">long-handle breaker bar</a> to establish whether the fastener turns at all before anything is cut, and a <a href="/products/TH-102">zirconia flap disc</a> for the scale removal that makes any of the three approaches work. Checking whether the nut turns is free. Cutting is not.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>A rusted nut and a rounded bolt head are different failures. The tool choice follows the failure, not the label.</li>
+        <li>A nut splitter cuts the nut wall and never grips the stud. That is its whole advantage.</li>
+        <li>It needs a flat, body clearance, and a nut softer than the chisel. Flange nuts, recessed nuts and class 10 or 12 nuts are where it disappoints.</li>
+        <li>Stop turning when the nut cracks. The chisel tip is closest to the stud at exactly that moment.</li>
+        <li>Never reuse a split nut, and always chase the thread before fitting the replacement.</li>
+        <li>Stock the chisel as a spare. The tool is durable; the edge is not.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-048", "TH-036", "TH-102"],
+    seoTitle: "Nut Splitter vs Bolt Extractor vs Cut-Off Wheel: Seized Nut Removal | TorqHive",
+    metaDescription: "When to split a rusted nut, when an extractor works, and when cutting is the only option, with chisel limits, nut property classes and a stud-safe procedure."
+  },
+  {
     slug: "thread-pitch-identification-unc-unf-metric-coarse-fine",
     title: "Thread Pitch Identification: Reading UNC, UNF and Metric Coarse and Fine Before You Chase or Replace a Thread",
     date: "Nov 04, 2026",
