@@ -10,6 +10,269 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "flap-disc-selection-en-13743-grit-backing",
+    title: "Flap Disc Selection for Distributors: EN 13743 Marking, Grit, Backing and the 80 m/s Limit",
+    date: "Nov 06, 2026",
+    category: "OEM & Sourcing",
+    readTime: "11 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-102/hero-web.webp",
+    excerpt: "A flap disc is the easiest abrasive line to source badly: the label looks complete, the price is right, and the disc glazes in ten minutes. Here is what EN 13743 actually requires on the marking, how peripheral speed decides whether a disc survives, and the grit, grain and bore questions a private-label PO has to answer.",
+    tags: [
+      "flap disc",
+      "EN 13743",
+      "zirconia alumina",
+      "abrasive sourcing",
+      "80 m/s"
+    ],
+    content: `
+      <h2>The disc that stops cutting is usually glazed, not worn out</h2>
+      <p>Two versions of the same problem turn up on r/Tools within a few months of each other. The first is a user: in <a href="https://www.reddit.com/r/Tools/comments/1qqtc6n/flap_disk_on_die_grinder/">"Flap disk on die grinder"</a>, the poster says the disc worked for a few minutes of metal prep and then stopped removing material — the tool still spins it, the disc just polishes the surface. The second is commercial: <a href="https://www.reddit.com/r/Tools/comments/1ujrkm0/what_details_matter_most_when_choosing_cutting_or/">"What details matter most when choosing cutting or grinding discs?"</a> is written by someone assembling a counter guide for workshop and maintenance users, asking which specifications actually decide the sale.</p>
+      <p>Both questions resolve to the same four variables: grain, grit, backing stiffness, and the surface speed the disc runs at. A flap disc is a coated abrasive built from overlapping cloth flaps, so it behaves like a flexible grinding wheel with a wear surface that renews itself. That is also why it fails in a specific way. When the grain cannot fracture and clear, the workpiece melts onto the abrasive and the disc glazes — it still looks like a disc, it still spins, and it cuts nothing. The operator's instinct is to push harder, which adds heat and makes the glaze worse.</p>
+      <p>For a distributor the practical consequence is that a flap disc cannot be bought on price alone. The cheapest way to make a flap disc is to reduce grain quality and flap density, and the result is a product that passes a visual check, fails in the first ten minutes, and comes back as a warranty claim that is impossible to argue because nothing is measurably wrong with it.</p>
+
+      <h2>What EN 13743 puts on the label</h2>
+      <p>Flap discs sold into Europe are covered by <strong>EN 13743:2017, Safety requirements for coated abrasive products</strong>, which applies to flap wheels, flap discs, vulcanised fibre discs, spindle-mounted flap wheels and the back-up pads for fibre discs. The standard's scope names the permitted grains: aluminium oxide, silicon carbide, diamond or CBN. It is a safety standard, not a performance standard, and that distinction matters commercially — compliance tells you the disc will not burst at its marked speed, not that it will cut a weld in a reasonable time.</p>
+      <p>The marking content is the part a buyer can audit at goods-in. The oSa guidance document on marking for EN 13743 lists nine items for flap discs: the manufacturer, supplier or importer name or registered trademark; the nominal dimensions; the maximum operating speed in m/s; the maximum permissible rotational speed in rpm; the EN 13743 declaration of conformity; any restriction of use; a traceability code; the oSa logo if claimed; and, on private-label products, the five-digit oSa private label number.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Marking item</th><th>What it looks like</th><th>Why it fails an audit</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Identity</td><td>Manufacturer, importer or registered trademark</td><td>A trading company name with no legal entity behind it</td></tr>
+            <tr><td>Dimensions</td><td>Diameter, thickness and bore in millimetres</td><td>Bore marked 22 mm or 22.2 mm instead of 22.23 mm for 7/8 in.</td></tr>
+            <tr><td>Maximum operating speed</td><td>Peripheral speed in m/s, from the EN 13743 sequence</td><td>A speed printed in rpm only, with no m/s value</td></tr>
+            <tr><td>Maximum rotation</td><td>rpm value consistent with the diameter and the m/s rating</td><td>rpm copied from a larger disc, or rounded up</td></tr>
+            <tr><td>Conformity</td><td>The text EN 13743</td><td>Claiming EN 12413, the bonded-wheel standard, on a coated product</td></tr>
+            <tr><td>Restriction of use</td><td>Text or pictogram, for example not permitted for wet grinding</td><td>Omitted where the product is dry-only</td></tr>
+            <tr><td>Traceability</td><td>Batch, production date or serial number</td><td>No code, so a failure cannot be traced to a production lot</td></tr>
+            <tr><td>oSa and private label</td><td>oSa logo plus five-digit private label number</td><td>Logo used with no private label number registered</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The bore detail is worth pausing on. The oSa guidance is explicit that 7/8 in. converts to <strong>22.23 mm</strong>, not 22.2 mm and not 22 mm, and that imperial marking is permitted only alongside metric. A disc that will not sit flat on the backing pad because the bore was rounded down is a fitting problem that shows up as vibration, then as a cracked disc.</p>
+
+      <h2>Speed is peripheral, not spindle</h2>
+      <p>Every abrasive limit is a surface speed, because burst stress scales with the square of peripheral velocity. The conversion from the marked m/s to the rpm an operator sees on the grinder is:</p>
+      <p><strong>n (rpm) = 60 × v (m/s) ÷ (π × D (m))</strong></p>
+      <p>Run the numbers for an 80 m/s disc. At 100 mm diameter the ceiling is roughly 15,300 rpm. At 125 mm it is roughly 12,200 rpm. At 180 mm it falls to about 8,500 rpm. This is why the same disc grade cannot simply be scaled up: a 125 mm disc on a grinder governed for a 100 mm wheel is already outside its rating before the first cut, and EN 13743's safety factors assume the product is used at or below its marked maximum.</p>
+      <p>The standard sets the sequence of maximum operating speeds as 16, 20, 25, 32, 35, 40, 45, 50, 63 and 80 m/s, and requires a bursting safety factor of 3.0 for flap discs used on hand-held machines at or below 125 mm, rising to 3.5 above 125 mm. Those factors are the reason a compliant disc is heavier and more expensive than a disc wound from the same cloth without the reinforcement.</p>
+
+      <h2>Grain and grit: the two decisions that set the selling story</h2>
+      <p>Grit designation for coated abrasives follows the P-scale defined in the <strong>ISO 6344</strong> series on grain size analysis; Part 3, for example, covers microgrits from P240 to P2500, while the coarse end used on flap discs sits in the earlier parts of the series. The practical ranges a distributor should hold are narrow:</p>
+      <ul>
+        <li><strong>P40</strong> — heavy stock removal, weld dressing on thick section, scale. Fast, hot, and the grit that inexperienced users overload first.</li>
+        <li><strong>P60</strong> — the general weld-blending grit on mild steel; the highest-volume SKU in most markets.</li>
+        <li><strong>P80</strong> — the blend-and-finish compromise, and the grit that suits stainless and thin sheet where heat distortion is the risk.</li>
+        <li><strong>P120</strong> — surface refinement and paint prep, not stock removal. Selling P120 to someone who wants to flatten a weld guarantees a complaint.</li>
+      </ul>
+      <p>Grain type decides life more than grit does. Aluminium oxide is the cheap default and fractures quickly on hard steel. Zirconia alumina is tougher and self-sharpens under pressure, which is why it dominates flap discs for stainless and mild steel. Ceramic grain cuts fastest and coolest and costs the most; it earns its price on heat-sensitive alloys and high-pressure production work, and is wasted on a user who grinds with the edge of the disc.</p>
+
+      <h2>Backing, bore and shape</h2>
+      <p>The backing plate is either fibre or a plastic composite. Fibre is stiffer and holds shape at temperature, which suits heavy stock removal; plastic-backed discs run flatter and are less likely to shed flaps when the disc is used at an angle. Neither is a defect, but the two behave differently on the same grinder, and a distributor who switches supplier without checking the backing will get returns that say "the new ones are worse" with no further detail.</p>
+      <p>Bore sizes follow the machine, not the disc: 100 mm discs are commonly supplied with a 16 mm bore, while 115 mm and 125 mm discs use the 22.23 mm (7/8 in.) bore. Getting that wrong creates a disc that fits loosely enough to spin off-centre.</p>
+      <p>Shape is designated T27 for the flat disc and T29 for the conical one. The conical profile puts more of the abrasive at an angle to the work, which lets the operator reach into a fillet or work a weld toe without tilting the grinder to the point where the disc edge digs in. For a maintenance counter, T29 in P60 and P80 covers most of the demand; T27 remains the choice for flat plate and edge work.</p>
+
+      <h2>What belongs on a private-label PO</h2>
+      <ul>
+        <li><strong>Standard reference.</strong> State EN 13743:2017 and require the marking items in full, including the traceability code and, where the oSa mark is used, the registered private label number. This is the clause that makes a claim auditable.</li>
+        <li><strong>Speed, both ways.</strong> Specify maximum operating speed in m/s and the corresponding rpm for each diameter in the range. Do not accept one without the other.</li>
+        <li><strong>Grain and grit.</strong> Name the grain, not just "zirconia" — ask for the supplier's grain source and the P-grade, and require the grit to be printed on the backing, not only on the carton.</li>
+        <li><strong>Backing and flap construction.</strong> Fibre or plastic, single or double flap, and the flap count or cloth weight per disc. Flap density is the variable most often quietly reduced between samples and production.</li>
+        <li><strong>Bore tolerance.</strong> 22.23 mm for 7/8 in., 16 mm for the 100 mm line, with a stated tolerance. A bore that is 0.2 mm oversize is a vibration complaint waiting to happen.</li>
+        <li><strong>Batch testing.</strong> Ask for the burst test record behind the safety factor, and keep the batch code on the carton matched to the disc. The <a href="/blog/hand-tool-plating-salt-spray-test-spec">same logic applied to plating</a> applies here: the certificate is only useful if it can be tied to the goods in the box.</li>
+        <li><strong>Use restrictions.</strong> Dry or wet, hand-held only, backing pad required. These belong on the disc and in the counter sheet, not only in the manual.</li>
+      </ul>
+      <p>For the wider commercial framework — sample approval, pre-shipment inspection, and the documents a first order should carry — the <a href="/blog/oem-private-label-hand-tool-sourcing-guide">private-label sourcing checklist</a> covers the sequence. Abrasives add one extra step: a cut test on the customer's own material, because a disc that performs on mild steel can glaze in minutes on 304 stainless.</p>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>Glazing, not wear, is what most users call a dead flap disc. Grain type, grit and pressure decide whether it happens.</li>
+        <li>EN 13743:2017 is a safety standard with a defined marking list: identity, dimensions, m/s, rpm, conformity, restrictions, traceability, oSa and private label number.</li>
+        <li>Speed is peripheral. 80 m/s is about 15,300 rpm at 100 mm and about 12,200 rpm at 125 mm.</li>
+        <li>Hold P40, P60, P80 and P120 in zirconia for general trade, and treat ceramic as a premium line with a defined application.</li>
+        <li>Specify bore, backing and flap density on the PO, and verify them at goods-in. They are the three variables that move between sample and production.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-102"],
+    seoTitle: "Flap Disc Selection: EN 13743 Marking, Grit and the 80 m/s Limit | TorqHive",
+    metaDescription: "How EN 13743 marking, peripheral speed, grain and grit decide flap disc performance, and what a private-label abrasive PO must specify before the first order."
+  },
+  {
+    slug: "grease-gun-air-lock-coupler-fit",
+    title: "Grease Gun Air Lock and Coupler Fit: Why a New Gun Will Not Pump, and What to Specify",
+    date: "Nov 06, 2026",
+    category: "Workshop Practice",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-098/hero-web.webp",
+    excerpt: "Most grease guns returned as faulty are not faulty. They are air-locked, fitted with a worn coupler, or pointed at a blocked zerk. Here is how the pump actually moves grease, how to tell the three apart in under a minute, and which coupler and fitting specifications belong on the order.",
+    tags: [
+      "grease gun air lock",
+      "zerk fitting",
+      "SAE J534",
+      "grease coupler",
+      "NLGI 2"
+    ],
+    content: `
+      <h2>Three different faults, one complaint</h2>
+      <p>The complaint is almost always the same sentence: the gun will not pump. On r/Tools it arrives in two forms. In <a href="https://www.reddit.com/r/Tools/comments/1m49ke4/first_grease_gun_help/">"First Grease Gun - Help!"</a> the poster has loaded a cartridge and now has grease oozing from what looks like a pressure relief point: <em>"I keep wiping it off and it keeps coming back. Am I supposed to release the pressure somehow?"</em> In <a href="https://www.reddit.com/r/Tools/comments/1s7ez5s/grease_gun_issue/">"Grease gun issue"</a>, the problem is at the other end of the hose: <em>"I'm having trouble connecting my grease gun to the Zirk fittings on my new Bobcat subcompact tractor. It's a cheap manual gun."</em></p>
+      <p>Those are not the same failure, and neither is the third common one — a machine that has not been greased in years, where the zerk itself is blocked with hardened soap. A gun is a positive-displacement pump with a check valve, a reservoir and a coupler. Diagnosing "will not pump" means deciding which of those three is at fault before buying a replacement. The order matters, because the cheapest fix is usually at the end of the hose, not inside the gun.</p>
+
+      <h2>How the gun moves grease</h2>
+      <p>A grease gun does not suck grease like a syringe. Grease is thixotropic and holds its shape, so the gun pushes it. The reservoir — barrel or cartridge — is swept by a follower: a spring-loaded piston on a manual gun, an air piston on a pneumatic one. The follower's only job is to keep the grease in contact with the pump inlet under light pressure. The pump then displaces a fixed volume per stroke through a check valve into the hose.</p>
+      <p>Air lock is what happens when a pocket of air sits between the follower and the grease. Air is compressible and grease is not, so the pump stroke is spent compressing the bubble instead of moving grease. The symptom is a rod or piston that moves normally with no grease at the coupler, or grease that appears only in a thin smear. Nothing is broken. The pump has simply been asked to pump a gas.</p>
+      <ul>
+        <li><strong>Cartridge loading.</strong> The most common cause is a cartridge that was not pushed fully home, or a metal seal tab left in place, so the follower never reaches the grease. Remove the tab, seat the cartridge, then release the follower rod under control rather than letting it snap.</li>
+        <li><strong>Bulk filling.</strong> Filling a barrel from a bucket traps air unless the follower is pushed down as grease goes in. Fill slowly, in stages, with the follower following the grease.</li>
+        <li><strong>Bleeding.</strong> Most guns have a bleeder screw or a small valve on the pump body. Open it a turn, pump until grease — not air — appears, then close it. On a gun with no bleeder, disconnect the hose at the body and pump until grease shows at the outlet.</li>
+        <li><strong>The ooze in the first thread.</strong> Grease escaping around the follower seal or the bleeder is pressure finding the easiest path. It confirms the pump is working and the seal is not. Wipe it, bleed it, and check that the follower seal is seated square in the barrel.</li>
+      </ul>
+
+      <h2>The coupler is a wear part, and it is usually the real fault</h2>
+      <p>The hydraulic coupler at the end of the hose is a four-jaw chuck with a rubber seal and a check ball. The jaws close on the spherical head of the zerk and the seal bears on the nipple face. Three things wear: the jaws bell out, the seal hardens or tears, and the check ball leaks. A worn coupler behaves exactly like a blocked zerk — the gun loads, the trigger feels firm, and no grease reaches the bearing, because the grease is escaping around the nipple instead of going through it.</p>
+      <p>Test it in ten seconds: wipe the nipple, fit the coupler, and watch the joint while someone pumps one stroke. Grease appearing around the outside of the coupler means the coupler or the nipple face is the problem, not the gun. A coupler that rocks or releases under pressure is worn. Couplers are consumables and should be stocked as such — a distributor who sells a gun without a spare coupler sells a support call.</p>
+      <p>Coupler type must match the fitting type. The standard hydraulic coupler grips a <strong>hydraulic</strong> zerk with a spherical head. A <strong>button-head</strong> or pin-type fitting needs a different coupler entirely, and the two will not seal against each other no matter how hard the jaws close. Adapters exist for both directions and belong in the accessory range, not in the "maybe it fits" drawer.</p>
+
+      <h2>Threads on the fitting are a standard, not a guess</h2>
+      <p>Lubrication fittings are covered by <strong>SAE J534</strong>, and the thread is where cross-threading starts. Three families account for most of the world's zerks:</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Thread</th><th>Where it is used</th><th>What goes wrong</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1/4-28 SAE-LT (straight)</td><td>Automotive chassis, suspension and driveline fittings</td><td>Forced into a tapered port, which splits the boss or leaks</td></tr>
+            <tr><td>1/8-27 NPT / PTF (tapered)</td><td>Machine tools, industrial bearings, general equipment</td><td>Sealed with tape that sheds strands into the grease passage</td></tr>
+            <tr><td>1/4-18 PTF (tapered)</td><td>Heavier industrial housings</td><td>Bottomed out before the taper seals</td></tr>
+            <tr><td>Metric M6, M8, M10 straight</td><td>European and Asian machinery, some automotive</td><td>Matched by eye to an SAE fitting of similar diameter</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Two rules follow. Straight and tapered threads are not interchangeable, even when they start; and a fitting is identified by thread and angle, not by the size of the hex. A 45-degree and a 90-degree fitting with the same thread are the same part in a different orientation, which is why an assortment box with straight, 45 and 90 degree variants in each thread covers more machines than the same number of straight fittings.</p>
+
+      <h2>The zerk is a one-way valve that stops being one-way</h2>
+      <p>A zerk contains a small spring-loaded ball. When the coupler pushes grease in, the ball lifts; when the coupler comes off, the ball seats and holds the grease in the bearing. A fitting that has sat in mud, paint or wash-down water can have a stuck ball, and no amount of pump pressure will fix it. The symptom is a coupler that will not accept grease on one nipple while working on the next one on the same machine.</p>
+      <p>Clean the nipple with a rag and a pick before coupling — grit on the face destroys the coupler seal. If the ball is stuck, replace the fitting; they cost less than the labour of clearing one. Do not use a grease gun to clear a blocked passage with the fitting removed: the pressures involved are high enough to inject grease into skin, which is a surgical injury, not a workshop inconvenience. That warning belongs on the product card, not only in the manual.</p>
+
+      <h2>Cartridge volume is not cartridge mass</h2>
+      <p>The specification on a pneumatic gun is usually a barrel volume — the <a href="/products/TH-098">400 cc pneumatic grease gun</a> is a typical size — while cartridges are sold by mass, commonly 400 g. Those numbers look interchangeable and are not: they only coincide at a grease density near 1.0 g/cm3, and greases vary. A gun whose follower is set for a cartridge will not accept bulk fill without the matching follower, and a cartridge that is short for the barrel will air-lock at the end of its travel. Confirm the fill method against the model sheet before ordering either.</p>
+      <p>Consistency matters too. <strong>NLGI grade 2</strong> is the most common general-purpose grade for bearings and chassis points, and it is what most manual and pneumatic guns are designed around. A grade 1 grease flows more easily and can be the right choice in cold conditions; a grade 3 may not move through a long hose at all. Mixing thickener types — lithium complex with polyurea, for example — can soften or harden the mixture in the bearing, so the safe instruction is to purge rather than top up when the previous grease is unknown.</p>
+
+      <h2>What to specify and stock</h2>
+      <ul>
+        <li><strong>Coupler as a SKU, not an accessory.</strong> Stock replacement hydraulic couplers and at least one button-head adapter. They fail before the gun does.</li>
+        <li><strong>Hose and thread.</strong> State the hose length, working pressure and the thread at both ends. A short high-pressure hose is what lets one hand hold the coupler square while the other triggers the gun.</li>
+        <li><strong>Bleeder accessibility.</strong> A bleeder screw that can be reached with the gun on the machine prevents the most common return. If it is buried under the barrel, the design is wrong.</li>
+        <li><strong>Follower and seal kit.</strong> Offer the seal as a spare. A gun with a torn follower seal air-locks on every fill.</li>
+        <li><strong>Air inlet fittings.</strong> Pneumatic guns live or die on the shop air line; the coupler profile at the inlet has to match the hose, and the <a href="/blog/pneumatic-quick-coupler-interchange-standards">quick-coupler interchange guide</a> explains why 1/4 in. is a size, not a standard.</li>
+        <li><strong>Air supply and lubrication.</strong> A pneumatic gun is an air motor with a piston; it needs clean, lubricated air like any other air tool, as covered in the <a href="/blog/air-tool-lubrication-oil-grease-maintenance-schedule">air tool lubrication schedule</a>.</li>
+      </ul>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>Air lock is air between follower and grease. Bleed it, seat the cartridge, and fill bulk barrels in stages.</li>
+        <li>A worn coupler mimics a blocked zerk. Watch the joint while someone pumps one stroke.</li>
+        <li>Couplers and fittings are matched systems: hydraulic versus button-head, straight versus tapered, SAE versus metric.</li>
+        <li>NLGI 2 is the default grade; confirm the gun's fill method and volume before ordering cartridges.</li>
+        <li>Stock couplers and follower seals as consumables. They are the parts that actually fail.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-098", "TH-096"],
+    seoTitle: "Grease Gun Air Lock and Coupler Fit: Why a Grease Gun Will Not Pump | TorqHive",
+    metaDescription: "Diagnose a grease gun that will not pump: air lock, worn hydraulic coupler or blocked zerk, plus the SAE J534 fitting threads and NLGI grade to specify."
+  },
+  {
+    slug: "crimped-vs-soldered-terminals-iec-60352-2",
+    title: "Crimped vs Soldered Terminals: What IEC 60352-2 Requires and Why Crimp Height Decides the Joint",
+    date: "Nov 06, 2026",
+    category: "Material & Engineering",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-067/hero-web.webp",
+    excerpt: "A crimp is a controlled compression, not a squeeze. The difference between a joint that survives vibration and one that fails in service is crimp height, die match and a ratchet that will not release early — three things a buyer can specify and a user can inspect.",
+    tags: [
+      "crimp vs solder",
+      "IEC 60352-2",
+      "crimp height",
+      "ratchet crimper",
+      "insulated terminals"
+    ],
+    content: `
+      <h2>The joint nobody inspects until it fails</h2>
+      <p>Crimping sits in an awkward place in most workshops: it is fast, it is cheap, and it is almost never checked. The questions on Reddit reflect that. In <a href="https://www.reddit.com/r/AskElectricians/comments/1nxrslt/crimping_wires_help/">"Crimping wires help"</a> the answer is a warning rather than a technique: <em>"A real set of crimpers would be better but you'll survive, just make sure it has good contact metal to wire."</em> In <a href="https://www.reddit.com/r/electricians/comments/tz7aen/which_crimper_do_you_recommend/">"Which Crimper do you recommend?"</a> the argument is entirely about the tool, and in <a href="https://www.reddit.com/r/AskElectricians/comments/w6lvu7/what_tool_to_use/">"What tool to use"</a> it is about matching one specific terminal to one specific wire size.</p>
+      <p>All three threads are circling the same fact: the crimp is a system of three parts — terminal, die and wire — and the quality of the joint is set by how far the barrel is compressed, not by how hard the operator squeezes. That is a measurable quantity, which is what makes it specifiable.</p>
+
+      <h2>What a crimp actually is</h2>
+      <p>In a correct crimp, the barrel is compressed around the strands until the individual wires deform into each other and into the barrel. The result is a large, oxygen-excluded contact area with no voids, held by elastic springback rather than by friction. Done properly, the joint is mechanically stronger than the wire beside it and electrically indistinguishable from a continuous conductor. Done badly, it is a resistor with a mechanical joint attached, and it fails by heating.</p>
+      <p><strong>IEC 60352-2</strong> is the standard that frames this. The 2024 edition applies to solderless crimped connections made with appropriately designed uninsulated or pre-insulated crimp barrels, and the edition it supersedes covered stranded and solid conductors from 0.05 mm2 to 10 mm2. It sets general requirements, test methods and practical guidance — it does not tell you which tool to buy, and it does not certify a crimper. That gap is where product quality lives.</p>
+      <p>On the acceptance side, <strong>IPC/WHMA-A-620</strong> is the reference most harness shops work to for cable and wire assembly, including crimped connections. A distributor selling into automotive, marine or industrial harness supply will be asked about both: IEC 60352-2 for the connection, IPC/WHMA-A-620 for the workmanship.</p>
+
+      <h2>Crimp height is the process, pull force is the exam</h2>
+      <p>Every terminal has a compression window. Below the lower limit the barrel is over-compressed: strands are cut, the barrel thins at the corners, and the joint can crack under vibration. Above the upper limit it is under-crimped: voids remain between strands, resistance rises, and the joint heats under load until the insulation discolours. Between the limits the joint is gas-tight and stable.</p>
+      <p>That window is why crimp height — measured with a crimp height gauge or a micrometer across the compressed barrel — is the production control, and pull force is the audit. Pull testing tells you whether the joint you already made is acceptable; crimp height is what keeps every joint in the batch inside the window. A shop that only pull-tests is inspecting a sample and hoping.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Symptom</th><th>Usual cause</th><th>What to change</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Barrel cracked or wings touching</td><td>Over-crimped: wrong die for the terminal, or a die worn past its tolerance</td><td>Correct die cavity, replace worn die, set the crimp height stop</td></tr>
+            <tr><td>Strands pull out below load</td><td>Under-crimped, or wire gauge above the terminal range</td><td>Verify wire range against the terminal maker's table; adjust crimp height</td></tr>
+            <tr><td>Insulation pierced or cut</td><td>Insulation crimp set as tight as the conductor crimp</td><td>Separate the two adjustments; the insulation crimp should grip, not bite</td></tr>
+            <tr><td>Joint heats in service</td><td>Voids or oxide in the barrel, often from tinned or contaminated strands</td><td>Clean strands, no solder pre-tinning, re-crimp with correct height</td></tr>
+            <tr><td>Terminal loose on the stud</td><td>Compression changed the barrel length and the terminal geometry</td><td>Check terminal orientation in the die; crimp before forming or bending</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>The ratchet is a process control, not a convenience</h2>
+      <p>A ratcheting crimper will not release until the full cycle is complete. That single feature is the difference between a tool and a gauge. A simple plier-style crimper lets the operator stop when the joint looks closed, which on a 6 mm2 terminal is well before the barrel has actually compressed. The ratchet removes that judgement: either the cycle completes, or the tool stays locked on the terminal and the operator finishes the stroke.</p>
+      <p>This is why the mechanism matters more than the handle. A ratchet with a soft release, a worn pawl or a plastic body that flexes under load will complete the cycle without delivering the intended compression. On the <a href="/products/TH-067">0.5 to 6 mm2 ratcheting crimper</a>, the full-cycle release and the hardened colour-coded dies are the two features that carry the quality, not the grip.</p>
+
+      <h2>Two cavities, two different jobs</h2>
+      <p>An insulated terminal is crimped twice in one stroke. The conductor crimp compresses the barrel onto bare strands. The insulation crimp closes the rear section around the insulation to provide strain relief. They are separate adjustments and they must not be set the same.</p>
+      <ul>
+        <li><strong>Conductor crimp</strong> — full compression, barrel closed, a slight bell mouth at the wire entry so strands are not sheared at the edge.</li>
+        <li><strong>Insulation crimp</strong> — grips the insulation without piercing it. A pierced insulation is a moisture path and a dielectric failure waiting for a damp environment.</li>
+        <li><strong>Strip length</strong> — long enough that strands reach the end of the barrel, short enough that bare copper does not extend past it. Both errors are visible, and both are common.</li>
+        <li><strong>Orientation</strong> — the seam of the barrel belongs opposite the die anvil. Crimping on the seam splits it.</li>
+      </ul>
+
+      <h2>Where solder wins, and where it does not</h2>
+      <p>Solder is not obsolete, but it solves a different problem. A soldered joint is electrically excellent and easy to inspect visually. It is also stiff: solder wicks up the strands and creates a rigid section immediately behind a flexible one, which is a stress concentration under vibration. In a harness that flexes, that is where the conductor breaks — not at the terminal, but just behind it.</p>
+      <p>Crimping keeps the strands flexible up to the barrel. That is why automotive, aerospace and industrial harness standards are built around crimped connections and treat solder as a rework or repair method, not a production process. Solder also leaves flux residue that must be cleaned, and it makes a joint that cannot be re-terminated without cutting the wire back.</p>
+      <p>The exception worth naming: a soldered joint is often the better choice for a single, static, well-supported connection in a prototype or a repair where the correct terminal and die are not available. The mistake is treating that as a production method, then wondering why the harness fails at the 20,000-cycle vibration test.</p>
+
+      <h2>Matching the die to the terminal</h2>
+      <p>The colour code on pre-insulated terminals — red, blue, yellow — is a manufacturer convention for wire range, not an international specification, and the ranges behind the colours are not identical between brands. Two consequences follow. First, the terminal's own datasheet, not the colour, defines the wire range. Second, a die marked for one brand's insulated terminal may not be correct for another's, even at the same colour.</p>
+      <p>The safe purchasing rule is to buy terminal and die as a pair, or to require the terminal maker's crimp specification — wire range, strip length, crimp height and die reference — with the goods. A crimper sold without that data is a tool with no acceptance criteria, and no amount of operator skill fixes a missing specification.</p>
+
+      <h2>What to specify on a private-label order</h2>
+      <ul>
+        <li><strong>Wire range and standard reference.</strong> State the range in mm2 and AWG and reference IEC 60352-2 for the connection; add IPC/WHMA-A-620 if the customer is a harness builder.</li>
+        <li><strong>Crimp height window.</strong> Ask for the nominal crimp height and tolerance per die cavity, and the gauge or method used to verify it.</li>
+        <li><strong>Die material and hardness.</strong> Hardened dies hold the window; soft dies wear into under-crimping and nobody notices until returns appear.</li>
+        <li><strong>Ratchet mechanism.</strong> Full-cycle release, serviceable pawl, and a release lever that does not defeat the ratchet in normal use.</li>
+        <li><strong>Handle and insulation.</strong> For electrical work the grips must meet the relevant insulation standard; the <a href="/blog/vde-insulated-tools-iec-60900-1000v-mark">VDE 1000 V marking</a> is a specific claim with specific test requirements, and a red handle is not one.</li>
+        <li><strong>Documentation.</strong> A crimp chart on the tool or in the box, and a spare-part path for dies. A crimper with no die availability is a disposable tool sold at a professional price.</li>
+      </ul>
+
+      <h2>The short version</h2>
+      <ol>
+        <li>A crimp is controlled compression that produces a gas-tight, void-free joint. It is not a squeeze.</li>
+        <li>IEC 60352-2 sets the requirements and tests; IPC/WHMA-A-620 sets workmanship acceptance for harness work.</li>
+        <li>Crimp height controls the process. Pull force audits it. You need both, in that order.</li>
+        <li>The ratchet exists to guarantee a complete cycle — treat it as a process control, not a feature.</li>
+        <li>Match die to terminal by datasheet, not by colour, and require the crimp specification with the goods.</li>
+      </ol>
+    `,
+    relatedProducts: ["TH-067"],
+    seoTitle: "Crimped vs Soldered Terminals: IEC 60352-2 and Crimp Height | TorqHive",
+    metaDescription: "What IEC 60352-2 requires from a crimped connection, why crimp height controls joint quality, and how to specify a ratcheting crimper and dies for private label."
+  },
+  {
     slug: "manual-impact-driver-jis-screws-cam-out",
     title: "Manual Impact Driver and JIS Screws: Why Cross-Head Screws Cam Out, and the Order of Attack That Saves Them",
     date: "Nov 05, 2026",
