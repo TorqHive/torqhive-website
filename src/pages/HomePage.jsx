@@ -4,6 +4,7 @@ import CategoryGrid from '../components/categories/CategoryGrid';
 import PowerToolsRoadmap from '../components/sections/PowerToolsRoadmap';
 import FeaturedProducts from '../components/sections/FeaturedProducts';
 import BuyingProcess from '../components/sections/BuyingProcess';
+import OemSection from '../components/sections/OemSection';
 import ManufacturingSection from '../components/sections/ManufacturingSection';
 import QualitySection from '../components/sections/QualitySection';
 import InquiryBanner from '../components/sections/InquiryBanner';
@@ -19,9 +20,11 @@ export default function HomePage() {
       <PowerToolsRoadmap />
       <FeaturedProducts products={featuredProducts} />
       <BuyingProcess />
+      <OemSection />
       <ManufacturingSection />
       <QualitySection />
       <InquiryBanner />
     </main>
   );
 }
+
