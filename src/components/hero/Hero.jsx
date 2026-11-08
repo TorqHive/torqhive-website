@@ -222,13 +222,26 @@ export default function Hero() {
           </div>
 
           {/* Action CTAs */}
-          <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '24px' }}>
             <Link to="/products" className="btn btn-primary" style={{ gap: '6px', padding: '12px 24px' }}>
               Explore Products <ArrowRight size={16} />
             </Link>
             <Link to="/about" className="btn btn-outline" style={{ padding: '12px 22px' }}>
               Company &amp; Roadmap
             </Link>
+          </div>
+
+          {/* Trust Guarantees */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', fontSize: '12px', color: 'rgba(255,255,255,0.55)' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+              <span style={{ color: 'var(--th-red, #dc2626)' }}>✓</span> ISO &amp; ASME Standards
+            </span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+              <span style={{ color: 'var(--th-red, #dc2626)' }}>✓</span> 48h Sample Dispatch
+            </span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+              <span style={{ color: 'var(--th-red, #dc2626)' }}>✓</span> 100% Pre-Shipment QC
+            </span>
           </div>
         </div>
 
