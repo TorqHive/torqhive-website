@@ -110,7 +110,7 @@ export default function ProductDetailPage() {
               <img
                 src={product.image}
                 alt={product.title}
-                style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain' }}
+                style={{ maxWidth: '100%', maxHeight: product.image && product.image.includes('hero-dark') ? '100%' : '400px', objectFit: 'contain' }}
               />
             </div>
 
@@ -292,4 +292,5 @@ export default function ProductDetailPage() {
     </main>
   );
 }
+
 
