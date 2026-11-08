@@ -258,12 +258,12 @@ export default function CategoryGrid({ categories }) {
           gap: 6px;
         }
         .cat__cta-num {
-          font-family: var(--font-display);
-          font-size: 40px;
-          line-height: 1;
-          color: rgba(255,255,255,0.14);
+          font-family: var(--font-mono);
+          font-size: 10px;
+          letter-spacing: 0.16em;
+          color: rgba(255,255,255,0.3);
           position: absolute;
-          top: 14px;
+          top: 16px;
           right: 18px;
         }
         .cat__cta-label {
@@ -298,5 +298,6 @@ export default function CategoryGrid({ categories }) {
     </section>
   );
 }
+
 
 
