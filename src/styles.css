@@ -212,6 +212,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
+.product-card__img-wrap.is-dark { background: #0B0E13; }
 .product-card__img-wrap {
   background: var(--tile);
   aspect-ratio: 1/1;
@@ -413,4 +414,5 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 /* Header CTA: keep the tablet header single-line */
 @media (max-width: 1023px) { .btn.header-cta { display: none; } }
+
 

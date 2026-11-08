@@ -14,6 +14,7 @@ import { trackWhatsAppClick } from '../../utils/analytics';
  * @param {string} props.image
  */
 export default function ProductCard({ id, title, category, dimensions, weight, moq, image }) {
+  const isDarkShot = typeof image === 'string' && image.includes('hero-dark');
   const waNumber = '8615669586372';
   const waText = encodeURIComponent(
     `Hi TorqHive, I'd like to inquire about ${id} — ${title}.\n` +
@@ -26,7 +27,7 @@ export default function ProductCard({ id, title, category, dimensions, weight, m
   return (
     <article className="product-card" data-component="product-card">
       <Link to={`/products/${id}`} aria-label={`View ${title}`}>
-        <div className="product-card__img-wrap">
+        <div className={`product-card__img-wrap${isDarkShot ? " is-dark" : ""}`}>
           <img
             src={image}
             alt={title}
@@ -60,3 +61,4 @@ export default function ProductCard({ id, title, category, dimensions, weight, m
     </article>
   );
 }
+

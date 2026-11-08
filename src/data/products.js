@@ -22,7 +22,7 @@ export const products = [
     id: "TH-003", title: "6-Piece Extra-Long Wrench Set",
     category: "Wrenches",
     dimensions: "44.5×20.5×3.5 cm", weight: "1650 g", moq: 1,
-    image: "/assets/images/products/TH-003/hero-web.webp",
+    image: "/assets/images/products/TH-003/hero-dark.webp",
     overview: "A six-piece set of extra-long combination wrenches providing deep-reach access in confined fastener locations.",
     lightCustomization: true,
   },
@@ -38,7 +38,7 @@ export const products = [
     id: "TH-005", title: "15-Piece Torque Wrench and Spark Plug Socket Set",
     category: "Torque Tools",
     dimensions: "33.5×24×3.5 cm", weight: "2070 g", moq: 1,
-    image: "/assets/images/products/TH-005/hero-web.webp",
+    image: "/assets/images/products/TH-005/hero-dark.webp",
     overview: "A 15-piece torque wrench set with spark plug sockets, packaged for automotive service distributors and trade buyers.",
     lightCustomization: true,
     featured: true,
@@ -47,7 +47,7 @@ export const products = [
     id: "TH-006", title: "15-Piece Universal Impact Socket Set",
     category: "Sockets & Accessories",
     dimensions: "28×26.5×4 cm", weight: "2775 g", moq: 1,
-    image: "/assets/images/products/TH-006/hero-web.webp",
+    image: "/assets/images/products/TH-006/hero-dark.webp",
     overview: "15-piece universal impact socket set suitable for pneumatic and electric impact tools across drive sizes.",
     lightCustomization: true,
     featured: true,
@@ -128,7 +128,7 @@ export const products = [
     id: "TH-016", title: "3-Piece Flex-Head Ratchet Set",
     category: "Ratchets & Drive Tools",
     dimensions: "34×16.5×4.8 cm", weight: "1600 g", moq: 1,
-    image: "/assets/images/products/TH-016/hero-web.webp",
+    image: "/assets/images/products/TH-016/hero-dark.webp",
     overview: "Three-piece flex-head ratchet set covering 1/4 in., 3/8 in., and 1/2 in. drive for versatile workshop coverage.",
     lightCustomization: true,
     featured: true,
@@ -161,7 +161,7 @@ export const products = [
     id: "TH-020", title: "100-Piece Professional Workshop Tool Set",
     category: "Tool Sets",
     dimensions: "43×30×6 cm", weight: "5800 g", moq: 1,
-    image: "/assets/images/products/TH-020/hero-web.webp",
+    image: "/assets/images/products/TH-020/hero-dark.webp",
     overview: "100-piece professional workshop set combining ratchets, sockets, and accessories for comprehensive workshop and distributor programs.",
     lightCustomization: true,
     featured: true,
@@ -1056,3 +1056,4 @@ export const categories = [
 ];
 
 export const featuredProductIds = ["TH-041", "TH-005", "TH-006", "TH-042", "TH-016", "TH-020"];
+

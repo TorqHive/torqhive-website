@@ -98,13 +98,13 @@ export default function ProductDetailPage() {
           {/* Left — image */}
           <div>
             <div style={{
-              background: 'var(--th-surface)',
+              background: product.image && product.image.includes('hero-dark') ? '#0B0E13' : 'var(--th-surface)',
               borderRadius: 'var(--radius)',
               border: '1px solid var(--th-border)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: '40px',
+              padding: product.image && product.image.includes('hero-dark') ? '0px' : '40px',
               aspectRatio: '1/1',
             }}>
               <img
@@ -292,3 +292,4 @@ export default function ProductDetailPage() {
     </main>
   );
 }
+
