@@ -71,7 +71,7 @@ export default function Header() {
         {/* CTA */}
         <Link
           to="/contact"
-          className="btn btn-primary btn-sm hidden md:inline-flex"
+          className="btn btn-primary btn-sm hidden lg:inline-flex"
           style={{ flexShrink: 0 }}
         >
           Request a Quote
@@ -130,3 +130,4 @@ export default function Header() {
     </header>
   );
 }
+
