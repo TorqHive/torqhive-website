@@ -201,6 +201,12 @@ async function run() {
           <span>${escapeHtml(product.category)}</span> &gt;
           <span>${escapeHtml(product.title)}</span>
         </nav>
+        <div style="display: flex; gap: 16px; margin-bottom: 24px; padding: 12px 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 13px; color: #374151; flex-wrap: wrap;">
+          <span><strong>ISO &amp; ASME</strong> Standard Tested</span> &bull;
+          <span><strong>48h Sample</strong> Dispatch Ready</span> &bull;
+          <span><strong>Factory-Direct</strong> MOQ from ${product.moq || 1} pc</span> &bull;
+          <span><strong>OEM/ODM</strong> Custom Logo &amp; Packaging</span>
+        </div>
         <article style="display: grid; grid-template-columns: 1fr; gap: 24px;">
           <h1 style="font-size: 28px; font-weight: 700; color: #111827; margin: 0;">${escapeHtml(product.title)}</h1>
           <p style="font-size: 14px; color: #6b7280; margin: 0;">SKU: ${escapeHtml(product.id)} | Category: ${escapeHtml(product.category)} | MOQ: ${product.moq || 1} unit(s)</p>
