@@ -64,7 +64,7 @@ export default function BlogPage() {
                       transition: 'all 150ms ease',
                       border: '1px solid',
                       borderColor: selectedCategory === cat ? 'var(--th-red)' : 'var(--th-border)',
-                      background: selectedCategory === cat ? 'var(--th-red)' : '#FFFFFF',
+                      background: selectedCategory === cat ? 'var(--th-red)' : 'var(--panel)',
                       color: selectedCategory === cat ? '#FFFFFF' : 'var(--th-text)',
                     }}
                   >
@@ -91,7 +91,7 @@ export default function BlogPage() {
                     border: '1px solid var(--th-border)',
                     fontSize: 'var(--text-sm)',
                     outline: 'none',
-                    background: '#FFFFFF',
+                    background: 'var(--panel)',
                   }}
                 />
               </div>
@@ -134,7 +134,7 @@ export default function BlogPage() {
                   style={{
                     display: 'flex',
                     flexDirection: 'column',
-                    background: '#FFFFFF',
+                    background: 'var(--panel)',
                     borderRadius: 'var(--th-radius)',
                     border: '1px solid var(--th-border)',
                     overflow: 'hidden',
@@ -296,3 +296,4 @@ export default function BlogPage() {
     </main>
   );
 }
+

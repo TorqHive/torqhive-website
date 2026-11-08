@@ -91,7 +91,7 @@ export default function Hero() {
           display: flex;
           align-items: center;
           min-height: 700px;
-          padding-top: 72px;
+          padding-top: 96px;
           padding-bottom: 72px;
         }
         .hero__copy { width: 100%; max-width: 560px; }
@@ -178,7 +178,7 @@ export default function Hero() {
             background:
               linear-gradient(180deg, rgba(14,17,23,0.86) 0%, rgba(14,17,23,0.72) 45%, rgba(14,17,23,0.94) 100%);
           }
-          .hero__inner { min-height: 0; padding-top: 56px; padding-bottom: 56px; }
+          .hero__inner { min-height: 0; padding-top: 96px; padding-bottom: 56px; }
           .hero__title { font-size: 32px; }
           .hero__lead { font-size: 15px; }
           .hero__stats { margin-bottom: 24px; }
@@ -193,3 +193,4 @@ export default function Hero() {
     </section>
   );
 }
+

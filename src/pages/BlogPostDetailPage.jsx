@@ -217,7 +217,7 @@ export default function BlogPostDetailPage() {
                       alignItems: 'center',
                       gap: '16px',
                       padding: '16px',
-                      background: '#FFFFFF',
+                      background: 'var(--panel)',
                       border: '1px solid var(--th-border)',
                       borderRadius: 'var(--th-radius)',
                       textDecoration: 'none',
@@ -330,3 +330,4 @@ export default function BlogPostDetailPage() {
     </main>
   );
 }
+
