@@ -31,7 +31,7 @@ const CATEGORY_ICONS = {
 
 export default function CategoryGrid({ categories }) {
   const [lead, ...rest] = categories;
-  const pad = String(categories.length).padStart(2, '0');
+  const label = n => (n === 1 ? 'product' : 'products');
 
   return (
     <section data-component="category-grid" className="section cat">
@@ -54,6 +54,7 @@ export default function CategoryGrid({ categories }) {
               data-component="category-card"
               className="cat__card cat__card--lead"
             >
+              <span className="cat__watermark" aria-hidden="true">{CATEGORY_ICONS[lead.name]}</span>
               <div className="cat__card-top">
                 <span className="cat__num">01</span>
                 <span className="cat__icon">{CATEGORY_ICONS[lead.name]}</span>
@@ -63,7 +64,7 @@ export default function CategoryGrid({ categories }) {
                 <p>{lead.description}</p>
               </div>
               <div className="cat__card-foot">
-                <span className="cat__count">{lead.count} products</span>
+                <span className="cat__count">{lead.count} {label(lead.count)}</span>
                 <span className="cat__go"><ArrowUpRight size={16} /></span>
               </div>
             </Link>
@@ -85,7 +86,7 @@ export default function CategoryGrid({ categories }) {
                 <p>{cat.description}</p>
               </div>
               <div className="cat__card-foot">
-                <span className="cat__count">{cat.count} products</span>
+                <span className="cat__count">{cat.count} {label(cat.count)}</span>
                 <span className="cat__go"><ArrowUpRight size={14} /></span>
               </div>
             </Link>
@@ -107,14 +108,14 @@ export default function CategoryGrid({ categories }) {
                 <p>{cat.description}</p>
               </div>
               <div className="cat__card-foot">
-                <span className="cat__count">{cat.count} products</span>
+                <span className="cat__count">{cat.count} {label(cat.count)}</span>
                 <span className="cat__go"><ArrowUpRight size={14} /></span>
               </div>
             </Link>
           ))}
 
           <Link to="/products" className="cat__card cat__card--cta">
-            <span className="cat__cta-num">{pad}</span>
+            <span className="cat__cta-num">ALL</span>
             <span className="cat__cta-label">All tool families</span>
             <span className="cat__cta-link">Browse full catalogue <ArrowUpRight size={14} /></span>
           </Link>
@@ -174,6 +175,16 @@ export default function CategoryGrid({ categories }) {
           grid-row: span 2;
           padding: 24px;
         }
+        .cat__watermark {
+          position: absolute;
+          right: -30px;
+          bottom: -34px;
+          color: rgba(255,255,255,0.045);
+          pointer-events: none;
+          line-height: 0;
+        }
+        .cat__watermark svg { width: 260px; height: 260px; }
+        .cat__card--lead .cat__card-body { margin-top: auto; }
 
         .cat__card-top {
           display: flex;
@@ -287,3 +298,5 @@ export default function CategoryGrid({ categories }) {
     </section>
   );
 }
+
+
