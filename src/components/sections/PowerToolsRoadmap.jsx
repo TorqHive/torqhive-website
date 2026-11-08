@@ -184,36 +184,6 @@ export default function PowerToolsRoadmap() {
           </div>
         </div>
 
-        {/* Bottom Banner: OEM/ODM Customization for Both Product Lines */}
-        <div
-          style={{
-            marginTop: '36px',
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(255,255,255,0.08)',
-            borderRadius: '8px',
-            padding: '20px 28px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '16px',
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <Sparkles size={20} style={{ color: 'var(--th-red)' }} />
-            <div>
-              <div style={{ fontSize: '14px', fontWeight: 700, color: '#FFFFFF' }}>
-                Full-Service OEM / ODM Manufacturing Available
-              </div>
-              <div style={{ fontSize: '12.5px', color: 'rgba(255,255,255,0.6)' }}>
-                Laser engraving, custom color housings, custom EVA foam trays, and tailored blow-mold packaging.
-              </div>
-            </div>
-          </div>
-          <Link to="/contact" className="btn btn-outline btn-sm" style={{ color: '#FFFFFF' }}>
-            Request Custom Program
-          </Link>
-        </div>
       </div>
 
       <style>{`
