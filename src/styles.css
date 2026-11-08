@@ -410,3 +410,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 
 
+
+/* Header CTA: keep the tablet header single-line */
+@media (max-width: 1023px) { .btn.header-cta { display: none; } }
+
