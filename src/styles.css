@@ -5,25 +5,29 @@
 /* ─── TorqHive Design Tokens ─────────────────────────────────────── */
 :root {
   --th-black:       #111111;
-  --th-red:         #C8102E;
-  --th-red-hover:   #A80D27;
+  --th-red:         #E5173F;
+  --th-red-hover:   #C8102E;
   --th-red-accent:  #FF5C7A;
   --th-white:       #FFFFFF;
-  --th-surface:     #F5F5F4;
-  --th-text:        #171717;
-  --th-muted:       #626262;
-  --th-border:      #DCDCDC;
+  --th-surface:     #161B22;
+  --th-text:        #E8EAED;
+  --th-muted:       #8B949E;
+  --th-border:      rgba(255,255,255,0.12);
   --th-radius:      8px;
 
-  --bg:             var(--th-white);
-  --fg:             var(--th-text);
+  /* Carbon Matrix dark surfaces */
+  --bg:             #0E1117;
+  --fg:             #E8EAED;
   --accent:         var(--th-red);
   --accent-hover:   var(--th-red-hover);
-  --accent-on:      var(--th-white);
-  --border:         var(--th-border);
-  --border-strong:  var(--th-black);
+  --accent-on:      #FFFFFF;
+  --border:         rgba(255,255,255,0.12);
+  --border-strong:  #E8EAED;
   --muted:          var(--th-muted);
-  --surface:        var(--th-surface);
+  --surface:        #161B22;
+  --panel:          #12171E;
+  --panel-2:        #0A0D12;
+  --tile:           #EDF0F4;
 
   --font-display:   "Arial Black", Arial, system-ui, sans-serif;
   --font-body:      Arial, "Noto Sans", system-ui, sans-serif;
@@ -186,16 +190,16 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 .btn-outline-dark {
   background: transparent;
-  color: var(--th-black);
-  border: 1.5px solid var(--th-black);
+  color: var(--fg);
+  border: 1.5px solid var(--border-strong);
 }
-.btn-outline-dark:hover { background: var(--th-black); color: var(--th-white); }
+.btn-outline-dark:hover { background: var(--fg); color: #0E1117; }
 
 .btn-sm { padding: 8px 16px; font-size: var(--text-xs); }
 
 /* ─── Product Card ───────────────────────────────────────────────── */
 .product-card {
-  background: var(--th-white);
+  background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -207,7 +211,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 .product-card__img-wrap {
-  background: var(--surface);
+  background: var(--tile);
   aspect-ratio: 1/1;
   overflow: hidden;
   display: flex;
@@ -264,7 +268,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   padding: 3px 8px;
   border-radius: var(--radius-sm);
 }
-.badge-red { background: #FEE2E2; color: var(--th-red); }
+.badge-red { background: rgba(229,23,63,0.16); color: #FF7A8A; }
 .badge-dark { background: var(--th-black); color: var(--th-white); }
 .badge-outline { border: 1px solid var(--border); color: var(--muted); }
 
@@ -281,7 +285,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   font-family: var(--font-body);
   font-size: var(--text-base);
   color: var(--fg);
-  background: var(--th-white);
+  background: var(--panel);
   border: 1.5px solid var(--border);
   border-radius: var(--radius);
   transition: border-color var(--motion-fast) var(--ease);
@@ -289,7 +293,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .form-input:focus, .form-select:focus, .form-textarea:focus {
   outline: none;
-  border-color: var(--th-black);
+  border-color: var(--accent);
 }
 .form-textarea { resize: vertical; min-height: 100px; }
 .form-error { font-size: var(--text-xs); color: var(--accent); }
@@ -356,7 +360,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .blog-prose h2 {
   font-size: var(--text-2xl);
   font-weight: 700;
-  color: var(--th-black);
+  color: var(--fg);
   margin-top: 36px;
   margin-bottom: 16px;
   line-height: 1.3;
@@ -364,7 +368,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .blog-prose h3 {
   font-size: var(--text-xl);
   font-weight: 600;
-  color: var(--th-black);
+  color: var(--fg);
   margin-top: 28px;
   margin-bottom: 12px;
   line-height: 1.4;
@@ -372,13 +376,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .blog-prose p {
   margin-bottom: 20px;
   line-height: 1.8;
-  color: #374151;
+  color: var(--fg);
 }
 .blog-prose ul, .blog-prose ol {
   margin-bottom: 24px;
   padding-left: 24px;
   line-height: 1.8;
-  color: #374151;
+  color: var(--fg);
 }
 .blog-prose ul { list-style-type: disc; }
 .blog-prose ol { list-style-type: decimal; }
@@ -386,11 +390,11 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   margin-bottom: 8px;
 }
 .blog-prose li strong {
-  color: var(--th-black);
+  color: var(--fg);
 }
 .blog-prose strong {
   font-weight: 600;
-  color: var(--th-black);
+  color: var(--fg);
 }
 
 /* Buying-guide links and comparison tables follow the existing blog palette. */
@@ -398,6 +402,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .blog-table-scroll { overflow-x: auto; margin: 24px 0; border: 1px solid var(--th-border); border-radius: var(--th-radius); }
 .blog-prose table { border-collapse: collapse; width: 100%; font-size: var(--text-sm); }
 .blog-prose th, .blog-prose td { text-align: left; vertical-align: top; padding: 12px 16px; min-width: 145px; border-bottom: 1px solid var(--th-border); }
-.blog-prose th { background: var(--th-surface); font-weight: 700; }
+.blog-prose th { background: var(--panel); font-weight: 700; }
 .blog-prose tr:last-child td { border-bottom: 0; }
+
+
 

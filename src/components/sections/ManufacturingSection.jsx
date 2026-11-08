@@ -121,7 +121,7 @@ export default function ManufacturingSection() {
           line-height: 1.1;
           letter-spacing: -0.01em;
           margin: 0;
-          color: var(--th-black);
+          color: var(--fg);
           max-width: 15ch;
         }
         .mfg-lead {
@@ -139,9 +139,9 @@ export default function ManufacturingSection() {
           font-weight: 700;
           letter-spacing: 0.04em;
           text-transform: uppercase;
-          color: var(--th-black);
+          color: var(--fg);
           text-decoration: none;
-          border-bottom: 1px solid var(--th-black);
+          border-bottom: 1px solid var(--border-strong);
           padding-bottom: 3px;
         }
         .mfg-cta span { color: var(--th-red); }
@@ -192,7 +192,8 @@ export default function ManufacturingSection() {
           text-overflow: ellipsis;
         }
         .mfg-cell--stat {
-          background: var(--th-black);
+          background: var(--panel-2);
+          border: 1px solid var(--border);
           color: #fff;
           padding: 26px 26px 22px;
           display: flex;
@@ -318,3 +319,4 @@ export default function ManufacturingSection() {
     </section>
   );
 }
+

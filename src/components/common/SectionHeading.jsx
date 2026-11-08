@@ -23,14 +23,14 @@ export default function SectionHeading({ eyebrow, title, subtitle, align = 'left
       )}
       <h2
         className="text-h2"
-        style={{ color: isDark ? '#FFFFFF' : 'var(--th-black)', marginBottom: subtitle ? '12px' : 0 }}
+        style={{ color: 'var(--fg)', marginBottom: subtitle ? '12px' : 0 }}
       >
         {title}
       </h2>
       {subtitle && (
         <p style={{
           fontSize: 'var(--text-lg)',
-          color: isDark ? 'rgba(255,255,255,0.7)' : 'var(--th-muted)',
+          color: 'var(--muted)',
           maxWidth: align === 'center' ? '560px' : 'none',
           margin: align === 'center' ? '0 auto' : 0,
           lineHeight: 1.6,
@@ -41,3 +41,4 @@ export default function SectionHeading({ eyebrow, title, subtitle, align = 'left
     </div>
   );
 }
+
