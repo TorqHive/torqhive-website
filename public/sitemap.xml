@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://torqhive.com/</loc>
@@ -827,5 +827,11 @@
   </url>
   <url>
     <loc>https://torqhive.com/blog/crimped-vs-soldered-terminals-iec-60352-2</loc>
+  </url>
+  <url>
+    <loc>https://torqhive.com/blog/ball-end-hex-key-torque-limits-iso-2936</loc>
+  </url>
+  <url>
+    <loc>https://torqhive.com/blog/torque-screwdriver-electrical-terminals-nec-110-14-d</loc>
   </url>
 </urlset>
