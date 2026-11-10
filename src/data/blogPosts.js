@@ -10,6 +10,200 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "tire-plug-vs-patch-ustma-repair-limits",
+    title: "Tire Plug vs Patch: USTMA Repair Limits, the 1/4-Inch Rule and Why an Outside-In Plug Is Not a Repair",
+    date: "Nov 10, 2026",
+    category: "Workshop Practice",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-057/hero-web.webp",
+    excerpt: "A plug fills the hole. A patch seals the innerliner. USTMA's procedure requires both, limits repairs to the tread area and a 6 mm injury, and bans outside-in work entirely. Here is what that means for a shop, a distributor and the driver at the counter.",
+    tags: [
+      "tire plug vs patch",
+      "USTMA tire repair",
+      "puncture repair",
+      "plug patch",
+      "tire repair kit"
+    ],
+    content: `
+      <h2>The same nail, two opposite answers</h2>
+      <p>In r/tires a driver recently described a shop installing an external plug and calling it permanent: <a href="https://www.reddit.com/r/tires/comments/1tgvg09/tire_shop_only_did_an_external_plug_and_said_its/">"Tire shop only did an external plug and said it's permanent."</a> The puncture was a nail in the centre tread of a nearly new tire. Some replies said the plug would outlast the tire. Others said the shop had sold a temporary repair as a permanent one.</p>
+      <p>An older r/Cartalk thread on <a href="https://www.reddit.com/r/Cartalk/comments/1met74/nail_in_tire_use_a_repair_kit_or_take_it_to_a_shop/">a nail and a DIY repair kit</a> takes the harder line: a plug should never be considered a permanent fix, and installing one badly can do more harm than the puncture. A more recent r/tires thread asking whether a hole is <a href="https://www.reddit.com/r/tires/comments/1vmyizn/too_close_to_sidewall_to_repair/">too close to the sidewall to repair</a> gets the same split, with one commenter pointing straight at the industry guidelines.</p>
+      <p>Both camps are looking at the same hole. Only one is describing a repair. The difference is not opinion, and it is not brand loyalty. It is written down in the U.S. Tire Manufacturers Association procedure for passenger and light truck tires, and it is short enough to settle the argument in a minute.</p>
+
+      <h2>What the procedure actually requires</h2>
+      <p>The USTMA <a href="https://www.ustires.org/system/files/files/2024-09/Puncture_repair_handout_17_2.pdf">Puncture Repair Procedures for Passenger and Light Truck Tires</a> is the industry reference most shops claim to follow. Its rules are specific:</p>
+      <ul>
+        <li>The tire must be removed from the rim for a complete inspection of all damage.</li>
+        <li>Repairs are limited to the tread area only.</li>
+        <li>The puncture injury cannot be greater than 1/4 inch, or 6 mm, in diameter.</li>
+        <li>No repair if the damage reaches the shoulder or belt edge area, or runs at an angle into the shoulder.</li>
+        <li>A rubber stem or plug must fill the injury, and a patch must seal the innerliner. A one-piece combination plug-patch is the common repair unit.</li>
+        <li>Repairs cannot overlap.</li>
+        <li>A tire with an existing improper repair must be scrapped, not repaired again.</li>
+        <li>Outside-in repairs and on-the-wheel repairs are never allowed.</li>
+      </ul>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Condition found</th><th>USTMA position</th><th>Practical result</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tread-area puncture, 6 mm or less</td><td>Eligible for repair</td><td>Dismount, inspect, combination plug-patch</td></tr>
+            <tr><td>Tread-area puncture over 6 mm</td><td>Not repairable</td><td>Replace the tire</td></tr>
+            <tr><td>Damage in shoulder or belt edge</td><td>No repair</td><td>Take the tire out of service</td></tr>
+            <tr><td>Injury angled into the shoulder</td><td>No repair</td><td>Take the tire out of service</td></tr>
+            <tr><td>Second repair overlapping the first</td><td>Not allowed</td><td>Replace or re-evaluate as scrap</td></tr>
+            <tr><td>Existing improper repair</td><td>Scrap</td><td>Do not repair over it</td></tr>
+            <tr><td>Outside-in or on-wheel plug</td><td>Never permitted</td><td>Not a conforming repair</td></tr>
+            <tr><td>Run-flat or maker-restricted tire</td><td>Follow tire manufacturer policy</td><td>Check before quoting the job</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Two sentences in that document deserve to be read twice. The first is that the repair unit has two jobs, filling the injury and sealing the innerliner. The second is that the tire has to come off the wheel. Everything else in the plug-versus-patch argument follows from those two requirements.</p>
+
+      <h2>A plug and a patch do different jobs</h2>
+      <p>A plug is a filler. Its job is to occupy the injury channel so water and grit cannot travel through it and so the repair unit has something to grip. A patch is a seal. Its job is to bond to the innerliner and close the hole from the inside, where the air is.</p>
+      <p>A combination unit does both with one piece: a rubber stem is pulled through the injury from inside the tire, and the patch moulded to its base is stitched down onto the liner. That is why the USTMA procedure describes a stem plus a patch rather than choosing between them.</p>
+      <p>An external plug does only the first job, and it does it from the wrong side. It is not bonded to the innerliner, so the seal depends on compression and on the plug staying put. It leaves the injury uninspected from inside, which means a nail that grazed a belt or opened the liner is never seen. And it gives water a path along the plug body into the carcass, where the steel cords are. A plugged tire can hold air for thousands of miles and still be corroding from the inside. The failure that follows is belt separation, and it does not announce itself at the moment the plug goes in.</p>
+      <p>This is also why a plug is not automatically a scam. As a roadside measure that gets a vehicle to a shop, it is useful and widely sold. The problem is the label. Selling it as a permanent repair is what the procedure forbids.</p>
+
+      <h2>Why 6 mm, and why the shoulder is different</h2>
+      <p>The 1/4 inch limit is not a tread-depth rule. It is a limit on how much of the carcass the repair unit can bridge. A larger injury disturbs more belt cords, leaves a wider channel for the stem to seal, and reduces the liner area a patch can reliably bond to. Beyond 6 mm, the repair unit cannot be trusted to do both jobs over the life of the tire, so the procedure stops.</p>
+      <p>The shoulder is a separate case. The belt edges terminate there, the tread transitions into the sidewall, and the flex cycle is at its highest. A patch cannot be supported the way it is on the flat tread, and the injury angle is usually not straight through. USTMA's wording is strict: if there is any question that the injury extends into the shoulder or belt edge, the tire comes out of service. That is also the reason a hole that looks repairable from outside can be condemned once the tire is off the rim and the inside is visible.</p>
+      <p>Angle matters for the same reason. A nail rarely enters perpendicular. The exit hole inside the tire is offset from the entry, so a straight stem can miss part of the channel or leave a void beside it. Probing and reaming follow the actual path, not the visible hole.</p>
+
+      <h2>The order of a conforming repair</h2>
+      <ol>
+        <li><strong>Dismount and inspect.</strong> Both faces of the tread, the liner, the bead and the sidewall. Mark the injury from outside before the tire is off the rim.</li>
+        <li><strong>Remove the object and probe.</strong> Follow the channel with a probe to establish size and angle.</li>
+        <li><strong>Ream to the repair unit's size.</strong> The stem has to fill the channel; an undersized stem leaks, an oversized ream destroys cords.</li>
+        <li><strong>Clean and buff the liner.</strong> Only in the patch footprint, and only to the finish the repair unit maker specifies. Buffing through the liner is a scrap tire.</li>
+        <li><strong>Apply vulcanising cement and let it dry.</strong> Dry time is part of the bond. Cement that is still wet traps solvent under the patch.</li>
+        <li><strong>Install the combination unit from inside.</strong> Pull the stem through, then stitch the patch from the centre outward to push air out from under it.</li>
+        <li><strong>Trim the stem flush with the tread.</strong> Not proud of it, and not below it.</li>
+        <li><strong>Mount, seat, balance and reset the TPMS.</strong> A repair is not finished until the wheel is back on the balancer and the sensor has been checked.</li>
+      </ol>
+      <p>Two details decide whether the repair lasts. The first is cleanliness: liner contamination from tire sealant, soap or bead lube is the most common reason a patch lifts. The second is the stitch. A patch that is pressed in the middle and left loose at the edges will peel from the edge inward.</p>
+
+      <h2>TPMS, run-flats and speed-rated tires</h2>
+      <p>A repair on a late-model wheel usually means a sensor is in the way. The sensor has to come off or be moved aside, and the service kit that holds it, the grommet, nut, core and cap, is single-use on many designs. Reusing a hardened grommet is how a repaired tire comes back with a slow leak at the valve.</p>
+      <p>USTMA also notes that not every tire can be repaired, and that manufacturers may impose their own limits, naming run-flats as an example. A repair restores the liner seal, not the original damage tolerance of the tire. Before a repaired tire goes back into high-speed or heavy-load service, check the tire maker's policy rather than assuming the repair is invisible to the speed rating.</p>
+
+      <h2>What belongs in the kit you sell</h2>
+      <p>The market treats every tire repair kit as the same product. It is not. A roadside kit and a shop repair system share a rasp and a plug, and then diverge completely.</p>
+      <ul>
+        <li><strong>Roadside kit:</strong> spiral rasp, plug inserter, vulcanising plug strips, a small cement tube, a knife. It gets the vehicle to a shop. The <a href="/products/TH-057">9-piece tubeless tire repair kit</a> is this product, and it should be sold with that wording.</li>
+        <li><strong>Shop repair system:</strong> combination plug-patch units in a size range, probe, reamer, buffer, liner cleaner, vulcanising cement, stitcher, and a repair-unit selection chart.</li>
+        <li><strong>Valve and sensor hardware:</strong> snap-in stems, cores, caps and grommets. The <a href="/products/TH-056">valve stem puller and core service kit</a> covers tubeless valve replacement, and the <a href="/products/TH-061">TPMS snap-in service kit</a> covers the consumables that are replaced when a sensor moves to a new rim.</li>
+        <li><strong>Verification:</strong> a gauge that reads to 1 psi, not a pencil gauge with a 5 psi scale. The <a href="/products/TH-052">digital pressure and tread depth gauge</a> is the inspection tool for the counter.</li>
+      </ul>
+      <p>For a distributor, the commercial point is straightforward. A kit without a patch, a stitcher and a buffer is a plug kit, and plug kits cannot support a shop that advertises conforming repairs. Sell the system to shops and the roadside kit to drivers, and label each one for what it does. The <a href="/blog/manual-tire-mounting-bead-seating-tire-iron-selection">manual tire mounting guide</a> covers the dismount and bead-seating side of the same workflow, and the <a href="/blog/tpms-valve-stem-torque-and-service-kit-spec">TPMS valve stem guide</a> covers the sensor hardware in detail.</p>
+
+      <h2>The sentence to use at the counter</h2>
+      <p>"I can plug it, but a plug only fills the hole. The industry procedure is to dismount the tire, inspect it inside, and install a combination plug-patch. If the hole is bigger than 6 mm or it is in the shoulder, it cannot be repaired."</p>
+      <p>That sentence does three things. It separates the emergency repair from the permanent one, it gives the customer a number instead of an opinion, and it protects the shop from a comeback it cannot win.</p>
+
+      <h2>Bottom line</h2>
+      <p>A plug is a filler, a patch is a seal, and a conforming repair needs both, from inside, on a dismounted tire, inside the tread area, with an injury no larger than 6 mm. Everything else, including the popular outside-in plug sold as permanent, is a temporary measure with a different name. The procedure is not a secret and it is not ambiguous; the only variable is whether the person at the counter explains it before the wheel comes off.</p>
+    `,
+    relatedProducts: ["TH-057", "TH-056", "TH-061", "TH-052"],
+    seoTitle: "Tire Plug vs Patch: USTMA Repair Limits and the 6 mm Rule | TorqHive",
+    metaDescription: "USTMA limits tire repairs to the tread area and a 6 mm puncture, requires a plug to fill and a patch to seal the innerliner, and bans outside-in repairs. What shops and distributors should stock."
+  },
+  {
+    slug: "crank-pulley-bolt-harmonic-balancer-removal",
+    title: "Crank Pulley Bolt and Harmonic Balancer Removal: Holding the Engine, Breaking the Bolt and Pulling the Hub Without Stripping the Snout",
+    date: "Nov 10, 2026",
+    category: "Workshop Practice",
+    readTime: "11 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-028/hero-web.webp",
+    excerpt: "A 400 Nm impact that will not move the bolt, and a puller that turns the whole engine, are the same job failing at two different stages. Here is the order of attack for crank pulley and balancer service, including puller thread engagement and why the crank bolt is not a press tool.",
+    tags: [
+      "harmonic balancer removal",
+      "crank pulley bolt",
+      "balancer puller",
+      "crankshaft holding tool",
+      "press fit"
+    ],
+    content: `
+      <h2>Two threads, one stuck engine</h2>
+      <p>The first post is about the bolt: <a href="https://www.reddit.com/r/MechanicAdvice/comments/1dkduwf/cant_remove_crank_pulley_bolt/">"Can't remove crank pulley bolt"</a> in r/MechanicAdvice. The poster has a crankshaft holding tool, a 400 Nm impact wrench on its highest setting, and penetrating oil on the bolt. It still will not move. The second post is about what happens after the bolt finally comes out: <a href="https://www.reddit.com/r/MechanicAdvice/comments/1uit7ni/2006_40_v6_harmonic_balancer_puller_just_spins/">"Harmonic balancer puller just spins the engine"</a>, on a 2006 4.0 L V6. The third is the same question from a different garage: <a href="https://www.reddit.com/r/MechanicAdvice/comments/1ltaphm/how_to_get_crank_pulley_bolt_off/">"How to get crank pulley bolt off"</a> on a BMW M50 build.</p>
+      <p>All three are one job that fails at different stages. Crank pulley and balancer service is not a single operation. It is three: stop the crankshaft from turning, break a bolt that was tightened to a specification most hand tools cannot reach, and pull an interference-fit hub off a snout that cannot be replaced. Each stage has its own failure mode, and the expensive ones belong to the third stage.</p>
+
+      <h2>Stage one: hold the crank</h2>
+      <p>Every torque applied to the crank bolt has to be reacted somewhere. If the reaction goes through the belt, the alternator or a chain wrench on the balancer, something other than the bolt takes the load. The correct reaction is a tool that engages the crank or the flywheel directly.</p>
+      <ul>
+        <li><strong>Flywheel lock.</strong> A plate or pin that engages the ring gear or bolts in place of the starter. This is the most positive hold on a manual or an engine on a stand, because it loads the teeth in their strong direction.</li>
+        <li><strong>Pulley holding tool.</strong> A bar with pins or a strap that engages the balancer's own features. Good when the engine is in the car and the gearbox is not accessible.</li>
+        <li><strong>Gearbox in high gear with the brakes held.</strong> Works on a manual for moderate torque, but it loads the driveline through the clutch and the backlash. It is not a substitute for a lock at crank-bolt torque levels.</li>
+        <li><strong>Chain wrench on the balancer.</strong> Common, and risky. The chain loads the outer ring and the elastomer bond, which is the part already suspect on a balancer being replaced. A chain wrench can also crush the outer ring out of round.</li>
+        <li><strong>Rope in the cylinder.</strong> Effective on assembly, but it puts a bending load on a rod and is easy to get wrong on an engine with valve overlap.</li>
+        <li><strong>Starter bump.</strong> Popular on forums, uncontrolled in practice. The bar has to land against something solid, the ignition and fuel have to be disabled, and the reaction is a shock load rather than a controlled torque.</li>
+      </ul>
+      <p>The holding tool also decides whether the puller can work. A puller that is turning the engine is not pulling the hub; it is using the crank as a rotary motor. The fix is not a longer bar on the puller, it is a proper crank lock.</p>
+
+      <h2>Stage two: break the bolt</h2>
+      <p>An impact wrench is rated on breakaway torque in a laboratory, not on the torque it will deliver through a used socket, a wobble extension and a cold joint. The <a href="/blog/impact-wrench-torque-ratings-explained">difference between breakaway and fastening torque</a> explains why a 400 Nm tool can fail on a bolt that was installed at 200 Nm and has been sitting for a decade. Air supply matters as well: a tool that needs 24 CFM at the inlet will not make its rating on a 6 CFM compressor, as the <a href="/blog/air-supply-impact-wrench-cfm-vs-psi">CFM versus PSI guide</a> sets out.</p>
+      <p>When the impact does not move it, the next step is controlled leverage, not a longer cheater pipe on a ratchet. A <a href="/blog/breaker-bar-vs-impact-wrench-stuck-bolts">breaker bar</a> puts the load into a fixed square drive with no ratchet mechanism to shear, and a <a href="/blog/torque-multiplier-vs-impact-wrench-high-torque">torque multiplier</a> with a reaction arm reaches the same bolt at a fraction of the hand force. Heat helps, but it belongs at the bolt head and the washer face, not on the balancer's elastomer or the front seal.</p>
+      <p>Two checks before any of that. First, confirm the thread direction. Not every crank bolt is right-hand, and a left-hand bolt tightened further is a bolt that will never come out. Second, establish whether the bolt is torque-to-yield. If it is, it is single-use, and the new one goes in with the OEM torque plus angle procedure. The <a href="/blog/torque-to-yield-bolts-single-use">TTY guide</a> covers why reusing it is not a saving.</p>
+
+      <h2>Stage three: pull the hub</h2>
+      <p>There are two families of puller, and they load the balancer differently.</p>
+      <p>A <strong>jaw puller</strong> grips the outside diameter. On a bonded balancer, that means the jaws load the outer ring and the rubber bond, which is exactly where a tired balancer fails. Jaws also need a square, unobstructed grip; a balancer with a lip or a pulley groove gives them little to hold.</p>
+      <p>A <strong>bolt-on puller</strong> threads into the balancer's own tapped holes or into the crank snout and pulls on the hub bore. That is the correct load path, which is why OEM tools and most dedicated kits are bolt-on designs. The <a href="/products/TH-028">harmonic balancer pulley puller kit</a> is this type.</p>
+      <p>The instructions that come with one LS puller and installer kit are worth reading as a checklist, because they apply to the pattern rather than the engine. The flanged nut goes onto the puller shaft before the shaft is threaded into the crank. The thrust bearing faces the crankshaft for removal, and faces away from it for installation. The shaft hex is held with a wrench while the nut is turned, so the shaft does not rotate in the crank threads. The threads are lubricated before each use, and the maximum recommended input torque is 150 ft-lb.</p>
+      <p>That last number is the one most often ignored. A puller is a screw, and its capacity is set by the thread and the thrust bearing, not by how strong the operator is. If 150 ft-lb of input is not moving the hub, the answer is heat, penetration time or a different puller, not another foot on the bar.</p>
+      <p>Thread engagement is the other failure point. The puller shaft has to engage the full available depth of the crank snout. If it catches three or four threads and the nut is tightened, those threads carry the entire pull force, and the crank thread strips. That turns a balancer job into a thread repair on a component that cannot be replaced with a Heli-Coil in the car. Check engagement before the nut is turned, and stop if the shaft bottoms or rocks.</p>
+
+      <h2>The keyway is part of the tooling</h2>
+      <p>Most press-fit balancers are located by a Woodruff key, and the key has to stay in its slot as the hub starts to move. If the key rolls or drops, the hub cocks on the snout and the puller starts loading one side. The symptom is a hub that moves a few millimetres and then stops, with the puller shaft no longer concentric. Clean the keyway, check the key for shear, and replace it if it is damaged. On installation, line the keyway up before any force is applied; do not let the balancer push the key around the snout.</p>
+
+      <h2>Press fit or slip fit: know which one you have</h2>
+      <p>Not every balancer is pressed on. Some engines use a slip-fit hub retained only by the crank bolt and washer, with the bolt providing the clamp load. Others are a genuine interference fit and will not move without a puller. The distinction changes both removal and installation.</p>
+      <p>A hub that walks off by hand is a slip fit. A hub that does not move under hand pressure is not, and levering it is how the snout gets scored. Check the service information before choosing the method, and do not assume that a bolt-on pulley means a slip fit.</p>
+
+      <h2>Installation: the part everyone rushes</h2>
+      <p>The balancer goes on with an installer, not a hammer. A hammer delivers a shock load through the hub into the crank, and the crank reacts against the thrust bearing. It also distorts the outer ring and can crack the elastomer bond on a new part. The correct tool is a threaded rod with a thrust bearing and a nut, drawing the hub onto the snout along its axis.</p>
+      <p>Lubricate the installer threads, not the hub bore, unless the service information says otherwise. Draw the hub on until it is fully seated against the crank shoulder or the timing sprocket, then verify the belt alignment before the crank bolt is torqued. If the hub is not seated, the crank bolt will try to finish the job and will lose preload as the hub creeps.</p>
+      <p>The crank bolt itself is a clamp bolt, not a press. Using it to draw a press-fit hub loads the threads and the shank in a way they were not sized for, and on a TTY bolt it uses up the stretch that was supposed to hold the joint. If the hub needs a press, use a press tool. If the bolt is TTY, fit a new one and follow the OEM torque plus angle sequence, with the crank held on a proper lock.</p>
+
+      <h2>Diagnosis before the puller comes out</h2>
+      <ul>
+        <li><strong>Cracked or missing elastomer.</strong> The bond between hub and outer ring is the part that fails with age and heat. Cracks at the edge are the early sign.</li>
+        <li><strong>Outer ring slipped.</strong> The timing mark no longer lines up with the pointer, or the mark has moved relative to the keyway. This is a replacement, not an adjustment.</li>
+        <li><strong>Wobble or runout.</strong> Check with a dial indicator on the outer ring; a wobble that follows the hub points to a bent hub or a damaged snout.</li>
+        <li><strong>Bolt loose or backing out.</strong> Fretting at the washer face, a polished bolt head and a worn keyway usually travel together.</li>
+        <li><strong>Noise at the belt line.</strong> A chirp or a rattle that changes with engine speed can be the balancer, the tensioner or the belt. Remove the belt and spin each component before condemning the balancer.</li>
+      </ul>
+
+      <h2>What a distributor should stock</h2>
+      <p>The puller is only as useful as its adapter coverage. Crank snout threads are not universal, and a kit with one adapter is a kit for one engine family.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Adapter thread</th><th>Where it appears</th><th>Why it matters</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>M12 x 1.5</td><td>Common metric crank snouts and balancer tapped holes</td><td>Small-displacement and compact engine coverage</td></tr>
+            <tr><td>M14 x 1.5</td><td>Common metric crank snouts</td><td>Mid-range coverage; often missing from cheap kits</td></tr>
+            <tr><td>M16 x 2.0</td><td>GM LS and larger domestic engines</td><td>High pull force needs full thread engagement</td></tr>
+            <tr><td>5/8-18 UNF</td><td>Many domestic V8 crank snouts</td><td>Inch coverage for older engine families</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Confirm the thread against the engine, not against the kit's label. A kit that lists four adapters can still miss the one engine in front of you, and an adapter that threads in two turns is not engaged.</p>
+      <p>The rest of the specification is about load path and instruction: a forged forcing screw, a thrust bearing that takes the load without galling, hardened adapters, and a printed maximum input torque. The <a href="/products/TH-036">long-handle breaker bar</a>, the <a href="/products/TH-047">3:1 torque multiplier</a> and the <a href="/products/TH-002">3/4 in. drive extendable ratchet</a> cover the bolt-breaking stage, while the <a href="/products/TH-028">balancer puller kit</a> covers the hub. A distributor who sells all four as one job solves the customer's actual problem instead of one third of it.</p>
+
+      <h2>Bottom line</h2>
+      <p>Stop the crank with a tool that loads the crank, break the bolt with controlled torque rather than a longer pipe, and pull the hub with a bolt-on puller that engages full threads and has a stated input limit. Then install with an installer, not a hammer, and torque a TTY bolt once, with a new bolt. The order is not complicated. The damage comes from skipping a stage, and the snout is the part that cannot be replaced.</p>
+    `,
+    relatedProducts: ["TH-028", "TH-036", "TH-047", "TH-002"],
+    seoTitle: "Crank Pulley Bolt and Harmonic Balancer Removal Guide | TorqHive",
+    metaDescription: "How to hold the crank, break a stubborn crank pulley bolt and pull a press-fit harmonic balancer without stripping the snout. Puller thread engagement, installer method and kit specification."
+  },
+  {
     slug: "ball-end-hex-key-torque-limits-iso-2936",
     title: "Ball-End Hex Keys vs Straight Hex: ISO 2936 Proof Torque, 25-Degree Entry and When the Ball Costs You a Screw",
     date: "Nov 09, 2026",
