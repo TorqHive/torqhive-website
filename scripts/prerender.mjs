@@ -247,7 +247,7 @@ async function run() {
     const canonicalUrl = `https://torqhive.com${route}`;
     const targetFile = path.resolve(distDir, 'blog', post.slug, 'index.html');
     const title = `${post.title} | TorqHive Engineering & Insights`;
-    const description = post.excerpt || post.title;
+    const description = post.metaDescription || post.excerpt || post.title;
     const ogImage = post.coverImage || '/assets/images/home/torqhive-hero-premium.webp';
 
     const structuredData = {
