@@ -10,6 +10,308 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "flex-head-ratchet-hinge-locking-detent-friction",
+    title: "Flex-Head Ratchet Hinge: What Locking, Detent and Friction Joints Actually Cost You",
+    date: "Nov 17, 2026",
+    category: "Buying Guide",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-021/hero-web.webp",
+    excerpt: "The complaint about a flex-head ratchet is never the gear, it is the hinge. A 100 lbf pull on an 11.4 in. handle loses only about 13 percent of its torque at a 90-degree head angle, so the real cost is not leverage: it is a joint that carries the full bending moment through a detent, a friction bolt or a lock. Here is how the three designs fail, what the head dimensions say, and what to specify.",
+    tags: [
+      "flex head ratchet",
+      "locking flex head",
+      "ratchet hinge",
+      "ratchet head thickness",
+      "ratchet selection",
+    ],
+    content: `
+      <h2>The complaint is never about the gear</h2>
+      <p>Search for a flex-head ratchet and the negative reviews are consistent to the point of being repetitive. In <a href="https://www.reddit.com/r/Tools/comments/15q88ze/flex_head_ratcheting_wrenches_loose/">an r/Tools thread on loose flex-head wrenches</a> the request is not more teeth or a longer handle: it is a head that stays where it was set until deliberate pressure moves it. <a href="https://www.reddit.com/r/Tools/comments/13ajwlq/locking_flex_head_ratchet_spannerswrenches_do/">A second r/Tools thread on locking versus non-locking flex heads</a> reaches the same place from the other direction, with non-locking heads described as floppy enough to be frustrating in use.</p>
+      <p>That is a hinge complaint, not a ratchet complaint. The gear, the pawl and the tooth count are the parts the catalog sells; the hinge is the part the user actually fights. It is also the part that decides whether the extra access angle is worth carrying.</p>
+
+      <h2>Three joints, three failure modes</h2>
+      <p>Flex heads are not one product category inside the handle. The joint is built in one of three ways, and each has a different way of going loose:</p>
+      <ul>
+        <li><strong>Plain friction hinge.</strong> A bolt and a spring or Belleville washer clamp the head against the handle. Holding force is set by bolt tension, so it can be re-tensioned when it softens, and it is the design least likely to shed material. It is also the design that goes floppy when the bolt backs out or the washer takes a set.</li>
+        <li><strong>Indexing detent.</strong> A spring-loaded ball or pawl drops into machined grooves at fixed angles. The head clicks between positions and holds only as well as the detent force. The second failure is surface wear: the detent works against the chrome in the grooves, and on a decorative chrome finish that coating flakes rather than wears. <a href="https://marketstreettools.wordpress.com/2021/02/07/the-worst-type-of-flex-head-ratchets/">A teardown of common flex-head designs</a> documents exactly this, with chrome loss and flaking concentrated at the detent grooves and the joint face.</li>
+        <li><strong>Locking lever.</strong> A lever clamps the joint at discrete positions. The 3/8 in. GearWrench locking flex head is listed with 9 locked positions plus an unlocked mode, against 6 positions on the non-locking version of the same 90-tooth ratchet. The lock solves detent slip, and adds a mechanism that can be left unlocked at the wrong moment.</li>
+      </ul>
+      <p>None of these is a defect. They are three different answers to the same question, and the answer a buyer needs depends on whether the head has to hold an angle under load or merely reach one.</p>
+
+      <h2>What the flex angle actually costs</h2>
+      <p>The common assumption is that angling the head destroys leverage. It does not, and the arithmetic is worth doing once because it changes the purchase decision. Take a 3/8 in. ratchet with an 11.4 in. overall length, a head offset of about 1.5 in. from the fastener axis to the hinge, and a 100 lbf pull applied at right angles to the handle.</p>
+      <p>The moment arm about the fastener is the handle length from the hinge plus the projection of the head offset, which is <strong>L + h x cos(angle)</strong>, where L is 9.9 in. and h is 1.5 in. At a straight 0 degrees the arm is 11.4 in. and the torque is 95.0 lb-ft. At 90 degrees the arm is 9.9 in. and the torque is 82.5 lb-ft. The loss across the entire range of motion is about 13 percent, not the 100 percent that the "flex heads kill leverage" claim implies.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Head angle</th>
+              <th>Moment arm (in.)</th>
+              <th>Torque at 100 lbf (lb-ft)</th>
+              <th>Side load at the socket (lbf)</th>
+              <th>Bending moment at the hinge (lb-ft)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0 degrees</td><td>11.40</td><td>95.0</td><td>0</td><td>82.5</td></tr>
+            <tr><td>30 degrees</td><td>11.20</td><td>93.3</td><td>50.0</td><td>82.5</td></tr>
+            <tr><td>45 degrees</td><td>10.96</td><td>91.3</td><td>70.7</td><td>82.5</td></tr>
+            <tr><td>60 degrees</td><td>10.65</td><td>88.8</td><td>86.6</td><td>82.5</td></tr>
+            <tr><td>90 degrees</td><td>9.90</td><td>82.5</td><td>100.0</td><td>82.5</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The column that matters is the last one. The hinge sees the full 82.5 lb-ft of bending at every angle, because the pull is always at right angles to the handle and always the same distance from the joint. All of that moment has to pass through a detent ball, a friction washer or a locking tooth that is a fraction of the size of the ratchet gear. That is why the hinge, not the 90-tooth gear, is the part that decides whether the tool feels tight after a year.</p>
+      <p>The fourth column explains the other field complaint. At 0 degrees the reaction at the socket is axial, pushing the socket onto the fastener. At 90 degrees the same 100 lbf is a side load across the square drive, which cocks the socket on the anvil and loads the corners of the drive square. A flex head used at extreme angles is not weaker in torque; it is harder on the socket, the anvil and the fastener corners.</p>
+
+      <h2>Head thickness is not the price you pay</h2>
+      <p>It is reasonable to assume a hinge must make the head thicker. In the GearWrench 90-tooth 3/8 in. family it does not. The fixed-head 11 in. ratchet lists a head thickness of 0.47 in. and a head width of 1.25 in. The 11.4 in. non-locking flex head lists the same 0.47 in. and 1.25 in. The 11.47 in. locking flex head lists 0.47 in. and 1.25 in. as well.</p>
+      <p>So the hinge is packaged inside the same envelope as the fixed head. What the buyer pays is not height. It is parts count, a second wear interface, and a head that can move when it was not asked to. That is a much narrower trade than most buying guides admit, and it means the decision should be made on joint type and serviceability rather than on access dimensions that do not change.</p>
+
+      <h2>Tooth count and the swing you actually get</h2>
+      <p>The arc per tooth is arithmetic: 360 degrees divided by the tooth count. A 90-tooth ratchet gives 4 degrees, a 72-tooth gives 5 degrees, and a 120-tooth gives 3 degrees. In a 40-degree window between obstructions, 4 degrees gives ten engagement positions and 5 degrees gives eight.</p>
+      <p>What the flex joint adds is the ability to re-aim the handle into a different plane, which often buys more usable swing than another twenty teeth. That is the honest case for a flex head: it does not make the ratchet stronger or finer, it lets the handle go where the obstructions are not.</p>
+
+      <h2>Where a flex head is the wrong tool</h2>
+      <ul>
+        <li><strong>Breaking torque.</strong> A flex head is not a breaker bar. The hinge is loaded in bending at every angle, and the joint is the smallest structural feature in the tool. Use a <a href="/blog/breaker-bar-vs-impact-wrench-stuck-bolts">breaker bar</a> for the first crack of a seized fastener and switch to the ratchet afterwards.</li>
+        <li><strong>Final torque.</strong> A torque wrench with a flex head introduces an angle and a joint between the wrench and the fastener. Torque with a fixed head or a dedicated torque wrench, and keep the flex head for running the fastener down.</li>
+        <li><strong>Handle extensions.</strong> A cheater pipe on any ratchet is a bad idea; on a flex head it loads the hinge with a moment the detent was never designed to hold.</li>
+        <li><strong>Blind pockets.</strong> If the head cannot rotate through its arc because the pocket is narrow, the flex angle does not help. A roto ratchet or a stubby fixed head reaches where a teardrop flex head cannot.</li>
+      </ul>
+
+      <h2>What to specify when buying</h2>
+      <p>For a distributor or a private-label program, the hinge is where the warranty claims will come from, so it deserves its own specification lines rather than a bullet in the marketing copy.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Ask for</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Joint type</td>
+              <td>Plain friction, indexing detent or locking lever, with the number of positions</td>
+              <td>Determines whether the head holds an angle or only reaches one</td>
+            </tr>
+            <tr>
+              <td>Holding torque</td>
+              <td>Test method and measured value for the joint, not the word strong</td>
+              <td>A detent that holds 2 lb-ft and one that holds 8 lb-ft read identically in a catalog</td>
+            </tr>
+            <tr>
+              <td>Head thickness and width</td>
+              <td>Both dimensions in mm, measured at the head</td>
+              <td>Width, not thickness, is usually the access limit</td>
+            </tr>
+            <tr>
+              <td>Chrome at the joint</td>
+              <td>Plating spec and salt spray hours, with the joint face included</td>
+              <td>Detent grooves and joint faces flake first because coverage is poorest there</td>
+            </tr>
+            <tr>
+              <td>Body material</td>
+              <td>Cr-V or Cr-Mo, forging process, and heat treatment</td>
+              <td>The flex head sees bending that a fixed head does not</td>
+            </tr>
+            <tr>
+              <td>Service parts</td>
+              <td>Repair kit part number, hinge bolt or washer availability, individual handle</td>
+              <td>The joint is a wear item; the GearWrench family shares one repair kit across flex and fixed heads</td>
+            </tr>
+            <tr>
+              <td>Handle length</td>
+              <td>Overall length and handle diameter in mm</td>
+              <td>Leverage and access trade directly against each other</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Verdict</h2>
+      <p>Buy a flex head for access, and buy the joint deliberately. A locking head is the right choice for a technician who needs an angle held under load; a plain friction hinge is the right choice for someone who wants the fewest parts to wear; an indexing detent is the middle case and the one most likely to disappoint, because the holding force is a spring rather than a clamp. None of them costs head thickness, and none of them costs much torque. What they cost is a hinge that has to be tightened, cleaned and eventually rebuilt.</p>
+      <p>TorqHive supplies the three drive sizes as standalone units, the <a href="/products/TH-021">3/8 in. drive flex-head ratchet</a>, the <a href="/products/TH-022">1/2 in. drive flex-head ratchet</a> and the <a href="/products/TH-023">1/4 in. drive flex-head ratchet</a>, plus the <a href="/products/TH-016">3-piece flex-head ratchet set</a> for a full range. The service side is covered in <a href="/blog/ratchet-rebuild-kit-serviceability-sourcing">ratchet rebuild kits and serviceability</a>, and the tooth-count trade-off is set out in <a href="/blog/ratchet-tooth-count-and-arc-swing">ratchet tooth count and arc swing</a>.</p>
+    `,
+    relatedProducts: ["TH-021", "TH-022", "TH-016", "TH-023"],
+    seoTitle: "Flex-Head Ratchet Hinge: Locking vs Detent vs Friction | TorqHive",
+    metaDescription: "A flex-head ratchet loses about 13 percent of its torque at 90 degrees, not half. The real cost is the hinge: locking lever, indexing detent or friction bolt, and how each one fails.",
+  },
+  {
+    slug: "pass-through-socket-set-what-it-replaces",
+    title: "Pass-Through Socket Sets: What a Hollow Ratchet Replaces, and the Four Jobs It Cannot Do",
+    date: "Nov 17, 2026",
+    category: "Buying Guide",
+    readTime: "11 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-008/hero-web.webp",
+    excerpt: "A pass-through set is not a deep socket replacement and not a compact socket set. It is a hollow drive system that trades wall thickness, size range and impact rating for height over a protruding stud. Here is the geometry behind the 5-degree arc and the 50-percent-thinner head, the four jobs the system cannot do, and the lines a distributor should put in a purchase spec.",
+    tags: [
+      "pass-through socket set",
+      "pass-thru ratchet",
+      "deep socket alternative",
+      "thin wall socket",
+      "socket set specification",
+    ],
+    content: `
+      <h2>Two threads, two opposite conclusions</h2>
+      <p>In <a href="https://www.reddit.com/r/Tools/comments/1rwm36m/need_some_help_picking_some_pass_through_sockets/">a recent r/Tools thread asking for help choosing pass-through sockets</a>, the verdict from the people who own a set is that it is "more of a limited use specialty item", and the missing capability named first is functional extensions. In <a href="https://www.reddit.com/r/MechanicAdvice/comments/1n9939p/why_not_to_get_passthrough_ratchet_and_sockets/">an r/MechanicAdvice thread titled "Why not to get pass-through ratchet and sockets?"</a> the original poster has the opposite problem: the system looks more versatile than a normal set, saves space, and the question is why anyone would avoid it.</p>
+      <p>Both descriptions are accurate, because they are describing different jobs. A pass-through set is not a better socket set. It is a socket set with the drive tang removed and the socket bored through, which solves one specific access problem and gives up three ordinary capabilities to do it. Once those trade-offs are separated, the product stops being controversial and becomes easy to specify.</p>
+
+      <h2>What the system actually changes</h2>
+      <p>A conventional socket is a blind cup with a square drive broached into its back. The drive tang and the ratchet anvil occupy the centre of that cup, so the depth of the well is the maximum length of stud the socket can swallow. A pass-through socket is open at both ends: the stud continues through the socket, through the ratchet ring, and out the back of the head.</p>
+      <p>Three consequences follow directly, and they explain every review you will read:</p>
+      <ul>
+        <li><strong>Height stops scaling with stud length.</strong> A deep socket has to be as deep as the protrusion plus the nut. A pass-through socket is one length regardless of how far the stud sticks out, because the stud exits through the tool instead of stopping inside it.</li>
+        <li><strong>The wall becomes the structural part.</strong> With no tang in the middle, the socket body is a thin tube. GearWrench describes its Pass-Thru sockets as a thin wall design and states the ratchet heads are up to 50 percent thinner than standard ratchets. That is where the access gain comes from, and it is also where the strength question starts.</li>
+        <li><strong>The drive interface is proprietary.</strong> There is no square tang carrying the load. The ratchet ring engages the outside of the socket. GearWrench claims the arrangement is up to 40 percent stronger than a standard ratchet precisely because the tang is gone, and quotes a 5-degree ratcheting arc against 30 degrees for a standard wrench.</li>
+      </ul>
+      <p>Those figures come from the maker's product data for the 21-piece 3/8 in. drive set, which also lists a 72-tooth mechanism, alloy steel sockets, and a size range of 3/8 to 3/4 in. and 10 to 19 mm. Read them as a description of one well-documented system, not as an industry standard, because no industry standard exists for this interface.</p>
+
+      <h2>The comparison that decides the purchase</h2>
+      <p>The four systems below are the ones a buyer actually chooses between. The columns are the variables that change the answer: how far the handle must swing, how tall the stack is over the fastener, what limits the stud length, whether the system can be struck by an impact, and where the load travels.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>System</th>
+              <th>Swing arc</th>
+              <th>Height over fastener</th>
+              <th>Stud length limit</th>
+              <th>Impact use</th>
+              <th>Load path</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pass-through socket and ring ratchet</td>
+              <td>5 degrees (maker figure)</td>
+              <td>Low: shallow socket plus shallow head</td>
+              <td>No practical limit; stud exits the tool</td>
+              <td>Manual only</td>
+              <td>Socket body to ratchet ring; no tang</td>
+            </tr>
+            <tr>
+              <td>Deep socket and standard ratchet</td>
+              <td>4 to 5 degrees at 90 or 72 teeth</td>
+              <td>Tall: well depth plus head</td>
+              <td>Set by well depth</td>
+              <td>Chrome manual; impact version available</td>
+              <td>Square tang and anvil</td>
+            </tr>
+            <tr>
+              <td>Shallow socket, extension and ratchet</td>
+              <td>4 to 5 degrees at the ratchet</td>
+              <td>Tall and offset by the extension</td>
+              <td>Set by extension length</td>
+              <td>Depends on the socket used</td>
+              <td>Tang plus every extension joint</td>
+            </tr>
+            <tr>
+              <td>Standard non-ratcheting wrench</td>
+              <td>30 degrees (maker comparison)</td>
+              <td>Lowest over the fastener</td>
+              <td>Open ring, no limit</td>
+              <td>Never</td>
+              <td>Jaw or ring to fastener flats</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The table makes the positioning clear. A pass-through set wins on height and stud length, loses on impact capability and size range, and sits between a deep socket and a wrench on swing arc. It does not dominate any row. It occupies one.</p>
+
+      <h2>Where the hollow bore is the only thing that fits</h2>
+      <p>The system earns its place in jobs where the fastener is not the problem and the thread sticking out of it is:</p>
+      <ul>
+        <li><strong>Nuts on long studs.</strong> Strut top mounts, exhaust flange studs, turbo downpipe studs, machine feet and clamp bolts. A deep socket runs out of well before the nut seats; a pass-through does not care.</li>
+        <li><strong>Jam nuts on threaded rod.</strong> Two nuts locked against each other need one held while the other turns. A pass-through holds the inner nut with the rod running out through the tool.</li>
+        <li><strong>Low overhead clearance.</strong> Under a cowl, a bench overhang or a control arm pocket, the stack height is the difference between engaging the nut and not reaching it.</li>
+        <li><strong>Threaded adjusters.</strong> Turnbuckles, linkage rods and leveling feet where the thread must pass through the tool while the nut is driven.</li>
+      </ul>
+      <p>In every one of those cases the benefit is reach over a protrusion. None of them is a high-torque job, which is the next point.</p>
+
+      <h2>Four jobs the system cannot do</h2>
+      <ol>
+        <li><strong>Impact work.</strong> GearWrench states that the pass-through bits in its bit-socket set are for manual use and are not rated for impact tools, and the sockets are thin-wall chrome. No published impact class exists for the ring interface. Wheel nuts, suspension bolts and anything rusted solid belong on impact sockets with a square-drive impact wrench.</li>
+        <li><strong>Sizes above 19 mm.</strong> The 3/8 in. drive set covers 10 to 19 mm and 3/8 to 3/4 in. Fasteners at 21, 22 and 24 mm, which is where suspension, driveline and many lug nuts live, are outside the range. A pass-through set is an addition to a 1/2 in. drive range, not a substitute for it.</li>
+        <li><strong>Blind recesses.</strong> The bore only helps if the stud can leave the tool. A nut at the bottom of a pocket with a closed end, or a recess narrower than the socket outside diameter, still needs a deep socket or a thin-wall impact socket.</li>
+        <li><strong>A calibrated torque value.</strong> To use a torque wrench, the pass-through socket needs an adapter back to square drive. That adapter restores the tang and the stack height the system was bought to remove, and it adds a joint between the wrench and the fastener. Torque the fastener with the correct square-drive socket and a wrench that was calibrated for that drive size.</li>
+      </ol>
+
+      <h2>The adapter undoes the advantage</h2>
+      <p>GearWrench supplies an adapter so the sockets can be driven by conventional square-drive tools. It is genuinely useful for rescue work and for using a pass-through socket on a ratchet that is already in your hand. It is not a way to turn the system into a normal set. The adapter puts the square tang back in the load path, adds roughly its own height to the stack, and introduces another interface that can rock under load. If a job needs the adapter, the job probably needed a deep socket in the first place.</p>
+
+      <h2>What belongs in a purchase spec</h2>
+      <p>Distributors get into trouble with this category because the catalog copy is all access claims and no interface data. The specification below is what a private-label buyer should be able to fill in before approving a sample, and what a supplier should be able to answer in writing.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Specification line</th>
+              <th>What to write</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Drive interface</td>
+              <td>Maker-specific ring interface; confirm cross-brand compatibility in writing</td>
+              <td>There is no published square-drive standard for this joint, so sets are not interchangeable</td>
+            </tr>
+            <tr>
+              <td>Through-bore</td>
+              <td>Minimum bore diameter in mm, measured against the longest stud in the fleet</td>
+              <td>The bore, not the hex size, decides whether the tool reaches the nut</td>
+            </tr>
+            <tr>
+              <td>Socket outside diameter</td>
+              <td>OD at the largest size, in mm</td>
+              <td>Sets the smallest recess the set can enter</td>
+            </tr>
+            <tr>
+              <td>Wall thickness</td>
+              <td>Minimum wall at the hex flats, plus material grade</td>
+              <td>The thin wall is the wear and split point</td>
+            </tr>
+            <tr>
+              <td>Torque verification</td>
+              <td>Static torque test value and fixture description, per lot</td>
+              <td>No published proof-torque class covers a hollow ring-driven socket</td>
+            </tr>
+            <tr>
+              <td>Impact statement</td>
+              <td>Mark manual use only unless an impact-rated line is supplied with its own test data</td>
+              <td>Prevents a warranty claim that the tool was never designed to survive</td>
+            </tr>
+            <tr>
+              <td>Service parts</td>
+              <td>Individual sockets, ratchet repair kit, adapter part numbers</td>
+              <td>A set with no spares becomes a drawer of orphans</td>
+            </tr>
+            <tr>
+              <td>Marking and finish</td>
+              <td>Hard stamp or laser size marking, chrome spec, salt spray hours</td>
+              <td>Inspection, warranty and shelf life in a humid warehouse</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>How the standard applies, and where it stops</h2>
+      <p>ASME B107.110 is the consolidated US standard for socket wrenches, handles and attachments, covering sockets, ratchets, breaker bars, extensions, universal joints and adapters. It is written around square-drive tooling: the dimensional fit and the performance requirements are stated for that geometry. It does not publish a separate proof-torque class for a hollow socket driven by a ring, so a "meets ASME" line on a pass-through set is a general conformance statement rather than a torque rating for the interface. For a private-label program, the only number that means anything is the one the supplier tests and signs.</p>
+
+      <h2>Verdict</h2>
+      <p>Buy a pass-through set as a third system, after a 3/8 in. deep socket range and a 1/2 in. impact range, and buy it for the one thing it does that nothing else does: driving a nut that sits a long way down a stud. For a distributor it is a specialty SKU with strong attachment sales, because every set needs spare sockets, an adapter and a repair kit, and it is a poor substitute for a core socket range.</p>
+      <p>The parts of a conventional range that cover the same jobs are the <a href="/products/TH-008">7-piece 3/8 in. drive long socket set</a> for depth, the <a href="/products/TH-035">extension bar set</a> for reach, and the <a href="/products/TH-011">12-piece 1/2 in. drive long socket set</a> once the fastener is above 19 mm. The background on how much depth a socket actually buys is in <a href="/blog/deep-vs-shallow-vs-semi-deep-sockets">deep versus shallow versus semi-deep sockets</a>.</p>
+    `,
+    relatedProducts: ["TH-008", "TH-007", "TH-035", "TH-011"],
+    seoTitle: "Pass-Through Socket Set: What It Replaces and Its Limits | TorqHive",
+    metaDescription: "A pass-through socket set solves protruding studs, not torque. The 5-degree arc, thin-wall trade-off, 10-19 mm range limit, impact restrictions and the spec lines buyers should require.",
+  },
+  {
     slug: "tire-pressure-gauge-accuracy-asme-grade-b-3-2-3",
     title: "Tire Pressure Gauge Accuracy: What ASME Grade B (3-2-3) and Percent of Span Really Mean",
     date: "Nov 16, 2026",
