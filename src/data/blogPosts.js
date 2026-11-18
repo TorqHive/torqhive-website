@@ -10,6 +10,280 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "impact-driver-bits-torsion-zone-s2-steel",
+    title: "Impact Driver Bits: Where They Snap, Why Torsion Zones Work, and What S2 Steel Actually Buys",
+    date: "Nov 18, 2026",
+    category: "Material & Engineering",
+    readTime: "11 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-051/hero-web.webp",
+    excerpt: "Impact driver bits fail in three different ways, and only one of them is about steel. The torsion zone, the hardness window and the 6.3 mm shank form decide whether a bit wears out, snaps at the neck or jams in the chuck - and each one is a line a buyer can specify.",
+    tags: [
+      "impact driver bits",
+      "torsion zone",
+      "S2 steel",
+      "1/4 hex bits",
+      "bit breakage",
+    ],
+    content: `
+      <h2>Three complaints, one product category</h2>
+      <p>In <a href="https://www.reddit.com/r/Tools/comments/1w1k3s6/best_torx_bits/">an August 2026 r/Tools thread on the best Torx bits</a> the most useful answer is not a brand. It is a classification: "small torx hex bits I would consider a consumable", with one poster noting that the bit supplied in a box of structural screws "works great for about 1 box of screws before it's trash". The same thread contains the opposite view from users who expect a bit to last a season, and they are not wrong either - they are describing different jobs at different torques.</p>
+      <p>Two more threads frame the rest of the problem. <a href="https://www.reddit.com/r/Tools/comments/1svgip3/klein_impact_bits_junk/">A thread titled "Klein Impact bits = Junk"</a> is a complaint about a branded impact set failing in service, with the same post mirrored in the brand's own subreddit where it collected dozens of replies. <a href="https://www.reddit.com/r/Tools/comments/1qfnrnx/small_bit_stuck_in_impact_driver/">"Small bit stuck in impact driver"</a>, with 588 votes and roughly 400 comments, is not about breakage at all: the bit was intact and would not come out of the chuck.</p>
+      <p>Wear, fracture and retention are three different failure modes with three different causes. A catalogue lists one product, one steel grade and one price, which is why the complaints never converge.</p>
+
+      <h2>The torsion zone is a spring, not a feature label</h2>
+      <p>A 1/4 in. hex bit is a torsion bar between the impact mechanism and the screw head. An impact driver delivers energy in discrete blows, so the torque at the tip is a spike train rather than a steady value. Peak torque is what strips a recess or snaps a bit; mean torque is what actually drives the screw.</p>
+      <p>Insert a reduced-diameter section - the torsion zone - and the bit becomes a softer spring in series with the mechanism. Torsional stiffness of a round section is <strong>k = G x J / L</strong>, with <strong>J = pi x d^4 / 32</strong>. Reduce the neck diameter by 12.5 percent and stiffness falls by about 40 percent for the same length. For a given blow energy a softer spring deflects further and transmits a lower peak torque, which is exactly what protects the tip and the recess. The cost is stored energy, heat and twist: the bit winds up, the drive feels slower, and the neck works harder.</p>
+      <p>Two scaling rules explain most of what buyers observe. Torque capacity before yield scales with diameter cubed, while the strain energy the neck can absorb before yield scales with diameter squared, at fixed length and material. Moving from a 3.5 mm neck to 4.0 mm raises torque capacity by roughly 49 percent but raises yield energy by only about 31 percent. That is the honest trade: a thicker neck is stronger but fails more abruptly, and a longer, thinner torsion zone feels soft and survives longer at the same tip hardness.</p>
+      <p>There is a second and less obvious effect. The transition radius where the neck meets the hex body is a stress concentration, and torsional shear piles up there. A sharp corner starts a fatigue crack within a few thousand cycles; a generous radius spreads the same strain over more material. Two bits with identical steel and identical neck diameter can differ by an order of magnitude in life on that radius alone, which is why "S2" on a label predicts so little about breakage.</p>
+
+      <h2>The hardness window</h2>
+      <p>S2 is a shock-resisting tool steel, UNS T41902, with roughly 0.40-0.55 percent carbon, 0.90-1.20 percent silicon, 0.30-0.60 percent molybdenum and a vanadium addition. The high silicon is there for tempering resistance, and the grade is designed to survive impact rather than to hold an edge.</p>
+      <p>Bits in S2 are commonly specified at 58-62 HRC. Published work on bit steels puts Cr-V bits around 52 HRC, which buys toughness and gives up wear resistance: the tip rounds, the flanks polish, cam-out begins, and the screw head suffers before the bit breaks. Neither number is "better". They answer different questions - wear life at the tip versus fracture resistance at the neck.</p>
+      <p>Hardness also has an upper limit that catalogues ignore. Above roughly 62 HRC a bit becomes notch-sensitive: it holds its shape and then fails without warning at the first stress raiser. Below roughly 56 HRC the tip deforms and the bit starts stripping recesses. The useful window is narrow, and it belongs on a test certificate as a range with a method, not in marketing copy as a word.</p>
+      <p>"Modified S2" is a real category and an unregulated one. It usually means a mill variation or a micro-alloyed heat with vacuum or controlled-atmosphere hardening. It can be genuinely better. It can also mean the same wire drawn to a different temper and stamped with a nicer name. Ask for the mill certificate, the hardness test method and the sample size per lot, not the adjective.</p>
+
+      <h2>What the 6.3 mm body does and does not control</h2>
+      <p>1/4 in. hex is 6.3 mm, and the shank is standardized in DIN 3126 and ISO 1173. C 6.3 insert bits are the short bodies that sit in a holder; E 6.3 power bits are the longer bodies that lock into a quick-change chuck. The standard fixes the shank geometry, the retaining groove and the fit in the tool. It says nothing about tip tolerance, heat treatment, or whether a torsion zone exists at all.</p>
+      <p>That gap matters because most "impact rated" claims describe the shank, not the tip. A bit can be perfect at the drive end and still have a Torx profile at the loose end of its tolerance, which is where cam-out and rounded recesses come from. A Phillips recess is designed to cam out; a Torx recess is not, so a loose Torx bit does its damage by rocking in the recess and loading two lobes instead of six.</p>
+      <p>Runout compounds it. A holder with 0.2 mm of eccentricity, measured 60 mm from the tip, puts the bit into a visible orbit at the fastener and enters the recess at an angle. Long bits amplify the same error. When a technician reports that "these bits strip screws", the first things to check are the holder, the seating depth and the recess condition - not the steel grade.</p>
+
+      <h2>Why a bit jams in the chuck</h2>
+      <p>The stuck-bit thread is a retention failure, and it is usually self-inflicted. Quick-change chucks grip the hex flats over a short engagement length. Spin the bit under load, or seat it halfway, and the corners of the shank burnish, burr and then wedge into the jaws. Fine steel dust plus friction heat produces the same result more slowly, which is why the problem appears on the bits that get used most rather than on the newest ones.</p>
+      <p>Prevention is mechanical: seat the bit until the collar clicks, keep the chuck clean, avoid side load in drill mode, and retire any bit whose shank shows bright wear marks on the corners. Removal should use pliers on the exposed shank with the release collar pulled back, never the tip as a lever.</p>
+
+      <h2>What to put on a purchase order</h2>
+      <p>Bit quality is invisible in a photograph and easy to test in a workshop. These are the lines that make a difference between suppliers, and the ones a private-label buyer should require in writing.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Ask for</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Steel grade</td>
+              <td>S2 (UNS T41902) with mill certificate, or a named modified-S2 heat</td>
+              <td>"S2" alone covers several mill practices and tempers</td>
+            </tr>
+            <tr>
+              <td>Hardness</td>
+              <td>58-62 HRC, test method stated, minimum sample size per lot</td>
+              <td>A single spot check on one bit says nothing about a batch</td>
+            </tr>
+            <tr>
+              <td>Torsion zone</td>
+              <td>Neck diameter and length in mm, plus the transition radius</td>
+              <td>This is the part that decides peak torque at the tip and fatigue life</td>
+            </tr>
+            <tr>
+              <td>Tip tolerance</td>
+              <td>Profile dimensions and tolerance for each size, not just the size code</td>
+              <td>Loose tips round recesses before the bit breaks</td>
+            </tr>
+            <tr>
+              <td>Torque to failure</td>
+              <td>Measured value in Nm with the test fixture described</td>
+              <td>Converts a vague impact rating into a comparable number</td>
+            </tr>
+            <tr>
+              <td>Shank</td>
+              <td>DIN 3126 / ISO 1173 C 6.3 or E 6.3, groove dimensions included</td>
+              <td>Controls retention and how the bit wears in the chuck</td>
+            </tr>
+            <tr>
+              <td>Finish</td>
+              <td>Black oxide or phosphate, with salt spray hours if corrosion matters</td>
+              <td>Bare polished steel rusts in a toolbox within weeks</td>
+            </tr>
+            <tr>
+              <td>Traceability</td>
+              <td>Lot code on the bit or the pack, linked to the heat number</td>
+              <td>Makes a warranty claim a measurement instead of an argument</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>The buying decision</h2>
+      <p>Price bits per drive, not per piece. A technician driving 300 screws a day will consume small Torx and Phillips bits on a schedule that has nothing to do with brand loyalty, and a ten-pack of the two sizes that do most of the work is cheaper than a forty-piece case of sizes nobody touches. For a distributor, that also means stocking the fast-moving sizes as open stock rather than only inside a set, because a set with one missing bit becomes a return.</p>
+      <p>Keep the categories separate when specifying. A 1/4 in. hex power bit is a consumable with a torsion zone; a square-drive bit socket is a tool with a forged body, a pressed or broached bit and a retention system. The <a href="/products/TH-051">8-piece metric hex bit impact socket set</a> and the <a href="/products/TH-076">1/2 in. drive S2 bit socket</a> belong to the second category, and the <a href="/products/TH-095">1/2 in. square to 1/4 in. hex impact adapter</a> is the part that lets a square-drive tool use the first. The failure behaviour of a bit socket is covered separately in <a href="/blog/torx-hex-bit-sockets-failure-and-specification">Torx and hex bit sockets</a>.</p>
+
+      <h2>Verdict</h2>
+      <p>A bit that snaps is not necessarily a bad bit; it may be a hard tip doing its job at the end of a neck that was too thin to survive the fatigue. A bit that rounds is not necessarily soft; it may be a tough alloy being asked to do a wear job at 52 HRC. The torsion zone, the transition radius and the hardness range are the three variables that separate a consumable from a disappointment, and all three are specifiable. Buy the geometry deliberately, test hardness by lot, and treat the small sizes as stock rather than as a one-time purchase.</p>
+    `,
+    relatedProducts: ["TH-051", "TH-076", "TH-095", "TH-078"],
+    seoTitle: "Impact Driver Bits: Torsion Zone, S2 Steel and Failure Modes | TorqHive",
+    metaDescription: "Why impact driver bits snap at the neck, round at the tip or jam in the chuck: torsion zone mechanics, the 58-62 HRC S2 window, DIN 3126 shank forms and the PO lines that predict life.",
+  },
+  {
+    slug: "socket-set-skip-sizes-16-18-mm",
+    title: "Why Socket Sets Skip Sizes: The 11, 16 and 18 mm Gaps and What They Cost a Buyer",
+    date: "Nov 18, 2026",
+    category: "Buying Guide",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-009/hero-web.webp",
+    excerpt: "A twelve-piece socket set is not twelve usable sizes. Sets are built around a drive size, a case layout and a price point, and the sizes that disappear first are often M10 and M12 - the two most common metric fasteners a technician touches.",
+    tags: [
+      "socket set skip sizes",
+      "no skip socket set",
+      "16mm socket",
+      "18mm socket",
+      "socket set sizes",
+    ],
+    content: `
+      <h2>The complaint arrives with a size list</h2>
+      <p>In <a href="https://www.reddit.com/r/Tools/comments/1tx7zkd/why_the_skip_sizing/">an r/Tools thread titled "Why the skip sizing?"</a> a buyer who had just picked up a discounted set lists exactly what he received. The 1/2 in. drive kit runs 15, 16, 17, 18 and 19 mm and nothing else; the 3/8 in. set is missing only 11 mm; the 1/4 in. set stops at 14 mm. His summary is blunt: "Why do manufacturers skip sizes like this? It makes no sense."</p>
+      <p>The mirror-image thread is <a href="https://www.reddit.com/r/Tools/comments/1o8a2wv/do_you_guys_actually_use_every_socket_size_in/">"Do you guys actually use every socket size in those No-Skip sets? Or are some just dead weight?"</a>, where the complaint is the opposite: too many sizes, too much case, too much money tied up in sockets that never leave the tray.</p>
+      <p>Both posters are describing the same design decision from opposite ends. A socket set is not specified like a fastener or a wrench. It is assembled around a drive size, a case footprint and a retail price point, and the size list is whatever fits those three constraints.</p>
+
+      <h2>No standard defines what goes in a set</h2>
+      <p>ISO 2725-1 specifies the dimensions, designation and marking of hand-operated square drive sockets, for driving squares from 6.3 mm to 25 mm. DIN 3124 covers the same territory for the German market. Neither document says a 12-piece 3/8 in. set must include 11 mm, or that a 1/2 in. set may start at 15 mm. They define what a 16 mm socket must measure once someone decides to make one.</p>
+      <p>That is why "no skip" is a marketing term rather than a compliance claim, and why two sets with the same piece count can have completely different coverage. The only way to buy coverage is to write coverage into the purchase order.</p>
+
+      <h2>The sizes that matter are the ones with a thread under them</h2>
+      <p>Metric hex head fasteners follow ISO 4017, which fixes width across flats as a function of thread diameter. That mapping is the difference between a size list and a coverage map.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Thread (ISO 4017)</th>
+              <th>Width across flats</th>
+              <th>Where it shows up</th>
+              <th>If the socket is missing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>M6</td><td>10 mm</td><td>Brackets, covers, small assemblies</td><td>Adjustable wrench, rounded head</td></tr>
+            <tr><td>M8</td><td>13 mm</td><td>Body panels, mounts, general machinery</td><td>Usually present; rarely the gap</td></tr>
+            <tr><td>M10</td><td>16 mm</td><td>Extremely common on vehicles and equipment</td><td>Frequently skipped in 3/8 in. sets</td></tr>
+            <tr><td>M12</td><td>18 mm</td><td>Extremely common; suspension, brackets, structural</td><td>Frequently skipped in 1/2 in. sets</td></tr>
+            <tr><td>M14</td><td>21 mm</td><td>Chassis, driveline, machinery</td><td>Often the last size in a cheap set</td></tr>
+            <tr><td>M16</td><td>24 mm</td><td>Heavy brackets, suspension, industrial</td><td>Requires a second purchase</td></tr>
+            <tr><td>M18</td><td>27 mm</td><td>Commercial vehicle and plant</td><td>Rarely in a 1/2 in. set at all</td></tr>
+            <tr><td>M20</td><td>30 mm</td><td>Heavy equipment, structural steel</td><td>3/4 in. drive territory</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Read the table backwards and the skips look stranger. Dropping 16 mm removes M10. Dropping 18 mm removes M12. Those are the two thread sizes a technician meets most often on a modern vehicle, and they are also two of the sizes most commonly absent from mid-priced sets, because 16 and 18 mm fall in the overlap zone where a set can drop a piece without the box looking empty.</p>
+      <p>The same logic explains why 11 mm disappears from 3/8 in. sets. It is close to 7/16 in. (11.11 mm) and often treated as redundant, even though an 11 mm hex head is a real fastener and a 7/16 in. socket is 0.11 mm larger - enough to feel loose and enough to round a soft head.</p>
+
+      <h2>The arithmetic of substitution</h2>
+      <p>Inch sockets are not a substitute for metric ones, and the error is easy to quantify. A 16 mm head measures 0.6299 in.; the nearest inch size, 5/8 in., is 15.875 mm, which is 0.125 mm smaller and will not seat. The table below gives the nearest inch equivalent for the common metric sizes and the error in millimetres.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Metric socket</th>
+              <th>Nearest inch</th>
+              <th>Actual size</th>
+              <th>Error</th>
+              <th>Result in use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>10 mm</td><td>13/32 in.</td><td>10.32 mm</td><td>+0.32 mm</td><td>Loose; loads the corners</td></tr>
+            <tr><td>13 mm</td><td>1/2 in.</td><td>12.70 mm</td><td>-0.30 mm</td><td>Will not seat</td></tr>
+            <tr><td>16 mm</td><td>5/8 in.</td><td>15.88 mm</td><td>-0.13 mm</td><td>Will not seat</td></tr>
+            <tr><td>18 mm</td><td>11/16 in.</td><td>17.46 mm</td><td>-0.54 mm</td><td>Will not seat</td></tr>
+            <tr><td>19 mm</td><td>3/4 in.</td><td>19.05 mm</td><td>+0.05 mm</td><td>Fits, but sloppy at torque</td></tr>
+            <tr><td>21 mm</td><td>13/16 in.</td><td>20.64 mm</td><td>-0.36 mm</td><td>Will not seat</td></tr>
+            <tr><td>24 mm</td><td>15/16 in.</td><td>23.81 mm</td><td>-0.19 mm</td><td>Will not seat</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Only 19 mm has a genuinely usable inch twin, which is precisely why it is the size most often rationalized away in a dual-standard set. The others are not interchangeable. In practice a missing 16 or 18 mm socket sends the user to an adjustable wrench, which is the fastest route to a rounded head and then to an <a href="/blog/bolt-extractor-sockets-and-screw-extractors-sizing">extractor socket</a>.</p>
+
+      <h2>Why the gaps cluster where they do</h2>
+      <p>Every size in a set carries its own tooling: a forging die, a broach for the hex, a laser or stamp marking, a position in the case insert, and a line in the parts catalogue. A 12-piece set that adds four sizes is not a 12-piece set any more, and the case, the carton and the freight cube all change with it.</p>
+      <p>Three commercial habits follow from that. First, 1/2 in. drive sets often start at 15 mm because smaller sizes are considered 3/8 in. territory, which leaves the 1/2 in. set with a narrow band. Second, dual-standard sets drop metric sizes that are close to an inch size, on the assumption that the inch socket covers it - an assumption the table above does not support. Third, "piece count" is a cheaper marketing lever than "coverage", so a set can advertise 40 pieces and contain 32 usable sockets plus eight adapters and bits.</p>
+      <p>None of this is dishonest. It is the predictable result of not specifying coverage, and it is why two buyers with the same budget can end up with very different toolboxes.</p>
+
+      <h2>What the missing size actually costs</h2>
+      <p>For an individual, a missing 18 mm socket is a second order, a wait and a shipping charge - often more than the price difference between the cheap set and the complete one. For a shop, it is a bay held open, a technician borrowing from the next bay, and a fastener that gets abused in the meantime. For a distributor, it is a return and a review that says the set is incomplete, which is the single most damaging thing a house-brand set can be called.</p>
+      <p>The cost is asymmetric in a second way. A set with two extra sizes costs a few percent more to make. A rounded M12 head costs an extraction, possibly a replacement bolt, and sometimes a component that has to come off the vehicle. The coverage decision is cheap; the failure it prevents is not.</p>
+
+      <h2>What to write on a purchase order</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Wording that works</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>No-skip range</td>
+              <td>"3/8 in. drive, 6-19 mm, 1 mm increments, no omissions"</td>
+              <td>Removes the ambiguity in the phrase no skip</td>
+            </tr>
+            <tr>
+              <td>Declared skips</td>
+              <td>"Any omitted size listed in the packing list"</td>
+              <td>Sizes with no ISO 4017 hex head, such as 20, 23, 25, 26 and 28 mm, are defensible omissions - but they must be declared</td>
+            </tr>
+            <tr>
+              <td>Coverage versus count</td>
+              <td>"Usable socket sizes stated separately from adapters and bits"</td>
+              <td>Stops a 40-piece claim from hiding a 32-socket set</td>
+            </tr>
+            <tr>
+              <td>Marking</td>
+              <td>Size marked by laser or roll stamp, legible after plating, on socket and tray</td>
+              <td>An unmarked socket is a caliper job in the middle of a repair</td>
+            </tr>
+            <tr>
+              <td>Replacement</td>
+              <td>Individual sockets orderable at the same specification</td>
+              <td>A set with one lost size becomes a return otherwise</td>
+            </tr>
+            <tr>
+              <td>Depth</td>
+              <td>Standard, deep or semi-deep defined by overall length in mm</td>
+              <td>Depth changes access more than drive size does</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Coverage that actually works</h2>
+      <p>The ranges below are a working recommendation rather than a standard, and they assume metric fasteners. The principle is that each drive size should cover a continuous band, with the next drive taking over where reach or torque runs out.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Drive</th>
+              <th>Useful continuous range</th>
+              <th>Sizes worth adding</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1/4 in.</td><td>4-14 mm</td><td>5.5, 11 mm</td><td>Interior and small assemblies; low torque only</td></tr>
+            <tr><td>3/8 in.</td><td>6-19 mm</td><td>11, 16, 18 mm</td><td>The band where most vehicle work happens</td></tr>
+            <tr><td>1/2 in.</td><td>10-24 mm</td><td>20, 22, 23 mm</td><td>Chassis, suspension, driveline</td></tr>
+            <tr><td>1/2 in. deep</td><td>13-24 mm</td><td>27, 30 mm</td><td>Nut and stud access, not a substitute for 3/4 in.</td></tr>
+            <tr><td>3/4 in.</td><td>19-50 mm</td><td>32, 36, 41, 46 mm</td><td>Plant, commercial vehicle, industrial</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A 1/2 in. set that starts at 10 mm will duplicate much of a 3/8 in. set, and that duplication is often the better buy: the alternative is a gap at 16 and 18 mm that no adapter can fix. Duplication costs money once; a gap costs time every time it is hit.</p>
+
+      <h2>Verdict</h2>
+      <p>Piece count is the least useful number on a socket set. Coverage is the number that decides whether the set does the job, and it is easy to state: a continuous band, in 1 mm increments, with any omission declared. A twelve-piece set that skips 16 and 18 mm is really a ten-size set with two empty slots in the case, and the buyer discovers that at the worst possible moment.</p>
+      <p>TorqHive builds the ranges as stated bands rather than as round piece counts. The <a href="/products/TH-009">12-piece mixed-drive long socket set</a> and the <a href="/products/TH-010">14-piece 3/8 in. drive long socket set</a> cover the 3/8 in. band where the gaps usually appear, and the <a href="/products/TH-091">3/4 in. drive heavy-duty set, 19-50 mm</a>, carries the same no-skip logic into plant and commercial vehicle work. For the depth decision inside those ranges, see <a href="/blog/deep-vs-shallow-vs-semi-deep-sockets">deep versus shallow versus semi-deep sockets</a>.</p>
+    `,
+    relatedProducts: ["TH-009", "TH-010", "TH-091", "TH-015"],
+    seoTitle: "Why Socket Sets Skip Sizes: 11, 16 and 18 mm Gaps | TorqHive",
+    metaDescription: "Socket sets skip 11, 16 and 18 mm because they are built around piece count, not coverage. The ISO 4017 size map, substitution errors and the PO wording that closes the gaps.",
+  },
+  {
     slug: "flex-head-ratchet-hinge-locking-detent-friction",
     title: "Flex-Head Ratchet Hinge: What Locking, Detent and Friction Joints Actually Cost You",
     date: "Nov 17, 2026",
