@@ -10,6 +10,266 @@ export const blogCategories = [
 
 export const blogPosts = [
   {
+    slug: "zero-tooth-ratchet-sprag-clutch-arc-swing",
+    title: "Zero-Tooth Ratchets: What a 0-Degree Arc Claim Actually Buys You",
+    date: "Nov 20, 2026",
+    category: "Material & Engineering",
+    readTime: "12 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-001/hero-web.webp",
+    excerpt: "A zero-tooth ratchet does not have finer teeth - it has no teeth at all. The holding element is a sprag clutch, and that single change rewrites arc swing, lubrication, service life and what a distributor should put on the purchase order.",
+    tags: [
+      "zero tooth ratchet",
+      "sprag clutch ratchet",
+      "ratchet arc swing",
+      "gearless ratchet",
+      "ratchet sourcing",
+    ],
+    content: `
+      <h2>The thread started with a price and ended with a mechanism</h2>
+      <p>In <a href="https://www.reddit.com/r/Tools/comments/17g9s44/are_the_snapon_zero_tooth_ratchets_worth_it/">a r/Tools thread asking whether zero-tooth ratchets are worth the money</a>, the useful reply is not about brand loyalty. It is about what is inside the head: the tool does not have more teeth than a 144-tooth ratchet, it has no teeth at all. The holding element is a sprag clutch, the same family of one-way device used in helicopter rotor drives and motorcycle starters.</p>
+      <p>A second thread, <a href="https://www.reddit.com/r/Tools/comments/1qsg411/grease_vs_oil_for_90t_and_above_ratchets_whats/">on grease versus oil in 90-tooth and higher ratchets</a>, asks the question that logically follows. If lubricant choice already changes how a high-tooth-count ratchet feels, what does it do to a mechanism that depends on friction to hold at all?</p>
+      <p>Those two questions are the whole engineering story of the gearless ratchet, and they are the two things a buyer never sees on the packaging.</p>
+
+      <h2>What a toothed ratchet is actually selling</h2>
+      <p>A conventional ratchet is a gear and a pawl. The gear has a fixed number of teeth, the pawl drops into a tooth, and the handle must travel far enough for the pawl to clear one tooth and land in the next. That distance is the arc swing, and it is simple arithmetic: 360 degrees divided by the tooth count.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Tooth count</th>
+              <th>Geometric minimum arc</th>
+              <th>What it means at the handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>36</td>
+              <td>10.0 degrees</td>
+              <td>Needs a wide sweep; fine for bench work, poor under a dash</td>
+            </tr>
+            <tr>
+              <td>72</td>
+              <td>5.0 degrees</td>
+              <td>The long-standing professional baseline</td>
+            </tr>
+            <tr>
+              <td>90</td>
+              <td>4.0 degrees</td>
+              <td>Marketing has largely moved past this number</td>
+            </tr>
+            <tr>
+              <td>120</td>
+              <td>3.0 degrees</td>
+              <td>Comfortable in most engine-bay work</td>
+            </tr>
+            <tr>
+              <td>144</td>
+              <td>2.5 degrees</td>
+              <td>Close to the practical limit of a pawl and gear</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Two corrections matter before anyone quotes those numbers in a catalogue. First, the figure printed on the tool is tooth count, not arc; the arc is derived, and a supplier who quotes 5 degrees for a 72-tooth ratchet is doing arithmetic, not testing. Second, the geometric minimum is not the usable swing. Pawl engagement depth, backdrag, handle thickness and the obstruction in front of the head all add to the space a technician actually needs. A 3-degree ratchet on a 12 mm head is often less useful in a tight bay than a 5-degree ratchet on a thin one.</p>
+
+      <h2>What replaces the teeth</h2>
+      <p>A sprag clutch is a one-way freewheel that resembles a roller bearing but uses asymmetric, figure-eight-shaped elements. In one direction the elements slip and the inner race freewheels; in the other they tilt, wedge against the race and bind. The load path is a wedging contact, not a tooth flank in shear, and there is no discrete index position anywhere in the rotation.</p>
+      <p>That single substitution produces every property the marketing copy claims, and a few it does not mention:</p>
+      <ul>
+        <li><strong>No indexing increment.</strong> Any partial handle stroke that moves the fastener counts. There is no tooth to clear, so the handle does not need to travel a fixed minimum before it starts working.</li>
+        <li><strong>Holding depends on friction and geometry.</strong> A tooth is held by form; a sprag is held by wedging. Contamination, wear on the race, or the wrong lubricant film changes the holding behaviour rather than merely the feel.</li>
+        <li><strong>Lubricant is a specification, not a preference.</strong> Sprag clutch manufacturers generally do not allow lubricants containing extreme-pressure additives, because the additive film interferes with the wedging action. The habitual advice to pack a stiff, moly-fortified grease into a ratchet head does not transfer to a gearless one.</li>
+        <li><strong>The head is a matched assembly.</strong> There is no tooth strip to inspect and no pawl to replace. When the clutch or its race wears, the repair is a complete element, which changes the spare-parts economics for a distributor.</li>
+        <li><strong>Backdrag feel changes.</strong> A light drag is what keeps the elements in contact; a gearless head can feel different through the handle at low torque, which is often mistaken for roughness.</li>
+      </ul>
+
+      <h2>What 0 degrees does not do</h2>
+      <p>The claim is usually written as a zero-degree arc, and it is worth being precise about the boundary of that claim.</p>
+      <p>It does not remove the need for handle clearance. The handle still has to move through some angle for the technician to apply force; what changes is that every part of that movement produces fastener rotation instead of being spent re-clocking the pawl. In a space that allows 15 degrees of handle sweep, a gearless head uses all 15 degrees and a 72-tooth head uses 10 of them and wastes 5. The advantage is real, and it is not the same as needing no space.</p>
+      <p>It does not increase torque capacity. The failure limit of a ratchet is set by the drive square, the anvil, the head forging and the handle, not by the number of teeth. A gearless head with a soft race will slip at a lower load than a well-made 72-tooth head, and the slip is sudden rather than gradual, because there is no tooth to deform first as a warning.</p>
+      <p>It does not make the tool impact-rated. No hand ratchet is, regardless of mechanism. An impact gun delivers torque in pulses that a wedging element and a hand-forged head were never specified for, and the marketing shorthand of "heavy duty" is not a rating.</p>
+      <p>It also does not repeal the trade-off that comes with high tooth counts: finer engagement means less material behind each engagement point, so the same handle is easier to damage through misuse. A gearless mechanism avoids that particular trade-off, but it introduces a different one - a friction element that is far less forgiving of contamination than a greased gear.</p>
+
+      <h2>What a distributor should specify</h2>
+      <p>The purchasing conversation is where gearless ratchets are usually lost, because the catalogue copy is written for the end user and the specification is written for nobody. The lines below are the ones that produce a defensible product.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Line item</th>
+              <th>Wording that holds up</th>
+              <th>What it filters out</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Holding element</td>
+              <td>Sprag or roller one-way clutch, race hardness stated with test method and sample location</td>
+              <td>A soft race that passes a visual check and slips in month three</td>
+            </tr>
+            <tr>
+              <td>Arc</td>
+              <td>Indexing increment of zero, plus the minimum handle stroke in degrees at rated load</td>
+              <td>"0 degree" used as a slogan with no measured number behind it</td>
+            </tr>
+            <tr>
+              <td>Torque rating</td>
+              <td>Rated working torque per drive size, with the test standard named; ultimate torque listed separately</td>
+              <td>A peak figure that is quoted as if it were a working rating</td>
+            </tr>
+            <tr>
+              <td>Lubricant</td>
+              <td>Factory fill named, EP-additive free, service interval and approved re-lubricant listed</td>
+              <td>Whatever grease was in the plant that week, and warranty claims after a customer re-packs the head</td>
+            </tr>
+            <tr>
+              <td>Service parts</td>
+              <td>Clutch assembly and seal kit available as stocked SKUs, with lead time</td>
+              <td>A premium tool that becomes scrap when one element wears</td>
+            </tr>
+            <tr>
+              <td>Head envelope</td>
+              <td>Head thickness and width across the drive, measured on the production part</td>
+              <td>An arc claim that is defeated by a head that will not fit the gap</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The head envelope line is the one buyers skip and technicians notice first. Arc swing decides whether the handle can move; head thickness decides whether the socket can reach the fastener at all. A gearless ratchet with a thick head is a premium solution to a problem the customer does not have.</p>
+
+      <h2>Where the category actually fits</h2>
+      <p>Gearless ratchets are a specialist answer to a specific constraint: fasteners in spaces too tight for a pawl to re-clock. That is a real and recurring problem in automotive and aerospace service, and it justifies a premium price in those bays. It does not justify replacing a general-purpose 90 or 120-tooth ratchet in a service kit, where a sealed gear head is cheaper, more tolerant of dirt and easier to service.</p>
+      <p>For a distributor, the honest positioning is a two-line range: a sealed geared ratchet as the volume product, and a gearless head in the sizes where access is the binding constraint. Pairing the gearless tool with a stocked clutch kit turns a novelty into a line item a workshop can justify, because the buyer can see the cost of ownership instead of only the purchase price.</p>
+      <p>Related reading: <a href="/blog/ratchet-tooth-count-and-arc-swing">ratchet tooth count and arc swing</a>, <a href="/blog/ratchet-rebuild-kit-serviceability-sourcing">ratchet rebuild kits and serviceability</a>, and <a href="/blog/how-to-choose-high-torque-ratchet-handles">choosing high-torque ratchet handles</a>.</p>
+
+      <h2>Product references</h2>
+      <p>The <a href="/products/TH-001">dual-mode extendable ratchet handle</a> and the <a href="/products/TH-002">3/4 in. drive heavy-duty extendable ratchet</a> cover the high-torque end of the range, where head strength and anvil support decide the working limit. For confined access in 3/8 in. drive, the <a href="/products/TH-021">flex-head ratchet</a> trades a small arc advantage for a articulated head, which solves a different half of the same clearance problem. The <a href="/products/TH-094">quick-release reversing ratchet adapter</a> is the low-cost way to test whether a market wants quick-release operation before committing to a private-label head.</p>
+    `,
+    relatedProducts: ["TH-001", "TH-002", "TH-021", "TH-094"],
+    seoTitle: "Zero-Tooth Ratchets: Sprag Clutch, Arc Swing and Specs | TorqHive",
+    metaDescription: "Why a zero-tooth ratchet uses a sprag clutch instead of teeth, what a 0-degree arc can and cannot do, and the six specification lines a distributor should demand.",
+  },
+  {
+    slug: "where-torque-specs-come-from-nut-factor",
+    title: "Where Torque Specs Come From: Nut Factor, Friction and One Bolt With Five Numbers",
+    date: "Nov 20, 2026",
+    category: "Workshop Practice",
+    readTime: "13 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-043/hero-web.webp",
+    excerpt: "A torque figure is a proxy for clamp load, and the conversion depends on a friction coefficient nobody measures. That is why the same M10 bolt carries five different numbers and why the manual is still the only defensible source.",
+    tags: [
+      "torque specification",
+      "nut factor K",
+      "bolt preload",
+      "torque table",
+      "JIS B 1083",
+    ],
+    content: `
+      <h2>The thread asked where the number comes from</h2>
+      <p>In <a href="https://www.reddit.com/r/AskAMechanic/comments/1uocg1g/looking_for_a_good_way_to_find_correct_torque_spec/">a r/AskAMechanic thread on finding the correct torque spec</a>, the example given is a rear sway bar bracket bolt on a 2019 Volkswagen GTI at 20 Nm, and the accepted advice is to buy the workshop manual rather than trust a number found online. That advice is right, and it stops one step short of the useful answer: the manual number is itself a calculation, made with assumptions the manual rarely prints.</p>
+      <p>A parallel thread on <a href="https://www.reddit.com/r/AutoMechanics/comments/1w6p0h6/old_beam_torque_wrench_vs_new_tools_winner_will/">old beam torque wrenches versus digital tools</a> circles the same anxiety from the other side. Technicians argue about instrument accuracy while the larger error sits upstream, in the number the instrument is being set to.</p>
+
+      <h2>Torque is a proxy, and the proxy has a coefficient</h2>
+      <p>What a joint needs is clamp load: the tension that keeps the parts from separating or slipping. What a wrench measures is torque. The bridge between them is the short-form tightening equation, written in JIS B 1083 as T = K x d x F, where T is tightening torque, d is the nominal thread diameter, F is the target clamp force and K is the torque coefficient, also called the nut factor.</p>
+      <p>K is the problem. It is not a material property of the bolt. It bundles thread friction, under-head friction and the geometry that converts rotation into tension, and it changes with coating, lubrication, surface finish, washer presence and whether the threads were chased or run as-received. Published tightening data makes the spread explicit:</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Thread condition</th>
+              <th>Assumed K</th>
+              <th>Torque for a fixed clamp load</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Plain, dry</td>
+              <td>0.20</td>
+              <td>100 percent (reference)</td>
+            </tr>
+            <tr>
+              <td>Lightly lubricated</td>
+              <td>0.15</td>
+              <td>75 percent</td>
+            </tr>
+            <tr>
+              <td>Well lubricated</td>
+              <td>0.10</td>
+              <td>50 percent</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Read that table as a purchasing and training document, not a physics lecture. The same bolt, at the same target clamp load, needs half the torque when it is well lubricated compared with dry. Put the other way round: a technician who applies the dry-torque figure to a lubricated fastener produces roughly double the intended preload, which is how aluminium housings get stripped and how "the manual was wrong" stories start. A technician who applies a lubricated figure to a dry, corroded fastener under-torques it, and the joint comes loose.</p>
+      <p>Related: <a href="/blog/anti-seize-lug-nuts-torque-and-preload">anti-seize, lug nuts and preload</a> covers the same mechanism at the wheel, where the consequences are visible.</p>
+
+      <h2>Why the same M10 bolt has five numbers</h2>
+      <p>Generic torque tables are usually built from a proof-load target, commonly around 75 percent of the bolt proof load, with an assumed K of about 0.20 and no knowledge of the joint. An OEM figure is built the other way round: the joint is analysed for the clamp load it needs, then the torque is back-calculated for the specific bolt, coating, washer and thread condition on that assembly line.</p>
+      <p>The divergence is not error. It is four different questions being answered with the same units:</p>
+      <ol>
+        <li><strong>What is the target clamp load?</strong> A connecting rod and a plastic trim bracket do not want the same preload, even with the same thread.</li>
+        <li><strong>What is the bolt doing?</strong> An elastic joint holds its preload; a gasketed joint loses some to gasket compression; a torque-to-yield bolt is deliberately taken past yield and cannot be reused.</li>
+        <li><strong>What is the joint material?</strong> Aluminium and magnesium clamp differently from cast iron, and the same torque that seats a steel boss will pull threads out of a soft one.</li>
+        <li><strong>What is on the threads?</strong> Dry, oiled, threadlocked, zinc-flake coated or anti-seized are five different K values, and therefore five different torque numbers for one clamp load.</li>
+      </ol>
+      <p>This is also why "the forum said 20 Nm" is a weaker source than it looks. The number may be correct for a different engine, a different fastener coating or a different washer, and none of that survives the retelling.</p>
+
+      <h2>The scatter is larger than the wrench error</h2>
+      <p>Torque-controlled tightening is the least accurate of the common assembly methods, because friction is uncontrolled. VDI 2230, the systematic calculation guideline for high-duty bolted joints, handles this with a tightening factor applied to the minimum preload, which is a formal acknowledgement that the same torque does not produce the same clamp load twice.</p>
+      <p>Angle-controlled tightening exists because it removes friction from the conversion. Once the bolt is seated, a further rotation produces a predictable stretch, so the preload is set by geometry rather than by a coefficient. Torque-to-yield fasteners depend on that logic, which is why they are single-use and why <a href="/blog/torque-to-yield-bolts-single-use">reusing a TTY bolt</a> is not a shortcut but a different, weaker joint.</p>
+      <p>For a workshop, the practical ranking is: angle control where the OEM specifies it, a calibrated torque wrench on a clean and correctly lubricated thread where torque control is specified, and no guessing in between. Instrument accuracy matters, but a calibrated wrench set to the wrong coefficient is a precise instrument measuring the wrong thing. <a href="/blog/torque-wrench-calibration-frequency-and-verification">Calibration intervals and verification</a> are the second-order fix, not the first.</p>
+
+      <h2>Units are a separate failure mode</h2>
+      <p>Metric and imperial torque values are close enough to be confused and far enough apart to break parts. One foot-pound is about 1.356 newton-metres, and one inch-pound is about 0.113 newton-metres. The dangerous pair is ft-lb and in-lb, because the factor between them is twelve: a value read in the wrong unit is either twelve times too high or twelve times too low.</p>
+      <p>Dual-scale tools reduce the risk only if the scale in use is confirmed before the adjustment is made, and small values are where rounding does the most damage. A 9 Nm specification displayed on a tool that reads in 1 ft-lb increments cannot be set accurately at all, because one increment is 1.36 Nm.</p>
+      <p>For a distributor, this is a packaging decision. A torque card that prints both units, states the conversion factor, and shows the thread condition assumption prevents more warranty claims than a tighter tolerance on the wrench.</p>
+
+      <h2>What to publish with a torque tool</h2>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th>Source of the number</th>
+              <th>What it assumes</th>
+              <th>When it is the right source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>OEM service manual</td>
+              <td>A specific bolt, coating, washer, thread condition and joint on a specific assembly</td>
+              <td>Always, for a vehicle or machine the manual covers</td>
+            </tr>
+            <tr>
+              <td>Fastener manufacturer table</td>
+              <td>A proof-load target and a stated K, usually dry</td>
+              <td>Generic steel-to-steel joints with no OEM figure available</td>
+            </tr>
+            <tr>
+              <td>Calculated value</td>
+              <td>A target clamp load and an assumed friction coefficient</td>
+              <td>Design work, where the assumption can be documented and tested</td>
+            </tr>
+            <tr>
+              <td>Forum or video figure</td>
+              <td>Unknown, and usually unstated</td>
+              <td>Never as a final setting; useful only as a cross-check</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Three lines belong on any torque card shipped with a tool: the unit pair with the conversion factor, the thread condition the figure assumes, and whether the fastener is reusable. Those three lines cost nothing to print and answer the questions that generate most support tickets.</p>
+
+      <h2>Product references</h2>
+      <p>The <a href="/products/TH-043">1/2 in. drive split-beam click torque wrench (40-250 ft-lb)</a> covers the high end of automotive work where the ft-lb versus Nm decision is made daily. For production and heavy equipment, the <a href="/products/TH-083">3/4 in. drive preset click wrench, 100-600 Nm</a> removes the adjustment error entirely by fixing the setting. The <a href="/products/TH-062">140 Nm preset torque limiting extension bar</a> is the wheel-nut version of the same idea, and the <a href="/products/TH-092">torque wrench calibration tester, 100 Nm</a> lets a distributor verify incoming stock rather than trusting the certificate in the box.</p>
+    `,
+    relatedProducts: ["TH-043", "TH-083", "TH-062", "TH-092"],
+    seoTitle: "Where Torque Specs Come From: Nut Factor and Friction | TorqHive",
+    metaDescription: "How T = K x d x F turns clamp load into a torque number, why K of 0.20, 0.15 and 0.10 gives three different specs for one bolt, and what a distributor should print.",
+  },
+  {
     slug: "country-of-origin-taiwan-vietnam-china-hand-tools",
     title: "Taiwan, Vietnam or China: What a Hand Tool's Country of Origin Actually Predicts",
     date: "Nov 19, 2026",
