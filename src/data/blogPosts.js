@@ -11,7 +11,7 @@ export const blogCategories = [
 export const blogPosts = [
   {
     slug: "oil-drain-plug-torque-crush-washer",
-    title: "Oil Drain Plug Torque: Why 30 ft-lb Cracks an Aluminum Pan and What the Crush Washer Really Does",
+    title: "Oil Drain Plug Torque: Why 30 ft-lb Strips an Aluminum Pan and What the Crush Washer Really Does",
     date: "Nov 24, 2026",
     category: "Workshop Practice",
     readTime: "11 min read",
@@ -36,7 +36,7 @@ export const blogPosts = [
       <p>The failure mode is also not the one most owners expect. The plug rarely snaps. The pan threads strip, or the plug pulls the first two threads and then never reaches spec again. That is the point where a forty-dollar oil change becomes a thread insert, a pan replacement, or a used-car explanation.</p>
 
       <h2>The numbers, and where they come from</h2>
-      <p>Honda's current owner's manuals specify <strong>40 N·m (30 lbf·ft)</strong> for the engine oil drain bolt, as documented in the <a href="https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424IOM/enu/details/131240047-13568.html">2024 CR-V owner's manual section on changing engine oil</a>. A Toyota owner's thread lists <strong>30 lbf·ft</strong> for the oil pan drain plug and a lower figure for the filter housing drain. Across Japanese, European and American passenger cars, published drain plug specs commonly sit in the <strong>25 to 45 N·m</strong> band, roughly <strong>18 to 33 ft-lb</strong>, with European four-cylinders often at the bottom of that band and larger V6 and V8 engines at the top.</p>
+      <p>Honda's current owner's manuals specify <strong>40 N·m (30 lbf·ft)</strong> for the engine oil drain bolt, as documented in the <a href="https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424IOM/enu/details/131240047-13568.html">2024 CR-V owner's manual section on changing engine oil</a>. A <a href="https://www.toyotanation.com/threads/oil-drain-plugs-torque-spec.1732677/">Toyota owner's thread lists 30 lbf·ft</a> for the oil pan drain plug and a lower figure for the filter housing drain. Across Japanese, European and American passenger cars, published drain plug specs commonly sit in the <strong>25 to 45 N·m</strong> band, roughly <strong>18 to 33 ft-lb</strong>, with European four-cylinders often at the bottom of that band and larger V6 and V8 engines at the top.</p>
       <p>Those are reference points, not a universal setting. The only number that matters is the one in the service manual for the engine in front of you. What the range does tell a buyer is which wrench belongs in the oil-change kit.</p>
       <p>Here is the part most DIY kits get wrong. A 1/2 in. drive torque wrench with a 10-150 ft-lb scale puts a 30 ft-lb setting at <strong>20 percent of full scale</strong>, the very bottom of the usable band. The <a href="/blog/torque-wrench-range-selection-20-100-percent">20-100 percent rule</a> exists because click wrenches are least accurate at the extremes. A 3/8 in. drive wrench with a 10-80 ft-lb range places the same 30 ft-lb at roughly 38 percent of scale, which is where the tool was designed to work. For drain plugs, small engine work and brake bleeder screws, the smaller wrench is the more accurate instrument, not the weaker one.</p>
 
