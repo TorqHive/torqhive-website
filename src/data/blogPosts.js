@@ -9,6 +9,219 @@ export const blogCategories = [
 ];
 
 export const blogPosts = [
+
+  {
+    slug: "wrench-size-vs-bolt-size-metric-jis-din",
+    title: "Wrench Size vs Bolt Size: Why an M8 Bolt Takes a 13 mm Wrench, and Sometimes a 12 mm",
+    date: "Nov 26, 2026",
+    category: "Buying Guide",
+    readTime: "11 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-004/hero-web.webp",
+    excerpt: "The number in M8 is the thread diameter, not the head. Head size is set by the fastener standard, and four standards disagree by one or two millimetres in exactly the sizes a technician reaches for most.",
+    tags: [
+      "wrench size chart",
+      "M8 bolt head size",
+      "JIS wrench sizes",
+      "metric wrench set",
+      "bolt head across flats"
+    ],
+    content: `
+      <h2>A question that never quite gets answered</h2>
+      <p>In <a href="https://www.reddit.com/r/Tools/comments/1jh88ky/why_do_metric_bolt_heads_and_wrench_sizes_not/">a r/Tools thread asking why metric bolt heads and wrench sizes do not match up</a>, the replies eventually arrive at the correct answer, but only after several wrong ones: in the metric system the same thread size can carry different head sizes, so an M8-1.25 bolt is not tied to a single wrench. A second <a href="https://www.reddit.com/r/Tools/comments/1gzquzu/1st_metric_combination_set/">r/Tools thread on choosing a first metric combination set</a> contains the same exchange in miniature, with one reply stating that an M8 usually takes 13 mm and an M6 takes 10 mm, and another adding that DIN M8 heads are 13 mm while JIS M8 heads are 12 mm.</p>
+      <p>The same confusion appears from the diagnostic side. <a href="https://www.reddit.com/r/MechanicAdvice/comments/1d4irid/why_does_repair_literature_say_eg_m8_bolt_instead/">An r/MechanicAdvice thread on why repair literature specifies an M8 bolt instead of the wrench size</a> collects the practical version of the rule: M6 bolts are generally 10 mm heads, M8 bolts are 12 mm on Asian equipment and 13 mm on domestic, and M10 moves again. And in <a href="https://www.reddit.com/r/MechanicAdvice/comments/s1yypu/embarassed_to_ask_this_but_what_bolt_size_fits_a/">a thread about a 12 mm bleeder bolt on a Japanese car</a>, the poster is looking for a bolt that matches a 12 mm fastener and cannot find one, because the thread and the head are two different dimensions.</p>
+      <p>None of this is obscure trivia. It decides whether a technician rounds a brake bleeder, whether a distributor's 8-piece wrench set covers the cars its customers actually service, and whether a purchase order for 20,000 wrenches arrives with the sizes the buyer thought he ordered.</p>
+
+      <h2>M8 is a thread, not a wrench</h2>
+      <p>The number after the M is the nominal major diameter of the thread in millimetres. An M8 bolt has a thread about 8 mm across, and that is the only thing the 8 guarantees. The hexagon on top is sized by a separate table in the product standard, chosen to give enough bearing area under the head and enough grip length for a wrench without making the fastener unnecessarily heavy.</p>
+      <p>The dimension that matters at the tool is the width across flats, usually abbreviated WAF or s: the distance between two opposite flats of the hexagon. A wrench is marked with that number. It is not marked with the thread size, and it is not derived from the thread size by any formula a technician can do in his head.</p>
+
+      <h2>The metric ladder, and why it looks arbitrary</h2>
+      <p>For metric hexagon head bolts, the two tables that matter in most of the world are DIN 931 and DIN 933, and their ISO successors ISO 4014 and ISO 4017. Partially threaded and fully threaded versions share the same head dimensions. The widths across flats are as follows.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Thread</th><th>DIN 931 / 933 (mm)</th><th>ISO 4014 / 4017 (mm)</th><th>Coarse pitch (mm)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>M6</td><td>10</td><td>10</td><td>1.0</td></tr>
+            <tr><td>M8</td><td>13</td><td>13</td><td>1.25</td></tr>
+            <tr><td>M10</td><td>17</td><td>16</td><td>1.5</td></tr>
+            <tr><td>M12</td><td>19</td><td>18</td><td>1.75</td></tr>
+            <tr><td>M14</td><td>22</td><td>21</td><td>2.0</td></tr>
+            <tr><td>M16</td><td>24</td><td>24</td><td>2.0</td></tr>
+            <tr><td>M18</td><td>27</td><td>27</td><td>2.5</td></tr>
+            <tr><td>M20</td><td>30</td><td>30</td><td>2.5</td></tr>
+            <tr><td>M22</td><td>32</td><td>34</td><td>2.5</td></tr>
+            <tr><td>M24</td><td>36</td><td>36</td><td>3.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The values are the nominal widths across flats published by fastener distributors for <a href="https://www.wermac.org/bolts/metricBDC.html">DIN 931, DIN 933, ISO 4014 and ISO 4017</a>. A separate ISO standard, ISO 272, tabulates the permitted width-across-flats combinations for hexagon products generally, which is why the ladder is coarse and repeats: the standard is choosing from a fixed set of sizes, not scaling the head with the thread.</p>
+      <p>Read the table as a set of traps rather than a reference. M8 is 13 mm, so the 13 mm wrench in a cheap set is not a filler size, it is the single most used size on the rail. M10 is where the standards part company: a DIN M10 needs 17 mm, an ISO M10 needs 16 mm. M12 is 19 against 18, and M14 is 22 against 21. Then M16, M18, M20 and M24 agree again, and M22 disagrees in the opposite direction, with ISO two millimetres larger than DIN.</p>
+      <p>That one-millimetre difference is enough to matter. A 17 mm wrench on a 16 mm ISO head has a full millimetre of slack. It will not spin freely, because the hexagon still catches, but it bears on the corners of the head rather than the flats, and a corroded M10 on a suspension arm is exactly where that difference turns into a rounded fastener. The same logic runs the other way: a 16 mm wrench will not go on a 17 mm DIN head at all.</p>
+
+      <h2>Nuts do not always match the bolt next to them</h2>
+      <p>Hexagon nuts follow their own standard. ISO 4032 and the equivalent ASME metric table give M6 at 10 mm, M8 at 13 mm, M10 at 16 mm, M12 at 18 mm, M14 at 21 mm, M16 at 24 mm, M20 at 30 mm and M24 at 36 mm. Compare that with DIN bolts: an M10 DIN bolt is 17 mm and an ISO 4032 M10 nut is 16 mm.</p>
+      <p>On a joint built from mixed-standard hardware, the technician needs two different wrenches on the same fastener pair, one for the head and one for the nut. This is common on aftermarket suspension and exhaust hardware, where an ISO nut is run onto a DIN-style bolt, and it is one of the reasons a single wrench in the hand is not a plan. It is also why the useful unit for a professional is a set, not a size.</p>
+
+      <h2>JIS: the 12 mm M8, and why it is not an M12</h2>
+      <p>Japanese industrial fasteners add a second layer. JIS B1180 covers hexagon head bolts in the usual finished form, and the finished table gives the same widths across flats as DIN: M8 at 13 mm, M10 at 17 mm, M12 at 19 mm. But JIS B1180 also exists in a small-head series, and <a href="https://www.fastenermart.com/jis-b1180-small-head-hex-bolts.html">fastener suppliers describe the small-head width across flats as 1 to 3 mm smaller than the equivalent DIN, ISO or ANSI bolt</a>, with the series offered in M8, M10 and M12.</p>
+      <p>In practice that means an M8 on a Japanese vehicle or motorcycle often measures 12 mm across flats, and an M10 measures 14 mm. A 13 mm wrench on a 12 mm head has a millimetre of clearance; the wrench rocks, the operator assumes the fastener is between sizes, and the next tool tried is often an adjustable wrench, which is the worst available answer.</p>
+      <p>There is a second confusion buried in the same three characters. A 12 mm head is not a 12 mm thread. The bleeder bolt in the r/MechanicAdvice thread is a 12 mm fastener in the sense that a 12 mm wrench fits it, while the thread underneath may be M8. Buying a replacement by head size is how a simple job becomes a drilled-out bleeder.</p>
+
+      <h2>The inch side, and the near-misses that feel like fits</h2>
+      <p>Inch hardware is more regular, because ASME B18.2.1 ties each nominal diameter to one head size. The values below are the nominal widths across flats from the standard as tabulated in <a href="https://mechanicalc.com/reference/fastener-size-tables">standard fastener dimension tables</a>.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Nominal diameter</th><th>Width across flats</th><th>Metric equivalent (mm)</th><th>Nearest metric wrench</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1/4 in.</td><td>7/16 in.</td><td>11.11</td><td>11 mm (will not fit)</td></tr>
+            <tr><td>5/16 in.</td><td>1/2 in.</td><td>12.70</td><td>13 mm (loose)</td></tr>
+            <tr><td>3/8 in.</td><td>9/16 in.</td><td>14.29</td><td>14 mm (will not fit) or 15 mm (loose)</td></tr>
+            <tr><td>7/16 in.</td><td>5/8 in.</td><td>15.88</td><td>16 mm (loose)</td></tr>
+            <tr><td>1/2 in.</td><td>3/4 in.</td><td>19.05</td><td>19 mm (will not fit)</td></tr>
+            <tr><td>5/8 in.</td><td>15/16 in.</td><td>23.81</td><td>24 mm (loose)</td></tr>
+            <tr><td>3/4 in.</td><td>1-1/8 in.</td><td>28.58</td><td>29 mm (loose)</td></tr>
+            <tr><td>7/8 in.</td><td>1-5/16 in.</td><td>33.34</td><td>34 mm (loose)</td></tr>
+            <tr><td>1 in.</td><td>1-1/2 in.</td><td>38.10</td><td>38 mm (will not fit)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Note the direction of the error. A 13 mm wrench on a 1/2 in. head is 0.3 mm oversized, so it feels like a fit but loads the corners. A 19 mm wrench on a 3/4 in. head is 0.05 mm undersized and simply will not go on. That asymmetry explains a familiar workshop experience: the metric wrench that "almost works" on an inch fastener is the dangerous one, because it does work, once, on a good head, and then rounds the second one.</p>
+
+      <h2>What this means for set design</h2>
+      <p>A wrench set is a coverage decision, not a piece count. Three practical consequences follow from the tables above.</p>
+      <ul>
+        <li><strong>The 12, 13, 14, 16, 18 ladder is the working core.</strong> Those five sizes cover JIS small-head M8, DIN M8, JIS small-head M10, ISO M10 and ISO M12, which is most of what a technician touches on Asian and European vehicles. A set that runs 13, 14, 17, 19 covers a different world: DIN-era hardware and domestic equipment.</li>
+        <li><strong>Skipping 16 and 18 is a purchasing error, not a saving.</strong> We covered the reasoning separately in <a href="/blog/socket-set-skip-sizes-16-18-mm">why socket sets skip sizes</a>; the same logic applies to wrenches, where a 16 mm is the only correct tool for an ISO M10 and an 18 mm for an ISO M12.</li>
+        <li><strong>Six-point beats twelve-point on a marginal head.</strong> A 12-point ring or socket engages the corners, and a head that is already one millimetre undersized for the tool has the least material at the corners. The geometry is set out in <a href="/blog/six-point-vs-12-point-sockets">our comparison of 6-point and 12-point sockets</a>.</li>
+      </ul>
+      <p>Length and offset are separate variables that a size chart cannot solve. An extra-long pattern reaches a flange bolt that a standard wrench cannot, and an offset ring clears a raised boss. That is why the sets we supply are built around length families rather than around a size count: the <a href="/products/TH-003">TH-003 6-piece extra-long set</a> and the <a href="/products/TH-004">TH-004 8-piece extra-long set</a> exist because access, not size, is usually what stops the job, and the <a href="/products/TH-038">TH-038 4-piece offset ring set</a> covers the recessed fasteners a straight wrench cannot reach.</p>
+
+      <h2>Measure before you pull</h2>
+      <p>The reliable field procedure is short. Clean the head, measure across two opposite flats with a caliper, and compare against the tables above; do not measure across corners, which overstates the size by roughly 15 percent on a regular hexagon. If the thread is also in question, identify the pitch with a gauge rather than by eye, as described in <a href="/blog/thread-pitch-identification-unc-unf-metric-coarse-fine">our thread pitch identification guide</a>.</p>
+      <p>If the head is already damaged, the correct sequence is a half-size or extractor socket, not a smaller wrench and not an adjustable. A half-size socket is designed to bite a nominally undersized head, and <a href="/blog/swollen-capped-lug-nuts-half-size-sockets">the lug nut case</a> is the clearest example of where that saves a wheel. An adjustable wrench, by contrast, is guaranteed to be loose: <a href="/blog/adjustable-wrench-vs-correct-size-wrench-iso-6787">the jaw clearance permitted by ISO 6787</a> is enough to round a marginal head on the first pull.</p>
+
+      <h2>What to write on the purchase order</h2>
+      <p>The failures above are specification failures, and they are preventable at the purchasing desk. Three items belong on any hand tool PO that references fastener sizes.</p>
+      <ol>
+        <li><strong>Name the fastener standard, not just the thread.</strong> "M10" is ambiguous between ISO 4017 at 16 mm and DIN 933 at 17 mm. Write the standard and the width across flats.</li>
+        <li><strong>Specify JIS small head explicitly if the market needs it.</strong> JIS B1180 in its finished form matches DIN; the 12 mm M8 comes from the small-head series. A supplier quoting "JIS" without that distinction may deliver the wrong head.</li>
+        <li><strong>List sizes, not piece counts.</strong> An 8-piece set built from 8, 10, 12, 13, 14, 17, 19, 22 covers different fasteners than one built from 10, 12, 13, 14, 16, 17, 18, 19, and the second is the more useful set in a European or Asian service bay.</li>
+      </ol>
+      <p>For the dimensional standards behind socket and wrench fitment more generally, <a href="/blog/socket-standards-din-3124-vs-asme-b107-110">the DIN 3124 and ASME B107.110 comparison</a> covers the socket side of the same question.</p>
+
+      <h2>The short version</h2>
+      <p>An M8 bolt takes a 13 mm wrench because the head is sized by DIN 933 or ISO 4017, not by the thread. It takes a 12 mm wrench when the bolt is a JIS small-head fastener, which is common on Japanese equipment. An M10 takes 17 mm under DIN and 16 mm under ISO, and its nut may take 16 mm on its own. The only durable fix is to stop reading the thread size as a tool size, and to stock the sizes the standards actually produce.</p>
+    `,
+    relatedProducts: ["TH-003", "TH-004", "TH-038", "TH-030"],
+    seoTitle: "Wrench Size vs Bolt Size: M8, JIS 12 mm and the Metric Ladder | TorqHive",
+    metaDescription: "Why an M8 bolt takes a 13 mm wrench, why ISO 4017 differs from DIN 933 at M10 to M14, and why JIS small-head bolts need a 12 mm. Metric and inch tables included."
+  },
+  {
+    slug: "air-vs-cordless-impact-wrench-shop-decision",
+    title: "Air vs Cordless Impact Wrench: The Per-Bay Decision, Not the Torque Number",
+    date: "Nov 26, 2026",
+    category: "Workshop Practice",
+    readTime: "10 min read",
+    author: "TorqHive Engineering Team",
+    coverImage: "/assets/images/products/TH-073/hero-web.webp",
+    excerpt: "A 1/2 in. pneumatic and a 1/2 in. cordless now publish the same torque class. What separates them is what each one demands from the building, the battery cabinet and the person holding it.",
+    tags: [
+      "air vs cordless impact wrench",
+      "pneumatic impact wrench",
+      "cordless impact wrench",
+      "shop air setup",
+      "impact wrench buying"
+    ],
+    content: `
+      <h2>The argument that keeps restarting</h2>
+      <p><a href="https://www.reddit.com/r/Tools/comments/1qcplgn/is_there_still_a_place_for_air_impacts_in_the/">A r/Tools thread titled Is there still a place for air impacts in the automotive space</a> reads as a farewell, and then the replies refuse to let it be one. <a href="https://www.reddit.com/r/mechanics/comments/1wwc1u2/out_of_the_business_go_cordless_or_stay_with_air/">A more recent r/mechanics thread, from someone who left the trade and kept the tools, asks the same question from the other side</a>: go cordless or stay with air. <a href="https://www.reddit.com/r/IndustrialMaintenance/comments/1pf7tb8/air_vs_cordless_impact_wrenches_38_drive_vs_12/">An r/IndustrialMaintenance thread on air versus cordless, and 3/8 against 1/2 in. drive</a>, splits along application lines, with shop-based mechanics defending pneumatic tools while others point to what a modern battery impact delivers. <a href="https://www.reddit.com/r/Tools/comments/1pj773x/air_vs_battery_vs_corded_tools_for_diy_new_home/">Even the DIY version of the question</a> ends in the same place.</p>
+      <p>What makes these threads long is that both sides are right, because the question is being asked at the wrong level. At the level of the tool, the two categories converged years ago. At the level of the bay, they have almost nothing in common.</p>
+
+      <h2>The torque gap closed</h2>
+      <p>Take two current 1/2 in. drive tools from established manufacturers. The pneumatic example is the <a href="https://powertools.ingersollrand.com/en-us/drilling-and-bolting-tools/impact-wrenches/2235timax/">Ingersoll Rand 2235TiMAX</a>, rated 1,350 ft-lb nut-busting torque and 930 ft-lb maximum reverse torque, with an average air consumption of 6.0 CFM at 90 psi and a weight of about 4.6 lb. The cordless example is the <a href="https://www.milwaukeetool.com/products/details/m18-fuel-1-2-high-torque-impact-wrench-with-friction-ring-tool-only/2767-20">Milwaukee 2767 M18 FUEL 1/2 in. High Torque Impact Wrench</a>, rated 1,000 ft-lb fastening torque and 1,400 ft-lb nut-busting torque at about 5.5 lb.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Attribute</th><th>1/2 in. pneumatic (2235TiMAX)</th><th>1/2 in. cordless (2767 M18 FUEL)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Nut-busting torque</td><td>1,350 ft-lb</td><td>1,400 ft-lb</td></tr>
+            <tr><td>Stated maximum torque</td><td>930 ft-lb in reverse</td><td>1,000 ft-lb fastening</td></tr>
+            <tr><td>Rated energy source</td><td>90 psi compressed air at the inlet</td><td>18 V battery platform</td></tr>
+            <tr><td>Consumption</td><td>6.0 CFM average at 90 psi</td><td>Approximately 90 Wh for a nominal 18 V, 5.0 Ah pack</td></tr>
+            <tr><td>Tool weight</td><td>About 4.6 lb</td><td>About 5.5 lb</td></tr>
+            <tr><td>What the bay must provide</td><td>Compressor, dryer, filtration, piping, couplers, hose</td><td>Chargers, spare packs, a place to keep them warm</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The torque numbers are close enough that no technician chooses between these two on breakaway torque alone. The decision is made by everything in the last row.</p>
+
+      <h2>What the air number hides</h2>
+      <p>An air tool's published torque is a figure at a stated inlet pressure, and that pressure has to exist at the tool while the hammer is running. The 6.0 CFM on the datasheet is an average across a duty cycle that includes trigger-off time; it is not the flow the compressor sees during a ten-second pull on a rusted nut. We worked through the consequence in <a href="/blog/air-supply-impact-wrench-cfm-vs-psi">why 6 CFM average becomes a much larger number at the tool</a>, and the practical version is this: a compressor that meets the average rating can still leave an impact wrench unable to break a lug nut it tightened itself.</p>
+      <p>Put a number on the supply side. A 60-gallon, 3.7 HP single-stage compressor is rated <a href="https://www.homedepot.com/p/DEWALT-60-Gal-175-PSI-Electric-Stationary-Single-Stage-Air-compressor-11-5-SCFM-at-90-PSI-DXCM602/316164251">11.5 SCFM at 90 psi</a>. That is a substantial home-shop or small-bay machine, and it is still a recovery-limited system when two technicians hold triggers at the same time. The receiver covers the burst; the pump decides how soon the next burst is available. This is why a shop with four bays does not buy four impact wrenches, it buys a compressor and a distribution system sized for four bays, and the cost sits in the building rather than in the tool crib.</p>
+      <p>It is also why air is unforgiving of neglect. Water in the line, a lubricator that ran dry, a coupler with a worn collar, a hose with a 5 mm bore and fifteen metres of length: each one takes torque off the tool without changing the number printed on the box. The maintenance side is covered in <a href="/blog/water-in-air-lines-impact-wrench-failure">water in air lines</a> and <a href="/blog/air-tool-lubrication-oil-grease-maintenance-schedule">the air tool lubrication schedule</a>, and it is real work that has to be assigned to someone.</p>
+
+      <h2>What the battery number hides</h2>
+      <p>A nominal 18 V, 5.0 Ah pack holds about 90 Wh. That is the whole energy budget, and it is spent fast by a tool that delivers four figures of breakaway torque. The practical consequences are different from the air side but no less structural.</p>
+      <ul>
+        <li><strong>The pack is the consumable.</strong> The tool is a capital purchase and the batteries are a recurring one. A shop with six technicians and two packs each is managing eighteen cells per technician, plus chargers, plus the discipline of putting them back on charge.</li>
+        <li><strong>Cold is a derating factor, not a failure.</strong> Milwaukee rates its M18 REDLITHIUM XC packs for climates <a href="https://shop.nicklassupply.com/buy/product/m18-redlithium-xc-3-0ah-extended-capacity-battery-pack/1189772">below 0 degrees F, or -18 degrees C</a>. Below that, or after a pack has been sitting in a cold truck overnight, the tool still runs but the runtime curve moves against you. An unheated shop in February is a different operating environment from a heated one, and a technician who has not planned for it will blame the tool.</li>
+        <li><strong>The platform is a lock-in.</strong> Packs fit one brand. Once a shop has standardized on a platform, the next tool purchase is a decision about the battery system as much as the tool, and switching costs are paid in batteries rather than in wrenches.</li>
+      </ul>
+      <p>What the battery buys is independence from the building. No hose, no coupler, no pressure drop, no drain valve. A mobile technician, a technician working on the third floor of a parking structure, or a shop with one compressor and six bays gets a capability that air cannot deliver at any reasonable cost.</p>
+
+      <h2>Duty cycle is the dividing line</h2>
+      <p>The useful question is not which tool is better but how the bay actually runs. The table below is the qualification logic we use with distributors, and it maps closely to how the Reddit threads split once the application is named.</p>
+      <div class="blog-table-scroll" role="region" aria-label="Comparison table" tabindex="0">
+        <table>
+          <thead>
+            <tr><th>Setting</th><th>Dominant constraint</th><th>Practical default</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tire shop, four or more wheels per bay, all day</td><td>Continuous duty and cycle time</td><td>Air, with a compressor sized for simultaneous pulls and a dryer in the line</td></tr>
+            <tr><td>General repair, intermittent heavy work</td><td>Flexibility across the bay and the lot</td><td>Cordless, with one high-torque tool and a compact backup</td></tr>
+            <tr><td>Restoration and fabrication</td><td>Variable access, low duty cycle</td><td>Cordless for reach; air for sustained grinding and cutting</td></tr>
+            <tr><td>Mobile service</td><td>No fixed air supply</td><td>Cordless, with charging planned into the vehicle</td></tr>
+            <tr><td>Industrial maintenance</td><td>Large fasteners, long reach, existing plant air</td><td>Air where the plant already supplies it; cordless for remote assets</td></tr>
+            <tr><td>Home shop, one bay</td><td>Capital budget and storage</td><td>Cordless, unless a compressor already exists for other reasons</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The tire-shop case is the one worth spelling out, because it is where the two categories diverge most. A wheel bay does not need one burst of torque, it needs the same burst two hundred times a day. An air tool will do that indefinitely if the compressor keeps up; a cordless tool will do it until the packs are empty, and then the cycle time depends on chargers rather than on the technician. That is a workflow constraint, not a torque constraint, and it is why tire shops have stayed pneumatic.</p>
+
+      <h2>Who fixes it when it stops</h2>
+      <p>The failure modes are different, and so is the repair path.</p>
+      <ul>
+        <li><strong>Pneumatic:</strong> a vane motor, a hammer mechanism, O-rings and seals, an anvil. Most of it is serviceable with a rebuild kit and basic tools, and the diagnosis is usually audible or pneumatic: low power, a hiss, oil blowing out of the exhaust. The common causes are water, lubrication and supply, all of which are covered above.</li>
+        <li><strong>Cordless:</strong> a trigger and switch assembly, control electronics, the anvil and hammer, and the pack. Electronics failures are not field-repairable, and the warranty path runs through the brand rather than through a local service shop. Parts availability and service network matter more than they do for an air tool.</li>
+      </ul>
+      <p>For a distributor this changes what a support conversation looks like. An air tool complaint is often a supply complaint, and can be resolved with a gauge, a filter and a hose. A cordless complaint is often a battery complaint, and is resolved by a warranty claim or a sale.</p>
+
+      <h2>What to stock, and what to ask</h2>
+      <p>The sockets are the same either way. Both tools use 1/2 in. square drive, and both need impact-rated sockets in chrome molybdenum rather than hand sockets in chrome vanadium; the alloy and heat treatment distinction is set out in <a href="/blog/cr-v-vs-cr-mo-steel-selecting-the-right-alloy">our Cr-V and Cr-Mo comparison</a>. A <a href="/products/TH-073">32-piece 1/2 in. drive CR-MO impact socket set</a> serves a pneumatic and a cordless buyer identically, which is why the socket range is the safer inventory in a mixed market.</p>
+      <p>The accessories are where the two customers separate. A pneumatic buyer needs <a href="/products/TH-096">C-style quick couplers</a>, filtration and a hose that does not strangle the tool, and the coupler profile matters because 1/4 in. is a thread, not a flow rating, as covered in <a href="/blog/pneumatic-quick-coupler-interchange-standards">our quick coupler guide</a>. A cordless buyer needs packs, chargers and a second tool in a smaller drive size. Stocking both is not duplication; it is two different accessory ladders behind the same socket wall.</p>
+      <p>Five questions qualify a customer faster than a specification sheet.</p>
+      <ol>
+        <li><strong>How many bays, and how many technicians hold a trigger at once?</strong> This decides whether the compressor is adequate, and it is the question most buyers have never been asked.</li>
+        <li><strong>What is the duty cycle?</strong> Wheels all day, or one suspension bolt an hour. Continuous work favours air; intermittent work favours battery.</li>
+        <li><strong>Is there existing air, and what does it deliver at the tool?</strong> A gauge at the inlet under load answers more than the compressor label.</li>
+        <li><strong>Is the work indoors, outdoors or in an unheated building?</strong> Cold affects packs more than it affects a well-drained air line.</li>
+        <li><strong>What platform is already in the shop?</strong> A single-platform fleet is cheaper to run than a mixed one, even if the tool itself costs more.</li>
+      </ol>
+      <p>There is no universal answer, and a distributor who sells one is setting up a return. The honest answer is that the tool is now the cheap part of the decision: the compressor and its piping on one side, the battery fleet and its charging discipline on the other.</p>
+
+      <h2>The short version</h2>
+      <p>Air and cordless 1/2 in. impact wrenches have converged on torque. They have not converged on what they require. Air demands capital in the building, maintenance in the line and discipline at the drain valve, and it rewards continuous duty. Cordless demands capital in batteries, planning around cold and charging, and it rewards reach and independence. Choose by the bay, not by the box.</p>
+    `,
+    relatedProducts: ["TH-073", "TH-006", "TH-096", "TH-062"],
+    seoTitle: "Air vs Cordless Impact Wrench: Per-Bay Buying Decision | TorqHive",
+    metaDescription: "Same 1/2 in. drive and torque class, different infrastructure: what 6 CFM average means, what a 90 Wh pack means, and how to qualify a shop before selling either."
+  },
   {
     slug: "water-in-air-lines-impact-wrench-failure",
     title: "Water in the Air Line: Why Pneumatic Impact Wrenches Fail Early and What an FRL Actually Fixes",
